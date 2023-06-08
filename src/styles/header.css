@@ -15,9 +15,12 @@ header .main__nav {
   justify-content: space-between;
   align-items: center;
 }
-header .main__nav svg {
-  fill: white;
+header .main__nav .nav-logo {
+  padding-top: 3px;
+}
+header .main__nav .nav-logo svg {
   width: 4rem;
+  fill: white;
 }
 header .main__nav .start__main {
   display: flex;
@@ -37,4 +40,13 @@ header .main__nav ul li button {
   font-size: 14px;
   font-family: "Gotham SSm", sans-serif;
   color: white;
+}
+header .main__nav .nav__end {
+  display: flex;
+  gap: 0.9rem;
+}
+header .main__nav .nav__end svg {
+  fill: white;
+  width: 1.4rem;
+  height: 1.4rem;
 }/*# sourceMappingURL=header.css.map */

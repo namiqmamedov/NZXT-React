@@ -18,10 +18,15 @@ header {
         justify-content: space-between;
         align-items: center;
 
-        svg {
-            fill: white;
-            width: 4rem;
+
+        .nav-logo{
+            padding-top: 3px;
+            svg{
+                width: 4rem;
+                fill: white;
+            }
         }
+
 
         .start__main{
             display: flex;
@@ -42,6 +47,16 @@ header {
                     font-family: 'Gotham SSm', sans-serif;
                     color: #ffff;
                 }
+            }
+        }
+
+        .nav__end{
+            display: flex;
+            gap: .9rem;
+            svg {
+                fill: white;
+                width: 1.4rem;
+                height: 1.4rem;
             }
         }
     }
