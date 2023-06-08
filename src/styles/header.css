@@ -7,6 +7,7 @@ header .nav__top p {
   font-size: 12px;
   font-family: "Gotham SSm", sans-serif;
   color: white;
+  margin-bottom: 0;
 }
 header .main__nav {
   background: #313235;
@@ -16,7 +17,7 @@ header .main__nav {
   align-items: center;
 }
 header .main__nav .nav-logo {
-  padding-top: 3px;
+  margin-bottom: 6px;
 }
 header .main__nav .nav-logo svg {
   width: 4rem;
@@ -30,6 +31,7 @@ header .main__nav ul {
   display: flex;
   align-items: center;
   padding-left: 43px;
+  margin-bottom: 0;
   gap: 1.3rem;
 }
 header .main__nav ul li {

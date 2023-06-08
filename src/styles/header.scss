@@ -8,6 +8,7 @@ header {
             font-size: 12px;
             font-family: 'Gotham SSm', sans-serif;
             color: #ffff;
+            margin-bottom: 0;
         }
     }
 
@@ -20,7 +21,7 @@ header {
 
 
         .nav-logo{
-            padding-top: 3px;
+            margin-bottom: 6px;
             svg{
                 width: 4rem;
                 fill: white;
@@ -37,6 +38,7 @@ header {
             display: flex;
             align-items: center;
             padding-left: 43px;
+            margin-bottom: 0;
             gap: 1.3rem;
 
             li {
