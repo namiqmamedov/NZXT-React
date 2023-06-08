@@ -10,17 +10,27 @@ header .nav__top p {
 }
 header .main__nav {
   background: #313235;
-  padding: 20px 60px;
+  padding: 10px 60px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 header .main__nav svg {
   fill: white;
   width: 4rem;
 }
+header .main__nav .start__main {
+  display: flex;
+  align-items: center;
+}
 header .main__nav ul {
   display: flex;
   align-items: center;
+  padding-left: 43px;
+  gap: 1.3rem;
+}
+header .main__nav ul li {
+  list-style: none;
 }
 header .main__nav ul li button {
   text-transform: none;

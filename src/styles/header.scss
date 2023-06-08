@@ -13,8 +13,9 @@ header {
 
     .main__nav {
         background: #313235;
-        padding: 20px 60px;
+        padding: 10px 60px;
         display: flex;
+        justify-content: space-between;
         align-items: center;
 
         svg {
@@ -22,11 +23,19 @@ header {
             width: 4rem;
         }
 
+        .start__main{
+            display: flex;
+            align-items: center;
+        }
+
         ul {
             display: flex;
             align-items: center;
+            padding-left: 43px;
+            gap: 1.3rem;
 
             li {
+                list-style: none;
                 button {
                     text-transform: none;
                     font-size: 14px;
