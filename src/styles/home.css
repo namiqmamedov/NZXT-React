@@ -25,4 +25,20 @@
 }
 .home__index .home__text {
   padding-left: 80px;
+}
+.home__index .home__text h1 {
+  font-size: 48px;
+  font-family: "Gotham SSm", sans-serif;
+  font-weight: bold;
+}
+.home__index .home__text p {
+  font-size: 30px;
+  font-family: "Gotham SSm", sans-serif;
+  font-weight: bold;
+}
+.home__index .home__text img {
+  width: 32%;
+}
+.home__index .home__text button {
+  background: #5E0BCB;
 }/*# sourceMappingURL=home.css.map */

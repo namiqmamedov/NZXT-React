@@ -2,6 +2,7 @@ import React from 'react'
 import HeroBackground from '../assets/images/home/heroBackground.avif'
 import HeroCenter from '../assets/images/home/heroCenter.avif'
 import twologo from '../assets/images/home/two-logo.png'
+import Button from '@mui/material/Button';
 import '../styles/home.css'
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
                         <img src={twologo} alt="" />
                         <h1>Ready Player: Two</h1>
                         <p>Game, stream and create.</p>
+                        <Button variant="contained">Shop Player: Two</Button>
                     </div>
                     <div className="home__thumbnail col-lg-6">
                     <img className='home-img' src={HeroCenter} alt="Image" />

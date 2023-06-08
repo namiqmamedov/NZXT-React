@@ -26,5 +26,25 @@
 
     .home__text{
         padding-left: 80px;
+
+        h1{
+            font-size: 48px;
+            font-family: 'Gotham SSm', sans-serif;
+            font-weight: bold;
+        }
+
+        p{
+            font-size: 30px;
+            font-family: 'Gotham SSm', sans-serif;
+            font-weight: bold;
+        }
+
+        img{
+            width: 32%;
+        }
+        
+        button{
+            background: #5E0BCB;
+        }
     }
 }
