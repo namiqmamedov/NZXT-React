@@ -1,0 +1,39 @@
+header {
+    .nav__top {
+        background-color: #8A00FC;
+        text-align: center;
+        padding: 15px 0;
+
+        p {
+            font-size: 12px;
+            font-family: 'Gotham SSm', sans-serif;
+            color: #ffff;
+        }
+    }
+
+    .main__nav {
+        background: #313235;
+        padding: 20px 60px;
+        display: flex;
+        align-items: center;
+
+        svg {
+            fill: white;
+            width: 4rem;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                button {
+                    text-transform: none;
+                    font-size: 14px;
+                    font-family: 'Gotham SSm', sans-serif;
+                    color: #ffff;
+                }
+            }
+        }
+    }
+}
