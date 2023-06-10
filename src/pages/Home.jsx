@@ -4,10 +4,15 @@ import HeroCenter from '../assets/images/home/heroCenter.avif'
 import twologo from '../assets/images/home/two-logo.png'
 import Button from '@mui/material/Button';
 import '../styles/home.css'
+import card01 from '../assets/images/product/card01.png'
+import card02 from '../assets/images/product/card02.png'
+import thumbnail01 from '../assets/images/product/thumbnail01.png'
+import thumbnailLogo from '../assets/images/product/thumbnailLogo.png'
 
 const Home = () => {
   return (
-    <div className='home__index'>
+   <>
+     <div className='home__index'>
         <img className='background-img' src={HeroBackground} alt="Home Background Image" />
         <div className="container">
             <div className="row">
@@ -25,6 +30,75 @@ const Home = () => {
             </div>
         </div>
     </div>
+    <div className="player-two-card">
+        <div className="container">
+            <div className="row">
+            {/* <p>A PC BUILT TO GAME</p>
+            <p>Player: Two brings powerful, built-to-last performance to anything from competitive FPS to breathtaking RPGs.</p> */}
+            </div>
+            <div className="two-card-item">
+                <div className="card-item">
+                    <div className="card-thumbnail">
+                        <img src={card01} alt="Image" />                        
+                    </div>
+                    <div className="card-header">
+                        <p className='card-title'>
+                        Player: Two
+                        </p>
+                        <p className='subtitle'>H5 Elite RTX 4070 Gaming PC</p>
+                    </div>
+                    <div className="card-main">
+                        <p className='main-title'>Key Specs</p>
+                        <p className="main-text">AMD Ryzen™ 5 5600X</p>
+                        <p className="main-text">NVIDIA® GeForce RTX™ 4070</p>
+                        <p className="main-text">16GB (2 x 8GB) 3200 MHz (max speed)</p>
+                    </div>
+                    <div className="card-price">
+                        <p>$1,599.00</p>
+                    </div>
+                    <div className="shop-btn">
+                        <Button variant="contained">Shop</Button>
+                    </div>
+                </div>
+                <div className="card-item">
+                    <div className="card-thumbnail">
+                        <img src={card02} alt="Image" />                        
+                    </div>
+                    <div className="card-header">
+                        <p className='card-title'>
+                        Player: Two
+                        </p>
+                        <p className='subtitle'>H5 Elite RTX 4070 Gaming PC</p>
+                    </div>
+                    <div className="card-main">
+                        <p className='main-title'>Key Specs</p>
+                        <p className="main-text">AMD Ryzen™ 5 5600X</p>
+                        <p className="main-text">NVIDIA® GeForce RTX™ 4070</p>
+                        <p className="main-text">16GB (2 x 8GB) 3200 MHz (max speed)</p>
+                    </div>
+                    <div className="card-price">
+                        <p>$1,599.00</p>
+                    </div>
+                    <div className="shop-btn">
+                        <Button variant="contained">Shop</Button>
+                    </div>
+                </div>
+                <div className="thumbnail__end">
+                    <img className='thumbnail-img' src={thumbnail01} alt="Card Image" />
+                    <div className="card-body">
+                        <img src={thumbnailLogo} alt="Logo" />
+                        <div className="content">
+                            <p>Build that dream setup with great prices on a custom build.</p>
+                            <div className="customize-btn">
+                            <Button variant="outlined">Customize</Button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </>
   )
 }
 
