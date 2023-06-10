@@ -8,6 +8,8 @@ import card01 from '../assets/images/product/card01.png'
 import card02 from '../assets/images/product/card02.png'
 import thumbnail01 from '../assets/images/product/thumbnail01.png'
 import thumbnailLogo from '../assets/images/product/thumbnailLogo.png'
+import promoBanner from '../assets/images/home/promo-banner.png'
+import promoImg01 from '../assets/images/home/promo-img01.png'
 
 const Home = () => {
   return (
@@ -94,6 +96,16 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div className="promo__banner">
+        <div className="container">
+            <div className="row">
+                <div className="image-block">
+                <img className='banner-main' src={promoBanner} alt="Promo Banner" />
+                <img className='promo-img' src={promoImg01} alt="Promo Image" />
                 </div>
             </div>
         </div>
