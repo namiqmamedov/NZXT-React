@@ -148,6 +148,9 @@
   padding: 30px 34px;
 }
 
+.promo__banner {
+  margin-top: 128px;
+}
 .promo__banner .image-block {
   display: block;
   overflow: hidden;
@@ -156,11 +159,57 @@
   width: 100%;
   height: 50%;
 }
+.promo__banner .image-block .promo-block {
+  position: relative;
+}
 .promo__banner .image-block .promo-img {
   position: absolute;
-  left: 5%;
-  top: 198%;
+  top: -384px;
+  width: 37%;
+}
+.promo__banner .image-block .promo-content-index {
+  position: relative;
+}
+.promo__banner .image-block .promo-content-index .promo-content {
+  position: absolute;
+  top: -327px;
+  left: auto;
+  right: 0;
   bottom: 0;
-  width: 40%;
-  height: 58%;
+}
+.promo__banner .image-block .promo-content-index .promo-content img {
+  width: 33%;
+}
+.promo__banner .image-block .promo-content-index .promo-content h3 {
+  font-size: 30px;
+  font-family: "Gotham SSm", sans-serif;
+  font-weight: bold;
+  color: white;
+  padding: 7px 0;
+}
+.promo__banner .image-block .promo-content-index .promo-content .description {
+  font-size: 18px;
+  font-family: "Gotham SSm", sans-serif;
+  color: white;
+  max-width: 65%;
+  padding-bottom: 15px;
+}
+.promo__banner .image-block .promo-content-index .promo-content p {
+  font-size: 16px;
+  font-family: "Gotham SSm", sans-serif;
+  color: white;
+}
+.promo__banner .image-block .promo-content-index .promo-content button {
+  text-transform: none;
+  font-family: "Gotham SSm", sans-serif;
+  padding: 8px 18px;
+}
+.promo__banner .image-block .more-btn button {
+  color: white;
+  border-color: white;
+}
+
+.main-wrapper img {
+  width: 100%;
+  max-width: 100%;
 }/*# sourceMappingURL=home.css.map */

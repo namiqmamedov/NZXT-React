@@ -10,6 +10,9 @@ import thumbnail01 from '../assets/images/product/thumbnail01.png'
 import thumbnailLogo from '../assets/images/product/thumbnailLogo.png'
 import promoBanner from '../assets/images/home/promo-banner.png'
 import promoImg01 from '../assets/images/home/promo-img01.png'
+import promoLogo01 from '../assets/images/home/promo-logo01.png'
+import primeLogo01 from '../assets/images/home/prime-logo01.png'
+import mainBackground from '../assets/images/home/mainBackground.avif'
 
 const Home = () => {
   return (
@@ -105,10 +108,34 @@ const Home = () => {
             <div className="row">
                 <div className="image-block">
                 <img className='banner-main' src={promoBanner} alt="Promo Banner" />
+                <div className="promo-block">
                 <img className='promo-img' src={promoImg01} alt="Promo Image" />
+                </div>
+                <div className="promo-content-index">
+                <div className="promo-content">
+                    <img src={promoLogo01} alt="" />
+                    <h3>Rise Against Evil</h3>
+                    <div className='description'>Get Diablo® IV with select GeForce RTX 40 Series Prebuilt or Custom PC*</div>
+                    <p>*Any GeForce RTX 4090, 4080, 4070 Ti, 4070 PC.</p>
+                    <div className="more-btn">
+                        <Button variant="outlined">Learn More</Button>
+                    </div>
+                </div>
+                </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div className="main-wrapper">
+        <div className="wrapper-content">
+            <h1>Player: Prime</h1>
+            <div>
+            <p><em>Player: Prime</em> 
+            variants include an upgraded GPU, CPU and the latest NZXT PC cases, for maximum performance and style. Take your gaming to the next level with 
+            <em>Player:&nbsp;Prime</em>.</p>
+            </div>
+        </div>
+            <img src={mainBackground} alt="" />
     </div>
    </>
   )
