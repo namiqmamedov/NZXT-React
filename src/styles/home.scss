@@ -185,6 +185,7 @@
 
 .promo__banner {
     margin-top: 128px;
+
     .image-block {
         display: block;
         overflow: hidden;
@@ -204,48 +205,53 @@
             top: -384px;
             width: 37%;
         }
-        .promo-content-index{
+
+        .promo-content-index {
             position: relative;
-            .promo-content{
+
+            .promo-content {
                 position: absolute;
                 top: -327px;
                 left: auto;
                 right: 0;
                 bottom: 0;
 
-                img{
+                img {
                     width: 33%;
                 }
 
-                h3{
+                h3 {
                     font-size: 30px;
-                    font-family: 'Gotham SSm',sans-serif;
+                    font-family: 'Gotham SSm', sans-serif;
                     font-weight: bold;
                     color: white;
                     padding: 7px 0;
                 }
 
-                .description{
+                .description {
                     font-size: 18px;
-                    font-family: 'Gotham SSm',sans-serif;
+                    font-family: 'Gotham SSm', sans-serif;
                     color: white;
                     max-width: 65%;
                     padding-bottom: 15px;
                 }
-                p{
+
+                p {
                     font-size: 16px;
-                    font-family: 'Gotham SSm',sans-serif;
+                    font-family: 'Gotham SSm', sans-serif;
                     color: white;
                 }
-                button{
+
+                button {
                     text-transform: none;
-                    font-family: 'Gotham SSm',sans-serif;
+                    font-family: 'Gotham SSm', sans-serif;
                     padding: 8px 18px;
                 }
             }
         }
-        .more-btn{
-            button{
+
+        .more-btn {
+            button {
                 color: white;
                 border-color: white;
             }
@@ -254,9 +260,300 @@
 }
 
 
-.main-wrapper{
-    img{
+.main-wrapper {
+    .wrapper-content {
+        position: relative;
+
+        .wrapper-main {
+            position: absolute;
+            top: 270px;
+            right: 0;
+            left: 69px;
+            bottom: 0;
+
+            img {
+                width: 15%;
+            }
+
+            h1 {
+                font-size: 48px;
+                font-family: 'Gotham SSm', sans-serif;
+                color: white;
+            }
+
+            p {
+                font-size: 16px;
+                font-family: "Gotham SSm", sans-serif;
+                color: white;
+                max-width: 43%;
+            }
+        }
+    }
+
+    .background-img {
         width: 100%;
         max-width: 100%;
+        height: 100%;
+        min-height: 768px;
+        object-fit: cover;
+    }
+}
+
+.newest-releases {
+    padding-top: 50px;
+
+    .title {
+        text-align: center;
+        font-size: 48px;
+        font-family: 'Gotham SSm', sans-serif;
+        font-weight: bold;
+    }
+
+    .subtitle {
+        text-align: center;
+        font-size: 16px;
+        font-family: 'Gotham SSm', sans-serif;
+        max-width: 46%;
+        margin: 0 auto;
+        color: #737279;
+    }
+
+    .card__main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding-top: 55px;
+
+        .card-full {
+            width: 45%;
+            height: 567px;
+            position: relative;
+
+            .multiple-links {
+                display: flex;
+                gap: 1rem;
+
+                a {
+                    color: white;
+                }
+            }
+
+            .background-img {
+                margin-top: 6px;
+            }
+
+            .text-white {
+                background: #000000;
+            }
+
+            .image-block {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+
+                img {
+                    height: 567px;
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .card-item {
+                display: block;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    top: -58px;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 100%;
+                }
+            }
+        }
+
+        .card-full-content {
+            padding: 2rem;
+            min-height: 192px;
+
+            h3 {
+                font-size: 30px;
+                font-weight: bold;
+                font-family: 'Gotham SSm', sans-serif;
+            }
+
+            p {
+                font-size: 16px;
+                font-family: 'Gotham SSm', sans-serif;
+            }
+
+            a {
+                display: block;
+                color: #7135e5;
+                font-family: 'Gotham SSm', sans-serif;
+            }
+        }
+
+        .bottom-card {
+            display: flex;
+            gap: 1.3rem;
+
+            .card-full-bottom {
+                img {
+                    border-top-left-radius: .5rem;
+                    border-top-right-radius: .5rem;
+                    width: 100%;
+                    height: 380px;
+                }
+            }
+
+            .card__bottom-content {
+                background: #F5F5F8;
+
+                .card-body {
+                    padding: 2rem;
+                    margin: 0 auto;
+
+                    h3 {
+                        font-size: 30px;
+                        font-family: 'Gotham SSm', sans-serif;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+
+                    p {
+                        text-align: center;
+                        font-family: 'Gotham SSm', sans-serif;
+                    }
+
+                    a {
+                        display: block;
+                        text-align: center;
+                        color: #7135e5;
+                        font-family: 'Gotham SSm', sans-serif;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+.shop-bestseller {
+    padding-top: 70px;
+
+    .title {
+        font-size: 48px;
+        font-family: 'Gotham SSm', sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        font-family: 'Gotham SSm', sans-serif;
+        color: #737279;
+        text-align: center;
+        max-width: 48%;
+        margin: 0 auto;
+    }
+
+    .shop-index {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.3rem;
+
+        .shop-card {
+            width: 20%;
+
+            .card-thumbnail {
+                background: #F6F6F9;
+                padding-top: 30px;
+                padding-bottom: 30px;
+
+                img {
+                    width: 80%;
+                    margin: 0 auto;
+                    display: flex;
+                }
+            }
+
+            .color-options {
+                a {
+                    display: flex;
+                    border-radius: 50%;
+                    width: 28px;
+                    height: 28px;
+                    border-width: 2px;
+                    border-color: hsl(266deg 98% 60%);
+                }
+
+                .MuiFormGroup-root {
+                    flex-direction: unset;
+                }
+            }
+
+            .card-bottom {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 18px;
+
+                .card-price {
+                    margin-bottom: 0;
+                }
+
+                .color-radio {
+                    position: relative;
+                    margin: 0 !important;
+
+                    .MuiButtonBase-root.Mui-checked {
+                        // border-radius: 50% !important;
+                        // width: 28px !important;
+                        // height: 28px !important;
+                        // border-width: 2px !important;
+                        color: hsl(266deg 98% 60%) !important;
+                    }
+                    .css-11zohuh-MuiSvgIcon-root{
+                        height: 22px;
+                        color: transparent !important;
+                        left: 0;
+                        top: 0;
+                        width: 22px;
+                        border-radius: 50%;
+                        -webkit-box-shadow: 0 0 0 3px hsla(0,0%,100%,0), 0 0 0 4px hsla(0,0%,84%,0), inset 0 1px 6px 2px rgba(0,0,0,.2);
+                        box-shadow: 0 0 0 3px hsla(0,0%,100%,0), 0 0 0 4px hsla(0,0%,84%,0), inset 0 1px 6px 2px rgba(0,0,0,.2);
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        z-index: 1;
+                        &:not(svg){
+                            display: none;
+                        }
+                    }
+
+                }
+            }
+            .card-title{
+                padding-top: 5px;
+                padding-bottom: 3.5px;
+                font-size: 18px;
+                font-weight: bold;
+                font-family: 'Gotham SSm', sans-serif;
+                color: #000000;
+            }
+            .card-subtitle{
+                font-size: 14px;
+                font-family: 'Gotham SSm', sans-serif;
+                color: #737279;
+            }
+        }
     }
 }

@@ -209,7 +209,246 @@
   border-color: white;
 }
 
-.main-wrapper img {
+.main-wrapper .wrapper-content {
+  position: relative;
+}
+.main-wrapper .wrapper-content .wrapper-main {
+  position: absolute;
+  top: 270px;
+  right: 0;
+  left: 69px;
+  bottom: 0;
+}
+.main-wrapper .wrapper-content .wrapper-main img {
+  width: 15%;
+}
+.main-wrapper .wrapper-content .wrapper-main h1 {
+  font-size: 48px;
+  font-family: "Gotham SSm", sans-serif;
+  color: white;
+}
+.main-wrapper .wrapper-content .wrapper-main p {
+  font-size: 16px;
+  font-family: "Gotham SSm", sans-serif;
+  color: white;
+  max-width: 43%;
+}
+.main-wrapper .background-img {
   width: 100%;
   max-width: 100%;
+  height: 100%;
+  min-height: 768px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.newest-releases {
+  padding-top: 50px;
+}
+.newest-releases .title {
+  text-align: center;
+  font-size: 48px;
+  font-family: "Gotham SSm", sans-serif;
+  font-weight: bold;
+}
+.newest-releases .subtitle {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Gotham SSm", sans-serif;
+  max-width: 46%;
+  margin: 0 auto;
+  color: #737279;
+}
+.newest-releases .card__main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 55px;
+}
+.newest-releases .card__main .card-full {
+  width: 45%;
+  height: 567px;
+  position: relative;
+}
+.newest-releases .card__main .card-full .multiple-links {
+  display: flex;
+  gap: 1rem;
+}
+.newest-releases .card__main .card-full .multiple-links a {
+  color: white;
+}
+.newest-releases .card__main .card-full .background-img {
+  margin-top: 6px;
+}
+.newest-releases .card__main .card-full .text-white {
+  background: #000000;
+}
+.newest-releases .card__main .card-full .image-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.newest-releases .card__main .card-full .image-block img {
+  height: 567px;
+}
+.newest-releases .card__main .card-full img {
+  width: 100%;
+}
+.newest-releases .card__main .card-full .card-item {
+  display: block;
+  position: relative;
+}
+.newest-releases .card__main .card-full .card-item img {
+  position: absolute;
+  top: -58px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+.newest-releases .card__main .card-full-content {
+  padding: 2rem;
+  min-height: 192px;
+}
+.newest-releases .card__main .card-full-content h3 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Gotham SSm", sans-serif;
+}
+.newest-releases .card__main .card-full-content p {
+  font-size: 16px;
+  font-family: "Gotham SSm", sans-serif;
+}
+.newest-releases .card__main .card-full-content a {
+  display: block;
+  color: #7135e5;
+  font-family: "Gotham SSm", sans-serif;
+}
+.newest-releases .card__main .bottom-card {
+  display: flex;
+  gap: 1.3rem;
+}
+.newest-releases .card__main .bottom-card .card-full-bottom img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  width: 100%;
+  height: 380px;
+}
+.newest-releases .card__main .bottom-card .card__bottom-content {
+  background: #F5F5F8;
+}
+.newest-releases .card__main .bottom-card .card__bottom-content .card-body {
+  padding: 2rem;
+  margin: 0 auto;
+}
+.newest-releases .card__main .bottom-card .card__bottom-content .card-body h3 {
+  font-size: 30px;
+  font-family: "Gotham SSm", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+.newest-releases .card__main .bottom-card .card__bottom-content .card-body p {
+  text-align: center;
+  font-family: "Gotham SSm", sans-serif;
+}
+.newest-releases .card__main .bottom-card .card__bottom-content .card-body a {
+  display: block;
+  text-align: center;
+  color: #7135e5;
+  font-family: "Gotham SSm", sans-serif;
+}
+
+.shop-bestseller {
+  padding-top: 70px;
+}
+.shop-bestseller .title {
+  font-size: 48px;
+  font-family: "Gotham SSm", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+.shop-bestseller .subtitle {
+  font-size: 16px;
+  font-family: "Gotham SSm", sans-serif;
+  color: #737279;
+  text-align: center;
+  max-width: 48%;
+  margin: 0 auto;
+}
+.shop-bestseller .shop-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.3rem;
+}
+.shop-bestseller .shop-index .shop-card {
+  width: 20%;
+}
+.shop-bestseller .shop-index .shop-card .card-thumbnail {
+  background: #F6F6F9;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.shop-bestseller .shop-index .shop-card .card-thumbnail img {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+.shop-bestseller .shop-index .shop-card .color-options a {
+  display: flex;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  border-width: 2px;
+  border-color: hsl(266, 98%, 60%);
+}
+.shop-bestseller .shop-index .shop-card .color-options .MuiFormGroup-root {
+  flex-direction: unset;
+}
+.shop-bestseller .shop-index .shop-card .card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+}
+.shop-bestseller .shop-index .shop-card .card-bottom .card-price {
+  margin-bottom: 0;
+}
+.shop-bestseller .shop-index .shop-card .card-bottom .color-radio {
+  position: relative;
+  margin: 0 !important;
+}
+.shop-bestseller .shop-index .shop-card .card-bottom .color-radio .MuiButtonBase-root.Mui-checked {
+  color: hsl(266, 98%, 60%) !important;
+}
+.shop-bestseller .shop-index .shop-card .card-bottom .color-radio .css-11zohuh-MuiSvgIcon-root {
+  height: 22px;
+  color: transparent !important;
+  left: 0;
+  top: 0;
+  width: 22px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px hsla(0, 0%, 100%, 0), 0 0 0 4px hsla(0, 0%, 84%, 0), inset 0 1px 6px 2px rgba(0, 0, 0, 0.2);
+  content: "";
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+.shop-bestseller .shop-index .shop-card .card-bottom .color-radio .css-11zohuh-MuiSvgIcon-root:not(svg) {
+  display: none;
+}
+.shop-bestseller .shop-index .shop-card .card-title {
+  padding-top: 5px;
+  padding-bottom: 3.5px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Gotham SSm", sans-serif;
+  color: #000000;
+}
+.shop-bestseller .shop-index .shop-card .card-subtitle {
+  font-size: 14px;
+  font-family: "Gotham SSm", sans-serif;
+  color: #737279;
 }/*# sourceMappingURL=home.css.map */
