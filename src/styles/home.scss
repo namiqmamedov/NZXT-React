@@ -477,6 +477,23 @@
                 background: #F6F6F9;
                 padding-top: 30px;
                 padding-bottom: 30px;
+                position: relative;
+
+                .badge-main{
+                    position: absolute;
+                    top: 5%;
+                    left: 4%;
+                    background-color: hsl(115deg 85% 29%);
+                    border-radius: 3px;
+                    p{
+                        padding: 3px 7px;
+                        color: white;
+                        font-weight: bold;
+                        font-size: 12px;
+                        font-family: 'Gotham SSm', sans-serif;
+                        margin-bottom: 0;
+                    }
+                }
 
                 img {
                     width: 80%;
@@ -498,13 +515,33 @@
                 .MuiFormGroup-root {
                     flex-direction: unset;
                 }
+
+            }
+
+            .promo-active {
+                margin-top: -15px;
+                svg {
+                    margin-right: 7px;
+                    color: hsl(115deg 85% 29%);
+                    width: 1rem;
+                    height: 1rem;
+                }
+
+                color: hsl(115deg 85% 29%);
+                font-size: 12px;
+                font-family: 'Gotham SSm',
+                sans-serif;
             }
 
             .card-bottom {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding-top: 18px;
+
+                .old-price{
+                    margin-bottom: 0;
+                    text-decoration-line: line-through;
+                }
 
                 .card-price {
                     margin-bottom: 0;
@@ -513,35 +550,48 @@
                 .color-radio {
                     position: relative;
                     margin: 0 !important;
+                    width: 33%;
+
+                    .css-1hbvpl3-MuiSvgIcon-root {
+                        width: 1em !important;
+                        height: 1em !important;
+
+                        font-size: 1.7rem;
+                    }
 
                     .MuiButtonBase-root.Mui-checked {
                         // border-radius: 50% !important;
                         // width: 28px !important;
                         // height: 28px !important;
                         // border-width: 2px !important;
+
+
                         color: hsl(266deg 98% 60%) !important;
                     }
-                    .css-11zohuh-MuiSvgIcon-root{
-                        height: 22px;
+
+                    .css-11zohuh-MuiSvgIcon-root {
+                        height: 15px;
                         color: transparent !important;
-                        left: 0;
-                        top: 0;
-                        width: 22px;
+                        left: 5.9px;
+                        top: 5.8px;
+                        width: 15px;
                         border-radius: 50%;
-                        -webkit-box-shadow: 0 0 0 3px hsla(0,0%,100%,0), 0 0 0 4px hsla(0,0%,84%,0), inset 0 1px 6px 2px rgba(0,0,0,.2);
-                        box-shadow: 0 0 0 3px hsla(0,0%,100%,0), 0 0 0 4px hsla(0,0%,84%,0), inset 0 1px 6px 2px rgba(0,0,0,.2);
+                        -webkit-box-shadow: 0 0 0 3px hsla(0, 0%, 100%, 0), 0 0 0 4px hsla(0, 0%, 84%, 0), inset 0 1px 6px 2px rgba(0, 0, 0, .2);
+                        box-shadow: 0 0 0 3px hsla(0, 0%, 100%, 0), 0 0 0 4px hsla(0, 0%, 84%, 0), inset 0 1px 6px 2px rgba(0, 0, 0, .2);
                         content: "";
                         position: absolute;
                         right: 0;
                         z-index: 1;
-                        &:not(svg){
+
+                        &:not(svg) {
                             display: none;
                         }
                     }
 
                 }
             }
-            .card-title{
+
+            .card-title {
                 padding-top: 5px;
                 padding-bottom: 3.5px;
                 font-size: 18px;
@@ -549,10 +599,12 @@
                 font-family: 'Gotham SSm', sans-serif;
                 color: #000000;
             }
-            .card-subtitle{
+
+            .card-subtitle {
                 font-size: 14px;
                 font-family: 'Gotham SSm', sans-serif;
                 color: #737279;
+                padding-bottom: 1.7rem;
             }
         }
     }

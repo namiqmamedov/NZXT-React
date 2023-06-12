@@ -4,11 +4,11 @@ import HeroCenter from "../assets/images/home/heroCenter.avif";
 import twologo from "../assets/images/home/two-logo.png";
 import Button from "@mui/material/Button";
 import "../styles/home.css";
-import Radio from '@mui/material/Radio';
-import RadioGroup from '@mui/material/RadioGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormControl from '@mui/material/FormControl';
-import FormLabel from '@mui/material/FormLabel';
+import Radio from "@mui/material/Radio";
+import RadioGroup from "@mui/material/RadioGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import FormControl from "@mui/material/FormControl";
+import FormLabel from "@mui/material/FormLabel";
 import card01 from "../assets/images/product/card01.png";
 import card02 from "../assets/images/product/card02.png";
 import card03 from "../assets/images/product/card03.avif";
@@ -186,8 +186,7 @@ const Home = () => {
               reliability.
             </p>
             <div className="card__main">
-              <div style={{backgroundColor: '#E4DAFF'}}
-              className="card-full">
+              <div style={{ backgroundColor: "#E4DAFF" }} className="card-full">
                 <div className="card-full-content text-grey">
                   <h3>Kraken and Kraken Elite</h3>
                   <p>
@@ -199,12 +198,15 @@ const Home = () => {
                     <MdKeyboardArrowRight />
                   </a>
                 </div>
-                <img className="background-img" src={newsCard01} alt="Card Image" />
+                <img
+                  className="background-img"
+                  src={newsCard01}
+                  alt="Card Image"
+                />
               </div>
-              <div 
-               className="card-full">
+              <div className="card-full">
                 <div className="image-block">
-                    <img src={newsCard02} alt="Card Image" />
+                  <img src={newsCard02} alt="Card Image" />
                 </div>
                 <div className="card-full-content text-grey">
                   <h3>RGB Core Fans</h3>
@@ -218,19 +220,16 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="card-item">
-                    <img src={newsCard02Item} alt="Card Image" />
+                  <img src={newsCard02Item} alt="Card Image" />
                 </div>
               </div>
-              <div 
-               className="card-full">
+              <div className="card-full">
                 <div className="image-block">
-                    <img  src={newsCard03} alt="Card Image" />
+                  <img src={newsCard03} alt="Card Image" />
                 </div>
                 <div className="card-full-content text-white">
                   <h3>H5 Flow RGB & H7 Flow RGB</h3>
-                  <p>
-                    The brighter side of the H Series.
-                  </p>
+                  <p>The brighter side of the H Series.</p>
                   <div className="multiple-links">
                     <a>
                       H5 Flow RGB
@@ -243,31 +242,33 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="card-item">
-                    <img src={newsCard03Item} alt="Card Image" />
+                  <img src={newsCard03Item} alt="Card Image" />
                 </div>
               </div>
-              <div 
-               style={{background: '#000000'}}
-               className="card-full">
+              <div style={{ background: "#000000" }} className="card-full">
                 <div className="card-full-content text-white">
                   <h3>Capsule Mini</h3>
                   <p>
-                  Capture unexpectedly big sound on the excitingly small Capsule Mini.
+                    Capture unexpectedly big sound on the excitingly small
+                    Capsule Mini.
                   </p>
                   <div className="multiple-links">
                     <a>
-                    Capsule Mini
+                      Capsule Mini
                       <MdKeyboardArrowRight />
                     </a>
                     <a>
-                    Boom Arm Mini
+                      Boom Arm Mini
                       <MdKeyboardArrowRight />
                     </a>
                   </div>
                 </div>
-                    <img className="background-img" src={newsCard04} alt="Card Image" />
-                <div className="card-item">
-                </div>
+                <img
+                  className="background-img"
+                  src={newsCard04}
+                  alt="Card Image"
+                />
+                <div className="card-item"></div>
               </div>
               <div className="bottom-card">
                 <div className="card-full-bottom">
@@ -328,39 +329,135 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <h1 className="title">Shop NZXT Bestsellers</h1>
-            <p className="subtitle">Join the thousands of PC gamers who have made NZXT's best-selling PC
-            products their go-to choice for top-tier performance, reliability, and style.</p>
+            <p className="subtitle">
+              Join the thousands of PC gamers who have made NZXT's best-selling
+              PC products their go-to choice for top-tier performance,
+              reliability, and style.
+            </p>
             <div className="shop-index">
               <div className="shop-card">
-                  <div className="card-thumbnail">
-                    <img src={card01} alt="Shop Card" />
-                  </div>
-                  <div className="card-body">
-                    <h5 className="card-title">Player: Two</h5>
-                    <p className="card-subtitle">H5 Elite RTX 4070 Gaming PC</p>
-                    <div className="card-bottom">
-                      <p className="card-price">$1,599.00</p>
-                      <div className="color-options">
-                      <FormControl>
-                          <RadioGroup
-                            aria-labelledby="demo-radio-buttons-group-label"
-                            defaultValue="1"
-                            name="radio-buttons-group"
-                          >
-                            <FormControlLabel className="color-radio" value="1" control={<Radio />}/>
-                            <FormControlLabel className="color-radio" value="2" control={<Radio />} />
-                          </RadioGroup>
-                        </FormControl>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-              <div className="shop-card">
-                  <div className="card-thumbnail">
-                    <img src={card01} alt="Shop Card" />
-                  </div>
+                <div className="card-thumbnail">
+                  <img src={card01} alt="Shop Card" />
+                </div>
+                <div className="card-body">
                   <h5 className="card-title">Player: Two</h5>
                   <p className="card-subtitle">H5 Elite RTX 4070 Gaming PC</p>
+                  <div className="card-bottom">
+                    <p className="card-price">$1,599.00</p>
+                    <div className="color-options">
+                      <FormControl>
+                        <RadioGroup
+                          aria-labelledby="demo-radio-buttons-group-label"
+                          defaultValue="1"
+                          name="radio-buttons-group"
+                        >
+                          <FormControlLabel
+                            className="color-radio"
+                            value="1"
+                            control={<Radio />}
+                          />
+                          <FormControlLabel
+                            className="color-radio"
+                            value="2"
+                            control={<Radio />}
+                          />
+                        </RadioGroup>
+                      </FormControl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="shop-card">
+                <div className="card-thumbnail">
+                  <img src={card01} alt="Shop Card" />
+                </div>
+                <h5 className="card-title">Player: Two</h5>
+                <p className="card-subtitle">H5 Elite RTX 4070 Gaming PC</p>
+                <div className="promo-active">
+                  <svg
+                    width="1em"
+                    height="1em"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    class="hidden md:block w-4 h-4 mr-1"
+                  >
+                    <path d="M1.88 17.742l.12.008h20l.12-.008c.84-.11.84-1.375 0-1.484L22 16.25A2.25 2.25 0 0119.75 14V9a7.75 7.75 0 00-15.5 0v5a2.25 2.25 0 01-2.096 2.245L2 16.25c-.958 0-.998 1.378-.12 1.492zM12 2.75A6.25 6.25 0 0118.25 9v5l.005.2a3.73 3.73 0 00.675 1.954l.071.096H4.998l.072-.096c.428-.61.68-1.352.68-2.154V9A6.25 6.25 0 0112 2.75zm1.081 17.874a.75.75 0 111.298.752 2.75 2.75 0 01-4.758 0 .75.75 0 011.24-.837l.058.085a1.25 1.25 0 002.081.123l.081-.123z"></path>
+                  </svg>
+                  See Promotion
+                </div>
+                <div className="card-bottom">
+                  <div className="price-index">
+                    <p className="card-price">$1,599.00</p>
+                  </div>
+                  <div className="color-options">
+                    <FormControl>
+                      <RadioGroup
+                        aria-labelledby="demo-radio-buttons-group-label"
+                        defaultValue="1"
+                        name="radio-buttons-group"
+                      >
+                        <FormControlLabel
+                          className="color-radio"
+                          value="1"
+                          control={<Radio />}
+                        />
+                        <FormControlLabel
+                          className="color-radio"
+                          value="2"
+                          control={<Radio />}
+                        />
+                      </RadioGroup>
+                    </FormControl>
+                  </div>
+                </div>
+              </div>
+              <div className="shop-card">
+                <div className="card-thumbnail">
+                  <span className="badge-main">
+                    <p>$100 Off</p>
+                  </span>
+                  <img src={card01} alt="Shop Card" />
+                </div>
+                <h5 className="card-title">Player: Two</h5>
+                <p className="card-subtitle">H5 Elite RTX 4070 Gaming PC</p>
+                <div className="promo-active">
+                  <svg
+                    width="1em"
+                    height="1em"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    class="hidden md:block w-4 h-4 mr-1"
+                  >
+                    <path d="M1.88 17.742l.12.008h20l.12-.008c.84-.11.84-1.375 0-1.484L22 16.25A2.25 2.25 0 0119.75 14V9a7.75 7.75 0 00-15.5 0v5a2.25 2.25 0 01-2.096 2.245L2 16.25c-.958 0-.998 1.378-.12 1.492zM12 2.75A6.25 6.25 0 0118.25 9v5l.005.2a3.73 3.73 0 00.675 1.954l.071.096H4.998l.072-.096c.428-.61.68-1.352.68-2.154V9A6.25 6.25 0 0112 2.75zm1.081 17.874a.75.75 0 111.298.752 2.75 2.75 0 01-4.758 0 .75.75 0 011.24-.837l.058.085a1.25 1.25 0 002.081.123l.081-.123z"></path>
+                  </svg>
+                  See Promotion
+                </div>
+                <div className="card-bottom">
+                  <div className="price-index">
+                    <p className="old-price">$2,499.00</p>
+                    <p className="card-price">$1,599.00</p>
+                  </div>
+                  <div className="color-options">
+                    <FormControl>
+                      <RadioGroup
+                        aria-labelledby="demo-radio-buttons-group-label"
+                        defaultValue="1"
+                        name="radio-buttons-group"
+                      >
+                        <FormControlLabel
+                          className="color-radio"
+                          value="1"
+                          control={<Radio />}
+                        />
+                        <FormControlLabel
+                          className="color-radio"
+                          value="2"
+                          control={<Radio />}
+                        />
+                      </RadioGroup>
+                    </FormControl>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

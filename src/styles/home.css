@@ -390,6 +390,22 @@
   background: #F6F6F9;
   padding-top: 30px;
   padding-bottom: 30px;
+  position: relative;
+}
+.shop-bestseller .shop-index .shop-card .card-thumbnail .badge-main {
+  position: absolute;
+  top: 5%;
+  left: 4%;
+  background-color: hsl(115, 85%, 29%);
+  border-radius: 3px;
+}
+.shop-bestseller .shop-index .shop-card .card-thumbnail .badge-main p {
+  padding: 3px 7px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: "Gotham SSm", sans-serif;
+  margin-bottom: 0;
 }
 .shop-bestseller .shop-index .shop-card .card-thumbnail img {
   width: 80%;
@@ -407,11 +423,26 @@
 .shop-bestseller .shop-index .shop-card .color-options .MuiFormGroup-root {
   flex-direction: unset;
 }
+.shop-bestseller .shop-index .shop-card .promo-active {
+  margin-top: -15px;
+  color: hsl(115, 85%, 29%);
+  font-size: 12px;
+  font-family: "Gotham SSm", sans-serif;
+}
+.shop-bestseller .shop-index .shop-card .promo-active svg {
+  margin-right: 7px;
+  color: hsl(115, 85%, 29%);
+  width: 1rem;
+  height: 1rem;
+}
 .shop-bestseller .shop-index .shop-card .card-bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 18px;
+}
+.shop-bestseller .shop-index .shop-card .card-bottom .old-price {
+  margin-bottom: 0;
+  text-decoration-line: line-through;
 }
 .shop-bestseller .shop-index .shop-card .card-bottom .card-price {
   margin-bottom: 0;
@@ -419,16 +450,22 @@
 .shop-bestseller .shop-index .shop-card .card-bottom .color-radio {
   position: relative;
   margin: 0 !important;
+  width: 33%;
+}
+.shop-bestseller .shop-index .shop-card .card-bottom .color-radio .css-1hbvpl3-MuiSvgIcon-root {
+  width: 1em !important;
+  height: 1em !important;
+  font-size: 1.7rem;
 }
 .shop-bestseller .shop-index .shop-card .card-bottom .color-radio .MuiButtonBase-root.Mui-checked {
   color: hsl(266, 98%, 60%) !important;
 }
 .shop-bestseller .shop-index .shop-card .card-bottom .color-radio .css-11zohuh-MuiSvgIcon-root {
-  height: 22px;
+  height: 15px;
   color: transparent !important;
-  left: 0;
-  top: 0;
-  width: 22px;
+  left: 5.9px;
+  top: 5.8px;
+  width: 15px;
   border-radius: 50%;
   box-shadow: 0 0 0 3px hsla(0, 0%, 100%, 0), 0 0 0 4px hsla(0, 0%, 84%, 0), inset 0 1px 6px 2px rgba(0, 0, 0, 0.2);
   content: "";
@@ -451,4 +488,5 @@
   font-size: 14px;
   font-family: "Gotham SSm", sans-serif;
   color: #737279;
+  padding-bottom: 1.7rem;
 }/*# sourceMappingURL=home.css.map */
