@@ -380,8 +380,10 @@
 }
 .shop-bestseller .shop-index {
   display: flex;
-  flex-wrap: wrap;
   gap: 1.3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 45px;
 }
 .shop-bestseller .shop-index .shop-card {
   width: 20%;
@@ -391,6 +393,32 @@
   padding-top: 30px;
   padding-bottom: 30px;
   position: relative;
+}
+.shop-bestseller .shop-index .shop-card .card-thumbnail:hover .quick-shop {
+  opacity: 1;
+}
+.shop-bestseller .shop-index .shop-card .card-thumbnail .quick-shop {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: #EDEDF1;
+  cursor: pointer;
+  opacity: 0;
+  transition: ease 0.3s;
+}
+.shop-bestseller .shop-index .shop-card .card-thumbnail .quick-shop:hover {
+  background-color: hsl(267, 83%, 49%);
+}
+.shop-bestseller .shop-index .shop-card .card-thumbnail .quick-shop:hover p {
+  color: white;
+}
+.shop-bestseller .shop-index .shop-card .card-thumbnail .quick-shop p {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-family: "Gotham SSm", sans-serif;
+  color: #737279;
+  padding: 7px 0;
 }
 .shop-bestseller .shop-index .shop-card .card-thumbnail .badge-main {
   position: absolute;
@@ -489,4 +517,102 @@
   font-family: "Gotham SSm", sans-serif;
   color: #737279;
   padding-bottom: 1.7rem;
+}
+
+.main-content-grid {
+  padding-top: 95px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.main-content-grid .background-img {
+  width: 100%;
+  height: 287px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.375rem;
+}
+.main-content-grid .main-content {
+  position: absolute;
+  top: 37%;
+  left: 12%;
+  right: 0;
+  bottom: 0;
+  display: inline-block;
+  width: 50%;
+  height: 37%;
+}
+.main-content-grid .main-content h3 {
+  font-size: 30px;
+  font-family: "Gotham SSm", sans-serif;
+  color: white;
+  padding-top: 6px;
+}
+.main-content-grid .main-content p {
+  font-size: 16px;
+  font-family: "Gotham SSm", sans-serif;
+  color: white;
+  max-width: 58%;
+}
+.main-content-grid .main-content img {
+  width: 33%;
+}
+
+.brand-content .title {
+  font-size: 48px;
+  font-family: "Gotham SSm", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 35px;
+}
+.brand-content .card-main {
+  display: flex;
+  gap: 1.3rem;
+  padding-top: 55px;
+}
+.brand-content .card-main .card-item {
+  background: #F5F5F8;
+}
+.brand-content .card-main .card-item .card-body {
+  padding: 30px 20px;
+}
+.brand-content .card-main .card-item .card-body img {
+  display: flex;
+  margin: 0 auto;
+  width: 46%;
+}
+.brand-content .card-main .card-item .card-body .description {
+  max-width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Gotham SSm", sans-serif;
+}
+
+.bottom-thumbnail {
+  position: relative;
+  padding-top: 60px;
+}
+.bottom-thumbnail img {
+  width: 100%;
+  height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bottom-thumbnail .content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.bottom-thumbnail .content p {
+  color: white;
+  font-family: "Gotham SSm", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+.bottom-thumbnail .content h1 {
+  color: white;
+  font-family: "Gotham SSm", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
 }/*# sourceMappingURL=home.css.map */
