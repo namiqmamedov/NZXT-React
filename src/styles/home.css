@@ -615,4 +615,13 @@
   font-family: "Gotham SSm", sans-serif;
   font-weight: bold;
   font-size: 48px;
+}
+.bottom-thumbnail .content a {
+  color: white;
+  font-family: "Gotham SSm", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+.bottom-thumbnail .content a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=home.css.map */

@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../Header/Header'
 import Routers from '../../routes/Routers'
+import Footer from '../Footer/Footer'
 
 const Layout = () => {
   return (
@@ -9,7 +10,7 @@ const Layout = () => {
         <>
             <Routers/>
         </>
-         {/* <Footer/> */}
+         <Footer/>
     </>
   )
 }

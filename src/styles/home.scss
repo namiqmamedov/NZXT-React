@@ -733,16 +733,26 @@
         right: 0;
         bottom: 0;
         p{
-            color: white;
+            color: #ffff;
             font-family: 'Gotham SSm', sans-serif;
             font-weight: bold;
             font-size: 14px;
         }
         h1{
-            color: white;
+            color: #ffff;
             font-family: 'Gotham SSm', sans-serif;
             font-weight: bold;
             font-size: 48px;
+        }
+        a{
+            color: #ffff;
+            font-family: 'Gotham SSm', sans-serif;
+            font-size: 18px;
+            text-decoration: none;
+
+            &:hover{
+                text-decoration:underline;
+            }
         }
     }
 }

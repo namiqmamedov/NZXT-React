@@ -39,6 +39,7 @@ import newsCard05 from "../assets/images/home/newsCard05.png";
 import newsCard06 from "../assets/images/home/newsCard06.png";
 import newsCard07 from "../assets/images/home/newsCard07.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import {Link} from 'react-router-dom'
 
 const brandData = [
   {
@@ -749,6 +750,9 @@ const Home = () => {
         <div className="content text-center">
           <p className="text-white">NZXT</p>
           <h1>Prebuilt Power to Love</h1>
+          <Link>Shop Player PCs
+          <MdKeyboardArrowRight />
+          </Link>
         </div>
         <img src={BottomThumbnail} alt="Thumbnail" title="Thumbnail" />
       </section>

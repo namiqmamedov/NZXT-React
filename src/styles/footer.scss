@@ -1,0 +1,100 @@
+.newsletter-index {
+    padding: 70px 0;
+    background: #000;
+
+    h2 {
+        font-size: 48px;
+        font-weight: bold;
+        color: #fff;
+        font-family: 'Gotham SSm', sans-serif;
+    }
+
+    p {
+        color: #fff;
+        font-family: 'Gotham SSm', sans-serif;
+    }
+
+    .input-area {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .6rem;
+        align-items: center;
+
+        input {
+            width: 70%;
+            height: 2.5rem;
+            border-radius: 0.375rem;
+            border-width: 1px;
+        }
+
+        button {
+            border: 1px solid #fff;
+            color: #fff;
+            padding: 8px 24px;
+        }
+    }
+
+    .check-privacy {
+        padding-top: 5px;
+
+        .nextui-checkbox-container {
+            background: white;
+            border: 1px solid white;
+            color: hsl(267deg 83% 49%) !important;
+
+        }
+
+        .checkbox-index {
+            .nextui-checkbox-text {
+                color: #fff;
+                font-family: 'Gotham SSm', sans-serif;
+                font-size: 10px;
+            }
+        }
+
+    }
+}
+
+footer {
+    background: black;
+
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social-area {
+        a {
+            &:hover {
+                svg {
+                    color: hsl(259deg 100% 81%);
+                }
+            }
+        }
+
+        svg {
+            transition: .3s ease-in-out;
+            margin-right: 15px;
+            width: 1.5rem;
+            height: 1.5rem;
+            color: rgb(156 163 175);
+        }
+    }
+
+    .input-wrapper {
+        fieldset {
+            display: flex;
+            .select-box{
+                display: flex;
+                select {
+                    background: black;
+                    color: white;
+                    border-style: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                }
+            }
+        }
+    }
+}
