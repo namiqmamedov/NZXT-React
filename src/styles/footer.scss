@@ -61,38 +61,77 @@ footer {
     .footer-wrapper {
         display: flex;
         justify-content: space-between;
-    }
 
-    .social-area {
-        a {
-            &:hover {
-                svg {
-                    color: hsl(259deg 100% 81%);
+        .social-area {
+            a {
+                &:hover {
+                    svg {
+                        color: hsl(259deg 100% 81%);
+                    }
                 }
+            }
+
+            svg {
+                transition: .3s ease-in-out;
+                margin-right: 15px;
+                width: 1.5rem;
+                height: 1.5rem;
+                color: rgb(156 163 175);
             }
         }
 
-        svg {
-            transition: .3s ease-in-out;
-            margin-right: 15px;
-            width: 1.5rem;
-            height: 1.5rem;
-            color: rgb(156 163 175);
+        .input-wrapper {
+            fieldset {
+                display: flex;
+                gap: 2rem;
+
+                .select-box {
+                    display: flex;
+                    gap: 1rem;
+
+                    select {
+                        background: black;
+                        color: white;
+                        border-style: none;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                    }
+                }
+
+                .flex-grow {
+                    label {
+                        font-family: 'Gotham SSm', sans-serif;
+                        font-size: 10px;
+                        color: #9ca3af;
+                        text-transform: uppercase;
+                    }
+                }
+            }
         }
     }
 
-    .input-wrapper {
-        fieldset {
-            display: flex;
-            .select-box{
-                display: flex;
-                select {
-                    background: black;
-                    color: white;
-                    border-style: none;
-                    -webkit-appearance: none;
-                    -moz-appearance: none;
-                    appearance: none;
+    .footer-link {
+        .menu-title {
+            font-size: 14px;
+            font-family: 'Gotham SSm', sans-serif;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .footer-menu {
+            ul {
+                padding-left: 0;
+                li {
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        font-size: 14px;
+                        font-family: 'Gotham SSm', sans-serif;
+                        text-transform: uppercase;
+                        color: #91919C;
+                    }
                 }
             }
         }

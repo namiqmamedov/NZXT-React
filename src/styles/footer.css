@@ -50,27 +50,54 @@ footer .footer-wrapper {
   display: flex;
   justify-content: space-between;
 }
-footer .social-area a:hover svg {
+footer .footer-wrapper .social-area a:hover svg {
   color: hsl(259, 100%, 81%);
 }
-footer .social-area svg {
+footer .footer-wrapper .social-area svg {
   transition: 0.3s ease-in-out;
   margin-right: 15px;
   width: 1.5rem;
   height: 1.5rem;
   color: rgb(156, 163, 175);
 }
-footer .input-wrapper fieldset {
+footer .footer-wrapper .input-wrapper fieldset {
   display: flex;
+  gap: 2rem;
 }
-footer .input-wrapper fieldset .select-box {
+footer .footer-wrapper .input-wrapper fieldset .select-box {
   display: flex;
+  gap: 1rem;
 }
-footer .input-wrapper fieldset .select-box select {
+footer .footer-wrapper .input-wrapper fieldset .select-box select {
   background: black;
   color: white;
   border-style: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+footer .footer-wrapper .input-wrapper fieldset .flex-grow label {
+  font-family: "Gotham SSm", sans-serif;
+  font-size: 10px;
+  color: #9ca3af;
+  text-transform: uppercase;
+}
+footer .footer-link .menu-title {
+  font-size: 14px;
+  font-family: "Gotham SSm", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+footer .footer-link .footer-menu ul {
+  padding-left: 0;
+}
+footer .footer-link .footer-menu ul li {
+  list-style: none;
+}
+footer .footer-link .footer-menu ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Gotham SSm", sans-serif;
+  text-transform: uppercase;
+  color: #91919C;
 }/*# sourceMappingURL=footer.css.map */
