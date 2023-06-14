@@ -69,3 +69,14 @@ header {
         }
     }
 }
+
+
+@media screen and (max-width: 576px){
+    header{
+        .main__nav{
+            ul{
+                display: none;
+            }
+        }
+    }
+}

@@ -139,6 +139,9 @@ const Home = () => {
                 src={thumbnail01}
                 alt="Card Image"
               />
+              <div
+              style={{background: 'linear-gradient(rgba(28, 29, 30, 0), rgb(28, 29, 30))'}}
+              className="background-sr"></div>
               <div className="card-body">
                 <img src={thumbnailLogo} alt="Logo" />
                 <div className="content">

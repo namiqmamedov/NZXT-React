@@ -1,6 +1,6 @@
 .newsletter-index {
   padding: 70px 0;
-  background: #000;
+  background-color: hsl(210, 7%, 11%);
 }
 .newsletter-index h2 {
   font-size: 48px;
@@ -44,7 +44,10 @@
 }
 
 footer {
-  background: black;
+  background-color: hsl(210, 7%, 11%);
+}
+footer .text-hover:hover {
+  color: white !important;
 }
 footer .footer-wrapper {
   display: flex;
@@ -82,22 +85,53 @@ footer .footer-wrapper .input-wrapper fieldset .flex-grow label {
   color: #9ca3af;
   text-transform: uppercase;
 }
+footer .footer-link {
+  display: flex;
+  padding-top: 56px;
+}
 footer .footer-link .menu-title {
   font-size: 14px;
   font-family: "Gotham SSm", sans-serif;
   text-transform: uppercase;
   color: #fff;
+  padding-bottom: 6px;
 }
 footer .footer-link .footer-menu ul {
   padding-left: 0;
 }
 footer .footer-link .footer-menu ul li {
   list-style: none;
+  padding-bottom: 12px;
 }
 footer .footer-link .footer-menu ul li a {
   text-decoration: none;
   font-size: 14px;
   font-family: "Gotham SSm", sans-serif;
-  text-transform: uppercase;
   color: #91919C;
+}
+footer .footer-bottom {
+  padding-top: 95px;
+}
+footer .footer-bottom .brand {
+  font-size: 12px;
+  font-family: "Gotham SSm", sans-serif;
+  color: white;
+}
+footer .footer-bottom .text-main {
+  display: flex;
+  gap: 2rem;
+}
+footer .footer-bottom .text-main .text-nzxt:hover {
+  color: #91919C;
+}
+footer .footer-bottom .text-main p {
+  font-size: 12px;
+  font-family: "Gotham SSm", sans-serif;
+  color: #92919C;
+}
+footer .footer-bottom .text-main p:hover {
+  color: #fff;
+}
+footer .footer-bottom .text-main a {
+  text-decoration: none;
 }/*# sourceMappingURL=footer.css.map */

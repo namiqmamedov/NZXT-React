@@ -116,6 +116,9 @@
   width: 30%;
   height: 100%;
 }
+.player-two-card .two-card-item .thumbnail__end .background-sr {
+  display: none;
+}
 .player-two-card .two-card-item .thumbnail__end .thumbnail-img {
   width: 100%;
   height: 360px;
@@ -624,4 +627,68 @@
 }
 .bottom-thumbnail .content a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 576px) {
+  .home__index .background-img {
+    height: 508px;
+  }
+  .home__index .home__content {
+    display: block;
+  }
+  .home__index .home__content .home__thumbnail img {
+    display: flex;
+    margin: 0 auto;
+    width: 81%;
+    height: 293px;
+  }
+  .home__index .home__text {
+    padding-left: 9px;
+    padding-top: 30px;
+  }
+  .home__index .home__text h1 {
+    font-size: 36px;
+  }
+  .home__index .home__text p {
+    font-size: 24px;
+  }
+  .home__index .home__text button {
+    background-color: hsl(267, 83%, 49%);
+    font-size: 16px;
+  }
+  .home__index .home__text img {
+    width: 46%;
+    padding-bottom: 9px;
+  }
+  .player-two-card .two-card-item {
+    flex-wrap: wrap !important;
+  }
+  .player-two-card .card-item {
+    width: 47% !important;
+  }
+  .player-two-card .thumbnail__end {
+    width: 100% !important;
+    height: 100%;
+    position: relative;
+  }
+  .player-two-card .thumbnail__end .background-sr {
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .player-two-card .thumbnail__end .card-body {
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 12px;
+    height: 50% !important;
+    background: transparent !important;
+  }
+  .player-two-card .thumbnail__end .card-body img {
+    height: 20% !important;
+  }
 }/*# sourceMappingURL=home.css.map */

@@ -143,6 +143,10 @@
             width: 30%;
             height: 100%;
 
+            .background-sr{
+                display: none;
+            }
+
             .thumbnail-img {
                 width: 100%;
                 height: 360px;
@@ -752,6 +756,81 @@
 
             &:hover{
                 text-decoration:underline;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .home__index{
+        .background-img{
+            height: 508px;
+        }
+        .home__content{
+            display: block;
+            .home__thumbnail{
+                img{
+                    display: flex;
+                    margin: 0 auto;
+                    width: 81%;
+                    height: 293px;
+                }
+            }   
+        }
+        .home__text{
+            padding-left: 9px;
+            padding-top: 30px;
+            h1{
+                font-size: 36px;
+            }
+            p{
+                font-size: 24px;
+            }
+            button{
+                background-color: hsl(267deg 83% 49%);
+                font-size: 16px;
+            }
+            img{
+                width: 46%;
+                padding-bottom: 9px;
+            }
+        }
+    }
+
+    .player-two-card{
+        .two-card-item{
+            flex-wrap: wrap !important;
+        }
+        .card-item{
+            width: 47% !important;
+        }
+
+        .thumbnail__end{
+            width: 100% !important;
+            height: 100%;
+            position: relative;
+
+            .background-sr{
+                display: block !important;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .card-body{
+                position: absolute;
+                top: auto;
+                left: 0;
+                right: 0;
+                bottom: 12px;
+                height: 50% !important;
+                background: transparent !important;
+
+                img{
+                    height: 20% !important;
+                }
             }
         }
     }

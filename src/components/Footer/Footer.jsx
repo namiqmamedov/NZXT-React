@@ -210,33 +210,103 @@ const Footer = () => {
                   </fieldset>
                 </form>
               </div>
-                  <div className="footer-link">
-                    <div className="footer-menu col-lg-3">
-                      <h4 className="menu-title">Contact</h4>
-                      <ul>
-                        <li>
-                        <Link>
-                        Company
-                       </Link>
-                        </li>
-                        <li>
-                        <Link>
-                        Customer Support
-                        </Link>
-                        </li>
-                        <li>
-                        <Link>
-                        Submit a Request
-                        </Link>
-                        </li>
-                        <li>
-                        <Link>
-                        Support Center
-                        </Link>
-                        </li>
-                      </ul>
-                    </div>
+              <div className="footer-link">
+                <div className="footer-menu col-lg-2">
+                  <h4 className="menu-title">Contact</h4>
+                  <ul>
+                    <li>
+                      <Link className="text-hover">Company</Link>
+                    </li>
+                    <li>
+                      <Link className="text-hover">Customer Support</Link>
+                    </li>
+                    <li>
+                      <Link className="text-hover">Submit a Request</Link>
+                    </li>
+                    <li>
+                      <Link className="text-hover">Support Center</Link>
+                    </li>
+                  </ul>
                 </div>
+                <div className="footer-menu col-lg-2">
+                  <h4 className="menu-title">ABOUT NZXT</h4>
+                  <ul>
+                    <li>
+                      <Link className="text-hover">Founder Q & A</Link>
+                    </li>
+                    <li>
+                      <Link className="text-hover">Careers</Link>
+                    </li>
+                    <li>
+                      <Link className="text-hover">Customer Reviews</Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="footer-menu col-lg-2">
+                  <h4 className="menu-title">COMMUNITY</h4>
+                  <ul>
+                    <li>
+                      <Link className="text-hover">Our Discord</Link>
+                    </li>
+                    <li>
+                      <Link className="text-hover">Newsroom & Blog</Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="footer-menu col-lg-2">
+                  <h4 className="menu-title">SOFTWARE</h4>
+                  <ul>
+                    <li>
+                      <Link className="text-hover">CAM</Link>
+                    </li>
+                    <li>
+                      <Link className="text-hover">CAM Feedback</Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="footer-menu col-lg-2">
+                  <h4 className="menu-title">ACCOUNT</h4>
+                  <ul>
+                    <li>
+                      <Link className="text-hover">Manage Your Account</Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="footer-menu col-lg-2">
+                  <h4 className="menu-title">NZXT STORE</h4>
+                  <ul>
+                    <li>
+                      <Link className="text-hover">NZXT BLD PC</Link>
+                    </li>
+                    <li>
+                      <Link className="text-hover">Refurbished Builds</Link>
+                    </li>
+                    <li>
+                      <Link className="text-hover">FAQ</Link>
+                    </li>
+                    <li >
+                      <Link className="text-hover">Find a Retailer</Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="footer-bottom">
+                <p className="brand">NZXT</p>
+                <div className="text-main">
+                  <p className="text-nzxt">
+                    © NZXT Inc. 2023 All Rights Reserved
+                  </p>
+                  <Link>
+                    <p className="text-hover">Legal</p>
+                  </Link>
+                  <Link >
+                  <p className="text-hover">Privacy Policy</p>
+                  </Link>
+                  <Link >
+                  <p className="text-hover">Manage Cookie Preferences</p>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -59,4 +59,10 @@ header .main__nav .nav__end svg {
   fill: white;
   width: 1.4rem;
   height: 1.4rem;
+}
+
+@media screen and (max-width: 576px) {
+  header .main__nav ul {
+    display: none;
+  }
 }/*# sourceMappingURL=header.css.map */
