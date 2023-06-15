@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import "../../styles/footer.css";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <div className="newsletter-index">
@@ -294,7 +295,7 @@ const Footer = () => {
                 <p className="brand">NZXT</p>
                 <div className="text-main">
                   <p className="text-nzxt">
-                    © NZXT Inc. 2023 All Rights Reserved
+                    © NZXT Inc. {currentYear} All Rights Reserved
                   </p>
                   <Link>
                     <p className="text-hover">Legal</p>

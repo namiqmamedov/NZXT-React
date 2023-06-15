@@ -28,6 +28,7 @@ import promoImg01 from "../assets/images/home/promo-img01.png";
 import promoLogo01 from "../assets/images/home/promo-logo01.png";
 import primeLogo01 from "../assets/images/home/prime-logo01.png";
 import mainBackground from "../assets/images/home/mainBackground.avif";
+import mainBackgroundSr from "../assets/images/home/mainBackgroundSr.avif";
 import mainBackground2 from "../assets/images/home/mainBackground2.png";
 import newsCard01 from "../assets/images/home/newsCard01.png";
 import newsCard02 from "../assets/images/home/newsCard02.png";
@@ -157,7 +158,7 @@ const Home = () => {
           </div>
       </div>
       </section>
-      <section className="promo__banner">
+      {/* <section className="promo__banner">
         <div className="container">
           <div className="row">
             <div className="image-block">
@@ -186,7 +187,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="main-wrapper">
         <div className="wrapper-content">
           <div className="wrapper-main">
@@ -203,7 +204,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <img className="background-img" src={mainBackground} alt="" />
+        <div><picture><source media="(min-width: 1024px)" width="100%" height="768px" srcset={mainBackground}/><source media="(max-width: 1024px)" width="100%" height="100%" 
+        srcset={mainBackgroundSr}/><img className="lg:block max-h-full lg:max-w-full block max-h-full max-w-full w-full md:max-w-lg md:mx-auto object-fit-cover" width="100%" height="100%" src={mainBackground}/></picture></div>
       </section>
       <section className="newest-releases">
         <div className="container">
