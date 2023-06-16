@@ -728,4 +728,44 @@
   .newest-releases .bottom-card {
     flex-wrap: wrap;
   }
+  .shop-bestseller .title {
+    font-size: 30px;
+  }
+  .shop-bestseller .subtitle {
+    max-width: 89%;
+  }
+  .shop-bestseller .shop-index .shop-card {
+    width: 46%;
+  }
+  .main-content-grid .full-main {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+  .main-content-grid .full-main .background-img {
+    border-radius: 0;
+  }
+  .main-content-grid .main-content {
+    position: static;
+    width: 100%;
+    background-color: #4A4AF4;
+    padding: 25px 20px;
+  }
+  .main-content-grid .main-content p {
+    max-width: 100%;
+  }
+  .brand-content .title {
+    font-size: 30px;
+  }
+  .brand-content .card-main {
+    flex-wrap: wrap;
+  }
+  .bottom-thumbnail .content {
+    top: 42%;
+  }
+  .bottom-thumbnail .content h1 {
+    font-size: 36px;
+  }
 }/*# sourceMappingURL=home.css.map */

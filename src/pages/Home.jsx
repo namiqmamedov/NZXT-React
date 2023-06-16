@@ -722,13 +722,17 @@ const Home = () => {
       <section className="main-content-grid">
         <div className="container">
           <div className="row">
-            <div className="main-content">
-              <img src={affirmLogo} alt="Affirm Logo" title="Affirm Logo" />
-              <h3>Pay Later with Affirm</h3>
-              <p>Buy now, pay over time. Quick and easy. No hidden fees. Select "Affirm monthly payments"
-              during checkout.</p>
+            <div className="full-main">
+              <div className="main-content">
+                <img src={affirmLogo} alt="Affirm Logo" title="Affirm Logo" />
+                <h3>Pay Later with Affirm</h3>
+                <p>Buy now, pay over time. Quick and easy. No hidden fees. Select "Affirm monthly payments"
+                during checkout.</p>
+              </div>
+              <div className="image-block">
+                <img className="background-img" src={mainBackground2} alt="Main Image" />
+              </div>
             </div>
-            <img className="background-img" src={mainBackground2} alt="Main Image" />
           </div>
         </div>
       </section>

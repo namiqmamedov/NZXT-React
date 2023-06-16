@@ -143,7 +143,7 @@
             width: 30%;
             height: 100%;
 
-            .background-sr{
+            .background-sr {
                 display: none;
             }
 
@@ -266,6 +266,7 @@
 
 .main-wrapper {
     padding-top: 40px;
+
     .wrapper-content {
         position: relative;
 
@@ -650,17 +651,19 @@
     }
 }
 
-.main-content-grid{
+.main-content-grid {
     padding-top: 95px;
     padding-bottom: 40px;
     position: relative;
-    .background-img{
+
+    .background-img {
         width: 100%;
         height: 287px;
         object-fit: cover;
         border-radius: 0.375rem;
     }
-    .main-content{
+
+    .main-content {
         position: absolute;
         top: 37%;
         left: 12%;
@@ -670,26 +673,28 @@
         width: 50%;
         height: 37%;
 
-        h3{
+        h3 {
             font-size: 30px;
-            font-family: 'Gotham SSm',sans-serif;
+            font-family: 'Gotham SSm', sans-serif;
             color: #ffff;
             padding-top: 6px;
         }
-        p{
+
+        p {
             font-size: 16px;
-            font-family: 'Gotham SSm',sans-serif;
+            font-family: 'Gotham SSm', sans-serif;
             color: #ffff;
             max-width: 58%;
         }
-        img{
+
+        img {
             width: 33%;
         }
     }
 }
 
-.brand-content{
-    .title{
+.brand-content {
+    .title {
         font-size: 48px;
         font-family: 'Gotham SSm', sans-serif;
         font-weight: bold;
@@ -697,121 +702,137 @@
         padding-top: 35px;
     }
 
-    .card-main{
+    .card-main {
         display: flex;
         gap: 1.3rem;
         padding-top: 55px;
-        .card-item{
-           background: #F5F5F8;
 
-           .card-body{
-            padding: 30px 20px;
-            img{
-                display: flex;
-                margin: 0 auto;
-                width: 46%;
+        .card-item {
+            background: #F5F5F8;
+
+            .card-body {
+                padding: 30px 20px;
+
+                img {
+                    display: flex;
+                    margin: 0 auto;
+                    width: 46%;
+                }
+
+                .description {
+                    max-width: 75%;
+                    margin: 0 auto;
+                    text-align: center;
+                    font-family: 'Gotham SSm', sans-serif;
+                }
             }
-            .description{
-                max-width: 75%;
-                margin: 0 auto;
-                text-align: center;
-                font-family: 'Gotham SSm', sans-serif;
-            }
-           }
-           
+
         }
     }
 }
 
-.bottom-thumbnail{
+.bottom-thumbnail {
     position: relative;
     padding-top: 60px;
-    img{
+
+    img {
         width: 100%;
         height: 550px;
         object-fit: cover;
     }
-    .content{
+
+    .content {
         position: absolute;
         top: 50%;
         left: 0;
         right: 0;
         bottom: 0;
-        p{
+
+        p {
             color: #ffff;
             font-family: 'Gotham SSm', sans-serif;
             font-weight: bold;
             font-size: 14px;
         }
-        h1{
+
+        h1 {
             color: #ffff;
             font-family: 'Gotham SSm', sans-serif;
             font-weight: bold;
             font-size: 48px;
         }
-        a{
+
+        a {
             color: #ffff;
             font-family: 'Gotham SSm', sans-serif;
             font-size: 18px;
             text-decoration: none;
 
-            &:hover{
-                text-decoration:underline;
+            &:hover {
+                text-decoration: underline;
             }
         }
     }
 }
 
 @media screen and (max-width: 576px) {
-    .home__index{
-        .background-img{
+    .home__index {
+        .background-img {
             height: 508px;
         }
-        .home__content{
+
+        .home__content {
             display: block;
-            .home__thumbnail{
-                img{
+
+            .home__thumbnail {
+                img {
                     display: flex;
                     margin: 0 auto;
                     width: 81%;
                     height: 293px;
                 }
-            }   
+            }
         }
-        .home__text{
+
+        .home__text {
             padding-left: 9px;
             padding-top: 30px;
-            h1{
+
+            h1 {
                 font-size: 36px;
             }
-            p{
+
+            p {
                 font-size: 24px;
             }
-            button{
+
+            button {
                 background-color: hsl(267deg 83% 49%);
                 font-size: 16px;
             }
-            img{
+
+            img {
                 width: 46%;
                 padding-bottom: 9px;
             }
         }
     }
 
-    .player-two-card{
-        .two-card-item{
+    .player-two-card {
+        .two-card-item {
             flex-wrap: wrap !important;
         }
-        .card-item{
+
+        .card-item {
             width: 47% !important;
         }
 
-        .thumbnail__end{
+        .thumbnail__end {
             width: 100% !important;
             height: 100%;
             position: relative;
 
-            .background-sr{
+            .background-sr {
                 display: block !important;
                 position: absolute;
                 top: 0;
@@ -820,7 +841,7 @@
                 height: 100%;
             }
 
-            .card-body{
+            .card-body {
                 position: absolute;
                 top: auto;
                 left: 0;
@@ -829,60 +850,121 @@
                 height: 50% !important;
                 background: transparent !important;
 
-                img{
+                img {
                     height: 20% !important;
                 }
             }
         }
     }
 
-    .main-wrapper{
-        img{
+    .main-wrapper {
+        img {
             height: 100%;
         }
-        .wrapper-content{
+
+        .wrapper-content {
             display: none;
-            .wrapper-main{
-                p{
+
+            .wrapper-main {
+                p {
                     max-width: 100%;
                 }
             }
         }
     }
 
-    .newest-releases{
-        .title{
+    .newest-releases {
+        .title {
             font-size: 30px;
         }
-        .subtitle{
+
+        .subtitle {
             max-width: 95%;
         }
-        .card__main{
+
+        .card__main {
             gap: 5.2rem;
-            .card-full{
+
+            .card-full {
                 width: 100%;
                 height: 442px;
 
-                .card-item{
-                    img{
+                .card-item {
+                    img {
                         top: -17px;
                     }
                 }
 
-                .card-full-content{
+                .card-full-content {
                     min-height: 223px;
                 }
 
-                .image-block{
-                    img{
+                .image-block {
+                    img {
                         height: 498px;
                     }
                 }
             }
         }
 
-        .bottom-card{
+        .bottom-card {
             flex-wrap: wrap;
+        }
+    }
+
+    .shop-bestseller {
+        .title {
+            font-size: 30px;
+        }
+
+        .subtitle {
+            max-width: 89%;
+        }
+
+        .shop-index {
+            .shop-card {
+                width: 46%;
+            }
+        }
+    }
+
+    .main-content-grid {
+        .full-main {
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-wrap: wrap;
+            .background-img{
+                border-radius: 0;
+            }
+        }
+
+        .main-content {
+            position: static;
+            width: 100%;
+            background-color: #4A4AF4;
+            padding: 25px 20px;
+            p {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .brand-content{
+        .title{
+            font-size: 30px;
+        }
+        .card-main{
+            flex-wrap: wrap;
+        }
+    }
+    .bottom-thumbnail{
+        .content{
+            top: 42%;
+            h1{
+                font-size: 36px;
+            }
         }
     }
 }

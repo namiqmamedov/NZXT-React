@@ -49,6 +49,11 @@
                 color: #fff;
                 font-family: 'Gotham SSm', sans-serif;
                 font-size: 10px;
+
+                a {
+                    text-decoration: none;
+                    padding: 0 4px;
+                }
             }
         }
 
@@ -58,8 +63,8 @@
 footer {
     background-color: hsl(210deg 7% 11%);
 
-    .text-hover{
-        &:hover{
+    .text-hover {
+        &:hover {
             color: #ffff !important;
         }
     }
@@ -96,7 +101,7 @@ footer {
                     gap: 1rem;
 
                     select {
-                        background: black;
+                        background: transparent;
                         color: white;
                         border-style: none;
                         -webkit-appearance: none;
@@ -180,6 +185,98 @@ footer {
             a {
                 text-decoration: none;
 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .newsletter-index {
+        h2 {
+            font-size: 30px;
+        }
+
+        .input-area {
+            input {
+                width: 100%;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    }
+
+    footer {
+        .footer-link {
+            display: none;
+        }
+
+        .footer-wrapper {
+            .social-area {
+                display: none;
+            }
+
+            .input-wrapper {
+                width: 100%;
+
+                .flex-grow {
+                    width: 40%;
+                }
+            }
+
+        }
+
+        .footer-bottom {
+
+            p,
+            a {
+                width: 100%;
+                text-align: center;
+            }
+
+            .text-main {
+                gap: 0;
+                flex-wrap: wrap;
+            }
+        }
+
+        .accordion-main{
+            background-color: hsl(210, 7%, 11%);
+
+            svg{
+                color: #fff;
+            }
+            .menu-title{
+                color: #fff;
+                text-transform: uppercase;
+
+            }
+
+            .accordion-summary{
+                padding: 0;
+                border-bottom: 1px solid #fff;
+            }
+            .accordion-detail{
+                padding: 8px 3px 16px;
+            }
+
+            ul{
+                padding: 0;
+                li{
+                    padding-bottom: 11px;
+                    list-style: none;
+                    a{
+                        color: #91919c;
+                        font-size: 14px;
+                        font-family: 'Gotham SSm',sans-serif;
+                        text-decoration: none;
+                        transition: .3s ease-in-out;
+                        &:hover{
+                            color: #fff;
+                        }
+                    }
+                }
             }
         }
     }

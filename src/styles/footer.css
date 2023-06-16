@@ -42,6 +42,10 @@
   font-family: "Gotham SSm", sans-serif;
   font-size: 10px;
 }
+.newsletter-index .check-privacy .checkbox-index .nextui-checkbox-text a {
+  text-decoration: none;
+  padding: 0 4px;
+}
 
 footer {
   background-color: hsl(210, 7%, 11%);
@@ -72,7 +76,7 @@ footer .footer-wrapper .input-wrapper fieldset .select-box {
   gap: 1rem;
 }
 footer .footer-wrapper .input-wrapper fieldset .select-box select {
-  background: black;
+  background: transparent;
   color: white;
   border-style: none;
   -webkit-appearance: none;
@@ -134,4 +138,71 @@ footer .footer-bottom .text-main p:hover {
 }
 footer .footer-bottom .text-main a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+  .newsletter-index h2 {
+    font-size: 30px;
+  }
+  .newsletter-index .input-area input {
+    width: 100%;
+  }
+  .newsletter-index .input-area button {
+    width: 100%;
+  }
+  footer .footer-link {
+    display: none;
+  }
+  footer .footer-wrapper .social-area {
+    display: none;
+  }
+  footer .footer-wrapper .input-wrapper {
+    width: 100%;
+  }
+  footer .footer-wrapper .input-wrapper .flex-grow {
+    width: 40%;
+  }
+  footer .footer-bottom p,
+  footer .footer-bottom a {
+    width: 100%;
+    text-align: center;
+  }
+  footer .footer-bottom .text-main {
+    gap: 0;
+    flex-wrap: wrap;
+  }
+  footer .accordion-main {
+    background-color: hsl(210, 7%, 11%);
+  }
+  footer .accordion-main svg {
+    color: #fff;
+  }
+  footer .accordion-main .menu-title {
+    color: #fff;
+    text-transform: uppercase;
+  }
+  footer .accordion-main .accordion-summary {
+    padding: 0;
+    border-bottom: 1px solid #fff;
+  }
+  footer .accordion-main .accordion-detail {
+    padding: 8px 3px 16px;
+  }
+  footer .accordion-main ul {
+    padding: 0;
+  }
+  footer .accordion-main ul li {
+    padding-bottom: 11px;
+    list-style: none;
+  }
+  footer .accordion-main ul li a {
+    color: #91919c;
+    font-size: 14px;
+    font-family: "Gotham SSm", sans-serif;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+  }
+  footer .accordion-main ul li a:hover {
+    color: #fff;
+  }
 }/*# sourceMappingURL=footer.css.map */
