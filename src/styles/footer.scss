@@ -63,6 +63,10 @@
 footer {
     background-color: hsl(210deg 7% 11%);
 
+    .accordion-main{
+        display: none;
+    }
+
     .text-hover {
         &:hover {
             color: #ffff !important;
@@ -219,9 +223,18 @@ footer {
 
             .input-wrapper {
                 width: 100%;
+                margin-bottom: 20px;
 
                 .flex-grow {
-                    width: 40%;
+                    &:first-child{
+                        width: 40%;
+                    }
+                    &:last-child{
+                        width: 60%;
+                    }
+                    .select-box{
+                        justify-content: space-between;
+                    }
                 }
             }
 
@@ -243,6 +256,8 @@ footer {
 
         .accordion-main{
             background-color: hsl(210, 7%, 11%);
+            margin: 4px 0;
+            display: block;
 
             svg{
                 color: #fff;
@@ -250,11 +265,14 @@ footer {
             .menu-title{
                 color: #fff;
                 text-transform: uppercase;
-
+                font-size: 14px;
+                font-family: 'Gotham SSm',sans-serif;
             }
 
             .accordion-summary{
-                padding: 0;
+                padding-bottom: 4px;
+                padding-left: 0;
+                padding-right: 0;
                 border-bottom: 1px solid #fff;
             }
             .accordion-detail{

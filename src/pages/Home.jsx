@@ -30,6 +30,7 @@ import primeLogo01 from "../assets/images/home/prime-logo01.png";
 import mainBackground from "../assets/images/home/mainBackground.avif";
 import mainBackgroundSr from "../assets/images/home/mainBackgroundSr.avif";
 import mainBackground2 from "../assets/images/home/mainBackground2.png";
+import mainBackground2Sr from "../assets/images/home/mainBackground2Sr.png";
 import newsCard01 from "../assets/images/home/newsCard01.png";
 import newsCard02 from "../assets/images/home/newsCard02.png";
 import newsCard02Item from "../assets/images/home/newsCard02Item.png";
@@ -95,6 +96,9 @@ const Home = () => {
             <div className="card-item">
               <div className="card-thumbnail">
                 <img src={card01} alt="Image" />
+                <div className="quick-shop">
+                    <p>Quick Shop</p>
+                  </div>
               </div>
               <div className="card-header">
                 <p className="card-title">Player: Two</p>
@@ -116,6 +120,9 @@ const Home = () => {
             <div className="card-item">
               <div className="card-thumbnail">
                 <img src={card02} alt="Image" />
+                <div className="quick-shop">
+                    <p>Quick Shop</p>
+                  </div>
               </div>
               <div className="card-header">
                 <p className="card-title">Player: Two</p>
@@ -403,6 +410,9 @@ const Home = () => {
               <div className="shop-card">
                 <div className="card-thumbnail">
                   <img src={card01} alt="Shop Card" />
+                  <div className="quick-shop">
+                    <p>Quick Shop</p>
+                  </div>
                 </div>
                 <h5 className="card-title">Player: Two Prime</h5>
                 <p className="card-subtitle">H5 Elite RTX 4070 Gaming PC</p>
@@ -450,6 +460,9 @@ const Home = () => {
                     <p>$100 Off</p>
                   </span>
                   <img src={card03} alt="Shop Card" />
+                  <div className="quick-shop">
+                    <p>Quick Shop</p>
+                  </div>
                 </div>
                 <h5 className="card-title">Player: Three</h5>
                 <p className="card-subtitle">H5 Elite RTX 4070 Gaming PC</p>
@@ -498,6 +511,9 @@ const Home = () => {
                     <p>$100 Off</p>
                   </span>
                   <img src={card04} alt="Shop Card" />
+                  <div className="quick-shop">
+                    <p>Quick Shop</p>
+                  </div>
                 </div>
                 <h5 className="card-title">Player: Three Prime</h5>
                 <p className="card-subtitle">H5 Elite RTX 4070 Gaming PC</p>
@@ -578,6 +594,9 @@ const Home = () => {
               <div className="shop-card">
                 <div className="card-thumbnail">
                   <img src={card06} alt="Shop Card" />
+                  <div className="quick-shop">
+                    <p>Quick Shop</p>
+                  </div>
                 </div>
                 <h5 className="card-title">Player: Two Prime</h5>
                 <p className="card-subtitle">H5 Elite RTX 4070 Gaming PC</p>
@@ -625,6 +644,9 @@ const Home = () => {
                     <p>$100 Off</p>
                   </span>
                   <img src={card07} alt="Shop Card" />
+                  <div className="quick-shop">
+                    <p>Quick Shop</p>
+                  </div>
                 </div>
                 <h5 className="card-title">Player: Three</h5>
                 <p className="card-subtitle">H5 Elite RTX 4070 Gaming PC</p>
@@ -673,6 +695,9 @@ const Home = () => {
                     <p>$100 Off</p>
                   </span>
                   <img src={card08} alt="Shop Card" />
+                  <div className="quick-shop">
+                    <p>Quick Shop</p>
+                  </div>
                 </div>
                 <h5 className="card-title">Player: Three Prime</h5>
                 <p className="card-subtitle">H5 Elite RTX 4070 Gaming PC</p>
@@ -730,7 +755,11 @@ const Home = () => {
                 during checkout.</p>
               </div>
               <div className="image-block">
+              <picture>
+                <source media="(min-width: 992px)" srcset={mainBackground2}/>
+                <source media="(max-width: 992px)" srcset={mainBackground2Sr}/>
                 <img className="background-img" src={mainBackground2} alt="Main Image" />
+              </picture>
               </div>
             </div>
           </div>

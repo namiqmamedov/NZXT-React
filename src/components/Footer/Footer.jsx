@@ -16,6 +16,7 @@ const Footer = () => {
     setExpanded(isExpanded ? panel : false);
   };
   const currentYear = new Date().getFullYear();
+
   return (
     <>
       <div className="newsletter-index">
@@ -302,7 +303,7 @@ const Footer = () => {
                 </div>
               </div>
               <Accordion
-              className="accordion-main"
+                className="accordion-main"
                 expanded={expanded === "panel1"}
                 onChange={handleChange("panel1")}
               >
@@ -312,12 +313,15 @@ const Footer = () => {
                   aria-controls="panel1bh-content"
                   id="panel1bh-header"
                 >
-                  <Typography className="menu-title" sx={{ width: "33%", flexShrink: 0 }}>
+                  <Typography
+                    className="menu-title"
+                    sx={{ width: "33%", flexShrink: 0 }}
+                  >
                     Contact
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails className="accordion-detail">
-                <ul>
+                  <ul>
                     <li>
                       <Link className="text-hover">Company</Link>
                     </li>
@@ -334,161 +338,152 @@ const Footer = () => {
                 </AccordionDetails>
               </Accordion>
               <Accordion
-              className="accordion-main"
-                expanded={expanded === "panel1"}
-                onChange={handleChange("panel1")}
+                className="accordion-main"
+                expanded={expanded === "panel2"}
+                onChange={handleChange("panel2")}
               >
                 <AccordionSummary
                   className="accordion-summary"
                   expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1bh-content"
-                  id="panel1bh-header"
+                  aria-controls="panel2bh-content"
+                  id="panel2bh-header"
                 >
-                  <Typography className="menu-title" sx={{ width: "33%", flexShrink: 0 }}>
+                  <Typography
+                    className="menu-title"
+                    sx={{ width: "33%", flexShrink: 0 }}
+                  >
                     About Nzxt
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails className="accordion-detail">
-                <ul>
+                  <ul>
                     <li>
-                      <Link className="text-hover">Company</Link>
+                      <Link className="text-hover">Founder Q & A</Link>
                     </li>
                     <li>
-                      <Link className="text-hover">Customer Support</Link>
+                      <Link className="text-hover">Careers</Link>
                     </li>
                     <li>
-                      <Link className="text-hover">Submit a Request</Link>
-                    </li>
-                    <li>
-                      <Link className="text-hover">Support Center</Link>
+                      <Link className="text-hover">Customer Reviews</Link>
                     </li>
                   </ul>
                 </AccordionDetails>
               </Accordion>
               <Accordion
-              className="accordion-main"
-                expanded={expanded === "panel1"}
-                onChange={handleChange("panel1")}
+                className="accordion-main"
+                expanded={expanded === "panel3"}
+                onChange={handleChange("panel3")}
               >
                 <AccordionSummary
                   className="accordion-summary"
                   expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1bh-content"
-                  id="panel1bh-header"
+                  aria-controls="panel3bh-content"
+                  id="panel3bh-header"
                 >
-                  <Typography className="menu-title" sx={{ width: "33%", flexShrink: 0 }}>
+                  <Typography
+                    className="menu-title"
+                    sx={{ width: "33%", flexShrink: 0 }}
+                  >
                     Community
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails className="accordion-detail">
-                <ul>
+                  <ul>
                     <li>
-                      <Link className="text-hover">Company</Link>
+                      <Link className="text-hover">Our Discord</Link>
                     </li>
                     <li>
-                      <Link className="text-hover">Customer Support</Link>
-                    </li>
-                    <li>
-                      <Link className="text-hover">Submit a Request</Link>
-                    </li>
-                    <li>
-                      <Link className="text-hover">Support Center</Link>
+                      <Link className="text-hover">Newsroom & Blog</Link>
                     </li>
                   </ul>
                 </AccordionDetails>
               </Accordion>
               <Accordion
-              className="accordion-main"
-                expanded={expanded === "panel1"}
-                onChange={handleChange("panel1")}
+                className="accordion-main"
+                expanded={expanded === "panel4"}
+                onChange={handleChange("panel4")}
               >
                 <AccordionSummary
                   className="accordion-summary"
                   expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1bh-content"
-                  id="panel1bh-header"
+                  aria-controls="panel4bh-content"
+                  id="panel4bh-header"
                 >
-                  <Typography className="menu-title" sx={{ width: "33%", flexShrink: 0 }}>
+                  <Typography
+                    className="menu-title"
+                    sx={{ width: "33%", flexShrink: 0 }}
+                  >
                     Software
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails className="accordion-detail">
-                <ul>
+                  <ul>
                     <li>
-                      <Link className="text-hover">Company</Link>
+                      <Link className="text-hover">CAM</Link>
                     </li>
                     <li>
-                      <Link className="text-hover">Customer Support</Link>
-                    </li>
-                    <li>
-                      <Link className="text-hover">Submit a Request</Link>
-                    </li>
-                    <li>
-                      <Link className="text-hover">Support Center</Link>
+                      <Link className="text-hover">CAM Feedback</Link>
                     </li>
                   </ul>
                 </AccordionDetails>
               </Accordion>
               <Accordion
-              className="accordion-main"
-                expanded={expanded === "panel1"}
-                onChange={handleChange("panel1")}
+                className="accordion-main"
+                expanded={expanded === "panel5"}
+                onChange={handleChange("panel5")}
               >
                 <AccordionSummary
                   className="accordion-summary"
                   expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1bh-content"
-                  id="panel1bh-header"
+                  aria-controls="panel5bh-content"
+                  id="panel5bh-header"
                 >
-                  <Typography className="menu-title" sx={{ width: "33%", flexShrink: 0 }}>
+                  <Typography
+                    className="menu-title"
+                    sx={{ width: "33%", flexShrink: 0 }}
+                  >
                     Account
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails className="accordion-detail">
-                <ul>
+                  <ul>
                     <li>
-                      <Link className="text-hover">Company</Link>
-                    </li>
-                    <li>
-                      <Link className="text-hover">Customer Support</Link>
-                    </li>
-                    <li>
-                      <Link className="text-hover">Submit a Request</Link>
-                    </li>
-                    <li>
-                      <Link className="text-hover">Support Center</Link>
+                      <Link className="text-hover">Manage Your Account</Link>
                     </li>
                   </ul>
                 </AccordionDetails>
               </Accordion>
               <Accordion
-              className="accordion-main"
-                expanded={expanded === "panel1"}
-                onChange={handleChange("panel1")}
+                className="accordion-main"
+                expanded={expanded === "panel6"}
+                onChange={handleChange("panel6")}
               >
                 <AccordionSummary
                   className="accordion-summary"
                   expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1bh-content"
-                  id="panel1bh-header"
+                  aria-controls="panel6bh-content"
+                  id="panel6bh-header"
                 >
-                  <Typography className="menu-title" sx={{ width: "33%", flexShrink: 0 }}>
+                  <Typography
+                    className="menu-title"
+                    sx={{ width: "33%", flexShrink: 0 }}
+                  >
                     Nzxt Store
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails className="accordion-detail">
-                <ul>
+                  <ul>
                     <li>
-                      <Link className="text-hover">Company</Link>
+                      <Link className="text-hover">NZXT BLD PC</Link>
                     </li>
                     <li>
-                      <Link className="text-hover">Customer Support</Link>
+                      <Link className="text-hover">Refurbished Builds</Link>
                     </li>
                     <li>
-                      <Link className="text-hover">Submit a Request</Link>
+                      <Link className="text-hover">FAQ</Link>
                     </li>
                     <li>
-                      <Link className="text-hover">Support Center</Link>
+                      <Link className="text-hover">Find a Retailer</Link>
                     </li>
                   </ul>
                 </AccordionDetails>
