@@ -2,6 +2,7 @@ import React from "react";
 import HeroBackground from "../assets/images/home/heroBackground.avif";
 import BottomThumbnail from "../assets/images/home/bottomThumbnail.avif";
 import HeroCenter from "../assets/images/home/heroCenter.avif";
+import HeroCenterSr from "../assets/images/home/heroCenterSr.avif";
 import twologo from "../assets/images/home/two-logo.png";
 import Button from "@mui/material/Button";
 import "../styles/home.css";
@@ -80,7 +81,7 @@ const Home = () => {
                 <Button variant="contained">Shop Player: Two</Button>
               </div>
               <div className="home__thumbnail col-lg-6">
-                <img className="home-img" src={HeroCenter} alt="Image" />
+                <img className="home-img" src={HeroCenterSr} alt="Image" />
               </div>
             </div>
           </div>

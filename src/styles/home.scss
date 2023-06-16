@@ -825,18 +825,33 @@
 @media screen and (max-width: 576px) {
     .home__index {
         .background-img {
-            height: 508px;
+            height: 557px;
         }
 
         .home__content {
             display: block;
 
+            .home__thumbnail{
+                // position: relative; */
+                display: block;
+                /* height: 300px; */
+                width: 100%;
+                height: 301px;
+            }
+
             .home__thumbnail {
                 img {
+                    position: absolute;
+                    top: 53%;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 78%;
+                    height: 47%;
+                    max-width: 100%;
+                    max-height: 100%;
                     display: flex;
                     margin: 0 auto;
-                    width: 81%;
-                    height: 293px;
                 }
             }
         }
@@ -850,7 +865,7 @@
             }
 
             p {
-                font-size: 24px;
+                font-size: 24px !important;
             }
 
             button {
@@ -871,7 +886,7 @@
         }
 
         .card-item {
-            width: 47% !important;
+            width: 46% !important;
         }
 
         .thumbnail__end {
@@ -933,12 +948,19 @@
             gap: 5.2rem;
 
             .card-full {
+                height: 476px;
                 width: 100%;
-                height: 442px;
-
+                
                 .card-item {
+                    height: 275px;
                     img {
-                        top: -17px;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        max-width: 100%;
+                        display: block;
                     }
                 }
 
@@ -984,6 +1006,7 @@
             flex-wrap: wrap;
 
             .background-img {
+                object-fit: unset;
                 border-radius: 0;
             }
         }
