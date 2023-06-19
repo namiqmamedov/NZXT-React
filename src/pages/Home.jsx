@@ -764,8 +764,8 @@ const Home = () => {
               </div>
               <div className="image-block">
               <picture>
-                <source media="(min-width: 992px)" srcset={mainBackground2}/>
-                <source media="(max-width: 992px)" srcset={mainBackground2Sr}/>
+                <source media="(min-width: 768px)" srcset={mainBackground2}/>
+                <source media="(max-width: 768px)" srcset={mainBackground2Sr}/>
                 <img className="background-img" src={mainBackground2} alt="Main Image" />
               </picture>
               </div>

@@ -1036,8 +1036,18 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  .container {
+    max-width: 900px !important;
+  }
+  .main-wrapper .wrapper-text {
+    top: 5% !important;
+  }
+  .main-wrapper .wrapper-text img {
+    height: 4% !important;
+    width: 20% !important;
+  }
   .home__index .background-img {
-    height: 770px;
+    height: 660px;
   }
   .home__index .home__content {
     display: block;
@@ -1050,12 +1060,12 @@
   }
   .home__index .home__content .home__thumbnail img {
     position: absolute;
-    top: 37%;
+    top: 50%;
     left: 0;
     right: 0;
     bottom: 0;
-    width: 72%;
-    height: 63%;
+    width: 53%;
+    height: 50%;
     max-width: 100%;
     max-height: 100%;
     display: flex;
@@ -1076,19 +1086,23 @@
     font-size: 16px;
   }
   .home__index .home__text img {
-    width: 46%;
+    width: 21%;
     padding-bottom: 9px;
   }
   .player-two-card .two-card-item {
     flex-wrap: wrap !important;
   }
   .player-two-card .card-item {
-    width: 46% !important;
+    width: 48.8% !important;
+  }
+  .player-two-card .card-item img {
+    width: 90% !important;
   }
   .player-two-card .thumbnail__end {
     width: 100% !important;
     height: 100%;
     position: relative;
+    background: #000000;
   }
   .player-two-card .thumbnail__end .background-sr {
     display: block !important;
@@ -1097,18 +1111,24 @@
     left: 0;
     width: 100%;
     height: 100%;
+    background: transparent;
   }
   .player-two-card .thumbnail__end .card-body {
     position: absolute;
     top: auto;
     left: 0;
     right: 0;
-    bottom: 12px;
+    bottom: 30px;
     height: 50% !important;
     background: transparent !important;
   }
   .player-two-card .thumbnail__end .card-body img {
-    height: 20% !important;
+    width: 20% !important;
+    height: 25% !important;
+  }
+  .player-two-card .thumbnail__end .thumbnail-img {
+    height: 447px !important;
+    width: 53% !important;
   }
   .main-wrapper img {
     height: 100%;
@@ -1122,11 +1142,8 @@
   .newest-releases .subtitle {
     max-width: 95%;
   }
-  .newest-releases .card__main {
-    gap: 5.2rem;
-  }
   .newest-releases .card__main .card-full {
-    height: 476px;
+    height: auto;
     width: 100%;
   }
   .newest-releases .card__main .card-full .card-item {
@@ -1136,10 +1153,11 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 42%;
     height: 100%;
     max-width: 100%;
     display: block;
+    margin: 0 auto;
   }
   .newest-releases .card__main .card-full .card-full-content {
     min-height: 223px;
@@ -1148,13 +1166,19 @@
     height: 498px;
   }
   .newest-releases .bottom-card {
-    flex-wrap: wrap;
+    gap: 0.8rem !important;
+  }
+  .newest-releases .bottom-card img {
+    height: 305px !important;
+  }
+  .newest-releases .bottom-card .card-body h3 {
+    font-size: 23px !important;
   }
   .shop-bestseller .title {
     font-size: 30px;
   }
   .shop-bestseller .subtitle {
-    max-width: 89%;
+    max-width: 70%;
   }
   .shop-bestseller .shop-index .shop-card {
     width: 46%;
@@ -1164,32 +1188,34 @@
     display: flex;
     width: 100%;
     height: 100%;
-    flex-wrap: wrap;
-  }
-  .main-content-grid .full-main .background-img {
-    -o-object-fit: unset;
-       object-fit: unset;
-    border-radius: 0;
   }
   .main-content-grid .main-content {
-    position: static;
     width: 100%;
-    background-color: #4A4AF4;
     padding: 25px 20px;
+    top: 10%;
+    left: 3%;
   }
   .main-content-grid .main-content p {
-    max-width: 100%;
+    max-width: 37%;
+  }
+  .main-content-grid .main-content h3 {
+    font-weight: bold;
+    font-size: 23px;
+  }
+  .main-content-grid .main-content img {
+    width: 25%;
   }
   .main-content-grid .image-block {
     background-color: #4A4AF4;
     width: 100%;
     display: block;
+    border-radius: 5%;
   }
   .brand-content .title {
     font-size: 30px;
   }
-  .brand-content .card-main {
-    flex-wrap: wrap;
+  .brand-content img {
+    width: 75% !important;
   }
   .bottom-thumbnail .content {
     top: 42%;
