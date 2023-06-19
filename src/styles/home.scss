@@ -128,6 +128,7 @@
 
             .card-header {
                 border-bottom: 1px solid #EDEDF3;
+
                 .card-title {
                     font-size: 18px;
                     font-weight: bold;
@@ -145,6 +146,7 @@
                 padding-top: 14px;
                 padding-bottom: 14px;
                 border-bottom: 1px solid #EDEDF3;
+
                 .main-title {
                     font-size: 12px;
                     font-weight: bold;
@@ -161,10 +163,11 @@
 
             .card-price {
                 padding-top: 14px;
+
                 p {
                     color: #000000;
                     font-size: 14px;
-                    font-family: 'Gotham SSm',sans-serif;
+                    font-family: 'Gotham SSm', sans-serif;
                 }
             }
 
@@ -317,14 +320,15 @@
     .wrapper-content {
         position: relative;
 
-        .wrapper-main {
+        .wrapper-text {
             position: absolute;
-            top: 270px;
+            top: 1%;
             right: 0;
-            left: 69px;
+            left: 23px;
             bottom: 0;
 
             img {
+                height: 3%;
                 width: 15%;
             }
 
@@ -458,6 +462,7 @@
             gap: 1.3rem;
 
             .card-full-bottom {
+                width: 100%;
                 img {
                     border-top-left-radius: .5rem;
                     border-top-right-radius: .5rem;
@@ -823,6 +828,10 @@
 }
 
 @media screen and (max-width: 576px) {
+    .container {
+        max-width: 768px !important;
+    }
+
     .home__index {
         .background-img {
             height: 557px;
@@ -831,7 +840,7 @@
         .home__content {
             display: block;
 
-            .home__thumbnail{
+            .home__thumbnail {
                 // position: relative; */
                 display: block;
                 /* height: 300px; */
@@ -842,12 +851,505 @@
             .home__thumbnail {
                 img {
                     position: absolute;
-                    top: 53%;
+                    top: 46%;
                     left: 0;
                     right: 0;
                     bottom: 0;
                     width: 78%;
-                    height: 47%;
+                    height: 54%;
+                    max-width: 100%;
+                    max-height: 100%;
+                    display: flex;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .home__text {
+            padding-left: 9px;
+            padding-top: 30px;
+
+            h1 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 24px !important;
+            }
+
+            button {
+                background-color: hsl(267deg 83% 49%);
+                font-size: 16px;
+            }
+
+            img {
+                width: 46%;
+                padding-bottom: 9px;
+            }
+        }
+    }
+
+    .player-two-card {
+        .two-card-item {
+            flex-wrap: wrap !important;
+            gap: 1rem;
+        }
+
+        .card-item {
+            width: 47% !important;
+        }
+
+        .thumbnail__end {
+            width: 100% !important;
+            height: 100%;
+            position: relative;
+
+            .background-sr {
+                display: block !important;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .card-body {
+                position: absolute;
+                top: auto;
+                left: 0;
+                right: 0;
+                bottom: 60px;
+                height: 50% !important;
+                background: transparent !important;
+
+                img {
+                    height: 37% !important;
+                }
+            }
+        }
+    }
+
+    .main-wrapper {
+        img {
+            height: 100%;
+        }
+
+        .wrapper-content {
+
+            .wrapper-text {
+                top: 6%;
+                width: 92%;
+
+                p {
+                    max-width: 100%;
+                }
+
+                img{
+                    height: 4%;
+                    width: 40%;
+                }
+
+                h1{
+                    font-size: 39px;
+                }
+            }
+        }
+    }
+
+    .newest-releases {
+        .title {
+            font-size: 30px;
+        }
+
+        .subtitle {
+            max-width: 95%;
+        }
+
+        .card__main {
+
+            .card-full {
+                height: auto;
+                width: 100%;
+
+                .card-item {
+                    height: 275px;
+
+                    img {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        max-width: 100%;
+                        display: block;
+                    }
+                }
+
+                .card-full-content {
+                    min-height: 223px;
+                }
+
+                .image-block {
+                    img {
+                        height: 498px;
+                    }
+                }
+            }
+        }
+
+        .bottom-card {
+            flex-wrap: wrap;
+        }
+    }
+
+    .shop-bestseller {
+        .title {
+            font-size: 30px;
+        }
+
+        .subtitle {
+            max-width: 89%;
+        }
+
+        .shop-index {
+            .shop-card {
+                width: 46%;
+            }
+        }
+    }
+
+    .main-content-grid {
+        .full-main {
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-wrap: wrap;
+
+            .background-img {
+                object-fit: unset;
+                border-radius: 0;
+            }
+        }
+
+        .main-content {
+            position: static;
+            width: 100%;
+            background-color: #4A4AF4;
+            padding: 25px 20px;
+
+            p {
+                max-width: 100%;
+            }
+
+        }
+
+        .image-block {
+            background-color: #4A4AF4;
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .brand-content {
+        .title {
+            font-size: 30px;
+        }
+
+        .card-main {
+            flex-wrap: wrap;
+        }
+    }
+
+    .bottom-thumbnail {
+        .content {
+            top: 42%;
+
+            h1 {
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .container {
+        max-width: 768px !important;
+    }
+
+    .home__index {
+        .background-img {
+            height: 767px;
+        }
+
+        .home__content {
+            display: block;
+
+            .home__thumbnail {
+                // position: relative; */
+                display: block;
+                /* height: 300px; */
+                width: 100%;
+                height: 301px;
+            }
+
+            .home__thumbnail {
+                img {
+                    position: absolute;
+                    top: 37%;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 88%;
+                    height: 63%;
+                    max-width: 100%;
+                    max-height: 100%;
+                    display: flex;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .home__text {
+            padding-left: 9px;
+            padding-top: 30px;
+
+            h1 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 24px !important;
+            }
+
+            button {
+                background-color: hsl(267deg 83% 49%);
+                font-size: 16px;
+            }
+
+            img {
+                width: 46%;
+                padding-bottom: 9px;
+            }
+        }
+    }
+
+    .player-two-card {
+        .two-card-item {
+            flex-wrap: wrap !important;
+        }
+
+        .card-item {
+            width: 48.5% !important;
+        }
+
+        .thumbnail__end {
+            background: #30313A;
+            width: 100% !important;
+            height: 100%;
+            position: relative;
+
+            .background-sr {
+                display: block !important;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .thumbnail-img{
+                height: 435px !important;
+                width: 65% !important;
+            }
+
+            .card-body {
+                position: absolute;
+                top: auto;
+                left: 0;
+                right: 0;
+                bottom: 60px;
+                height: 50% !important;
+                background: transparent !important;
+
+                img {
+                    width: 32% !important;
+                    height: 22% !important;
+                }
+            }
+        }
+    }
+
+    .main-wrapper {
+        img {
+            height: 100%;
+        }
+
+        .wrapper-content {
+
+            .wrapper-text {
+                top: 6%;
+                width: 92%;
+
+                p {
+                    max-width: 100%;
+                }
+
+                img{
+                    height: 4%;
+                    width: 40%;
+                }
+
+                h1{
+                    font-size: 39px;
+                }
+            }
+        }
+    }
+
+    .newest-releases {
+        .title {
+            font-size: 30px;
+        }
+
+        .subtitle {
+            max-width: 95%;
+        }
+
+        .card__main {
+
+            .card-full {
+                height: auto;
+                width: 100%;
+
+                .card-item {
+                    height: 275px;
+
+                    img {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 50%;
+                        height: 100%;
+                        max-width: 100%;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+
+                .card-full-content {
+                    min-height: 223px;
+                }
+
+                .image-block {
+                    img {
+                        height: 498px;
+                    }
+                }
+            }
+        }
+
+        .bottom-card {
+            flex-wrap: wrap;
+        }
+    }
+
+    .shop-bestseller {
+        .title {
+            font-size: 30px;
+        }
+
+        .subtitle {
+            max-width: 89%;
+        }
+
+        .shop-index {
+            .shop-card {
+                width: 46%;
+            }
+        }
+    }
+
+    .main-content-grid {
+        .full-main {
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-wrap: wrap;
+
+            .background-img {
+                object-fit: unset;
+                border-radius: 0;
+            }
+        }
+
+        .main-content {
+            position: static;
+            width: 100%;
+            background-color: #4A4AF4;
+            padding: 25px 20px;
+
+            p {
+                max-width: 100%;
+            }
+
+        }
+
+        .image-block {
+            background-color: #4A4AF4;
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .brand-content {
+        .title {
+            font-size: 30px;
+        }
+
+        .card-main {
+            flex-wrap: wrap;
+        }
+    }
+
+    .bottom-thumbnail {
+        .content {
+            top: 42%;
+
+            h1 {
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .home__index {
+        .background-img {
+            height: 770px;
+        }
+
+        .home__content {
+            display: block;
+
+            .home__thumbnail {
+                // position: relative; */
+                display: block;
+                /* height: 300px; */
+                width: 100%;
+                height: auto;
+            }
+
+            .home__thumbnail {
+                img {
+                    position: absolute;
+                    top: 37%;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 72%;
+                    height: 63%;
                     max-width: 100%;
                     max-height: 100%;
                     display: flex;
@@ -925,9 +1427,8 @@
         }
 
         .wrapper-content {
-            display: none;
 
-            .wrapper-main {
+            .wrapper-text {
                 p {
                     max-width: 100%;
                 }
@@ -950,9 +1451,10 @@
             .card-full {
                 height: 476px;
                 width: 100%;
-                
+
                 .card-item {
                     height: 275px;
+
                     img {
                         position: absolute;
                         left: 0;

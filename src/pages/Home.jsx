@@ -81,7 +81,11 @@ const Home = () => {
                 <Button variant="contained">Shop Player: Two</Button>
               </div>
               <div className="home__thumbnail col-lg-6">
-                <img className="home-img" src={HeroCenterSr} alt="Image" />
+              <picture>
+                <source media="(min-width: 992px)" srcset={HeroCenter}/>
+                <source media="(max-width: 992px)" srcset={HeroCenterSr}/>
+                <img className="background-img" src={HeroCenter} alt="Main Image" />
+              </picture>
               </div>
             </div>
           </div>
@@ -198,7 +202,7 @@ const Home = () => {
       </section> */}
       <section className="main-wrapper">
         <div className="wrapper-content">
-          <div className="wrapper-main">
+          <div className="wrapper-text">
             <img src={primeLogo01} alt="" />
             <h1>Player: Prime</h1>
             <div>
@@ -211,9 +215,12 @@ const Home = () => {
               </p>
             </div>
           </div>
+          <picture>
+                <source media="(min-width: 992px)" srcset={mainBackground}/>
+                <source media="(max-width: 992px)" srcset={mainBackgroundSr}/>
+                <img className="background-img" src={mainBackground} alt="Main Image" />
+        </picture>
         </div>
-        <div><picture><source media="(min-width: 1024px)" width="100%" height="768px" srcset={mainBackground}/><source media="(max-width: 1024px)" width="100%" height="100%" 
-        srcset={mainBackgroundSr}/><img className="lg:block max-h-full lg:max-w-full block max-h-full max-w-full w-full md:max-w-lg md:mx-auto object-fit-cover" width="100%" height="100%" src={mainBackground}/></picture></div>
       </section>
       <section className="newest-releases">
         <div className="container">

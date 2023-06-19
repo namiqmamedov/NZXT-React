@@ -221,4 +221,162 @@ footer .footer-bottom .text-main a {
   footer .accordion-main ul li a:hover {
     color: #fff;
   }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .newsletter-index h2 {
+    font-size: 30px;
+  }
+  .newsletter-index .input-area input {
+    width: 100%;
+  }
+  .newsletter-index .input-area button {
+    width: 100%;
+  }
+  footer .footer-link {
+    display: none;
+  }
+  footer .footer-wrapper .social-area {
+    display: none;
+  }
+  footer .footer-wrapper .input-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  footer .footer-wrapper .input-wrapper .flex-grow:first-child {
+    width: 40%;
+  }
+  footer .footer-wrapper .input-wrapper .flex-grow:last-child {
+    width: 60%;
+  }
+  footer .footer-wrapper .input-wrapper .flex-grow .select-box {
+    justify-content: space-between;
+  }
+  footer .footer-bottom p,
+  footer .footer-bottom a {
+    width: 100%;
+    text-align: center;
+  }
+  footer .footer-bottom .text-main {
+    gap: 0;
+    flex-wrap: wrap;
+  }
+  footer .accordion-main {
+    background-color: hsl(210, 7%, 11%);
+    margin: 4px 0;
+    display: block;
+  }
+  footer .accordion-main svg {
+    color: #fff;
+  }
+  footer .accordion-main .menu-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Gotham SSm", sans-serif;
+  }
+  footer .accordion-main .accordion-summary {
+    padding-bottom: 4px;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: 1px solid #fff;
+  }
+  footer .accordion-main .accordion-detail {
+    padding: 8px 3px 16px;
+  }
+  footer .accordion-main ul {
+    padding: 0;
+  }
+  footer .accordion-main ul li {
+    padding-bottom: 11px;
+    list-style: none;
+  }
+  footer .accordion-main ul li a {
+    color: #91919c;
+    font-size: 14px;
+    font-family: "Gotham SSm", sans-serif;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+  }
+  footer .accordion-main ul li a:hover {
+    color: #fff;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .newsletter-index h2 {
+    font-size: 30px;
+  }
+  .newsletter-index .input-area input {
+    width: 100%;
+  }
+  .newsletter-index .input-area button {
+    width: 100%;
+  }
+  footer .footer-link {
+    display: none;
+  }
+  footer .footer-wrapper .social-area {
+    display: none;
+  }
+  footer .footer-wrapper .input-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  footer .footer-wrapper .input-wrapper .flex-grow:first-child {
+    width: 40%;
+  }
+  footer .footer-wrapper .input-wrapper .flex-grow:last-child {
+    width: 60%;
+  }
+  footer .footer-wrapper .input-wrapper .flex-grow .select-box {
+    justify-content: space-between;
+  }
+  footer .footer-bottom p,
+  footer .footer-bottom a {
+    width: 100%;
+    text-align: center;
+  }
+  footer .footer-bottom .text-main {
+    gap: 0;
+    flex-wrap: wrap;
+  }
+  footer .accordion-main {
+    background-color: hsl(210, 7%, 11%);
+    margin: 4px 0;
+    display: block;
+  }
+  footer .accordion-main svg {
+    color: #fff;
+  }
+  footer .accordion-main .menu-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Gotham SSm", sans-serif;
+  }
+  footer .accordion-main .accordion-summary {
+    padding-bottom: 4px;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: 1px solid #fff;
+  }
+  footer .accordion-main .accordion-detail {
+    padding: 8px 3px 16px;
+  }
+  footer .accordion-main ul {
+    padding: 0;
+  }
+  footer .accordion-main ul li {
+    padding-bottom: 11px;
+    list-style: none;
+  }
+  footer .accordion-main ul li a {
+    color: #91919c;
+    font-size: 14px;
+    font-family: "Gotham SSm", sans-serif;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+  }
+  footer .accordion-main ul li a:hover {
+    color: #fff;
+  }
 }/*# sourceMappingURL=footer.css.map */

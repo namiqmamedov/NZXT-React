@@ -80,3 +80,23 @@ header {
         }
     }
 }
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    header{
+        .main__nav{
+            ul{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header{
+        .main__nav{
+            ul{
+                display: none;
+            }
+        }
+    }
+}
