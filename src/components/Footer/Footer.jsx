@@ -44,8 +44,6 @@ const Footer = () => {
       </div>
       <footer>
         <div className="footer-index">
-          <div className="container">
-            <div className="row">
               <div className="footer-wrapper">
                 <div className="social-area">
                   <Link>
@@ -104,6 +102,9 @@ const Footer = () => {
                       <path d="M5.99 0L1.7 4.286v15.428h5.147V24l4.29-4.286h3.431L22.29 12V0H5.99zm14.583 11.143l-3.431 3.428H13.71l-3.002 3v-3h-3.86V1.714h13.725v9.429z"></path>
                       <path d="M18 4.714h-1.716v5.143H18V4.714zm-4.719 0h-1.715v5.143h1.715V4.714z"></path>
                     </svg>
+                  </Link>
+                  <Link>
+                  <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6"><path d="M14.528 16.093c-.535.535-1.692.728-2.507.728-.814 0-1.971-.193-2.507-.728a.31.31 0 00-.45 0 .31.31 0 000 .45c.857.857 2.486.921 2.979.921.471 0 2.121-.064 2.978-.921a.31.31 0 000-.45c-.171-.107-.385-.107-.493 0zM10.5 13.264a1.244 1.244 0 10-2.487.002 1.244 1.244 0 002.487-.002z"></path><path d="M12 0C5.379 0 0 5.379 0 12s5.379 12 12 12 12-5.379 12-12c.021-6.621-5.357-12-12-12zm6.964 13.607c.022.171.043.343.043.536 0 2.7-3.129 4.886-7.007 4.886-3.879 0-7.007-2.208-7.007-4.908 0-.171.021-.364.043-.535A1.755 1.755 0 014.007 12c0-.964.793-1.757 1.757-1.757.472 0 .9.193 1.222.493 1.221-.879 2.893-1.436 4.757-1.479l.9-4.178a.312.312 0 01.128-.193.298.298 0 01.236-.043l2.914.621c.215-.407.622-.707 1.115-.707a1.244 1.244 0 010 2.486 1.25 1.25 0 01-1.243-1.2l-2.614-.557-.793 3.75c1.843.064 3.493.621 4.692 1.478.322-.3.75-.493 1.222-.493.964 0 1.757.793 1.757 1.758-.043.75-.471 1.35-1.093 1.628z"></path><path d="M14.764 12a1.244 1.244 0 10.002 2.487A1.244 1.244 0 0014.764 12z"></path></svg>
                   </Link>
                   <Link>
                     <svg
@@ -223,7 +224,7 @@ const Footer = () => {
                 </form>
               </div>
               <div className="footer-link">
-                <div className="footer-menu col-lg-2">
+                <div className="footer-menu col-lg-4 col-xl-2">
                   <h4 className="menu-title">Contact</h4>
                   <ul>
                     <li>
@@ -240,7 +241,7 @@ const Footer = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="footer-menu col-lg-2">
+                <div className="footer-menu col-lg-4 col-xl-2">
                   <h4 className="menu-title">ABOUT NZXT</h4>
                   <ul>
                     <li>
@@ -254,7 +255,7 @@ const Footer = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="footer-menu col-lg-2">
+                <div className="footer-menu col-lg-4 col-xl-2">
                   <h4 className="menu-title">COMMUNITY</h4>
                   <ul>
                     <li>
@@ -265,7 +266,7 @@ const Footer = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="footer-menu col-lg-2">
+                <div className="footer-menu col-lg-4 col-xl-2">
                   <h4 className="menu-title">SOFTWARE</h4>
                   <ul>
                     <li>
@@ -276,7 +277,7 @@ const Footer = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="footer-menu col-lg-2">
+                <div className="footer-menu col-lg-4 col-xl-2">
                   <h4 className="menu-title">ACCOUNT</h4>
                   <ul>
                     <li>
@@ -284,7 +285,7 @@ const Footer = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="footer-menu col-lg-2">
+                <div className="footer-menu col-lg-4 col-xl-2">
                   <h4 className="menu-title">NZXT STORE</h4>
                   <ul>
                     <li>
@@ -506,8 +507,6 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
       </footer>
     </>
   );

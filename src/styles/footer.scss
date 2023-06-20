@@ -7,9 +7,11 @@
         font-weight: bold;
         color: #fff;
         font-family: 'Gotham SSm', sans-serif;
+        padding-left: 40px;
     }
 
     p {
+        padding-left: 40px;
         color: #fff;
         font-family: 'Gotham SSm', sans-serif;
     }
@@ -36,6 +38,7 @@
 
     .check-privacy {
         padding-top: 5px;
+        padding-left: 10px;
 
         .nextui-checkbox-container {
             background: white;
@@ -63,7 +66,11 @@
 footer {
     background-color: hsl(210deg 7% 11%);
 
-    .accordion-main{
+    .footer-index{
+        padding: 0 3rem;
+    }
+
+    .accordion-main {
         display: none;
     }
 
@@ -76,9 +83,12 @@ footer {
     .footer-wrapper {
         display: flex;
         justify-content: space-between;
+        padding-top: 35px;
 
         .social-area {
+            padding-left: 20px;
             a {
+                padding-right: 6px !important;
                 &:hover {
                     svg {
                         color: hsl(259deg 100% 81%);
@@ -128,7 +138,7 @@ footer {
 
     .footer-link {
         display: flex;
-        padding-top: 56px;
+        padding-top: 31px;
 
         .menu-title {
             font-size: 14px;
@@ -226,13 +236,15 @@ footer {
                 margin-bottom: 20px;
 
                 .flex-grow {
-                    &:first-child{
+                    &:first-child {
                         width: 40%;
                     }
-                    &:last-child{
+
+                    &:last-child {
                         width: 60%;
                     }
-                    .select-box{
+
+                    .select-box {
                         justify-content: space-between;
                     }
                 }
@@ -254,43 +266,48 @@ footer {
             }
         }
 
-        .accordion-main{
+        .accordion-main {
             background-color: hsl(210, 7%, 11%);
             margin: 4px 0;
             display: block;
 
-            svg{
+            svg {
                 color: #fff;
             }
-            .menu-title{
+
+            .menu-title {
                 color: #fff;
                 text-transform: uppercase;
                 font-size: 14px;
-                font-family: 'Gotham SSm',sans-serif;
+                font-family: 'Gotham SSm', sans-serif;
             }
 
-            .accordion-summary{
+            .accordion-summary {
                 padding-bottom: 4px;
                 padding-left: 0;
                 padding-right: 0;
                 border-bottom: 1px solid #fff;
             }
-            .accordion-detail{
+
+            .accordion-detail {
                 padding: 8px 3px 16px;
             }
 
-            ul{
+            ul {
                 padding: 0;
-                li{
+
+                li {
                     padding-bottom: 11px;
                     list-style: none;
-                    a{
+
+                    a {
                         color: #91919c;
                         font-size: 14px;
-                        font-family: 'Gotham SSm',sans-serif;
+                        font-family: 'Gotham SSm', sans-serif;
                         text-decoration: none;
                         transition: .3s ease-in-out;
-                        &:hover{
+
+                        &:hover {
                             color: #fff;
                         }
                     }
@@ -332,13 +349,15 @@ footer {
                 margin-bottom: 20px;
 
                 .flex-grow {
-                    &:first-child{
+                    &:first-child {
                         width: 40%;
                     }
-                    &:last-child{
+
+                    &:last-child {
                         width: 60%;
                     }
-                    .select-box{
+
+                    .select-box {
                         justify-content: space-between;
                     }
                 }
@@ -360,43 +379,48 @@ footer {
             }
         }
 
-        .accordion-main{
+        .accordion-main {
             background-color: hsl(210, 7%, 11%);
             margin: 4px 0;
             display: block;
 
-            svg{
+            svg {
                 color: #fff;
             }
-            .menu-title{
+
+            .menu-title {
                 color: #fff;
                 text-transform: uppercase;
                 font-size: 14px;
-                font-family: 'Gotham SSm',sans-serif;
+                font-family: 'Gotham SSm', sans-serif;
             }
 
-            .accordion-summary{
+            .accordion-summary {
                 padding-bottom: 4px;
                 padding-left: 0;
                 padding-right: 0;
                 border-bottom: 1px solid #fff;
             }
-            .accordion-detail{
+
+            .accordion-detail {
                 padding: 8px 3px 16px;
             }
 
-            ul{
+            ul {
                 padding: 0;
-                li{
+
+                li {
                     padding-bottom: 11px;
                     list-style: none;
-                    a{
+
+                    a {
                         color: #91919c;
                         font-size: 14px;
-                        font-family: 'Gotham SSm',sans-serif;
+                        font-family: 'Gotham SSm', sans-serif;
                         text-decoration: none;
                         transition: .3s ease-in-out;
-                        &:hover{
+
+                        &:hover {
                             color: #fff;
                         }
                     }
@@ -438,13 +462,15 @@ footer {
                 margin-bottom: 20px;
 
                 .flex-grow {
-                    &:first-child{
+                    &:first-child {
                         width: 40%;
                     }
-                    &:last-child{
+
+                    &:last-child {
                         width: 60%;
                     }
-                    .select-box{
+
+                    .select-box {
                         justify-content: space-between;
                     }
                 }
@@ -466,46 +492,72 @@ footer {
             }
         }
 
-        .accordion-main{
+        .accordion-main {
             background-color: hsl(210, 7%, 11%);
             margin: 4px 0;
             display: block;
 
-            svg{
+            svg {
                 color: #fff;
             }
-            .menu-title{
+
+            .menu-title {
                 color: #fff;
                 text-transform: uppercase;
                 font-size: 14px;
-                font-family: 'Gotham SSm',sans-serif;
+                font-family: 'Gotham SSm', sans-serif;
             }
 
-            .accordion-summary{
+            .accordion-summary {
                 padding-bottom: 4px;
                 padding-left: 0;
                 padding-right: 0;
                 border-bottom: 1px solid #fff;
             }
-            .accordion-detail{
+
+            .accordion-detail {
                 padding: 8px 3px 16px;
             }
 
-            ul{
+            ul {
                 padding: 0;
-                li{
+
+                li {
                     padding-bottom: 11px;
                     list-style: none;
-                    a{
+
+                    a {
                         color: #91919c;
                         font-size: 14px;
-                        font-family: 'Gotham SSm',sans-serif;
+                        font-family: 'Gotham SSm', sans-serif;
                         text-decoration: none;
                         transition: .3s ease-in-out;
-                        &:hover{
+
+                        &:hover {
                             color: #fff;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    footer {
+        .footer-link {
+            flex-wrap: wrap;
+        }
+    }
+
+    .newsletter-index {
+        .nextui-checkbox-text {
+            flex-wrap: wrap !important;
+            justify-content: left;
+
+            a {
+                &:last-child {
+                    padding: 0 !important;
                 }
             }
         }

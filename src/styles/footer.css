@@ -7,8 +7,10 @@
   font-weight: bold;
   color: #fff;
   font-family: "Gotham SSm", sans-serif;
+  padding-left: 40px;
 }
 .newsletter-index p {
+  padding-left: 40px;
   color: #fff;
   font-family: "Gotham SSm", sans-serif;
 }
@@ -31,6 +33,7 @@
 }
 .newsletter-index .check-privacy {
   padding-top: 5px;
+  padding-left: 10px;
 }
 .newsletter-index .check-privacy .nextui-checkbox-container {
   background: white;
@@ -50,6 +53,9 @@
 footer {
   background-color: hsl(210, 7%, 11%);
 }
+footer .footer-index {
+  padding: 0 3rem;
+}
 footer .accordion-main {
   display: none;
 }
@@ -59,6 +65,13 @@ footer .text-hover:hover {
 footer .footer-wrapper {
   display: flex;
   justify-content: space-between;
+  padding-top: 35px;
+}
+footer .footer-wrapper .social-area {
+  padding-left: 20px;
+}
+footer .footer-wrapper .social-area a {
+  padding-right: 6px !important;
 }
 footer .footer-wrapper .social-area a:hover svg {
   color: hsl(259, 100%, 81%);
@@ -94,7 +107,7 @@ footer .footer-wrapper .input-wrapper fieldset .flex-grow label {
 }
 footer .footer-link {
   display: flex;
-  padding-top: 56px;
+  padding-top: 31px;
 }
 footer .footer-link .menu-title {
   font-size: 14px;
@@ -378,5 +391,17 @@ footer .footer-bottom .text-main a {
   }
   footer .accordion-main ul li a:hover {
     color: #fff;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  footer .footer-link {
+    flex-wrap: wrap;
+  }
+  .newsletter-index .nextui-checkbox-text {
+    flex-wrap: wrap !important;
+    justify-content: left;
+  }
+  .newsletter-index .nextui-checkbox-text a:last-child {
+    padding: 0 !important;
   }
 }/*# sourceMappingURL=footer.css.map */
