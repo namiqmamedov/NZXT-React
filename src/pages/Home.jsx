@@ -314,7 +314,6 @@ const Home = () => {
                   src={newsCard04}
                   alt="Card Image"
                 />
-                <div className="card-item"></div>
               </div>
               <div className="bottom-card">
                 <div className="card-full-bottom">

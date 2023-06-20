@@ -343,6 +343,16 @@
                 font-family: "Gotham SSm", sans-serif;
                 color: white;
                 max-width: 43%;
+
+                em {
+                    padding-right: 7px;
+                    font-family: "Gotham SSm", sans-serif;
+                    font-size: 16px;
+
+                    &:last-child {
+                        padding-left: 7px;
+                    }
+                }
             }
         }
     }
@@ -526,7 +536,6 @@
         display: flex;
         gap: 1.3rem;
         flex-wrap: wrap;
-        justify-content: center;
         padding-top: 45px;
 
         .shop-card {
@@ -589,7 +598,7 @@
                 }
 
                 img {
-                    width: 80%;
+                    width: 100%;
                     margin: 0 auto;
                     display: flex;
                 }
@@ -1404,7 +1413,7 @@
         }
 
         .card-item {
-            width: 48.8% !important;
+            width: 48.5% !important;
 
             img {
                 width: 90% !important;
@@ -1547,21 +1556,21 @@
         }
 
         .main-content {
-            width: 100%;
+            width: 40%;
             padding: 25px 20px;
             top: 10%;
             left: 3%;
 
             p {
-                max-width: 37%;
+                max-width: 100%;
             }
 
-            h3{
+            h3 {
                 font-weight: bold;
                 font-size: 23px;
             }
 
-            img{
+            img {
                 width: 25%;
             }
         }
@@ -1579,7 +1588,278 @@
             font-size: 30px;
         }
 
-        img{
+        img {
+            width: 75% !important;
+        }
+    }
+
+    .bottom-thumbnail {
+        .content {
+            top: 42%;
+
+            h1 {
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .container {
+        max-width: 1045px !important;
+    }
+
+    .main-wrapper {
+        .wrapper-text {
+            top: 41% !important;
+            left: 6% !important;
+
+            img {
+                height: 5% !important;
+                width: 13% !important;
+            }
+        }
+    }
+
+    .home__index {
+        .background-img {
+            height: 660px;
+        }
+
+        .home__content {
+
+
+            .home__thumbnail {
+                img {
+                    position: absolute;
+                    top: 24%;
+                    left: auto;
+                    right: 15px;
+                    bottom: 0;
+                    width: 44%;
+                    height: 76%;
+                    max-width: 100%;
+                    max-height: 100%;
+                    display: flex;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .home__text {
+            padding-left: 70px;
+            padding-top: 30px;
+
+            h1 {
+                font-size: 48px;
+            }
+
+            p {
+                font-size: 30px !important;
+            }
+
+            button {
+                background-color: hsl(267deg 83% 49%);
+                font-size: 16px;
+            }
+
+            img {
+                width: 34%;
+                padding-bottom: 9px;
+            }
+        }
+    }
+
+    .player-two-card {
+
+        .card-item {
+            width: 35% !important;
+
+            img {
+                width: 90% !important;
+            }
+        }
+
+        .thumbnail__end {
+            width: 35% !important;
+            height: 100%;
+            position: relative;
+
+            .background-sr {
+                display: block !important;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: transparent;
+            }
+
+            .card-body {
+                position: absolute;
+                top: auto;
+                left: 0;
+                right: 0;
+                bottom: 30px;
+                height: 50% !important;
+                background: transparent !important;
+
+                img {
+                    width: 58% !important;
+                    height: 13% !important;
+                }
+            }
+
+            .thumbnail-img {
+                height: 631px !important;
+                width: 100% !important;
+            }
+        }
+    }
+
+    .main-wrapper {
+        img {
+            height: 100%;
+        }
+
+        .wrapper-content {
+
+            .wrapper-text {
+                p {
+                    max-width: 43%;
+                }
+
+                img {
+                    height: 6% !important;
+                    width: 15% !important;
+                }
+            }
+        }
+    }
+
+    .newest-releases {
+        .title {
+            font-size: 30px;
+        }
+
+        .subtitle {
+            max-width: 95%;
+        }
+
+        .card__main {
+
+            .card-full {
+                width: 49%;
+
+                height: 497px;
+
+                img {
+                    height: 270px;
+                }
+
+                .card-item {
+                    height: 275px;
+
+                    img {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 70%;
+                        height: 100%;
+                        max-width: 100%;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+
+                .card-full-content {
+                    min-height: 223px;
+                }
+
+                .image-block {
+                    img {
+                        height: 498px;
+                    }
+                }
+            }
+        }
+
+        .bottom-card {
+            gap: .8rem !important;
+
+            img {
+                height: 305px !important;
+            }
+
+            .card-body {
+                h3 {
+                    font-size: 23px !important;
+                }
+            }
+        }
+    }
+
+    .shop-bestseller {
+        .title {
+            font-size: 30px;
+        }
+
+        .subtitle {
+            max-width: 70%;
+        }
+
+        .shop-index {
+            .shop-card {
+                width: 31%;
+            }
+        }
+    }
+
+    .main-content-grid {
+        .full-main {
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .main-content {
+            width: 47%;
+            height: 76%;
+            padding: 25px 20px;
+            top: 15%;
+            left: 3%;
+
+            p {
+                max-width: 100%;
+            }
+
+            h3 {
+                font-weight: bold;
+                font-size: 30px;
+            }
+
+            img {
+                width: 41%;
+            }
+        }
+
+        .image-block {
+            background-color: #4A4AF4;
+            width: 100%;
+            display: block;
+            border-radius: 5%;
+        }
+    }
+
+    .brand-content {
+        .title {
+            font-size: 30px;
+        }
+
+        img {
             width: 75% !important;
         }
     }
