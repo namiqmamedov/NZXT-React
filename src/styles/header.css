@@ -75,4 +75,14 @@ header .main__nav .nav__end svg {
   header .main__nav ul {
     display: none;
   }
+}
+@media only screen and (min-width: 1280px) {
+  header .main__nav {
+    padding: 10px 60px;
+  }
+}
+@media only screen and (min-width: 1540px) {
+  header .main__nav {
+    padding: 10px 225px;
+  }
 }/*# sourceMappingURL=header.css.map */

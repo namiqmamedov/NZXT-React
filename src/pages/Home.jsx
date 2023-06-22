@@ -148,6 +148,7 @@ const Home = () => {
             </div>
             <div className="thumbnail__end">
               <img
+              id=""
                 className="thumbnail-img"
                 src={thumbnail01}
                 alt="Card Image"
@@ -565,6 +566,9 @@ const Home = () => {
               </div>
               <div className="shop-card">
                 <div className="card-thumbnail">
+                <span className="badge-sold">
+                    <p>Sold Out</p>
+                  </span>
                   <img src={card05} alt="Shop Card" />
                   <div className="quick-shop">
                     <p>Quick Shop</p>
@@ -600,6 +604,9 @@ const Home = () => {
               </div>
               <div className="shop-card">
                 <div className="card-thumbnail">
+                <span className="badge-sold">
+                    <p>Sold Out</p>
+                  </span>
                   <img src={card06} alt="Shop Card" />
                   <div className="quick-shop">
                     <p>Quick Shop</p>
@@ -647,8 +654,8 @@ const Home = () => {
               </div>
               <div className="shop-card">
                 <div className="card-thumbnail">
-                  <span className="badge-main">
-                    <p>$100 Off</p>
+                <span className="badge-stock">
+                    <p>Low Stock</p>
                   </span>
                   <img src={card07} alt="Shop Card" />
                   <div className="quick-shop">
