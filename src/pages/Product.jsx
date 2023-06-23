@@ -76,7 +76,7 @@ const Product = () => {
       </section>
       <div className="center-thumbnail">
         <div
-          className="product__item col-lg-6"
+          className="product__item col-lg-7"
           style={{ background: "#F1F5FE" }}
         >
           <div className="container">
@@ -94,15 +94,15 @@ const Product = () => {
                   <picture>
                     <source
                       media="(min-width: 992px)"
-                      srcset={performencePrimary}
+                      srcset={panelPrimary}
                     />
                     <source
                       media="(max-width: 992px)"
-                      srcset={performencePrimary}
+                      srcset={panelPrimary}
                     />
                     <img
                       className="main-img"
-                      src={performencePrimary}
+                      src={panelPrimary}
                       alt="Main Image"
                     />
                   </picture>
@@ -112,7 +112,7 @@ const Product = () => {
           </div>
         </div>
         <div
-          className="product__item col-lg-6"
+          className="product__item col-lg-5"
           style={{ background: "#F1F5FE" }}
         >
           <div className="container">
@@ -122,15 +122,15 @@ const Product = () => {
                   <picture>
                     <source
                       media="(min-width: 992px)"
-                      srcset={performencePrimary}
+                      srcset={componentPrimary}
                     />
                     <source
                       media="(max-width: 992px)"
-                      srcset={performencePrimary}
+                      srcset={componentPrimary}
                     />
                     <img
                       className="main-img"
-                      src={performencePrimary}
+                      src={componentPrimary}
                       alt="Main Image"
                     />
                   </picture>

@@ -18,12 +18,12 @@ import card05 from "../assets/images/product/card05.avif";
 import card06 from "../assets/images/product/card06.avif";
 import card07 from "../assets/images/product/card07.avif";
 import card08 from "../assets/images/product/card08.avif";
-import brand01 from '../assets/images/home/brand01.png'
-import brand02 from '../assets/images/home/brand02.png'
-import brand03 from '../assets/images/home/brand03.png'
+import brand01 from "../assets/images/home/brand01.png";
+import brand02 from "../assets/images/home/brand02.png";
+import brand03 from "../assets/images/home/brand03.png";
 import thumbnail01 from "../assets/images/product/thumbnail01.png";
 import thumbnailLogo from "../assets/images/product/thumbnailLogo.png";
-import affirmLogo from '../assets/images/home/affirmLogo.png'
+import affirmLogo from "../assets/images/home/affirmLogo.png";
 import promoBanner from "../assets/images/home/promo-banner.png";
 import promoImg01 from "../assets/images/home/promo-img01.png";
 import promoLogo01 from "../assets/images/home/promo-logo01.png";
@@ -42,25 +42,25 @@ import newsCard05 from "../assets/images/home/newsCard05.png";
 import newsCard06 from "../assets/images/home/newsCard06.png";
 import newsCard07 from "../assets/images/home/newsCard07.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const brandData = [
   {
-    id: '01',
+    id: "01",
     image: brand01,
-    desc: '“Offering real-world performance data is a great idea, and makes the process of ordering a PC much less abstract for newcomers.”' 
+    desc: "“Offering real-world performance data is a great idea, and makes the process of ordering a PC much less abstract for newcomers.”",
   },
   {
-    id: '02',
+    id: "02",
     image: brand02,
-    desc: '“There’s something lovely about having a PC that comes with a set of guaranteed predicted frames-per-second targets for the games I planned.”' 
+    desc: "“There’s something lovely about having a PC that comes with a set of guaranteed predicted frames-per-second targets for the games I planned.”",
   },
   {
-    id: '03',
+    id: "03",
     image: brand03,
-    desc: '“This is certainly a very neat idea, and the company is putting its money where its mouth is regarding the frame-rate estimations.”' 
-  }
-]
+    desc: "“This is certainly a very neat idea, and the company is putting its money where its mouth is regarding the frame-rate estimations.”",
+  },
+];
 
 const Home = () => {
   return (
@@ -81,18 +81,22 @@ const Home = () => {
                 <Button variant="contained">Shop Player: Two</Button>
               </div>
               <div className="home__thumbnail col-lg-6">
-              <picture>
-                <source media="(min-width: 992px)" srcset={HeroCenter}/>
-                <source media="(max-width: 992px)" srcset={HeroCenterSr}/>
-                <img className="background-img" src={HeroCenter} alt="Main Image" />
-              </picture>
+                <picture>
+                  <source media="(min-width: 992px)" srcset={HeroCenter} />
+                  <source media="(max-width: 992px)" srcset={HeroCenterSr} />
+                  <img
+                    className="background-img"
+                    src={HeroCenter}
+                    alt="Main Image"
+                  />
+                </picture>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section className="player-two-card">
-      <div className="container">
+        <div className="container">
           <div className="row">
             {/* <p>A PC BUILT TO GAME</p>
             <p>Player: Two brings powerful, built-to-last performance to anything from competitive FPS to breathtaking RPGs.</p> */}
@@ -102,8 +106,8 @@ const Home = () => {
               <div className="card-thumbnail">
                 <img src={card01} alt="Image" />
                 <div className="quick-shop">
-                    <p>Quick Shop</p>
-                  </div>
+                  <p>Quick Shop</p>
+                </div>
               </div>
               <div className="card-header">
                 <p className="card-title">Player: Two</p>
@@ -126,8 +130,8 @@ const Home = () => {
               <div className="card-thumbnail">
                 <img src={card02} alt="Image" />
                 <div className="quick-shop">
-                    <p>Quick Shop</p>
-                  </div>
+                  <p>Quick Shop</p>
+                </div>
               </div>
               <div className="card-header">
                 <p className="card-title">Player: Two</p>
@@ -148,14 +152,18 @@ const Home = () => {
             </div>
             <div className="thumbnail__end">
               <img
-              id=""
+                id="thumbnail-img"
                 className="thumbnail-img"
                 src={thumbnail01}
                 alt="Card Image"
               />
               <div
-              style={{background: 'linear-gradient(rgba(28, 29, 30, 0), rgb(28, 29, 30))'}}
-              className="background-sr"></div>
+                style={{
+                  background:
+                    "linear-gradient(rgba(28, 29, 30, 0), rgb(28, 29, 30))",
+                }}
+                className="background-sr"
+              ></div>
               <div className="card-body">
                 <img src={thumbnailLogo} alt="Logo" />
                 <div className="content">
@@ -169,7 +177,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-      </div>
+        </div>
       </section>
       {/* <section className="promo__banner">
         <div className="container">
@@ -217,10 +225,14 @@ const Home = () => {
             </div>
           </div>
           <picture>
-                <source media="(min-width: 992px)" srcset={mainBackground}/>
-                <source media="(max-width: 992px)" srcset={mainBackgroundSr}/>
-                <img className="background-img" src={mainBackground} alt="Main Image" />
-        </picture>
+            <source media="(min-width: 992px)" srcset={mainBackground} />
+            <source media="(max-width: 992px)" srcset={mainBackgroundSr} />
+            <img
+              className="background-img"
+              src={mainBackground}
+              alt="Main Image"
+            />
+          </picture>
         </div>
       </section>
       <section className="newest-releases">
@@ -566,7 +578,7 @@ const Home = () => {
               </div>
               <div className="shop-card">
                 <div className="card-thumbnail">
-                <span className="badge-sold">
+                  <span className="badge-sold">
                     <p>Sold Out</p>
                   </span>
                   <img src={card05} alt="Shop Card" />
@@ -604,7 +616,7 @@ const Home = () => {
               </div>
               <div className="shop-card">
                 <div className="card-thumbnail">
-                <span className="badge-sold">
+                  <span className="badge-sold">
                     <p>Sold Out</p>
                   </span>
                   <img src={card06} alt="Shop Card" />
@@ -654,7 +666,7 @@ const Home = () => {
               </div>
               <div className="shop-card">
                 <div className="card-thumbnail">
-                <span className="badge-stock">
+                  <span className="badge-stock">
                     <p>Low Stock</p>
                   </span>
                   <img src={card07} alt="Shop Card" />
@@ -765,15 +777,24 @@ const Home = () => {
               <div className="main-content">
                 <img src={affirmLogo} alt="Affirm Logo" title="Affirm Logo" />
                 <h3>Pay Later with Affirm</h3>
-                <p>Buy now, pay over time. Quick and easy. No hidden fees. Select "Affirm monthly payments"
-                during checkout.</p>
+                <p>
+                  Buy now, pay over time. Quick and easy. No hidden fees. Select
+                  "Affirm monthly payments" during checkout.
+                </p>
               </div>
               <div className="image-block">
-              <picture>
-                <source media="(min-width: 768px)" srcset={mainBackground2}/>
-                <source media="(max-width: 768px)" srcset={mainBackground2Sr}/>
-                <img className="background-img" src={mainBackground2} alt="Main Image" />
-              </picture>
+                <picture>
+                  <source media="(min-width: 768px)" srcset={mainBackground2} />
+                  <source
+                    media="(max-width: 768px)"
+                    srcset={mainBackground2Sr}
+                  />
+                  <img
+                    className="background-img"
+                    src={mainBackground2}
+                    alt="Main Image"
+                  />
+                </picture>
               </div>
             </div>
           </div>
@@ -784,14 +805,16 @@ const Home = () => {
           <div className="row">
             <h1 className="title">What Others Say</h1>
             <div className="card-main">
-              {brandData.map((item,index) => (
+              {brandData.map((item, index) => (
                 <div className="card-item col-lg-4" key={index}>
-                    <div className="card-body">
-                      <img src={item.image} alt="Brand Image" title="Brand Image" />
-                      <div className="description">
-                        {item.desc}
-                      </div>
-                    </div>
+                  <div className="card-body">
+                    <img
+                      src={item.image}
+                      alt="Brand Image"
+                      title="Brand Image"
+                    />
+                    <div className="description">{item.desc}</div>
+                  </div>
                 </div>
               ))}
             </div>
@@ -802,8 +825,9 @@ const Home = () => {
         <div className="content text-center">
           <p className="text-white">NZXT</p>
           <h1>Prebuilt Power to Love</h1>
-          <Link>Shop Player PCs
-          <MdKeyboardArrowRight />
+          <Link>
+            Shop Player PCs
+            <MdKeyboardArrowRight />
           </Link>
         </div>
         <img src={BottomThumbnail} alt="Thumbnail" title="Thumbnail" />

@@ -128,11 +128,19 @@
 .center-thumbnail {
     padding-top: 20px;
     display: flex;
-    gap: 1.5rem;
+    gap: 1.3rem;
     .product__item{
         .product-img{
+            // position: relative;
             img{
-                width: 100% !important;
+                // position: absolute;
+                // top: 48px;
+                // left: 0;
+                // right: 0;
+                // bottom: 0;
+                // z-index: 1111111111;
+                // max-width: 71%;
+                 width: 80% !important;
             }
         }
         .product__content{

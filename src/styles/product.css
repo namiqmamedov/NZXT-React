@@ -113,10 +113,10 @@
 .center-thumbnail {
   padding-top: 20px;
   display: flex;
-  gap: 1.5rem;
+  gap: 1.3rem;
 }
 .center-thumbnail .product__item .product-img img {
-  width: 100% !important;
+  width: 80% !important;
 }
 .center-thumbnail .product__item .product__content {
   text-align: center;
