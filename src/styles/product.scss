@@ -1,4 +1,6 @@
-.product {
+.product-wrapper {
+    overflow: hidden;
+
     video {
         max-height: 500px;
         width: 100%;
@@ -18,21 +20,138 @@
             right: 0;
             bottom: 0;
             z-index: 111111111;
-            transform: translate(45%, 50%);
+            transform: translate(39%, 50%);
 
             h1 {
                 font-size: 60px;
                 font-family: 'Gotham SSm', sans-serif;
                 font-weight: bold;
                 display: inline-block;
+                padding-bottom: 25px;
             }
 
             p {
                 font-size: 16px;
                 font-family: 'Gotham SSm', sans-serif;
-                display: inline-block;
 
             }
         }
     }
+}
+
+.product-list {
+    .product-list-index {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.product-thumbnail {
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 50%;
+    }
+
+    .thumbnail-content {
+        position: relative;
+
+        .content-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+
+.product__thumbnail {
+    position: relative;
+
+    .background-img {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 660px;
+        object-fit: cover;
+    }
+
+    .product__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home-img {
+        width: 100%;
+        height: 659px;
+    }
+
+    .product__text {
+        text-align: center;
+        padding-top: 60px;
+
+        .title {
+            font-size: 30px;
+            font-family: 'Gotham SSm', sans-serif;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            font-family: 'Gotham SSm', sans-serif;
+            max-width: 23%;
+            margin: 0 auto;
+            color: #313235;
+        }
+    }
+
+    .product-img {
+        margin-top: 50px;
+        .main-img {
+            width: 44%;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+.center-thumbnail {
+    padding-top: 20px;
+    display: flex;
+    gap: 1.5rem;
+    .product__item{
+        .product-img{
+            img{
+                width: 100% !important;
+            }
+        }
+        .product__content{
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 45px;
+
+            .title{
+                font-size: 30px;
+                font-family: 'Gotham SSm',sans-serif;
+                font-weight: bold;
+            }
+            .subtitle{
+                font-size: 18px;
+                font-family: 'Gotham SSm',sans-serif;
+                max-width: 80%;
+                margin: 0 auto;
+            }
+        }
+    }
+    
 }
