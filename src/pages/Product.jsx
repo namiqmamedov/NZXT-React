@@ -5,6 +5,7 @@ import performencePrimaryBg from "../assets/images/thumbnail/performancePrimaryB
 import performencePrimary from "../assets/images/thumbnail/performancePrimary.avif";
 import panelPrimary from "../assets/images/thumbnail/panelPrimary.avif";
 import componentPrimary from "../assets/images/thumbnail/componentPrimary.avif";
+import meetTheFlow from "../assets/images/thumbnail/meet-the-flow.png";
 
 const Product = () => {
   return (
@@ -75,48 +76,48 @@ const Product = () => {
         </div>
       </section>
       <div className="center-thumbnail">
-        <div
-          className="product__item col-lg-7"
-          style={{ background: "#F1F5FE" }}
-        >
-          <div className="container">
-            <div className="row">
-              <div className="product__content">
-                <div className="product__text col-lg-12">
-                  <h3 className="title">Uninterrupted Glass Paneling</h3>
-                  <div className="subtitle">
-                    Featuring seamless glass paneling to showcase every angle of
-                    the most powerful components with a dual-chamber design to
-                    help increase cooling.
+        <div className="center-index">
+          <div
+            className="product__item col-lg-7"
+            style={{ background: "#F1F5FE" }}
+          >
+            <div className="container">
+              <div className="row">
+                <div className="product__content">
+                  <div className="product__text col-lg-12">
+                    <h3 className="title">Uninterrupted Glass Paneling</h3>
+                    <div className="subtitle">
+                      Featuring seamless glass paneling to showcase every angle
+                      of the most powerful components with a dual-chamber design
+                      to help increase cooling.
+                    </div>
                   </div>
-                </div>
-                <div className="product-img col-lg-12">
-                  <picture>
-                    <source
-                      media="(min-width: 992px)"
-                      srcset={panelPrimary}
-                    />
-                    <source
-                      media="(max-width: 992px)"
-                      srcset={panelPrimary}
-                    />
-                    <img
-                      className="main-img"
-                      src={panelPrimary}
-                      alt="Main Image"
-                    />
-                  </picture>
+                  <div className="product-img col-lg-12">
+                    <picture>
+                      <source
+                        media="(min-width: 992px)"
+                        srcset={panelPrimary}
+                      />
+                      <source
+                        media="(max-width: 992px)"
+                        srcset={panelPrimary}
+                      />
+                      <img
+                        className="left-img"
+                        src={panelPrimary}
+                        alt="Main Image"
+                      />
+                    </picture>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          className="product__item col-lg-5"
-          style={{ background: "#F1F5FE" }}
-        >
-          <div className="container">
-            <div className="row">
+          <div
+            className="product__item col-lg-5"
+            style={{ background: "#F1F5FE" }}
+          >
+            <div className="container">
               <div className="product__content">
                 <div className="product-img col-lg-12">
                   <picture>
@@ -141,6 +142,85 @@ const Product = () => {
                     The H9 has plenty of space for premium components, numerous
                     radiator mounting options, and the ability to vertically
                     mount a GPU.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="center-thumbnail">
+        <div className="container">
+          <div className="row">
+            <div className="center-index">
+              <div
+                className="product__item col-lg-6"
+                style={{ background: "#F1F5FE" }}
+              >
+                <div className="container">
+                  <div className="product__content">
+                    <div className="product__text col-lg-12">
+                      <h3 className="title">H9 Flow</h3>
+                      <div className="subtitle">
+                        The H9 Flow features a perforated top panel, room for up
+                        to 10 fans, and multiple radiator mounting options for
+                        increased cooling.
+                      </div>
+                    </div>
+                    <div className="product-img col-lg-12">
+                      <picture>
+                        <source
+                          media="(min-width: 992px)"
+                          srcset={meetTheFlow}
+                        />
+                        <source
+                          media="(max-width: 992px)"
+                          srcset={meetTheFlow}
+                        />
+                        <img
+                          className="left-img"
+                          src={meetTheFlow}
+                          alt="Main Image"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="product__item col-lg-6"
+                style={{ background: "#F1F5FE" }}
+              >
+                <div className="container">
+                  <div className="row">
+                    <div className="product__content">
+                      <div className="product-img col-lg-12">
+                        <picture>
+                          <source
+                            media="(min-width: 992px)"
+                            srcset={componentPrimary}
+                          />
+                          <source
+                            media="(max-width: 992px)"
+                            srcset={componentPrimary}
+                          />
+                          <img
+                            className="main-img"
+                            src={componentPrimary}
+                            alt="Main Image"
+                          />
+                        </picture>
+                      </div>
+                      <div className="product__text col-lg-12">
+                        <h3 className="title">H9 Elite</h3>
+                        <div className="subtitle">
+                          The H9 Elite features a tempered glass top panel with
+                          a uniquely clear radiator mounting bracket and a
+                          built-in RGB and Fan Controller for enhanced lighting
+                          customization.
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
