@@ -24,9 +24,6 @@ import brand03 from "../assets/images/home/brand03.png";
 import thumbnail01 from "../assets/images/product/thumbnail01.png";
 import thumbnailLogo from "../assets/images/product/thumbnailLogo.png";
 import affirmLogo from "../assets/images/home/affirmLogo.png";
-import promoBanner from "../assets/images/home/promo-banner.png";
-import promoImg01 from "../assets/images/home/promo-img01.png";
-import promoLogo01 from "../assets/images/home/promo-logo01.png";
 import primeLogo01 from "../assets/images/home/prime-logo01.png";
 import mainBackground from "../assets/images/home/mainBackground.avif";
 import mainBackgroundSr from "../assets/images/home/mainBackgroundSr.avif";
@@ -75,7 +72,7 @@ const Home = () => {
           <div className="row">
             <div className="home__content">
               <div className="home__text col-lg-6">
-                <img src={twologo} alt="" />
+                <img src={twologo} alt="Logo" />
                 <h1>Ready Player: Two</h1>
                 <p>Game, stream and create.</p>
                 <Button variant="contained">Shop Player: Two</Button>

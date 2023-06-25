@@ -1,5 +1,6 @@
 import React from "react";
 import high from "../assets/videos/high.mp4";
+import highSr from "../assets/videos/highSr.mp4";
 import "../styles/product.css";
 import performencePrimaryBg from "../assets/images/thumbnail/performancePrimaryBg.avif";
 import performencePrimary from "../assets/images/thumbnail/performancePrimary.avif";
@@ -16,8 +17,11 @@ import verticalGpu from "../assets/images/thumbnail/h9-vertical-gpu-bg.png";
 import krakenZ73 from "../assets/images/thumbnail/h9-kraken-z73.png";
 import fansPrimary from "../assets/images/thumbnail/fans-primary-web.png";
 import bgCenter from "../assets/images/thumbnail/bg-center.png";
+import nzxtLogo from "../assets/images/thumbnail/nzxtLogo.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
+import Button from "@mui/material/Button";
+
 
 const Product = () => {
   return (
@@ -29,7 +33,8 @@ const Product = () => {
             <p>Dual Chamber Mid-Tower Cases</p>
           </div>
         </div>
-        <video src={high} autoPlay loop muted></video>
+        <video className="graphics-hd" src={high} autoPlay loop muted></video>
+        <video className="graphics-hd-sr" src={highSr} autoPlay loop muted></video>
       </section>
       <section className="product-list">
         <div className="container">
@@ -788,10 +793,22 @@ const Product = () => {
         <div className="container">
           <div className="row">
             <div className="item-index">
-              <div className="col-lg-4">
-<h1>hello</h1>
+              <div className="content-item">
+              <div className="content-full col-lg-4" style={{backgroundColor: "#F5F5F8"}}>
+                <img src={nzxtLogo} alt="NZXT Logo" title="NZXT Logo" />
+                <h3>Better Together</h3>
+                <p>
+                Create the ultimate desk setup with our lineup; whether it is a 
+                Canvas Monitor, a Capsule Mic, a Function Keyboard, or any of our 
+                other great products, you can combine them to make
+                 for a customizable and cohesive desktop environment.
+                </p>
+                <div className="content-btn">
+                <Button variant="contained">Start Building</Button>
+                </div>
               </div>
-              <div className="col-lg-6">
+              </div>
+              <div className="item-thumbnail col-lg-8">
                 <img src={bgCenter} alt="Background Image" />
               </div>
             </div>
