@@ -156,11 +156,13 @@ const Product = () => {
                     help increase cooling.
                   </p>
                 </div>
+             <div className="image-center">
                 <img
                   className="background-img"
                   src={meetTheFlow}
                   alt="Card Image"
                 />
+                </div>
               </div>
               <div style={{ background: "#F1F5FE" }} className="card-full">
                 <div className="card-full-content text-white">
@@ -171,11 +173,13 @@ const Product = () => {
                     mount a GPU.
                   </p>
                 </div>
-                <img
+               <div className="image-center">
+               <img
                   className="background-img"
                   src={meetTheElite}
                   alt="Card Image"
                 />
+               </div>
               </div>
             </div>
           </div>
@@ -439,6 +443,7 @@ const Product = () => {
                 className="product__item mini"
                 style={{ backgroundImage: `url(${managementBG})` }}
               >
+                <div className="item-thumbnail">
                 <svg
                   width="1em"
                   height="1em"
@@ -449,6 +454,7 @@ const Product = () => {
                   <path d="M19.623 0a1 1 0 011 1v20.496a1 1 0 01-1 1h-5.301v-1.088h-4.77v1.088H4.5a1 1 0 01-1-1V1a1 1 0 011-1h15.123zm-.501 1.5H5v19.496h14.122V1.5z"></path>
                   <path d="M14.824 19.909a1 1 0 011 1V23a1 1 0 01-1 1h-5.77a1 1 0 01-1-1v-2.091a1 1 0 011-1h5.77zm-.501 1.499h-4.77v1.091h4.77v-1.091zm-1.717-10.16a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-3a1 1 0 011-1h3zm-.501 1.5h-2v2h2v-2zM6.657 4.831a1 1 0 100-2 1 1 0 000 2zm10.563 0a1 1 0 100-2 1 1 0 000 2zm0 15.078a1 1 0 100-2 1 1 0 000 2zm-10.563 0a1 1 0 100-2 1 1 0 000 2z"></path>
                 </svg>
+                </div>
                 <h3>SSD Hinge</h3>
                 <p>
                   The H9’s unique hinged door design offers easy access and
@@ -459,6 +465,7 @@ const Product = () => {
                 className="product__item mini"
                 style={{ backgroundImage: `url(${managementBG})` }}
               >
+                <div className="item-thumbnail">
                 <svg
                   width="1em"
                   height="1em"
@@ -469,6 +476,7 @@ const Product = () => {
                   <path d="M7.78 19.952l1.16.952-2.385 2.904H3.697L1.34 20.9l1.165-.944 1.906 2.351h1.433l1.936-2.355zm13.901 0l1.16.952-2.386 2.904h-2.857L15.242 20.9l1.165-.944 1.906 2.351h1.433l1.936-2.355z"></path>
                   <path d="M23 0a1 1 0 011 1v18.923a1 1 0 01-1 1H1a1 1 0 01-1-1V1a1 1 0 011-1h22zm-.5 1.5h-21v17.923h21V1.5z"></path>
                 </svg>
+                </div>
                 <h3>Dual-Chamber Layout</h3>
                 <p>
                   The dual-chamber layout allows for radiator and fan mounting
@@ -479,6 +487,7 @@ const Product = () => {
                 className="product__item mini"
                 style={{ backgroundImage: `url(${managementBG})` }}
               >
+                <div className="item-thumbnail">
                 <svg
                   width="1em"
                   height="1em"
@@ -488,6 +497,7 @@ const Product = () => {
                 >
                  <path d="M11.998 23.594a.75.75 0 01-.743-.648l-.007-.102-.001-3.261-2.234 2.264-.084.073a.75.75 0 01-1.055-1.043l.072-.084 3.3-3.344.001-2.157L9.466 14.2l-1.842 1.099-1.157 4.593a.75.75 0 01-1.472-.266l.018-.1.79-3.142-2.788 1.663a.75.75 0 01-.852-1.23l.084-.058 2.816-1.68-3.087-.835a.75.75 0 01.292-1.468l.1.02 4.488 1.214 1.865-1.112v-1.95L6.959 9.925 2.382 11.14A.75.75 0 011.9 9.723l.097-.033 3.13-.832-2.805-1.632a.75.75 0 01.663-1.342l.091.045 2.835 1.65-.767-3.106a.75.75 0 011.425-.456l.031.097 1.115 4.515 1.803 1.049 1.729-1.043V6.557L7.946 3.214a.75.75 0 01.983-1.127l.084.073 2.235 2.263V1.156a.75.75 0 01.648-.743l.102-.007h.004l.102.007a.75.75 0 01.648.743v3.267l2.235-2.263.084-.073a.75.75 0 01.983 1.127l-3.3 3.343-.001 2.078 1.73 1.043 1.802-1.05L17.4 4.115l.03-.097a.75.75 0 011.426.456l-.767 3.106 2.835-1.65.091-.045a.75.75 0 01.663 1.342l-2.806 1.632 3.131.832.097.033a.75.75 0 01-.482 1.417l-4.577-1.216-1.762 1.025v1.949l1.865 1.112 4.488-1.214.1-.02a.75.75 0 01.292 1.468l-3.087.835 2.816 1.68.084.058a.75.75 0 01-.852 1.23l-2.789-1.663.791 3.142.018.1a.75.75 0 01-1.472.266L16.376 15.3l-1.842-1.1-1.781 1.093v2.157l3.301 3.344.073.084a.75.75 0 01-1.056 1.043l-.084-.073-2.234-2.264v3.261l-.008.102a.75.75 0 01-.743.648h-.004zM12 9.933l-1.779 1.073v1.897L12 13.993l1.779-1.09v-1.897l-1.78-1.073z"></path>
                 </svg>
+                </div>
                 <h3>Cool Your Way</h3>
                 <p>
                   The H9 offers plenty of room for numerous radiator mounting
@@ -512,22 +522,26 @@ const Product = () => {
                   <h3>GPU Cooling</h3>
                   <p></p>
                 </div>
+           <div className="image-center">
                 <img
                   className="background-img"
                   src={airflowDiagram2}
                   alt="Card Image"
                 />
+                </div>
               </div>
               <div style={{ background: "#F1F5FE" }} className="card-full">
                 <div className="card-full-content text-white">
                   <h3>CPU Cooling</h3>
                   <p></p>
                 </div>
+           <div className="image-center">
                 <img
                   className="background-img"
                   src={airflowDiagram}
                   alt="Card Image"
                 />
+                </div>
               </div>
             </div>
           </div>
