@@ -260,7 +260,7 @@
   padding-top: 50px;
 }
 .center-index .title {
-  font-size: 48px;
+  font-size: 30px;
   font-family: "Gotham SSm", sans-serif;
   font-weight: bold;
   text-align: center;
@@ -269,7 +269,7 @@
   text-align: center;
   font-size: 16px;
   font-family: "Gotham SSm", sans-serif;
-  max-width: 46%;
+  max-width: 84%;
   margin: 0 auto;
   color: #737279;
 }
@@ -477,5 +477,77 @@
   .thumbnail-content .thumbnail-text p {
     text-align: center;
     display: block;
+  }
+  .product__thumbnail .product__text .title {
+    font-size: 24px !important;
+  }
+  .product__thumbnail .product__text .subtitle {
+    max-width: 73%;
+  }
+  .product__thumbnail .product-img {
+    margin-top: 0;
+  }
+  .product__thumbnail .product-img .main-img {
+    height: 402px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+  .center-index .card-full {
+    width: 100% !important;
+    height: 495px !important;
+  }
+  .center-index .card-full .card-full-content {
+    margin-bottom: -34px;
+  }
+  .center-index .card-full .card-full-content h3 {
+    text-align: center;
+    font-size: 24px !important;
+  }
+  .center-index .card-full .card-full-content p {
+    text-align: center;
+  }
+  .center-thumbnail h2 {
+    font-size: 30px;
+  }
+  .center-thumbnail p {
+    max-width: 89%;
+  }
+  .center-thumbnail .product__content .title {
+    text-align: left;
+    font-size: 24px !important;
+    max-width: 100% !important;
+  }
+  .center-thumbnail .product__content .subtitle {
+    max-width: 94% !important;
+    font-size: 16px !important;
+  }
+  .center-thumbnail .product__content .product__text {
+    padding-top: 25px !important;
+  }
+  .center-thumbnail .product__content .product-img {
+    height: 35vh !important;
+  }
+  .center-thumbnail .center-index.full {
+    flex-wrap: wrap;
+    padding: 10px 10px;
+  }
+  .center-thumbnail .center-index.mini {
+    flex-wrap: wrap;
+  }
+  .center-thumbnail .center-index.mini .product__item {
+    width: 100% !important;
+  }
+  .content-grid-block .item-index {
+    flex-wrap: wrap;
+  }
+  .content-grid-block .item-index .content-full {
+    padding: 40px 0 !important;
+    max-height: 100% !important;
+  }
+  .content-grid-block .item-index .content-full p {
+    max-width: 74%;
+    margin: 0 auto;
+    padding-bottom: 15px;
   }
 }/*# sourceMappingURL=product.css.map */
