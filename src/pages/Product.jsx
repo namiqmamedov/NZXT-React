@@ -428,7 +428,7 @@ const Product = () => {
                         srcset={cableManagement}
                       />
                       <img
-                        className="left-img"
+                        className="full-img"
                         src={cableManagement}
                         alt="Main Image"
                       />
@@ -644,7 +644,7 @@ const Product = () => {
           </div>
         </div>
       </div>
-      <div className="center-thumbnail">
+      <div className="center-thumbnail full">
         <div className="container">
           <div className="row">
             <div
