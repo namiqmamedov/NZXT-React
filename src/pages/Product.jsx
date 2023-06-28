@@ -22,6 +22,7 @@ import bgCenter from "../assets/images/thumbnail/bg-center.png";
 import nzxtLogo from "../assets/images/thumbnail/nzxtLogo.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import Button from "@mui/material/Button";
+// import products from '../data/products'
 import { Link } from "react-router-dom";
 
 const Product = () => {
@@ -56,7 +57,9 @@ const Product = () => {
                 </div>
               </div>
               <div className="col-lg-8">
-                <h1>hello</h1>
+                {/* {products.map((item,index) => (
+                  
+                ))} */}
               </div>
             </div>
           </div>
