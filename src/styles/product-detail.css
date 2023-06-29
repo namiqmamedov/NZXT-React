@@ -106,11 +106,29 @@
 }
 .product-item .product-index .product__content .product-mini-item .item-index {
   display: flex;
+  padding-left: 15px;
+}
+.product-item .product-index .product__content .product-mini-item .item-index .checkbox-index {
+  padding-right: 10px;
 }
 .product-item .product-index .product__content .product-mini-item .item-index .item-title {
   font-size: 16px;
   font-family: "Gotham SSm", sans-serif;
   font-weight: bold;
+  margin-bottom: 0;
+}
+.product-item .product-index .product__content .product-mini-item .item-index .item-price {
+  margin-top: auto;
+  width: 100%;
+  display: block;
+  text-align: end;
+}
+.product-item .product-index .product__content .product-mini-item .item-index .item-price span {
+  font-size: 14px;
+  font-family: "Gotham SSm", sans-serif;
+}
+.product-item .product-index .product__content .product-mini-item .item-index .item-content {
+  width: 55%;
 }
 .product-item .product-index .product__content .product-mini-item .item-index img {
   width: 18%;

@@ -12,6 +12,10 @@ import Form from 'react-bootstrap/Form';
 import miniProduct01 from '../assets/images/product/miniProduct01.png'
 import miniProduct02 from '../assets/images/product/miniProduct02.png'
 import miniProduct03 from '../assets/images/product/miniProduct03.png'
+import { Checkbox } from "@nextui-org/react";
+import Button from '@mui/material/Button';
+
+
 
 
 const ProductDetails = () => {
@@ -104,6 +108,8 @@ const ProductDetails = () => {
                 </Form.Select>
                 <div className="product-mini-item">
                     <div className="item-index">
+                    <Checkbox className="checkbox-index" color="secondary">
+                    </Checkbox>
                         <img src={miniProduct01} alt="Mini Product" />
                         <div className="item-content">
                         <p className="item-title">N7 Z690</p>
@@ -112,9 +118,15 @@ const ProductDetails = () => {
                             <p>Matte White</p>
                         </div>
                         </div>
-
+                        <div className="item-price">
+                          <span>
+                            $299.99
+                          </span>
+                        </div>
                     </div>
                     <div className="item-index">
+                    <Checkbox className="checkbox-index" color="secondary">
+                    </Checkbox>
                         <img src={miniProduct02} alt="Mini Product" />
                         <div className="item-content">
                         <p className="item-title">F120 RGB Triple Pack</p>
@@ -123,8 +135,15 @@ const ProductDetails = () => {
                             <p>Matte Black</p>
                         </div>
                         </div>
+                        <div className="item-price">
+                          <span>
+                            $89.99
+                          </span>
+                        </div>
                     </div>
                     <div className="item-index">
+                    <Checkbox className="checkbox-index" color="secondary">
+                    </Checkbox>
                         <img src={miniProduct03} alt="Mini Product" />
                         <div className="item-content">
                         <p className="item-title">C750 Gold</p>
@@ -133,8 +152,25 @@ const ProductDetails = () => {
                             <p>Matte Black</p>
                         </div>
                         </div>
+                        <div className="item-price">
+                          <span>
+                            $139.99
+                          </span>
+                        </div>
                     </div>
                 </div>
+                <div className="configure-item">
+                    <hr/>
+                    <span>
+                      Buy
+                    </span>
+                    <hr/>
+                </div>
+                <div className="buy-btn">
+                  <p className="notified-text">Get notified when this item is available.</p>
+                <Button variant="contained">Notify Me</Button>
+                </div>
+                <hr/>
               </div>
             </div>
           </div>

@@ -113,10 +113,29 @@
                 padding-top: 35px;
                 .item-index{
                     display: flex;
+                    padding-left: 15px;
+                    .checkbox-index{
+                        padding-right: 10px;
+                    }
                     .item-title{
                         font-size: 16px;
                         font-family: 'Gotham SSm',sans-serif;
                         font-weight: bold;
+                        margin-bottom: 0;
+                    }
+                    .item-price{
+                        margin-top: auto;
+                        width: 100%;
+                        display: block;
+                        text-align: end;
+
+                        span{
+                            font-size: 14px;
+                            font-family: 'Gotham SSm', sans-serif;
+                        }
+                    }
+                    .item-content{
+                        width: 55%;
                     }
                     img{
                         width: 18%;
