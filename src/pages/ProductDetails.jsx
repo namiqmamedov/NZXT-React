@@ -15,13 +15,16 @@ import miniProduct03 from '../assets/images/product/miniProduct03.png'
 import { Checkbox } from "@nextui-org/react";
 import Button from '@mui/material/Button';
 import nzxtSupport from '../assets/images/thumbnail/nzxtSupport.png'
+import buyTogether01 from '../assets/images/thumbnail/buyTogether01.png'
+import buyTogether02 from '../assets/images/thumbnail/buyTogether02.png'
+import buyTogether03 from '../assets/images/thumbnail/buyTogether03.png'
 
 
 
 const ProductDetails = () => {
   return (
     <>
-      <div className="breadcrumb-item">
+      <section className="breadcrumb-item">
         <div className="breadcrumb-index">
           <Link>H9 Series</Link>
           <svg
@@ -40,8 +43,8 @@ const ProductDetails = () => {
           </svg>
           <p>H9 Flow</p>
         </div>
-      </div>
-      <div className="product-item">
+      </section>
+      <section className="product-item">
         <div className="container">
           <div className="row">
             <div className="product-index">
@@ -162,7 +165,7 @@ const ProductDetails = () => {
                         </div>
                     </div>
                 </div>
-                <div className="configure-item">
+                <div className="buy-item">
                     <hr/>
                     <span>
                       Buy
@@ -202,7 +205,41 @@ const ProductDetails = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section className="buy-together-item">
+        <div className="container">
+          <div className="row">
+            <h2 className="title">Buy Together</h2>
+            <p className="subtitle">Take your build to the next level with expert recommended products</p>
+          <div className="buy-together-main">
+            <div className="buy-together-index">
+              <img src={buyTogether01} alt="Buy Together Item" />
+              <div className="item-context">
+              <h2>H9 Flow</h2>
+              <p>Dual-Chamber Mid-Tower Airflow Case</p>
+              <span>$159.99</span>
+              </div>
+            </div>
+            <div className="buy-together-index">
+              <img src={buyTogether02} alt="Buy Together Item" />
+              <div className="item-context">
+              <h2>Kraken X53</h2>
+              <p>240mm Liquid Cooler</p>
+              <span>$134.99</span>
+              </div>
+            </div>
+            <div className="buy-together-index">
+              <img src={buyTogether03} alt="Buy Together Item" />
+              <div className="item-context">
+              <h2>Internal USB Hub (Gen 3)</h2>
+              <p>Internal USB 2.0 Expansion Hub</p>
+              <span>$24.99</span>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

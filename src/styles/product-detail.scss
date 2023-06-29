@@ -34,6 +34,7 @@
 
         .product__content {
             width: 45%;
+
             .feedback-index {
                 padding-bottom: 10px;
 
@@ -72,7 +73,31 @@
                 padding-top: 15px;
 
                 hr {
-                    width: 34%;
+                    width: 41.8%;
+                    display: inline-block;
+                    margin: 0;
+                    padding-top: 3px;
+                }
+
+                .border-item {
+                    border-color: rgb(209 213 219);
+                    border-width: 1px;
+                    width: 100%;
+                    display: block;
+                }
+
+                span {
+                    text-align: center;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+
+            .buy-item {
+                padding-top: 15px;
+
+                hr {
+                    width: 45.8%;
                     display: inline-block;
                     margin: 0;
                     padding-top: 3px;
@@ -139,9 +164,11 @@
                     padding-bottom: 7px;
                     padding-top: 10px;
                     border-bottom: 1px solid #E9E8EF;
-                    &:last-child{
+
+                    &:last-child {
                         border: none;
                     }
+
                     .checkbox-index {
                         padding-right: 10px;
                     }
@@ -188,6 +215,7 @@
 
             .notify-btn {
                 text-align: center;
+                padding: 26px 0;
 
                 button {
                     width: 100%;
@@ -232,10 +260,12 @@
                 display: flex;
                 justify-content: space-between;
                 padding: 0 42px;
+                margin-bottom: 40px;
 
                 .support-img {
                     padding-top: 30px;
                     text-align: end;
+
                     img {
                         width: 149px;
                         height: 149px;
@@ -268,6 +298,51 @@
                         font-family: 'Gotham SSm', sans-serif;
                     }
                 }
+            }
+        }
+    }
+}
+
+.buy-together-item {
+    background: #EBEBF0;
+    padding: 50px 0;
+
+    .title {
+        font-size: 30px;
+        font-family: 'Gotham SSm', sans-serif;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        font-family: 'Gotham SSm', sans-serif;
+    }
+
+    .buy-together-main {
+        display: flex;
+
+        .buy-together-index {
+            display: flex;
+            gap: 1rem;
+            img {
+                width: 20%;
+            }
+
+            h2 {
+                font-size: 18px;
+                font-family: 'Gotham SSm', sans-serif;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 12px;
+                font-family: 'Gotham SSm', sans-serif;
+                color: #59595F;
+            }
+
+            span {
+                font-size: 12px;
+                font-family: 'Gotham SSm', sans-serif;
+                color: #737279;
             }
         }
     }
