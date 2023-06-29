@@ -1,3 +1,104 @@
-.index{
-    overflow: 0;
+.breadcrumb-item {
+    padding-left: 60px;
+
+    .breadcrumb-index {
+        display: flex;
+        gap: .3rem;
+        align-items: center;
+        padding: 17px 0;
+
+        a {
+            font-size: 14px;
+            color: #737279;
+            font-family: 'Gotham SSm', sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            font-family: 'Gotham SSm', sans-serif;
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+.product-item{
+    .product-index{
+        display: flex;
+        .product__content{
+            .feedback-index{
+                padding-bottom: 10px;
+                svg{
+                    color: hsl(267deg 83% 49%);
+                }
+            }
+            .title{
+                font-size: 36px;
+                font-weight: bold;
+                font-family: 'Gotham SSm',sans-serif;
+            }
+            .price{
+                font-size: 24px;
+                font-family: 'Gotham SSm',sans-serif;
+            }
+            .description{
+                font-size: 16px;
+                font-family: 'Gotham SSm',sans-serif;
+                margin-bottom: 5px;
+            }
+            .promo-text{
+                padding-top: 10px;
+                span{
+                    font-size: 16px;
+                font-family: 'Gotham SSm',sans-serif;
+                }
+            }
+            .configure-item{
+                padding-top: 15px;
+                hr{
+                    width: 34%;
+                    display: inline-block;
+                    margin: 0;
+                    padding-top: 3px;
+                }
+                .border-item{
+                    border-color: rgb(209 213 219);
+                border-width: 1px;
+                width: 100%;
+                display: block;
+                }
+                span{
+                    text-align: center;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+            .MuiFormGroup-root {
+                flex-direction: unset;
+            }
+            .seria-list{
+                display: flex;
+                gap: .6rem;
+                p{
+                    font-size: 14px;
+                    font-family: 'Gotham SSm',sans-serif;
+                }
+                a{
+                    color: #0645CB;
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-family: 'Gotham SSm',sans-serif;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
 }
