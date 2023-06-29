@@ -14,7 +14,7 @@ import miniProduct02 from '../assets/images/product/miniProduct02.png'
 import miniProduct03 from '../assets/images/product/miniProduct03.png'
 import { Checkbox } from "@nextui-org/react";
 import Button from '@mui/material/Button';
-
+import nzxtSupport from '../assets/images/thumbnail/nzxtSupport.png'
 
 
 
@@ -119,6 +119,7 @@ const ProductDetails = () => {
                         </div>
                         </div>
                         <div className="item-price">
+                          +
                           <span>
                             $299.99
                           </span>
@@ -136,6 +137,7 @@ const ProductDetails = () => {
                         </div>
                         </div>
                         <div className="item-price">
+                          +
                           <span>
                             $89.99
                           </span>
@@ -153,6 +155,7 @@ const ProductDetails = () => {
                         </div>
                         </div>
                         <div className="item-price">
+                          +
                           <span>
                             $139.99
                           </span>
@@ -166,11 +169,35 @@ const ProductDetails = () => {
                     </span>
                     <hr/>
                 </div>
-                <div className="buy-btn">
+                <div className="notify-btn">
                   <p className="notified-text">Get notified when this item is available.</p>
-                <Button variant="contained">Notify Me</Button>
+                  <Button variant="contained">Notify Me</Button>
                 </div>
                 <hr/>
+                <div className="order-text">
+                  <p>Return Policy: 
+                  <Link>
+                   NZXT Return Policy
+                  </Link>
+                  </p>
+                </div>
+                <div className="order-text">
+                  <p>Warranty  Policy: 
+                  <Link>
+                  NZXT Warranty
+                  </Link>
+                  </p>
+                </div>
+                <div className="support-module">
+                  <div className="support-content col-lg-6">
+                    <h2>Have questions?</h2>
+                    <p>Our experts are ready to help.</p>
+                    <Button variant="outlined">Chat Now</Button>
+                  </div>
+                  <div className="support-img col-lg-6">
+                    <img src={nzxtSupport} alt="Support Image" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

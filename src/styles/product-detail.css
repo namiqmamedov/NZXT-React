@@ -26,6 +26,9 @@
 .product-item .product-index {
   display: flex;
 }
+.product-item .product-index .product__content {
+  width: 45%;
+}
 .product-item .product-index .product__content .feedback-index {
   padding-bottom: 10px;
 }
@@ -107,6 +110,12 @@
 .product-item .product-index .product__content .product-mini-item .item-index {
   display: flex;
   padding-left: 15px;
+  padding-bottom: 7px;
+  padding-top: 10px;
+  border-bottom: 1px solid #E9E8EF;
+}
+.product-item .product-index .product__content .product-mini-item .item-index:last-child {
+  border: none;
 }
 .product-item .product-index .product__content .product-mini-item .item-index .checkbox-index {
   padding-right: 10px;
@@ -120,10 +129,12 @@
 .product-item .product-index .product__content .product-mini-item .item-index .item-price {
   margin-top: auto;
   width: 100%;
+  padding-right: 15px;
   display: block;
   text-align: end;
 }
 .product-item .product-index .product__content .product-mini-item .item-index .item-price span {
+  padding-left: 5px;
   font-size: 14px;
   font-family: "Gotham SSm", sans-serif;
 }
@@ -139,4 +150,73 @@
 .product-item .product-index .product__content .product-mini-item .item-index .color-index .color-wrapper {
   font-weight: bold;
   padding-right: 8px;
+}
+.product-item .product-index .product__content .notify-btn {
+  text-align: center;
+}
+.product-item .product-index .product__content .notify-btn button {
+  width: 100%;
+  text-transform: unset;
+  background-color: hsl(267, 83%, 49%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+  font-size: 16px;
+  font-family: "Gotham SSm", sans-serif;
+  padding: 10px 0;
+}
+.product-item .product-index .product__content .notify-btn button:hover {
+  background-color: hsl(266, 90%, 42%);
+  transform: scale(1.025);
+}
+.product-item .product-index .product__content .order-text {
+  display: flex;
+}
+.product-item .product-index .product__content .order-text a {
+  text-decoration: none;
+  padding-left: 6px;
+}
+.product-item .product-index .product__content .order-text a:hover {
+  text-decoration: underline;
+}
+.product-item .product-index .product__content .order-text p {
+  font-size: 12px;
+  font-family: "Gotham SSm", sans-serif;
+}
+.product-item .product-index .product__content .support-module {
+  background: #4087F7;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 42px;
+}
+.product-item .product-index .product__content .support-module .support-img {
+  padding-top: 30px;
+  text-align: end;
+}
+.product-item .product-index .product__content .support-module .support-img img {
+  width: 149px;
+  height: 149px;
+}
+.product-item .product-index .product__content .support-module .support-content {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.product-item .product-index .product__content .support-module .support-content h2 {
+  font-size: 16px;
+  font-family: "Gotham SSm", sans-serif;
+  color: white;
+}
+.product-item .product-index .product__content .support-module .support-content p {
+  font-size: 12px;
+  font-family: "Gotham SSm", sans-serif;
+  color: white;
+}
+.product-item .product-index .product__content .support-module .support-content button {
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  text-transform: unset;
+  font-size: 16px;
+  font-family: "Gotham SSm", sans-serif;
 }/*# sourceMappingURL=product-detail.css.map */
