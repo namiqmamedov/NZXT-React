@@ -76,6 +76,14 @@ header .main__nav .nav__end svg {
     display: none;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  header .main__nav {
+    padding: 10px 24px;
+  }
+  header .main__nav ul {
+    gap: 1.1rem;
+  }
+}
 @media only screen and (min-width: 1280px) {
   header .main__nav {
     padding: 10px 60px;

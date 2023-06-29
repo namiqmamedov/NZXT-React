@@ -46,7 +46,23 @@
 .product-list {
     .product-list-index {
         display: flex;
-        gap: 2rem;
+        .item-index{
+            position: sticky;
+            top: 50%;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 11;
+        }
+        .shop-bestseller{
+            padding: 0;
+            .shop-index{
+                padding: 0;
+            }
+            .shop-card{
+                width: 48.6%;
+             }
+        }
     }
 }
 
@@ -557,6 +573,23 @@
 
 @media screen and (max-width: 576px) {
 
+    .product-list{
+        .product-list-index{
+            flex-wrap: wrap;
+            .item-index{
+                padding-top: 40px;
+                padding-bottom: 30px;
+                text-align: center;
+                .subtitle{
+                    max-width: 60%;
+                    margin: 0 auto;
+                }
+            }
+            .shop-card{
+                width: 46.7% !important;
+            }
+        }
+    }
 
     .product-wrapper {
         max-height: 75vh;
@@ -734,6 +767,28 @@
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
+
+     .product-list{
+        .product-list-index{
+            flex-wrap: wrap;
+            .item-index{
+                padding-top: 40px;
+                padding-bottom: 30px;
+                text-align: center;
+                .subtitle{
+                    max-width: 60%;
+                    margin: 0 auto;
+                }
+            }
+            .shop-card{
+                width: 46.7% !important;
+            }
+            .shop-card{
+                padding-bottom: 40px;
+            }
+        }
+    }
+
     .product-wrapper {
         max-height: 75vh;
         height: 75vh;
@@ -912,6 +967,28 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+
+    .product-list{
+        .product-list-index{
+            flex-wrap: wrap;
+            .item-index{
+                padding-top: 40px;
+                padding-bottom: 30px;
+                text-align: center;
+                .subtitle{
+                    max-width: 60%;
+                    margin: 0 auto;
+                }
+            }
+            .shop-index{
+                padding-bottom: 80px !important;
+            }
+            .shop-card{
+                width: 48.7% !important;
+            }
+        }
+    }
+
     .product-wrapper {
         max-height: 75vh;
         height: 75vh;
@@ -964,7 +1041,7 @@
             .main-img{
                 height: 402px;
                 object-fit: cover;
-                width: 83%;
+                width: 63%;
             }
         }
     }
@@ -1090,6 +1167,51 @@
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .product-list{
+        .product-list-index{
+            padding-top: 80px;
+            padding-bottom: 80px;
+            .col-lg-8{
+                width: 64%;
+            }
+            .item-index{
+                padding-top: 40px;
+                padding-bottom: 30px;
+                text-align: center;
+                .title{
+                    font-weight: bold;
+                    font-size: 30px;
+                    padding-bottom: 15px;
+                    max-width: 82%;
+                    margin: 0 auto;
+                }
+                .subtitle{
+                    max-width: 93%;
+                    margin: 0 auto;
+                    font-size: 16px;
+                    font-family: 'Gotham SSm',sans-serif;
+                }
+            }
+            .shop-index{
+                justify-content: start !important;
+                flex-wrap: wrap !important;
+            
+            
+            }
+            .shop-bestseller{
+                padding: unset !important;
+            }
+            .shop-index{
+                padding: unset !important;
+            }
+            .shop-card{
+                padding: unset !important;
+                width: 46% !important;
+            }
+        }
+    }
+
     .product-wrapper {
         max-height: 75vh;
         height: 75vh;
@@ -1273,6 +1395,50 @@
 }
 
 @media screen and (min-width: 1200px) {
+
+    .product-list{
+        .product-list-index{
+            padding-top: 80px;
+            padding-bottom: 80px;
+            .item-index{
+                padding-top: 40px;
+                padding-bottom: 30px;
+                text-align: center;
+                padding-right: 50px;
+                .title{
+                    font-weight: bold;
+                    font-size: 30px;
+                    padding-bottom: 15px;
+                    max-width: 82%;
+                    margin: 0 auto;
+                }
+                .subtitle{
+                    max-width: 93%;
+                    margin: 0 auto;
+                    font-size: 16px;
+                    font-family: 'Gotham SSm',sans-serif;
+                }
+            }
+            .shop-index{
+                justify-content: start !important;
+                flex-wrap: wrap !important;
+            
+            
+            }
+            .shop-bestseller{
+                padding: unset !important;
+            }
+            .shop-index{
+                padding: unset !important;
+            }
+            .shop-card{
+                padding: unset !important;
+                 width: 48% !important;
+            }
+        }
+    }
+
+
     .product-wrapper {
         max-height: 75vh;
         height: 75vh;
@@ -1467,6 +1633,49 @@
 }
 
 @media screen and (min-width: 1540px) {
+
+    .product-list{
+        .product-list-index{
+            padding-top: 80px;
+            padding-bottom: 80px;
+            .item-index{
+                padding-top: 40px;
+                padding-bottom: 30px;
+                text-align: center;
+                padding-right: 50px;
+                .title{
+                    font-weight: bold;
+                    font-size: 30px;
+                    padding-bottom: 15px;
+                    max-width: 82%;
+                    margin: 0 auto;
+                }
+                .subtitle{
+                    max-width: 93%;
+                    margin: 0 auto;
+                    font-size: 16px;
+                    font-family: 'Gotham SSm',sans-serif;
+                }
+            }
+            .shop-index{
+                justify-content: start !important;
+                flex-wrap: wrap !important;
+            
+            
+            }
+            .shop-bestseller{
+                padding: unset !important;
+            }
+            .shop-index{
+                padding: unset !important;
+            }
+            .shop-card{
+                padding: unset !important;
+                width: 48.8% !important;
+            }
+        }
+    }
+
     .product-wrapper {
         max-height: 75vh;
         height: 75vh;
