@@ -9,6 +9,9 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import Form from 'react-bootstrap/Form';
+import miniProduct01 from '../assets/images/product/miniProduct01.png'
+import miniProduct02 from '../assets/images/product/miniProduct02.png'
+import miniProduct03 from '../assets/images/product/miniProduct03.png'
 
 
 const ProductDetails = () => {
@@ -95,12 +98,43 @@ const ProductDetails = () => {
                     <Link>
                     H9</Link>
                 </div>
-                <Form.Select aria-label="Default select example">
-                    <option>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                <Form.Select >
+                    <option value="1">H9 Flow</option>
+                    <option value="2">H9 Elite</option>
                 </Form.Select>
+                <div className="product-mini-item">
+                    <div className="item-index">
+                        <img src={miniProduct01} alt="Mini Product" />
+                        <div className="item-content">
+                        <p className="item-title">N7 Z690</p>
+                        <div className="color-index">
+                            <p className="color-wrapper">Color:</p>
+                            <p>Matte White</p>
+                        </div>
+                        </div>
+
+                    </div>
+                    <div className="item-index">
+                        <img src={miniProduct02} alt="Mini Product" />
+                        <div className="item-content">
+                        <p className="item-title">F120 RGB Triple Pack</p>
+                        <div className="color-index">
+                            <p className="color-wrapper">Color:</p>
+                            <p>Matte Black</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div className="item-index">
+                        <img src={miniProduct03} alt="Mini Product" />
+                        <div className="item-content">
+                        <p className="item-title">C750 Gold</p>
+                        <div className="color-index">
+                            <p className="color-wrapper">Color:</p>
+                            <p>Matte Black</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
               </div>
             </div>
           </div>
