@@ -1,5 +1,12 @@
 .breadcrumb-item {
+  position: sticky;
+  top: 14%;
+  left: 0;
+  bottom: 0;
+  z-index: 999999999999;
   padding-left: 60px;
+  border-bottom: 1px solid #dcdbe6;
+  background: white;
 }
 .breadcrumb-item .breadcrumb-index {
   display: flex;
@@ -247,6 +254,9 @@
   background: #EBEBF0;
   padding: 50px 0;
 }
+.buy-together-item .opacity-3 {
+  opacity: 0.3;
+}
 .buy-together-item .title {
   font-size: 30px;
   font-family: "Gotham SSm", sans-serif;
@@ -275,7 +285,7 @@
   top: auto;
   left: 9%;
   right: 0;
-  bottom: 20px;
+  bottom: -5px;
   width: 23%;
   text-align: center;
 }
@@ -295,7 +305,8 @@
   font-size: 12px;
   font-family: "Gotham SSm", sans-serif;
   color: #59595F;
-  max-width: 50%;
+  max-width: 60%;
+  text-align: center;
 }
 .buy-together-item .buy-together-main .buy-together-index span {
   font-size: 12px;
