@@ -102,6 +102,8 @@
     }
 
     .spec-main{
+        display: flex;
+        gap: 2.5rem;
         .spec-item{
             .spec-title{
                 text-transform: uppercase;

@@ -85,6 +85,10 @@
 .MuiTabPanel-root .content-grid-block .content-main .thumbnail-index img {
   width: 93%;
 }
+.MuiTabPanel-root .spec-main {
+  display: flex;
+  gap: 2.5rem;
+}
 .MuiTabPanel-root .spec-main .spec-item .spec-title {
   text-transform: uppercase;
 }
