@@ -5,4 +5,61 @@
   text-transform: unset !important;
   font-size: 18px;
   font-family: "Gotham SSm", sans-serif;
+}
+
+.MuiTabPanel-root .detail-index {
+  display: flex;
+  gap: 17rem;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dcdbe6;
+}
+.MuiTabPanel-root .detail-index h2 {
+  font-size: 20px;
+  font-family: "Gotham SSm", sans-serif;
+}
+.MuiTabPanel-root .detail-index p {
+  font-size: 16px;
+  font-family: "Gotham SSm", sans-serif;
+  padding-bottom: 10px;
+  color: #313235;
+}
+.MuiTabPanel-root .detail-index ul li {
+  font-size: 16px;
+  font-family: "Gotham SSm", sans-serif;
+  color: #313235;
+}
+.MuiTabPanel-root .detail-index ul li::marker {
+  color: #8a00fc;
+}
+.MuiTabPanel-root .inside-index {
+  display: flex;
+  gap: 13rem;
+  padding-top: 35px;
+}
+.MuiTabPanel-root .inside-index h2 {
+  font-size: 20px;
+  font-family: "Gotham SSm", sans-serif;
+}
+.MuiTabPanel-root .inside-index ul {
+  width: 100%;
+}
+.MuiTabPanel-root .inside-index ul li {
+  list-style: none;
+  border-bottom: 1px solid #dcdbe6;
+}
+.MuiTabPanel-root .inside-index ul li p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  padding: 6px 0;
+  font-size: 16px;
+  font-family: "Gotham SSm", sans-serif;
+  color: #1B1C1D;
+}
+.MuiTabPanel-root .content-grid-block {
+  background: #F5F5F8;
+}
+.MuiTabPanel-root .content-grid-block .content-main {
+  display: flex;
 }/*# sourceMappingURL=product-tab.css.map */
