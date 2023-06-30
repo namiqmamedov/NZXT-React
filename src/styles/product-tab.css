@@ -154,5 +154,78 @@
 }
 .MuiTabPanel-root .review-gallery {
   padding-top: 30px;
-  padding-bottom: 30px;
+}
+.MuiTabPanel-root .review-gallery .review-total {
+  padding-bottom: 25px;
+  display: block;
+}
+.MuiTabPanel-root .review-gallery .review-item {
+  width: 50%;
+  padding-bottom: 15px;
+  background: #F6F6F9;
+  border-radius: 8px;
+  padding: 14px 24px;
+  margin-bottom: 13px;
+}
+.MuiTabPanel-root .review-gallery .review-item .review-header {
+  display: flex;
+  justify-content: space-between;
+}
+.MuiTabPanel-root .review-gallery .review-item .review-header .user-name {
+  font-size: 12px;
+  font-family: "Gotham SSm", sans-serif;
+}
+.MuiTabPanel-root .review-gallery .review-item .review-header .review-date {
+  font-size: 12px;
+  font-family: "Gotham SSm", sans-serif;
+  color: #6C6A77;
+}
+.MuiTabPanel-root .review-gallery .review-item .star-index svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  color: hsl(267, 83%, 49%) !important;
+}
+.MuiTabPanel-root .review-gallery .review-item .context-title {
+  font-size: 14px;
+  font-family: "Gotham SSm", sans-serif;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 6px;
+}
+.MuiTabPanel-root .review-gallery .review-item .review-wrapper {
+  padding-bottom: 25px;
+  font-size: 14px;
+  font-family: "Gotham SSm", sans-serif;
+}
+.MuiTabPanel-root .review-gallery .review-item .review-image {
+  padding-bottom: 15px;
+}
+.MuiTabPanel-root .review-gallery .review-item .review-image img {
+  padding-right: 12px;
+  border-radius: 5px;
+}
+.MuiTabPanel-root .review-gallery .review-item .share svg {
+  margin-top: -1px;
+}
+.MuiTabPanel-root .review-gallery .review-item .share .label {
+  font-size: 14px;
+  font-family: "Gotham SSm", sans-serif;
+  color: #686774;
+  padding-left: 10px;
+}
+.MuiTabPanel-root .review-gallery .review-item .review-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.MuiTabPanel-root .review-gallery .review-item .review-footer .like-item {
+  display: flex;
+  gap: 1rem;
+}
+.MuiTabPanel-root .review-gallery .review-item .review-footer .like-item svg {
+  color: #686774;
+}
+.MuiTabPanel-root .review-gallery .review-item .review-footer .like-item .count {
+  color: #686774;
+  font-size: 13px;
+  font-family: "Gotham SSm", sans-serif;
 }/*# sourceMappingURL=product-tab.css.map */

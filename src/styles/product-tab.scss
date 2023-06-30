@@ -72,55 +72,65 @@
         }
     }
 
-    .content-grid-block{
+    .content-grid-block {
         background: #F5F5F8;
         margin-bottom: 20px;
-        .content-main{
+
+        .content-main {
             display: flex;
-            .content-block{
+
+            .content-block {
                 margin-top: auto;
                 margin-bottom: auto;
                 padding-left: 95px;
-                h3{
+
+                h3 {
                     font-size: 30px;
                     font-family: 'Gotham SSm', sans-serif;
                     font-weight: bold;
                 }
-                .description{
+
+                .description {
                     font-size: 18px;
                     font-family: 'Gotham SSm', sans-serif;
                     max-width: 83%;
                 }
             }
-            .thumbnail-index{
+
+            .thumbnail-index {
                 text-align: end;
-                img{
+
+                img {
                     width: 93%;
                 }
             }
         }
     }
 
-    .spec-main{
+    .spec-main {
         display: flex;
         gap: 2.5rem;
-        .spec-item{
-            .spec-title{
+
+        .spec-item {
+            .spec-title {
                 text-transform: uppercase;
-                
-                p{
+
+                p {
                     margin-bottom: 0;
                     padding: 10px 0;
                     border-bottom: 1px solid #dcdbe6;
                 }
             }
-            .spec-body{
+
+            .spec-body {
                 padding-top: 10px;
-                p{
+
+                p {
                     font-size: 16px;
                     font-family: 'Gotham SSm', sans-serif;
                 }
-                span{
+
+                span {
                     font-weight: bold;
                     font-size: 16px;
                     font-family: 'Gotham SSm', sans-serif;
@@ -130,23 +140,27 @@
         }
     }
 
-    .review-index{
+    .review-index {
         padding-bottom: 36px;
-        .review-count{
+
+        .review-count {
             display: flex;
             gap: .5rem;
             align-items: center;
-            .review-rating{
+
+            .review-rating {
                 font-size: 42px;
-                font-family: 'Gotham SSm',sans-serif;
+                font-family: 'Gotham SSm', sans-serif;
                 font-weight: bold;
             }
-            .review-total{
+
+            .review-total {
                 font-size: 14px;
-                font-family: 'Gotham SSm',sans-serif;
+                font-family: 'Gotham SSm', sans-serif;
             }
-            .star-index{
-                svg{
+
+            .star-index {
+                svg {
                     width: 1.5rem;
                     height: 1.5rem;
                 }
@@ -154,30 +168,126 @@
         }
     }
 
-    .review-filter{
+    .review-filter {
         border-bottom: 1px solid black;
         padding-bottom: 30px;
-        .title{
+
+        .title {
             font-size: 14px;
-            font-family: 'Gotham SSm',sans-serif;
+            font-family: 'Gotham SSm', sans-serif;
             padding-bottom: 12px;
         }
-        .filter-index{
+
+        .filter-index {
             display: flex;
             gap: 1.2rem;
-            .form-select{
+
+            .form-select {
                 width: 18%;
-                option{
+
+                option {
                     font-size: 16px;
-                font-family: 'Gotham SSm',sans-serif;
-                color: #A1998D;
+                    font-family: 'Gotham SSm', sans-serif;
+                    color: #A1998D;
                 }
             }
         }
     }
 
-    .review-gallery{
+    .review-gallery {
         padding-top: 30px;
-        padding-bottom: 30px;
+
+        .review-total {
+            padding-bottom: 25px;
+            display: block;
+        }
+
+        .review-item {
+            width: 50%;
+            padding-bottom: 15px;
+            background: #F6F6F9;
+            border-radius: 8px;
+            padding: 14px 24px;
+            margin-bottom: 13px;
+
+            .review-header {
+                display: flex;
+                justify-content: space-between;
+
+                .user-name {
+                    font-size: 12px;
+                    font-family: 'Gotham SSm', sans-serif;
+                }
+
+                .review-date {
+                    font-size: 12px;
+                    font-family: 'Gotham SSm', sans-serif;
+                    color: #6C6A77;
+                }
+            }
+
+            .star-index{
+                svg{
+                    width: 1.15rem;
+                    height: 1.15rem;
+                    color: hsl(267deg 83% 49%) !important;
+                }
+            }
+
+            .context-title {
+                font-size: 14px;
+                font-family: 'Gotham SSm', sans-serif;
+                font-weight: bold;
+                padding-top: 10px;
+                padding-bottom: 6px;
+            }
+
+            .review-wrapper {
+                padding-bottom: 25px;
+                font-size: 14px;
+                font-family: 'Gotham SSm', sans-serif;
+            }
+
+            .review-image {
+                img {
+                    padding-right: 12px;
+                    border-radius: 5px;
+                }
+
+                padding-bottom: 15px;
+            }
+
+            .share {
+                svg {
+                    margin-top: -1px;
+                }
+
+                .label {
+                    font-size: 14px;
+                    font-family: 'Gotham SSm', sans-serif;
+                    color: #686774;
+                    padding-left: 10px;
+                }
+            }
+
+            .review-footer {
+                display: flex;
+                justify-content: space-between;
+
+                .like-item {
+                    display: flex;
+                    gap: 1rem;
+
+                    svg{
+                        color: #686774;
+                    }
+                    .count{
+                        color: #686774;
+                        font-size: 13px;
+                        font-family: 'Gotham SSm', sans-serif;
+                    }
+                }
+            }
+        }
     }
 }
