@@ -17,7 +17,7 @@ import Button from '@mui/material/Button';
 import nzxtSupport from '../assets/images/thumbnail/nzxtSupport.png'
 import BuyTogether from "../components/UI/BuyTogether";
 import ProductTab from "../components/UI/ProductTab";
-
+import '../styles/product-detail.css'
 
 
 const ProductDetails = () => {
