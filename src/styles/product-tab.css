@@ -59,7 +59,50 @@
 }
 .MuiTabPanel-root .content-grid-block {
   background: #F5F5F8;
+  margin-bottom: 20px;
 }
 .MuiTabPanel-root .content-grid-block .content-main {
   display: flex;
+}
+.MuiTabPanel-root .content-grid-block .content-main .content-block {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 95px;
+}
+.MuiTabPanel-root .content-grid-block .content-main .content-block h3 {
+  font-size: 30px;
+  font-family: "Gotham SSm", sans-serif;
+  font-weight: bold;
+}
+.MuiTabPanel-root .content-grid-block .content-main .content-block .description {
+  font-size: 18px;
+  font-family: "Gotham SSm", sans-serif;
+  max-width: 83%;
+}
+.MuiTabPanel-root .content-grid-block .content-main .thumbnail-index {
+  text-align: end;
+}
+.MuiTabPanel-root .content-grid-block .content-main .thumbnail-index img {
+  width: 93%;
+}
+.MuiTabPanel-root .spec-main .spec-item .spec-title {
+  text-transform: uppercase;
+}
+.MuiTabPanel-root .spec-main .spec-item .spec-title p {
+  margin-bottom: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #dcdbe6;
+}
+.MuiTabPanel-root .spec-main .spec-item .spec-body {
+  padding-top: 10px;
+}
+.MuiTabPanel-root .spec-main .spec-item .spec-body p {
+  font-size: 16px;
+  font-family: "Gotham SSm", sans-serif;
+}
+.MuiTabPanel-root .spec-main .spec-item .spec-body span {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Gotham SSm", sans-serif;
+  padding-right: 7px;
 }/*# sourceMappingURL=product-tab.css.map */

@@ -74,8 +74,57 @@
 
     .content-grid-block{
         background: #F5F5F8;
+        margin-bottom: 20px;
         .content-main{
             display: flex;
+            .content-block{
+                margin-top: auto;
+                margin-bottom: auto;
+                padding-left: 95px;
+                h3{
+                    font-size: 30px;
+                    font-family: 'Gotham SSm', sans-serif;
+                    font-weight: bold;
+                }
+                .description{
+                    font-size: 18px;
+                    font-family: 'Gotham SSm', sans-serif;
+                    max-width: 83%;
+                }
+            }
+            .thumbnail-index{
+                text-align: end;
+                img{
+                    width: 93%;
+                }
+            }
+        }
+    }
+
+    .spec-main{
+        .spec-item{
+            .spec-title{
+                text-transform: uppercase;
+                
+                p{
+                    margin-bottom: 0;
+                    padding: 10px 0;
+                    border-bottom: 1px solid #dcdbe6;
+                }
+            }
+            .spec-body{
+                padding-top: 10px;
+                p{
+                    font-size: 16px;
+                    font-family: 'Gotham SSm', sans-serif;
+                }
+                span{
+                    font-weight: bold;
+                    font-size: 16px;
+                    font-family: 'Gotham SSm', sans-serif;
+                    padding-right: 7px;
+                }
+            }
         }
     }
 }

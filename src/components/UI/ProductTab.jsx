@@ -97,19 +97,61 @@ const ProductTab = () => {
                 </div>
                 <div className="content-grid-block">
                     <div className="content-main">
-                        <div className="content-block">
+                        <div className="content-block col-lg-6">
                             <h3>GPU Capacity</h3>
                             <div className="description">
                             The H9 Flow has 435mm of GPU clearance, offering room for the latest NVIDIA 40 Series and AMD 7000 Series cards.
                             </div>
                         </div>
-                        <div className="thumbnail-index">
+                        <div className="thumbnail-index col-lg-6">
                                 <img src={h9GpuCompatibility} alt="Image Card" />
                         </div>
                     </div>
                 </div>
+                <div className="content-grid-block">
+                    <div className="content-main">
+                        <div className="content-block col-lg-6 order-1">
+                            <h3>Fan Capacity</h3>
+                            <div className="description">
+                            The H9 Flow has room for 10 fans. With the capacity for 3x120mm fans on the side, 3 x 120mm or 2x140mm on the top and bottom, and 1 x120mm on the rear.
+                            </div>
+                        </div>
+                        <div className="thumbnail-index col-lg-6">
+                                <img src={h9FanCompatibility} alt="Image Card" />
+                        </div>
+                    </div>
+                </div>
+                <div className="content-grid-block">
+                    <div className="content-main">
+                        <div className="content-block col-lg-6">
+                            <h3>Radiator Capacity</h3>
+                            <div className="description">
+                            The H9 Flow has room for up to a 360mm radiator on the top, bottom, or side, and up to a 120mm radiator on the rear.
+                            </div>
+                        </div>
+                        <div className="thumbnail-index col-lg-6">
+                                <img src={h9RadiatorCompatibility} alt="Image Card" />
+                        </div>
+                    </div>
+                </div>
               </TabPanel>
-              <TabPanel value="2">Tech Specs</TabPanel>
+              <TabPanel value="2">
+                <div className="spec-main">
+                    <div className="spec-item">
+                        <div className="spec-title">
+                            <p>Key Specs</p>
+                        </div>
+                        <div className="spec-body">
+                            <p>
+                                <span>
+                                Motherboard Support:
+                                </span>
+                                Mini-ITX, Micro-ATX, ATX 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </TabPanel>
               <TabPanel value="3">Reviews</TabPanel>
               <TabPanel value="4">Resources</TabPanel>
             </TabContext>
