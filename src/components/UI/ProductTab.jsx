@@ -8,6 +8,11 @@ import "../../styles/product-tab.css";
 import h9GpuCompatibility from "../../assets/images/thumbnail/h9-gpu-compatibility.png";
 import h9FanCompatibility from "../../assets/images/thumbnail/h9-fan-compatibility.png";
 import h9RadiatorCompatibility from "../../assets/images/thumbnail/h9-radiator-compatibility.png";
+import {AiFillStar} from 'react-icons/ai'
+import {BsStarHalf} from 'react-icons/bs'
+import Form from 'react-bootstrap/Form';
+
+
 
 const ProductTab = () => {
   const [value, setValue] = React.useState("1");
@@ -397,7 +402,46 @@ const ProductTab = () => {
                   </div>
                 </div>
               </TabPanel>
-              <TabPanel value="3">Reviews</TabPanel>
+              <TabPanel value="3">
+                <div className="review-index">
+                  <div className="review-count">
+                    <span className="review-rating">4.5</span>
+                    <div className="star-index">
+                      <AiFillStar/>
+                      <AiFillStar/>
+                      <AiFillStar/>
+                      <AiFillStar/>
+                      <BsStarHalf/>
+                    </div>
+                    <span className="review-total">
+                      11 Reviews
+                    </span>
+                  </div>
+                </div>
+                <div className="review-filter">
+                  <div className="title">Filter Reviews</div>
+                    <div className="filter-index">
+                    <Form.Select>
+                    <option>Rating</option>
+                        <option value="1">H9 Flow</option>
+                        <option value="2">H9 Elite</option>
+                    </Form.Select>
+                    <Form.Select>
+                    <option>Images & Videos </option>
+                        <option value="1">H9 Flow</option>
+                        <option value="2">H9 Elite</option>
+                    </Form.Select>
+                    </div>
+                </div>
+                <div className="review-gallery">
+                <span className="review-total">
+                      11 Reviews
+                </span>
+                <div className="review-item">
+                  <span>maxim t.</span>
+                </div>
+                </div>
+              </TabPanel>
               <TabPanel value="4">Resources</TabPanel>
             </TabContext>
           </Box>

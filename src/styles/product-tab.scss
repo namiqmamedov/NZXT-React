@@ -129,4 +129,55 @@
             }
         }
     }
+
+    .review-index{
+        padding-bottom: 36px;
+        .review-count{
+            display: flex;
+            gap: .5rem;
+            align-items: center;
+            .review-rating{
+                font-size: 42px;
+                font-family: 'Gotham SSm',sans-serif;
+                font-weight: bold;
+            }
+            .review-total{
+                font-size: 14px;
+                font-family: 'Gotham SSm',sans-serif;
+            }
+            .star-index{
+                svg{
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .review-filter{
+        border-bottom: 1px solid black;
+        padding-bottom: 30px;
+        .title{
+            font-size: 14px;
+            font-family: 'Gotham SSm',sans-serif;
+            padding-bottom: 12px;
+        }
+        .filter-index{
+            display: flex;
+            gap: 1.2rem;
+            .form-select{
+                width: 18%;
+                option{
+                    font-size: 16px;
+                font-family: 'Gotham SSm',sans-serif;
+                color: #A1998D;
+                }
+            }
+        }
+    }
+
+    .review-gallery{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }

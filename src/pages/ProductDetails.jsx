@@ -106,7 +106,7 @@ const ProductDetails = () => {
                     <Link>
                     H9</Link>
                 </div>
-                <Form.Select >
+                <Form.Select>
                     <option value="1">H9 Flow</option>
                     <option value="2">H9 Elite</option>
                 </Form.Select>

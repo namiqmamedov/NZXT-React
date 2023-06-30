@@ -109,4 +109,50 @@
   font-size: 16px;
   font-family: "Gotham SSm", sans-serif;
   padding-right: 7px;
+}
+.MuiTabPanel-root .review-index {
+  padding-bottom: 36px;
+}
+.MuiTabPanel-root .review-index .review-count {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.MuiTabPanel-root .review-index .review-count .review-rating {
+  font-size: 42px;
+  font-family: "Gotham SSm", sans-serif;
+  font-weight: bold;
+}
+.MuiTabPanel-root .review-index .review-count .review-total {
+  font-size: 14px;
+  font-family: "Gotham SSm", sans-serif;
+}
+.MuiTabPanel-root .review-index .review-count .star-index svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.MuiTabPanel-root .review-filter {
+  border-bottom: 1px solid black;
+  padding-bottom: 30px;
+}
+.MuiTabPanel-root .review-filter .title {
+  font-size: 14px;
+  font-family: "Gotham SSm", sans-serif;
+  padding-bottom: 12px;
+}
+.MuiTabPanel-root .review-filter .filter-index {
+  display: flex;
+  gap: 1.2rem;
+}
+.MuiTabPanel-root .review-filter .filter-index .form-select {
+  width: 18%;
+}
+.MuiTabPanel-root .review-filter .filter-index .form-select option {
+  font-size: 16px;
+  font-family: "Gotham SSm", sans-serif;
+  color: #A1998D;
+}
+.MuiTabPanel-root .review-gallery {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }/*# sourceMappingURL=product-tab.css.map */
