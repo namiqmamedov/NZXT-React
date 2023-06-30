@@ -212,15 +212,18 @@ const ProductDetails = () => {
             <h2 className="title">Buy Together</h2>
             <p className="subtitle">Take your build to the next level with expert recommended products</p>
           <div className="buy-together-main">
-            <div className="buy-together-index">
+            <div className="buy-together-index col-lg-3">
               <img src={buyTogether01} alt="Buy Together Item" />
+              <div className="sold-out">
+                <p>Sold Out</p>
+              </div>
               <div className="item-context">
               <h2>H9 Flow</h2>
               <p>Dual-Chamber Mid-Tower Airflow Case</p>
               <span>$159.99</span>
               </div>
             </div>
-            <div className="buy-together-index">
+            <div className="buy-together-index col-lg-3">
               <img src={buyTogether02} alt="Buy Together Item" />
               <div className="item-context">
               <h2>Kraken X53</h2>
@@ -228,13 +231,22 @@ const ProductDetails = () => {
               <span>$134.99</span>
               </div>
             </div>
-            <div className="buy-together-index">
+            <div className="buy-together-index col-lg-3">
               <img src={buyTogether03} alt="Buy Together Item" />
               <div className="item-context">
               <h2>Internal USB Hub (Gen 3)</h2>
               <p>Internal USB 2.0 Expansion Hub</p>
               <span>$24.99</span>
               </div>
+            </div>
+            <div className="total-price col-lg-3">
+              <div className="price-index">
+                <p className="total">Total:</p>
+                <p className="price">$24.99</p>
+              </div>
+                  <div className="addToCartBtn">
+                    <Button variant="contained">Add To Cart</Button>
+                  </div>
             </div>
           </div>
           </div>

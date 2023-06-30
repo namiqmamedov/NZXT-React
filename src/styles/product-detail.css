@@ -257,13 +257,34 @@
 }
 .buy-together-item .buy-together-main {
   display: flex;
+  padding-top: 20px;
 }
 .buy-together-item .buy-together-main .buy-together-index {
   display: flex;
   gap: 1rem;
+  width: 25%;
+  position: relative;
 }
 .buy-together-item .buy-together-main .buy-together-index img {
-  width: 20%;
+  width: 40%;
+  height: 116px;
+}
+.buy-together-item .buy-together-main .buy-together-index .sold-out {
+  border: 1px solid #000000;
+  position: absolute;
+  top: auto;
+  left: 9%;
+  right: 0;
+  bottom: 20px;
+  width: 23%;
+  text-align: center;
+}
+.buy-together-item .buy-together-main .buy-together-index .sold-out p {
+  font-size: 12px;
+  font-family: "Gotham SSm", sans-serif;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding: 3px 5px;
 }
 .buy-together-item .buy-together-main .buy-together-index h2 {
   font-size: 18px;
@@ -274,9 +295,45 @@
   font-size: 12px;
   font-family: "Gotham SSm", sans-serif;
   color: #59595F;
+  max-width: 50%;
 }
 .buy-together-item .buy-together-main .buy-together-index span {
   font-size: 12px;
   font-family: "Gotham SSm", sans-serif;
   color: #737279;
+}
+.buy-together-item .buy-together-main .total-price {
+  padding-left: 40px;
+}
+.buy-together-item .buy-together-main .total-price .price-index {
+  display: flex;
+  justify-content: space-between;
+}
+.buy-together-item .buy-together-main .total-price .total {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Gotham SSm", sans-serif;
+}
+.buy-together-item .buy-together-main .total-price .price {
+  font-size: 18px;
+  font-family: "Gotham SSm", sans-serif;
+}
+.buy-together-item .buy-together-main .total-price .addToCartBtn {
+  width: 100%;
+  display: block;
+}
+.buy-together-item .buy-together-main .total-price .addToCartBtn button {
+  width: 100%;
+  text-transform: unset;
+  background-color: hsl(267, 83%, 49%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+  font-size: 16px;
+  font-family: "Gotham SSm", sans-serif;
+  padding: 9px 0;
+}
+.buy-together-item .buy-together-main .total-price .addToCartBtn button:hover {
+  background-color: hsl(266, 90%, 42%);
+  transform: scale(1.025);
 }/*# sourceMappingURL=product-detail.css.map */
