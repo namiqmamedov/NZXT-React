@@ -5,6 +5,7 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import "../../styles/product-tab.css";
+import { Link } from "react-router-dom";
 import h9GpuCompatibility from "../../assets/images/thumbnail/h9-gpu-compatibility.png";
 import h9FanCompatibility from "../../assets/images/thumbnail/h9-fan-compatibility.png";
 import h9RadiatorCompatibility from "../../assets/images/thumbnail/h9-radiator-compatibility.png";
@@ -15,14 +16,15 @@ import Form from "react-bootstrap/Form";
 import { ImShare } from "react-icons/im";
 import { AiFillLike } from "react-icons/ai";
 import { AiFillDislike } from "react-icons/ai";
-import feedbackImage01 from '../../assets/images/thumbnail/feedbackImage01.jpg'
-import feedbackImage02 from '../../assets/images/thumbnail/feedbackImage02.jpg'
-import feedbackImage03 from '../../assets/images/thumbnail/feedbackImage03.jpg'
-import feedbackImage04 from '../../assets/images/thumbnail/feedbackImage04.jpg'
-import feedbackImage05 from '../../assets/images/thumbnail/feedbackImage05.jpg'
-import feedbackImage06 from '../../assets/images/thumbnail/feedbackImage06.jpg'
+import feedbackImage01 from "../../assets/images/thumbnail/feedbackImage01.jpg";
+import feedbackImage02 from "../../assets/images/thumbnail/feedbackImage02.jpg";
+import feedbackImage03 from "../../assets/images/thumbnail/feedbackImage03.jpg";
+import feedbackImage04 from "../../assets/images/thumbnail/feedbackImage04.jpg";
+import feedbackImage05 from "../../assets/images/thumbnail/feedbackImage05.jpg";
+import feedbackImage06 from "../../assets/images/thumbnail/feedbackImage06.jpg";
 import ReactReadMoreReadLess from "react-read-more-read-less";
-import {IoIosArrowForward} from 'react-icons/io'
+import Pagination from "@mui/material/Pagination";
+import Stack from "@mui/material/Stack";
 
 const longText =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum venenatis pulvinar. Proin vitae lectus urna. Sed erat ipsum, maximus a elit nec, condimentum placerat ex. Ut tincidunt mi eget condimentum mollis. Pellentesque aliquam velit quis est varius, sed molestie dolor ultrices. Pellentesque eget dapibus eros, at blandit arcu. Duis id purus quis mi porttitor viverra vel tempus elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos posuere";
@@ -32,6 +34,11 @@ const ProductTab = () => {
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
+  };
+
+  const [page, setPage] = React.useState(1);
+  const handleChangeNav = (event, value) => {
+    setPage(value);
   };
 
   return (
@@ -416,7 +423,7 @@ const ProductTab = () => {
                       <AiFillStar />
                       <AiFillStar />
                       <AiFillStar />
-                      <TbStarHalfFilled  className="filled"/>
+                      <TbStarHalfFilled className="filled" />
                     </div>
                     <span className="review-total">11 Reviews</span>
                   </div>
@@ -439,408 +446,792 @@ const ProductTab = () => {
                 <div className="review-gallery">
                   <span className="review-total">11 Reviews</span>
                   <div className="review-main">
-                  <div className="review-item">
-                    <div className="review-header">
-                      <span className="user-name">jahmensky l.</span>
-                      <span className="review-date">
-                      03/20/23
-                      </span>
-                    </div>
-                    <div className="star-index">
-                      <AiFillStar />
-                      <AiFillStar />
-                      <AiFillStar />
-                      <AiFillStar />
-                      <AiOutlineStar />
-                    </div>
-                    <div className="context-title">
-                    Best case in the market
-                    </div>
-                    <div className="review-wrapper">
-                    Best case in the market !! Inspired by the lian li but better made.
-                    </div>
-                    <div className="review-image">
-                      <img src={feedbackImage01} alt="Feedback Image" />
-                      <img src={feedbackImage02} alt="Feedback Image" />
-                      <img src={feedbackImage03} alt="Feedback Image" />
-                    </div>
-                    <div className="review-footer">
-                      <div className="share">
-                        <ImShare />
-                        <span className="label">Share</span>
+                    <div className="review-item">
+                      <div className="review-header">
+                        <span className="user-name">jahmensky l.</span>
+                        <span className="review-date">03/20/23</span>
                       </div>
-                      <div className="like-item">
-                        <div className="like-sum">
-                          <AiFillLike />
-                          <span className="count">3</span>
-                        </div>
-                        <div className="dislike-sum">
-                          <AiFillDislike />
-                          <span className="count">0</span>
-                        </div>
+                      <div className="star-index">
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiOutlineStar />
                       </div>
-                    </div>
-                  </div>
-                  <div className="review-item">
-                  <div className="review-header">
-                    <span className="user-name">Sébastien M.</span>
-                      <span className="review-date">
-                      03/20/23
-                      </span>
-                    </div>
-                    <div className="star-index">
-                      <AiFillStar />
-                      <AiFillStar />
-                      <AiFillStar />
-                      <AiFillStar />
-                      <AiFillStar />
-                    </div>
-                    <div className="context-title">
-                    The look of that case
-                    </div>
-                    <div className="review-wrapper">
-                      
-                      <ReactReadMoreReadLess
-                        charLimit={200}
-                        readMoreText={"Read more ▼"}
-                        readLessText={"Read less ▲"}
-                        readMoreClassName="read-more-less--more"
-                        readLessClassName="read-more-less--less"
-                    >
-                       The look of that case is incredible! Also the quality of product is very good.
-                    </ReactReadMoreReadLess>
-                    </div>
-                    <div className="review-image">
-                    </div>
-                    <div className="review-footer">
-                      <div className="share">
-                        <ImShare />
-                        <span className="label">Share</span>
+                      <div className="context-title">
+                        Best case in the market
                       </div>
-                      <div className="like-item">
-                        <div className="like-sum">
-                          <AiFillLike />
-                          <span className="count">0</span>
+                      <div className="review-wrapper">
+                        Best case in the market !! Inspired by the lian li but
+                        better made.
+                      </div>
+                      <div className="review-image">
+                        <img src={feedbackImage01} alt="Feedback Image" />
+                        <img src={feedbackImage02} alt="Feedback Image" />
+                        <img src={feedbackImage03} alt="Feedback Image" />
+                      </div>
+                      <div className="review-footer">
+                        <div className="share">
+                          <ImShare />
+                          <span className="label">Share</span>
                         </div>
-                        <div className="dislike-sum">
-                          <AiFillDislike />
-                          <span className="count">0</span>
+                        <div className="like-item">
+                          <div className="like-sum">
+                            <AiFillLike />
+                            <span className="count">3</span>
+                          </div>
+                          <div className="dislike-sum">
+                            <AiFillDislike />
+                            <span className="count">0</span>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="review-item">
-                  <div className="review-header">
-                  <span className="user-name">Mark W.</span>
-                      <span className="review-date">
-                      03/20/23
-                      </span>
+                    <div className="review-item">
+                      <div className="review-header">
+                        <span className="user-name">Sébastien M.</span>
+                        <span className="review-date">03/20/23</span>
+                      </div>
+                      <div className="star-index">
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                      </div>
+                      <div className="context-title">The look of that case</div>
+                      <div className="review-wrapper">
+                        <ReactReadMoreReadLess
+                          charLimit={200}
+                          readMoreText={"Read more ▼"}
+                          readLessText={"Read less ▲"}
+                          readMoreClassName="read-more-less--more"
+                          readLessClassName="read-more-less--less"
+                        >
+                          The look of that case is incredible! Also the quality
+                          of product is very good.
+                        </ReactReadMoreReadLess>
+                      </div>
+                      <div className="review-image"></div>
+                      <div className="review-footer">
+                        <div className="share">
+                          <ImShare />
+                          <span className="label">Share</span>
+                        </div>
+                        <div className="like-item">
+                          <div className="like-sum">
+                            <AiFillLike />
+                            <span className="count">0</span>
+                          </div>
+                          <div className="dislike-sum">
+                            <AiFillDislike />
+                            <span className="count">0</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div className="star-index">
-                      <AiFillStar />
-                      <AiFillStar />
-                      <AiOutlineStar/>
-                      <AiOutlineStar/>
-                      <AiOutlineStar/>
-                    </div>
-                    <div className="context-title">
+                    <div className="review-item">
+                      <div className="review-header">
+                        <span className="user-name">Mark W.</span>
+                        <span className="review-date">03/20/23</span>
+                      </div>
+                      <div className="star-index">
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiOutlineStar />
+                        <AiOutlineStar />
+                        <AiOutlineStar />
+                      </div>
+                      <div className="context-title">
                         Bought the case and some
-                    </div>
-                    <div className="review-wrapper">
-                      
-                      <ReactReadMoreReadLess
-                        charLimit={200}
-                        readMoreText={"Read more ▼"}
-                        readLessText={"Read less ▲"}
-                        readMoreClassName="read-more-less--more"
-                        readLessClassName="read-more-less--less"
-                    >
-                      Bought the case and some of the legs came broken, asked to get it fixed and it’s been almost a month and still really haven’t heard anything. The case is proper up using square foam pads.
-                    </ReactReadMoreReadLess>
-                    </div>
-                    <div className="review-footer">
-                      <div className="share">
-                        <ImShare />
-                        <span className="label">Share</span>
                       </div>
-                      <div className="like-item">
-                        <div className="like-sum">
-                          <AiFillLike />
-                          <span className="count">0</span>
-                        </div>
-                        <div className="dislike-sum">
-                          <AiFillDislike />
-                          <span className="count">0</span>
-                        </div>
+                      <div className="review-wrapper">
+                        <ReactReadMoreReadLess
+                          charLimit={200}
+                          readMoreText={"Read more ▼"}
+                          readLessText={"Read less ▲"}
+                          readMoreClassName="read-more-less--more"
+                          readLessClassName="read-more-less--less"
+                        >
+                          Bought the case and some of the legs came broken,
+                          asked to get it fixed and it’s been almost a month and
+                          still really haven’t heard anything. The case is
+                          proper up using square foam pads.
+                        </ReactReadMoreReadLess>
                       </div>
-                    </div>
-                  </div>
-                  <div className="review-item">
-                  <div className="review-header">
-                  <span className="user-name">Trevor M.</span>
-                      <span className="review-date">
-                      03/20/23
-                      </span>
-                    </div>
-                    <div className="star-index">
-                      <AiFillStar />
-                      <AiFillStar />
-                      <AiFillStar />
-                      <AiFillStar />
-                      <AiFillStar />
-                    </div>
-                    <div className="context-title">
-                    Case is quality built great
-                    </div>
-                    <div className="review-wrapper">
-                      
-                      <ReactReadMoreReadLess
-                        charLimit={200}
-                        readMoreText={"Read more ▼"}
-                        readLessText={"Read less ▲"}
-                        readMoreClassName="read-more-less--more"
-                        readLessClassName="read-more-less--less"
-                    >
-                      Case is quality built great looks lots of room for 40 series GPU excellent cable management set up in back all around top of the line case.
-                    </ReactReadMoreReadLess>
-                    </div>
-                    <div className="review-image">
-                      <img src={feedbackImage04} alt="Feedback Image" />
-                      <img src={feedbackImage05} alt="Feedback Image" />
-                    </div>
-                    <div className="review-footer">
-                      <div className="share">
-                        <ImShare />
-                        <span className="label">Share</span>
-                      </div>
-                      <div className="like-item">
-                        <div className="like-sum">
-                          <AiFillLike />
-                          <span className="count">0</span>
+                      <div className="review-footer">
+                        <div className="share">
+                          <ImShare />
+                          <span className="label">Share</span>
                         </div>
-                        <div className="dislike-sum">
-                          <AiFillDislike />
-                          <span className="count">0</span>
+                        <div className="like-item">
+                          <div className="like-sum">
+                            <AiFillLike />
+                            <span className="count">0</span>
+                          </div>
+                          <div className="dislike-sum">
+                            <AiFillDislike />
+                            <span className="count">0</span>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="review-item">
-                  <div className="review-header">
-                  <span className="user-name">Benoit S.</span>
-                      <span className="review-date">
-                      03/20/23
-                      </span>
-                    </div>
-                    <div className="star-index">
-                      <AiFillStar />
-                      <AiFillStar />
-                      <AiFillStar />
-                      <AiFillStar />
-                      <AiFillDislike/>
-                    </div>
-                    <div className="context-title">
-                    It will have been great
-                    </div>
-                    <div className="review-wrapper">
-                      
-                      <ReactReadMoreReadLess
-                        charLimit={200}
-                        readMoreText={"Read more ▼"}
-                        readLessText={"Read less ▲"}
-                        readMoreClassName="read-more-less--more"
-                        readLessClassName="read-more-less--less"
-                    >
-                      It will have been great with a couple of y splitter for the fan. My motherboard was limited with the number of fan.
-                    </ReactReadMoreReadLess>
-                    </div>
-                    <div className="review-image">
-                    </div>
-                    <div className="review-footer">
-                      <div className="share">
-                        <ImShare />
-                        <span className="label">Share</span>
+                    <div className="review-item">
+                      <div className="review-header">
+                        <span className="user-name">Trevor M.</span>
+                        <span className="review-date">03/20/23</span>
                       </div>
-                      <div className="like-item">
-                        <div className="like-sum">
-                          <AiFillLike />
-                          <span className="count">4</span>
-                        </div>
-                        <div className="dislike-sum">
-                          <AiFillDislike />
-                          <span className="count">0</span>
-                        </div>
+                      <div className="star-index">
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
                       </div>
-                    </div>
-                  </div>
-                  <div className="review-item">
-                  <div className="review-header">
-                  <span className="user-name">Daniel H.</span>
-                      <span className="review-date">
-                      03/20/23
-                      </span>
-                    </div>
-                    <div className="star-index">
-                      <AiFillStar />
-                      <AiFillStar />
-                      <AiFillStar />
-                      <AiFillStar />
-                      <AiFillStar />
-                    </div>
-                    <div className="context-title">
-                    Awesome fit and finish. Cable
-                    </div>
-                    <div className="review-wrapper">
-                      
-                      <ReactReadMoreReadLess
-                        charLimit={200}
-                        readMoreText={"Read more ▼"}
-                        readLessText={"Read less ▲"}
-                        readMoreClassName="read-more-less--more"
-                        readLessClassName="read-more-less--less"
-                    >
-                      Awesome fit and finish. Cable Management was fitted within. The ability to put fans on the bottom of the case allows these fans to blow directly into the my RXT 4090 video card fans. With vertical airflow through the case providing excellent cooling.
-                    </ReactReadMoreReadLess>
-                    </div>
-                    <div className="review-image">
-                    </div>
-                    <div className="review-footer">
-                      <div className="share">
-                        <ImShare />
-                        <span className="label">Share</span>
+                      <div className="context-title">
+                        Case is quality built great
                       </div>
-                      <div className="like-item">
-                        <div className="like-sum">
-                          <AiFillLike />
-                          <span className="count">0</span>
+                      <div className="review-wrapper">
+                        <ReactReadMoreReadLess
+                          charLimit={200}
+                          readMoreText={"Read more ▼"}
+                          readLessText={"Read less ▲"}
+                          readMoreClassName="read-more-less--more"
+                          readLessClassName="read-more-less--less"
+                        >
+                          Case is quality built great looks lots of room for 40
+                          series GPU excellent cable management set up in back
+                          all around top of the line case.
+                        </ReactReadMoreReadLess>
+                      </div>
+                      <div className="review-image">
+                        <img src={feedbackImage04} alt="Feedback Image" />
+                        <img src={feedbackImage05} alt="Feedback Image" />
+                      </div>
+                      <div className="review-footer">
+                        <div className="share">
+                          <ImShare />
+                          <span className="label">Share</span>
                         </div>
-                        <div className="dislike-sum">
-                          <AiFillDislike />
-                          <span className="count">1</span>
+                        <div className="like-item">
+                          <div className="like-sum">
+                            <AiFillLike />
+                            <span className="count">0</span>
+                          </div>
+                          <div className="dislike-sum">
+                            <AiFillDislike />
+                            <span className="count">0</span>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="review-item">
-                  <div className="review-header">
-                  <span className="user-name">Quadgee C.</span>
-                      <span className="review-date">
-                      03/20/23
-                      </span>
-                    </div>
-                    <div className="star-index">
-                      <AiFillStar />
-                      <AiFillStar />
-                      <AiFillStar />
-                      <AiFillStar />
-                      <AiFillStar />
-                    </div>
-                    <div className="context-title">
-                    Love the product and your
-                    </div>
-                    <div className="review-wrapper">
-                      <ReactReadMoreReadLess
-                        charLimit={200}
-                        readMoreText={"Read more ▼"}
-                        readLessText={"Read less ▲"}
-                        readMoreClassName="read-more-less--more"
-                        readLessClassName="read-more-less--less"
-                    >
-                      Love the product and your company
-                    </ReactReadMoreReadLess>
-                    </div>
-                    <div className="review-image">
-                    </div>
-                    <div className="review-footer">
-                      <div className="share">
-                        <ImShare />
-                        <span className="label">Share</span>
+                    <div className="review-item">
+                      <div className="review-header">
+                        <span className="user-name">Benoit S.</span>
+                        <span className="review-date">03/20/23</span>
                       </div>
-                      <div className="like-item">
-                        <div className="like-sum">
-                          <AiFillLike />
-                          <span className="count">0</span>
-                        </div>
-                        <div className="dislike-sum">
-                          <AiFillDislike />
-                          <span className="count">0</span>
-                        </div>
+                      <div className="star-index">
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillDislike />
                       </div>
-                    </div>
-                  </div>
-                  <div className="review-item">
-                  <div className="review-header">
-                  <span className="user-name">Dave H.</span>
-                      <span className="review-date">
-                      03/20/23
-                      </span>
-                    </div>
-                    <div className="star-index">
-                      <AiFillStar />
-                      <AiFillStar />
-                      <AiFillStar />
-                      <AiFillStar />
-                      <AiFillStar />
-                    </div>
-                    <div className="context-title">
-                    Best looking case I've ever seen
-                    </div>
-                    <div className="review-wrapper">
-                      
-                      <ReactReadMoreReadLess
-                        charLimit={200}
-                        readMoreText={"Read more ▼"}
-                        readLessText={"Read less ▲"}
-                        readMoreClassName="read-more-less--more"
-                        readLessClassName="read-more-less--less"
-                    >
-                      The only issue I found was the cover where the motherboard power cable passes through was a bit too narrow. I ended up adding right angle connectors on on the motherboard power cable and front usb connectors.
-                    </ReactReadMoreReadLess>
-                    </div>
-                    <div className="review-image">
-                      <img src={feedbackImage06} alt="Review Image" />
-                    </div>
-                    <div className="review-footer">
-                      <div className="share">
-                        <ImShare />
-                        <span className="label">Share</span>
+                      <div className="context-title">
+                        It will have been great
                       </div>
-                      <div className="like-item">
-                        <div className="like-sum">
-                          <AiFillLike />
-                          <span className="count">1</span>
+                      <div className="review-wrapper">
+                        <ReactReadMoreReadLess
+                          charLimit={200}
+                          readMoreText={"Read more ▼"}
+                          readLessText={"Read less ▲"}
+                          readMoreClassName="read-more-less--more"
+                          readLessClassName="read-more-less--less"
+                        >
+                          It will have been great with a couple of y splitter
+                          for the fan. My motherboard was limited with the
+                          number of fan.
+                        </ReactReadMoreReadLess>
+                      </div>
+                      <div className="review-image"></div>
+                      <div className="review-footer">
+                        <div className="share">
+                          <ImShare />
+                          <span className="label">Share</span>
                         </div>
-                        <div className="dislike-sum">
-                          <AiFillDislike />
-                          <span className="count">0</span>
+                        <div className="like-item">
+                          <div className="like-sum">
+                            <AiFillLike />
+                            <span className="count">4</span>
+                          </div>
+                          <div className="dislike-sum">
+                            <AiFillDislike />
+                            <span className="count">0</span>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                    <div className="review-item">
+                      <div className="review-header">
+                        <span className="user-name">Daniel H.</span>
+                        <span className="review-date">03/20/23</span>
+                      </div>
+                      <div className="star-index">
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                      </div>
+                      <div className="context-title">
+                        Awesome fit and finish. Cable
+                      </div>
+                      <div className="review-wrapper">
+                        <ReactReadMoreReadLess
+                          charLimit={200}
+                          readMoreText={"Read more ▼"}
+                          readLessText={"Read less ▲"}
+                          readMoreClassName="read-more-less--more"
+                          readLessClassName="read-more-less--less"
+                        >
+                          Awesome fit and finish. Cable Management was fitted
+                          within. The ability to put fans on the bottom of the
+                          case allows these fans to blow directly into the my
+                          RXT 4090 video card fans. With vertical airflow
+                          through the case providing excellent cooling.
+                        </ReactReadMoreReadLess>
+                      </div>
+                      <div className="review-image"></div>
+                      <div className="review-footer">
+                        <div className="share">
+                          <ImShare />
+                          <span className="label">Share</span>
+                        </div>
+                        <div className="like-item">
+                          <div className="like-sum">
+                            <AiFillLike />
+                            <span className="count">0</span>
+                          </div>
+                          <div className="dislike-sum">
+                            <AiFillDislike />
+                            <span className="count">1</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="review-item">
+                      <div className="review-header">
+                        <span className="user-name">Quadgee C.</span>
+                        <span className="review-date">03/20/23</span>
+                      </div>
+                      <div className="star-index">
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                      </div>
+                      <div className="context-title">
+                        Love the product and your
+                      </div>
+                      <div className="review-wrapper">
+                        <ReactReadMoreReadLess
+                          charLimit={200}
+                          readMoreText={"Read more ▼"}
+                          readLessText={"Read less ▲"}
+                          readMoreClassName="read-more-less--more"
+                          readLessClassName="read-more-less--less"
+                        >
+                          Love the product and your company
+                        </ReactReadMoreReadLess>
+                      </div>
+                      <div className="review-image"></div>
+                      <div className="review-footer">
+                        <div className="share">
+                          <ImShare />
+                          <span className="label">Share</span>
+                        </div>
+                        <div className="like-item">
+                          <div className="like-sum">
+                            <AiFillLike />
+                            <span className="count">0</span>
+                          </div>
+                          <div className="dislike-sum">
+                            <AiFillDislike />
+                            <span className="count">0</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="review-item">
+                      <div className="review-header">
+                        <span className="user-name">Dave H.</span>
+                        <span className="review-date">03/20/23</span>
+                      </div>
+                      <div className="star-index">
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                      </div>
+                      <div className="context-title">
+                        Best looking case I've ever seen
+                      </div>
+                      <div className="review-wrapper">
+                        <ReactReadMoreReadLess
+                          charLimit={200}
+                          readMoreText={"Read more ▼"}
+                          readLessText={"Read less ▲"}
+                          readMoreClassName="read-more-less--more"
+                          readLessClassName="read-more-less--less"
+                        >
+                          The only issue I found was the cover where the
+                          motherboard power cable passes through was a bit too
+                          narrow. I ended up adding right angle connectors on on
+                          the motherboard power cable and front usb connectors.
+                        </ReactReadMoreReadLess>
+                      </div>
+                      <div className="review-image">
+                        <img src={feedbackImage06} alt="Review Image" />
+                      </div>
+                      <div className="review-footer">
+                        <div className="share">
+                          <ImShare />
+                          <span className="label">Share</span>
+                        </div>
+                        <div className="like-item">
+                          <div className="like-sum">
+                            <AiFillLike />
+                            <span className="count">1</span>
+                          </div>
+                          <div className="dislike-sum">
+                            <AiFillDislike />
+                            <span className="count">0</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="pagination-review">
-                <nav aria-label="...">
-                  <ul class="pagination">
-                    <li class="page-item disabled">
-                      <span class="page-link">Previous</span>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item active">
-                      <span class="page-link">
-                        2
-                        <span class="sr-only">(current)</span>
-                      </span>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">Next</a>
-                    </li>
-                  </ul>
-                </nav>
+                  <Stack spacing={2}>
+                    <Pagination
+                      count={2}
+                      page={page}
+                      onChange={handleChangeNav}
+                    />
+                  </Stack>
                 </div>
               </TabPanel>
-              <TabPanel value="4">Resources</TabPanel>
+              <TabPanel value="4">
+                <h2 className="download-text">Downloads</h2>
+                <div className="documentation">
+                  <h3>DOCUMENTATION</h3>
+                  <div className="document-wrapper">
+                  <div className="document-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="pdf-icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.5 22.25a.75.75 0 0 1-.75-.75v-19a.75.75 0 0 1 .75-.75h7.487a.75.75 0 0 1 .525.215l5.514 5.415a.75.75 0 0 1 .224.535V21.5a.75.75 0 0 1-.75.75h-13zm-2.25-.75a2.25 2.25 0 0 0 2.25 2.25h13a2.25 2.25 0 0 0 2.25-2.25V7.915a2.25 2.25 0 0 0-.673-1.605L14.563.895A2.25 2.25 0 0 0 12.987.25H5.5A2.25 2.25 0 0 0 3.25 2.5v19z"
+                        clip-rule="evenodd"
+                      ></path>
+                      <path d="M6.485 18h.924v-1.26h.702c.942 0 1.698-.504 1.698-1.476v-.012c0-.858-.606-1.452-1.608-1.452H6.485V18zm.924-2.082v-1.284h.714c.462 0 .75.222.75.636v.012c0 .36-.27.636-.732.636h-.732zM10.193 18h1.638c1.32 0 2.232-.918 2.232-2.1v-.012c0-1.182-.913-2.088-2.232-2.088h-1.638V18zm.924-.834v-2.532h.713c.756 0 1.267.522 1.267 1.266v.012c0 .744-.51 1.254-1.266 1.254h-.714zm3.469.834h.924v-1.626h2.004v-.84H15.51v-.894h2.274v-.84h-3.198V18z"></path>
+                      <path
+                        fill-rule="evenodd"
+                        d="M20.75 12V9.071A1.75 1.75 0 0 0 19 7.321h-5.071a.25.25 0 0 1-.25-.25V2a1.75 1.75 0 0 0-1.75-1.75H9v1.5h2.929a.25.25 0 0 1 .25.25v5.071c0 .967.783 1.75 1.75 1.75H19a.25.25 0 0 1 .25.25V12h1.5z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <div className="document-content">
+                      <Link>
+                      English Manual
+                        <svg
+                          width="1em"
+                          height="1em"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                          className="download-icon"
+                        >
+                          <path d="M12.031.072C5.441.072.098 5.414.098 12.005c0 6.59 5.343 11.933 11.933 11.933s11.934-5.342 11.934-11.933c0-6.59-5.343-11.933-11.934-11.933zm0 1.5c5.762 0 10.434 4.67 10.434 10.433 0 5.762-4.672 10.433-10.434 10.433S1.598 17.768 1.598 12.005c0-5.762 4.671-10.433 10.433-10.433z"></path>
+                          <path d="M12.031 6.782a.75.75 0 01.743.648l.007.102v7.135l3.193-3.192a.75.75 0 01.977-.073l.084.073a.75.75 0 01.073.976l-.073.084-4.473 4.474a.75.75 0 01-.977.072l-.084-.072-4.473-4.474a.75.75 0 01.976-1.133l.084.073 3.193 3.192V7.532a.75.75 0 01.75-.75z"></path>
+                        </svg>
+                      </Link>
+                      <div className="size">
+                        <p>20.6 MB <span></span>(pdf)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="document-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="pdf-icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.5 22.25a.75.75 0 0 1-.75-.75v-19a.75.75 0 0 1 .75-.75h7.487a.75.75 0 0 1 .525.215l5.514 5.415a.75.75 0 0 1 .224.535V21.5a.75.75 0 0 1-.75.75h-13zm-2.25-.75a2.25 2.25 0 0 0 2.25 2.25h13a2.25 2.25 0 0 0 2.25-2.25V7.915a2.25 2.25 0 0 0-.673-1.605L14.563.895A2.25 2.25 0 0 0 12.987.25H5.5A2.25 2.25 0 0 0 3.25 2.5v19z"
+                        clip-rule="evenodd"
+                      ></path>
+                      <path d="M6.485 18h.924v-1.26h.702c.942 0 1.698-.504 1.698-1.476v-.012c0-.858-.606-1.452-1.608-1.452H6.485V18zm.924-2.082v-1.284h.714c.462 0 .75.222.75.636v.012c0 .36-.27.636-.732.636h-.732zM10.193 18h1.638c1.32 0 2.232-.918 2.232-2.1v-.012c0-1.182-.913-2.088-2.232-2.088h-1.638V18zm.924-.834v-2.532h.713c.756 0 1.267.522 1.267 1.266v.012c0 .744-.51 1.254-1.266 1.254h-.714zm3.469.834h.924v-1.626h2.004v-.84H15.51v-.894h2.274v-.84h-3.198V18z"></path>
+                      <path
+                        fill-rule="evenodd"
+                        d="M20.75 12V9.071A1.75 1.75 0 0 0 19 7.321h-5.071a.25.25 0 0 1-.25-.25V2a1.75 1.75 0 0 0-1.75-1.75H9v1.5h2.929a.25.25 0 0 1 .25.25v5.071c0 .967.783 1.75 1.75 1.75H19a.25.25 0 0 1 .25.25V12h1.5z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <div className="document-content">
+                      <Link>
+                      Spanish Manual
+                        <svg
+                          width="1em"
+                          height="1em"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                          className="download-icon"
+                        >
+                          <path d="M12.031.072C5.441.072.098 5.414.098 12.005c0 6.59 5.343 11.933 11.933 11.933s11.934-5.342 11.934-11.933c0-6.59-5.343-11.933-11.934-11.933zm0 1.5c5.762 0 10.434 4.67 10.434 10.433 0 5.762-4.672 10.433-10.434 10.433S1.598 17.768 1.598 12.005c0-5.762 4.671-10.433 10.433-10.433z"></path>
+                          <path d="M12.031 6.782a.75.75 0 01.743.648l.007.102v7.135l3.193-3.192a.75.75 0 01.977-.073l.084.073a.75.75 0 01.073.976l-.073.084-4.473 4.474a.75.75 0 01-.977.072l-.084-.072-4.473-4.474a.75.75 0 01.976-1.133l.084.073 3.193 3.192V7.532a.75.75 0 01.75-.75z"></path>
+                        </svg>
+                      </Link>
+                      <div className="size">
+                        <p>20.6 MB <span></span>(pdf)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="document-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="pdf-icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.5 22.25a.75.75 0 0 1-.75-.75v-19a.75.75 0 0 1 .75-.75h7.487a.75.75 0 0 1 .525.215l5.514 5.415a.75.75 0 0 1 .224.535V21.5a.75.75 0 0 1-.75.75h-13zm-2.25-.75a2.25 2.25 0 0 0 2.25 2.25h13a2.25 2.25 0 0 0 2.25-2.25V7.915a2.25 2.25 0 0 0-.673-1.605L14.563.895A2.25 2.25 0 0 0 12.987.25H5.5A2.25 2.25 0 0 0 3.25 2.5v19z"
+                        clip-rule="evenodd"
+                      ></path>
+                      <path d="M6.485 18h.924v-1.26h.702c.942 0 1.698-.504 1.698-1.476v-.012c0-.858-.606-1.452-1.608-1.452H6.485V18zm.924-2.082v-1.284h.714c.462 0 .75.222.75.636v.012c0 .36-.27.636-.732.636h-.732zM10.193 18h1.638c1.32 0 2.232-.918 2.232-2.1v-.012c0-1.182-.913-2.088-2.232-2.088h-1.638V18zm.924-.834v-2.532h.713c.756 0 1.267.522 1.267 1.266v.012c0 .744-.51 1.254-1.266 1.254h-.714zm3.469.834h.924v-1.626h2.004v-.84H15.51v-.894h2.274v-.84h-3.198V18z"></path>
+                      <path
+                        fill-rule="evenodd"
+                        d="M20.75 12V9.071A1.75 1.75 0 0 0 19 7.321h-5.071a.25.25 0 0 1-.25-.25V2a1.75 1.75 0 0 0-1.75-1.75H9v1.5h2.929a.25.25 0 0 1 .25.25v5.071c0 .967.783 1.75 1.75 1.75H19a.25.25 0 0 1 .25.25V12h1.5z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <div className="document-content">
+                      <Link>
+                      German Manual
+                        <svg
+                          width="1em"
+                          height="1em"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                          className="download-icon"
+                        >
+                          <path d="M12.031.072C5.441.072.098 5.414.098 12.005c0 6.59 5.343 11.933 11.933 11.933s11.934-5.342 11.934-11.933c0-6.59-5.343-11.933-11.934-11.933zm0 1.5c5.762 0 10.434 4.67 10.434 10.433 0 5.762-4.672 10.433-10.434 10.433S1.598 17.768 1.598 12.005c0-5.762 4.671-10.433 10.433-10.433z"></path>
+                          <path d="M12.031 6.782a.75.75 0 01.743.648l.007.102v7.135l3.193-3.192a.75.75 0 01.977-.073l.084.073a.75.75 0 01.073.976l-.073.084-4.473 4.474a.75.75 0 01-.977.072l-.084-.072-4.473-4.474a.75.75 0 01.976-1.133l.084.073 3.193 3.192V7.532a.75.75 0 01.75-.75z"></path>
+                        </svg>
+                      </Link>
+                      <div className="size">
+                        <p>20.6 MB <span></span>(pdf)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="document-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="pdf-icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.5 22.25a.75.75 0 0 1-.75-.75v-19a.75.75 0 0 1 .75-.75h7.487a.75.75 0 0 1 .525.215l5.514 5.415a.75.75 0 0 1 .224.535V21.5a.75.75 0 0 1-.75.75h-13zm-2.25-.75a2.25 2.25 0 0 0 2.25 2.25h13a2.25 2.25 0 0 0 2.25-2.25V7.915a2.25 2.25 0 0 0-.673-1.605L14.563.895A2.25 2.25 0 0 0 12.987.25H5.5A2.25 2.25 0 0 0 3.25 2.5v19z"
+                        clip-rule="evenodd"
+                      ></path>
+                      <path d="M6.485 18h.924v-1.26h.702c.942 0 1.698-.504 1.698-1.476v-.012c0-.858-.606-1.452-1.608-1.452H6.485V18zm.924-2.082v-1.284h.714c.462 0 .75.222.75.636v.012c0 .36-.27.636-.732.636h-.732zM10.193 18h1.638c1.32 0 2.232-.918 2.232-2.1v-.012c0-1.182-.913-2.088-2.232-2.088h-1.638V18zm.924-.834v-2.532h.713c.756 0 1.267.522 1.267 1.266v.012c0 .744-.51 1.254-1.266 1.254h-.714zm3.469.834h.924v-1.626h2.004v-.84H15.51v-.894h2.274v-.84h-3.198V18z"></path>
+                      <path
+                        fill-rule="evenodd"
+                        d="M20.75 12V9.071A1.75 1.75 0 0 0 19 7.321h-5.071a.25.25 0 0 1-.25-.25V2a1.75 1.75 0 0 0-1.75-1.75H9v1.5h2.929a.25.25 0 0 1 .25.25v5.071c0 .967.783 1.75 1.75 1.75H19a.25.25 0 0 1 .25.25V12h1.5z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <div className="document-content">
+                      <Link>
+                      Portuguese Manual
+                        <svg
+                          width="1em"
+                          height="1em"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                          className="download-icon"
+                        >
+                          <path d="M12.031.072C5.441.072.098 5.414.098 12.005c0 6.59 5.343 11.933 11.933 11.933s11.934-5.342 11.934-11.933c0-6.59-5.343-11.933-11.934-11.933zm0 1.5c5.762 0 10.434 4.67 10.434 10.433 0 5.762-4.672 10.433-10.434 10.433S1.598 17.768 1.598 12.005c0-5.762 4.671-10.433 10.433-10.433z"></path>
+                          <path d="M12.031 6.782a.75.75 0 01.743.648l.007.102v7.135l3.193-3.192a.75.75 0 01.977-.073l.084.073a.75.75 0 01.073.976l-.073.084-4.473 4.474a.75.75 0 01-.977.072l-.084-.072-4.473-4.474a.75.75 0 01.976-1.133l.084.073 3.193 3.192V7.532a.75.75 0 01.75-.75z"></path>
+                        </svg>
+                      </Link>
+                      <div className="size">
+                        <p>20.6 MB <span></span>(pdf)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="document-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="pdf-icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.5 22.25a.75.75 0 0 1-.75-.75v-19a.75.75 0 0 1 .75-.75h7.487a.75.75 0 0 1 .525.215l5.514 5.415a.75.75 0 0 1 .224.535V21.5a.75.75 0 0 1-.75.75h-13zm-2.25-.75a2.25 2.25 0 0 0 2.25 2.25h13a2.25 2.25 0 0 0 2.25-2.25V7.915a2.25 2.25 0 0 0-.673-1.605L14.563.895A2.25 2.25 0 0 0 12.987.25H5.5A2.25 2.25 0 0 0 3.25 2.5v19z"
+                        clip-rule="evenodd"
+                      ></path>
+                      <path d="M6.485 18h.924v-1.26h.702c.942 0 1.698-.504 1.698-1.476v-.012c0-.858-.606-1.452-1.608-1.452H6.485V18zm.924-2.082v-1.284h.714c.462 0 .75.222.75.636v.012c0 .36-.27.636-.732.636h-.732zM10.193 18h1.638c1.32 0 2.232-.918 2.232-2.1v-.012c0-1.182-.913-2.088-2.232-2.088h-1.638V18zm.924-.834v-2.532h.713c.756 0 1.267.522 1.267 1.266v.012c0 .744-.51 1.254-1.266 1.254h-.714zm3.469.834h.924v-1.626h2.004v-.84H15.51v-.894h2.274v-.84h-3.198V18z"></path>
+                      <path
+                        fill-rule="evenodd"
+                        d="M20.75 12V9.071A1.75 1.75 0 0 0 19 7.321h-5.071a.25.25 0 0 1-.25-.25V2a1.75 1.75 0 0 0-1.75-1.75H9v1.5h2.929a.25.25 0 0 1 .25.25v5.071c0 .967.783 1.75 1.75 1.75H19a.25.25 0 0 1 .25.25V12h1.5z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <div className="document-content">
+                      <Link>
+                      Traditional Chinese Manual
+                        <svg
+                          width="1em"
+                          height="1em"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                          className="download-icon"
+                        >
+                          <path d="M12.031.072C5.441.072.098 5.414.098 12.005c0 6.59 5.343 11.933 11.933 11.933s11.934-5.342 11.934-11.933c0-6.59-5.343-11.933-11.934-11.933zm0 1.5c5.762 0 10.434 4.67 10.434 10.433 0 5.762-4.672 10.433-10.434 10.433S1.598 17.768 1.598 12.005c0-5.762 4.671-10.433 10.433-10.433z"></path>
+                          <path d="M12.031 6.782a.75.75 0 01.743.648l.007.102v7.135l3.193-3.192a.75.75 0 01.977-.073l.084.073a.75.75 0 01.073.976l-.073.084-4.473 4.474a.75.75 0 01-.977.072l-.084-.072-4.473-4.474a.75.75 0 01.976-1.133l.084.073 3.193 3.192V7.532a.75.75 0 01.75-.75z"></path>
+                        </svg>
+                      </Link>
+                      <div className="size">
+                        <p>20.6 MB <span></span>(pdf)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="document-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="pdf-icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.5 22.25a.75.75 0 0 1-.75-.75v-19a.75.75 0 0 1 .75-.75h7.487a.75.75 0 0 1 .525.215l5.514 5.415a.75.75 0 0 1 .224.535V21.5a.75.75 0 0 1-.75.75h-13zm-2.25-.75a2.25 2.25 0 0 0 2.25 2.25h13a2.25 2.25 0 0 0 2.25-2.25V7.915a2.25 2.25 0 0 0-.673-1.605L14.563.895A2.25 2.25 0 0 0 12.987.25H5.5A2.25 2.25 0 0 0 3.25 2.5v19z"
+                        clip-rule="evenodd"
+                      ></path>
+                      <path d="M6.485 18h.924v-1.26h.702c.942 0 1.698-.504 1.698-1.476v-.012c0-.858-.606-1.452-1.608-1.452H6.485V18zm.924-2.082v-1.284h.714c.462 0 .75.222.75.636v.012c0 .36-.27.636-.732.636h-.732zM10.193 18h1.638c1.32 0 2.232-.918 2.232-2.1v-.012c0-1.182-.913-2.088-2.232-2.088h-1.638V18zm.924-.834v-2.532h.713c.756 0 1.267.522 1.267 1.266v.012c0 .744-.51 1.254-1.266 1.254h-.714zm3.469.834h.924v-1.626h2.004v-.84H15.51v-.894h2.274v-.84h-3.198V18z"></path>
+                      <path
+                        fill-rule="evenodd"
+                        d="M20.75 12V9.071A1.75 1.75 0 0 0 19 7.321h-5.071a.25.25 0 0 1-.25-.25V2a1.75 1.75 0 0 0-1.75-1.75H9v1.5h2.929a.25.25 0 0 1 .25.25v5.071c0 .967.783 1.75 1.75 1.75H19a.25.25 0 0 1 .25.25V12h1.5z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <div className="document-content">
+                      <Link>
+                      French Manual
+                        <svg
+                          width="1em"
+                          height="1em"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                          className="download-icon"
+                        >
+                          <path d="M12.031.072C5.441.072.098 5.414.098 12.005c0 6.59 5.343 11.933 11.933 11.933s11.934-5.342 11.934-11.933c0-6.59-5.343-11.933-11.934-11.933zm0 1.5c5.762 0 10.434 4.67 10.434 10.433 0 5.762-4.672 10.433-10.434 10.433S1.598 17.768 1.598 12.005c0-5.762 4.671-10.433 10.433-10.433z"></path>
+                          <path d="M12.031 6.782a.75.75 0 01.743.648l.007.102v7.135l3.193-3.192a.75.75 0 01.977-.073l.084.073a.75.75 0 01.073.976l-.073.084-4.473 4.474a.75.75 0 01-.977.072l-.084-.072-4.473-4.474a.75.75 0 01.976-1.133l.084.073 3.193 3.192V7.532a.75.75 0 01.75-.75z"></path>
+                        </svg>
+                      </Link>
+                      <div className="size">
+                        <p>20.6 MB <span></span>(pdf)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="document-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="pdf-icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.5 22.25a.75.75 0 0 1-.75-.75v-19a.75.75 0 0 1 .75-.75h7.487a.75.75 0 0 1 .525.215l5.514 5.415a.75.75 0 0 1 .224.535V21.5a.75.75 0 0 1-.75.75h-13zm-2.25-.75a2.25 2.25 0 0 0 2.25 2.25h13a2.25 2.25 0 0 0 2.25-2.25V7.915a2.25 2.25 0 0 0-.673-1.605L14.563.895A2.25 2.25 0 0 0 12.987.25H5.5A2.25 2.25 0 0 0 3.25 2.5v19z"
+                        clip-rule="evenodd"
+                      ></path>
+                      <path d="M6.485 18h.924v-1.26h.702c.942 0 1.698-.504 1.698-1.476v-.012c0-.858-.606-1.452-1.608-1.452H6.485V18zm.924-2.082v-1.284h.714c.462 0 .75.222.75.636v.012c0 .36-.27.636-.732.636h-.732zM10.193 18h1.638c1.32 0 2.232-.918 2.232-2.1v-.012c0-1.182-.913-2.088-2.232-2.088h-1.638V18zm.924-.834v-2.532h.713c.756 0 1.267.522 1.267 1.266v.012c0 .744-.51 1.254-1.266 1.254h-.714zm3.469.834h.924v-1.626h2.004v-.84H15.51v-.894h2.274v-.84h-3.198V18z"></path>
+                      <path
+                        fill-rule="evenodd"
+                        d="M20.75 12V9.071A1.75 1.75 0 0 0 19 7.321h-5.071a.25.25 0 0 1-.25-.25V2a1.75 1.75 0 0 0-1.75-1.75H9v1.5h2.929a.25.25 0 0 1 .25.25v5.071c0 .967.783 1.75 1.75 1.75H19a.25.25 0 0 1 .25.25V12h1.5z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <div className="document-content">
+                      <Link>
+                      Korean Manual
+                        <svg
+                          width="1em"
+                          height="1em"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                          className="download-icon"
+                        >
+                          <path d="M12.031.072C5.441.072.098 5.414.098 12.005c0 6.59 5.343 11.933 11.933 11.933s11.934-5.342 11.934-11.933c0-6.59-5.343-11.933-11.934-11.933zm0 1.5c5.762 0 10.434 4.67 10.434 10.433 0 5.762-4.672 10.433-10.434 10.433S1.598 17.768 1.598 12.005c0-5.762 4.671-10.433 10.433-10.433z"></path>
+                          <path d="M12.031 6.782a.75.75 0 01.743.648l.007.102v7.135l3.193-3.192a.75.75 0 01.977-.073l.084.073a.75.75 0 01.073.976l-.073.084-4.473 4.474a.75.75 0 01-.977.072l-.084-.072-4.473-4.474a.75.75 0 01.976-1.133l.084.073 3.193 3.192V7.532a.75.75 0 01.75-.75z"></path>
+                        </svg>
+                      </Link>
+                      <div className="size">
+                        <p>20.6 MB <span></span>(pdf)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="document-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="pdf-icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.5 22.25a.75.75 0 0 1-.75-.75v-19a.75.75 0 0 1 .75-.75h7.487a.75.75 0 0 1 .525.215l5.514 5.415a.75.75 0 0 1 .224.535V21.5a.75.75 0 0 1-.75.75h-13zm-2.25-.75a2.25 2.25 0 0 0 2.25 2.25h13a2.25 2.25 0 0 0 2.25-2.25V7.915a2.25 2.25 0 0 0-.673-1.605L14.563.895A2.25 2.25 0 0 0 12.987.25H5.5A2.25 2.25 0 0 0 3.25 2.5v19z"
+                        clip-rule="evenodd"
+                      ></path>
+                      <path d="M6.485 18h.924v-1.26h.702c.942 0 1.698-.504 1.698-1.476v-.012c0-.858-.606-1.452-1.608-1.452H6.485V18zm.924-2.082v-1.284h.714c.462 0 .75.222.75.636v.012c0 .36-.27.636-.732.636h-.732zM10.193 18h1.638c1.32 0 2.232-.918 2.232-2.1v-.012c0-1.182-.913-2.088-2.232-2.088h-1.638V18zm.924-.834v-2.532h.713c.756 0 1.267.522 1.267 1.266v.012c0 .744-.51 1.254-1.266 1.254h-.714zm3.469.834h.924v-1.626h2.004v-.84H15.51v-.894h2.274v-.84h-3.198V18z"></path>
+                      <path
+                        fill-rule="evenodd"
+                        d="M20.75 12V9.071A1.75 1.75 0 0 0 19 7.321h-5.071a.25.25 0 0 1-.25-.25V2a1.75 1.75 0 0 0-1.75-1.75H9v1.5h2.929a.25.25 0 0 1 .25.25v5.071c0 .967.783 1.75 1.75 1.75H19a.25.25 0 0 1 .25.25V12h1.5z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <div className="document-content">
+                      <Link>
+                      Italian Manual
+                        <svg
+                          width="1em"
+                          height="1em"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                          className="download-icon"
+                        >
+                          <path d="M12.031.072C5.441.072.098 5.414.098 12.005c0 6.59 5.343 11.933 11.933 11.933s11.934-5.342 11.934-11.933c0-6.59-5.343-11.933-11.934-11.933zm0 1.5c5.762 0 10.434 4.67 10.434 10.433 0 5.762-4.672 10.433-10.434 10.433S1.598 17.768 1.598 12.005c0-5.762 4.671-10.433 10.433-10.433z"></path>
+                          <path d="M12.031 6.782a.75.75 0 01.743.648l.007.102v7.135l3.193-3.192a.75.75 0 01.977-.073l.084.073a.75.75 0 01.073.976l-.073.084-4.473 4.474a.75.75 0 01-.977.072l-.084-.072-4.473-4.474a.75.75 0 01.976-1.133l.084.073 3.193 3.192V7.532a.75.75 0 01.75-.75z"></path>
+                        </svg>
+                      </Link>
+                      <div className="size">
+                        <p>20.6 MB <span></span>(pdf)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="document-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="pdf-icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.5 22.25a.75.75 0 0 1-.75-.75v-19a.75.75 0 0 1 .75-.75h7.487a.75.75 0 0 1 .525.215l5.514 5.415a.75.75 0 0 1 .224.535V21.5a.75.75 0 0 1-.75.75h-13zm-2.25-.75a2.25 2.25 0 0 0 2.25 2.25h13a2.25 2.25 0 0 0 2.25-2.25V7.915a2.25 2.25 0 0 0-.673-1.605L14.563.895A2.25 2.25 0 0 0 12.987.25H5.5A2.25 2.25 0 0 0 3.25 2.5v19z"
+                        clip-rule="evenodd"
+                      ></path>
+                      <path d="M6.485 18h.924v-1.26h.702c.942 0 1.698-.504 1.698-1.476v-.012c0-.858-.606-1.452-1.608-1.452H6.485V18zm.924-2.082v-1.284h.714c.462 0 .75.222.75.636v.012c0 .36-.27.636-.732.636h-.732zM10.193 18h1.638c1.32 0 2.232-.918 2.232-2.1v-.012c0-1.182-.913-2.088-2.232-2.088h-1.638V18zm.924-.834v-2.532h.713c.756 0 1.267.522 1.267 1.266v.012c0 .744-.51 1.254-1.266 1.254h-.714zm3.469.834h.924v-1.626h2.004v-.84H15.51v-.894h2.274v-.84h-3.198V18z"></path>
+                      <path
+                        fill-rule="evenodd"
+                        d="M20.75 12V9.071A1.75 1.75 0 0 0 19 7.321h-5.071a.25.25 0 0 1-.25-.25V2a1.75 1.75 0 0 0-1.75-1.75H9v1.5h2.929a.25.25 0 0 1 .25.25v5.071c0 .967.783 1.75 1.75 1.75H19a.25.25 0 0 1 .25.25V12h1.5z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <div className="document-content">
+                      <Link>
+                      Japanese Manual
+                        <svg
+                          width="1em"
+                          height="1em"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                          className="download-icon"
+                        >
+                          <path d="M12.031.072C5.441.072.098 5.414.098 12.005c0 6.59 5.343 11.933 11.933 11.933s11.934-5.342 11.934-11.933c0-6.59-5.343-11.933-11.934-11.933zm0 1.5c5.762 0 10.434 4.67 10.434 10.433 0 5.762-4.672 10.433-10.434 10.433S1.598 17.768 1.598 12.005c0-5.762 4.671-10.433 10.433-10.433z"></path>
+                          <path d="M12.031 6.782a.75.75 0 01.743.648l.007.102v7.135l3.193-3.192a.75.75 0 01.977-.073l.084.073a.75.75 0 01.073.976l-.073.084-4.473 4.474a.75.75 0 01-.977.072l-.084-.072-4.473-4.474a.75.75 0 01.976-1.133l.084.073 3.193 3.192V7.532a.75.75 0 01.75-.75z"></path>
+                        </svg>
+                      </Link>
+                      <div className="size">
+                        <p>20.6 MB <span></span>(pdf)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="document-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="pdf-icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.5 22.25a.75.75 0 0 1-.75-.75v-19a.75.75 0 0 1 .75-.75h7.487a.75.75 0 0 1 .525.215l5.514 5.415a.75.75 0 0 1 .224.535V21.5a.75.75 0 0 1-.75.75h-13zm-2.25-.75a2.25 2.25 0 0 0 2.25 2.25h13a2.25 2.25 0 0 0 2.25-2.25V7.915a2.25 2.25 0 0 0-.673-1.605L14.563.895A2.25 2.25 0 0 0 12.987.25H5.5A2.25 2.25 0 0 0 3.25 2.5v19z"
+                        clip-rule="evenodd"
+                      ></path>
+                      <path d="M6.485 18h.924v-1.26h.702c.942 0 1.698-.504 1.698-1.476v-.012c0-.858-.606-1.452-1.608-1.452H6.485V18zm.924-2.082v-1.284h.714c.462 0 .75.222.75.636v.012c0 .36-.27.636-.732.636h-.732zM10.193 18h1.638c1.32 0 2.232-.918 2.232-2.1v-.012c0-1.182-.913-2.088-2.232-2.088h-1.638V18zm.924-.834v-2.532h.713c.756 0 1.267.522 1.267 1.266v.012c0 .744-.51 1.254-1.266 1.254h-.714zm3.469.834h.924v-1.626h2.004v-.84H15.51v-.894h2.274v-.84h-3.198V18z"></path>
+                      <path
+                        fill-rule="evenodd"
+                        d="M20.75 12V9.071A1.75 1.75 0 0 0 19 7.321h-5.071a.25.25 0 0 1-.25-.25V2a1.75 1.75 0 0 0-1.75-1.75H9v1.5h2.929a.25.25 0 0 1 .25.25v5.071c0 .967.783 1.75 1.75 1.75H19a.25.25 0 0 1 .25.25V12h1.5z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <div className="document-content">
+                      <Link>
+                      Simplified Chinese Manual
+                        <svg
+                          width="1em"
+                          height="1em"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                          className="download-icon"
+                        >
+                          <path d="M12.031.072C5.441.072.098 5.414.098 12.005c0 6.59 5.343 11.933 11.933 11.933s11.934-5.342 11.934-11.933c0-6.59-5.343-11.933-11.934-11.933zm0 1.5c5.762 0 10.434 4.67 10.434 10.433 0 5.762-4.672 10.433-10.434 10.433S1.598 17.768 1.598 12.005c0-5.762 4.671-10.433 10.433-10.433z"></path>
+                          <path d="M12.031 6.782a.75.75 0 01.743.648l.007.102v7.135l3.193-3.192a.75.75 0 01.977-.073l.084.073a.75.75 0 01.073.976l-.073.084-4.473 4.474a.75.75 0 01-.977.072l-.084-.072-4.473-4.474a.75.75 0 01.976-1.133l.084.073 3.193 3.192V7.532a.75.75 0 01.75-.75z"></path>
+                        </svg>
+                      </Link>
+                      <div className="size">
+                        <p>20.6 MB <span></span>(pdf)</p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </TabPanel>
             </TabContext>
           </Box>
         </div>

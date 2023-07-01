@@ -305,4 +305,73 @@
             }
         }
     }
+
+    .pagination-review {
+        .MuiPagination-ul {
+            justify-content: center;
+        }
+    }
+
+    .download-text {
+        font-size: 36px;
+        font-family: 'Gotham SSM', sans-serif;
+        font-weight: bold;
+    }
+
+
+    .documentation {
+        padding-top: 30px;
+        .document-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding-top: 15px;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-family: 'Gotham SSM', sans-serif;
+            font-weight: bold;
+            color: #737279;
+        }
+
+        .document-item {
+            display: flex;
+            gap: 1rem;
+            width: 48%;
+            border-bottom: 1px solid #dcdbe6;
+            &:last-child{
+                border: none;
+            }
+            .pdf-icon{
+                width: 2.2rem;
+                height: 2.2rem;
+                color: hsl(221deg 94% 41%);
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 16px;
+                font-family: 'Gotham SSM', sans-serif;
+                color: hsl(221deg 94% 41%);
+
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            p {
+                font-size: 12px;
+                font-family: 'Gotham SSM', sans-serif;
+                color: #737279;
+            }
+            .document-content{
+                .download-icon{
+                    margin-left: 5px;
+                    margin-top: -3px;
+                }
+            }
+        }
+    }
 }
