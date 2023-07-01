@@ -851,7 +851,7 @@ const ProductTab = () => {
                       ></path>
                     </svg>
                     <div className="document-content">
-                      <Link>
+                      <Link target="_blank" to={'https://www.datocms-assets.com/34299/1673509560-case_h9-flow_digital-manual-fr-220929.pdf'}>
                       English Manual
                         <svg
                           width="1em"
@@ -891,7 +891,7 @@ const ProductTab = () => {
                       ></path>
                     </svg>
                     <div className="document-content">
-                      <Link>
+                    <Link target="_blank" to={'https://www.datocms-assets.com/34299/1673509560-case_h9-flow_digital-manual-fr-220929.pdf'}>
                       Spanish Manual
                         <svg
                           width="1em"
@@ -931,7 +931,7 @@ const ProductTab = () => {
                       ></path>
                     </svg>
                     <div className="document-content">
-                      <Link>
+                    <Link target="_blank" to={'https://www.datocms-assets.com/34299/1673509560-case_h9-flow_digital-manual-fr-220929.pdf'}>
                       German Manual
                         <svg
                           width="1em"
@@ -971,7 +971,7 @@ const ProductTab = () => {
                       ></path>
                     </svg>
                     <div className="document-content">
-                      <Link>
+                    <Link target="_blank" to={'https://www.datocms-assets.com/34299/1673509560-case_h9-flow_digital-manual-fr-220929.pdf'}>
                       Portuguese Manual
                         <svg
                           width="1em"
@@ -1011,7 +1011,7 @@ const ProductTab = () => {
                       ></path>
                     </svg>
                     <div className="document-content">
-                      <Link>
+                    <Link target="_blank" to={'https://www.datocms-assets.com/34299/1673509560-case_h9-flow_digital-manual-fr-220929.pdf'}>
                       Traditional Chinese Manual
                         <svg
                           width="1em"
@@ -1025,7 +1025,7 @@ const ProductTab = () => {
                         </svg>
                       </Link>
                       <div className="size">
-                        <p>20.6 MB <span></span>(pdf)</p>
+                        <p>20.8 MB <span></span>(pdf)</p>
                       </div>
                     </div>
                   </div>
@@ -1051,7 +1051,7 @@ const ProductTab = () => {
                       ></path>
                     </svg>
                     <div className="document-content">
-                      <Link>
+                    <Link target="_blank" to={'https://www.datocms-assets.com/34299/1673509560-case_h9-flow_digital-manual-fr-220929.pdf'}>
                       French Manual
                         <svg
                           width="1em"
@@ -1091,7 +1091,7 @@ const ProductTab = () => {
                       ></path>
                     </svg>
                     <div className="document-content">
-                      <Link>
+                    <Link target="_blank" to={'https://www.datocms-assets.com/34299/1673509560-case_h9-flow_digital-manual-fr-220929.pdf'}>
                       Korean Manual
                         <svg
                           width="1em"
@@ -1131,7 +1131,7 @@ const ProductTab = () => {
                       ></path>
                     </svg>
                     <div className="document-content">
-                      <Link>
+                    <Link target="_blank" to={'https://www.datocms-assets.com/34299/1673509560-case_h9-flow_digital-manual-fr-220929.pdf'}>
                       Italian Manual
                         <svg
                           width="1em"
@@ -1171,7 +1171,7 @@ const ProductTab = () => {
                       ></path>
                     </svg>
                     <div className="document-content">
-                      <Link>
+                    <Link target="_blank" to={'https://www.datocms-assets.com/34299/1673509560-case_h9-flow_digital-manual-fr-220929.pdf'}>
                       Japanese Manual
                         <svg
                           width="1em"
@@ -1211,7 +1211,7 @@ const ProductTab = () => {
                       ></path>
                     </svg>
                     <div className="document-content">
-                      <Link>
+                    <Link target="_blank" to={'https://www.datocms-assets.com/34299/1673509560-case_h9-flow_digital-manual-fr-220929.pdf'}>
                       Simplified Chinese Manual
                         <svg
                           width="1em"
@@ -1225,7 +1225,7 @@ const ProductTab = () => {
                         </svg>
                       </Link>
                       <div className="size">
-                        <p>20.6 MB <span></span>(pdf)</p>
+                        <p>20.8 MB <span></span>(pdf)</p>
                       </div>
                     </div>
                   </div>

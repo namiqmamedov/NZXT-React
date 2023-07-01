@@ -18,6 +18,10 @@ import nzxtSupport from '../assets/images/thumbnail/nzxtSupport.png'
 import BuyTogether from "../components/UI/BuyTogether";
 import ProductTab from "../components/UI/ProductTab";
 import '../styles/product-detail.css'
+// Plugins
+import lgThumbnail from 'lightgallery/plugins/thumbnail'
+import  'lightgallery/css/lightgallery.css'
+import  LightGallery  from 'lightgallery/react/Lightgallery.es5';
 
 
 const ProductDetails = () => {
@@ -51,6 +55,15 @@ const ProductDetails = () => {
             <div className="product-index">
               <div className="product-thumbnail col-lg-6">
                 <img src={product01} alt="Product Image" />
+                <LightGallery
+                  speed={500}
+                  plugins={[lgThumbnail]}
+                >
+                  <a href="https://nzxt.com/assets/cms/34299/1672294362-h9-flow-side-empty-white.png?auto=format&dpr=1.5&fit=crop&h=1000&w=1000">
+                    <img src="https://nzxt.com/assets/cms/34299/1672294362-h9-flow-side-empty-white.png?auto=format&dpr=1.5&fit=crop&h=1000&w=1000" alt="Img" />
+                  </a>
+
+                </LightGallery>
               </div>
               <div className="product__content col-lg-6">
                 <h1 className="title">H9 Flow</h1>
