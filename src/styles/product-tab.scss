@@ -201,9 +201,14 @@
             padding-bottom: 25px;
             display: block;
         }
+        .review-main{
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
 
         .review-item {
-            width: 50%;
+            width: 49%;
             padding-bottom: 15px;
             background: #F6F6F9;
             border-radius: 8px;
@@ -285,6 +290,7 @@
                         color: #686774;
                         font-size: 13px;
                         font-family: 'Gotham SSm', sans-serif;
+                        padding-left: 4px;
                     }
                 }
             }

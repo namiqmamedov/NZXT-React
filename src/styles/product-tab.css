@@ -159,8 +159,13 @@
   padding-bottom: 25px;
   display: block;
 }
+.MuiTabPanel-root .review-gallery .review-main {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
 .MuiTabPanel-root .review-gallery .review-item {
-  width: 50%;
+  width: 49%;
   padding-bottom: 15px;
   background: #F6F6F9;
   border-radius: 8px;
@@ -228,4 +233,5 @@
   color: #686774;
   font-size: 13px;
   font-family: "Gotham SSm", sans-serif;
+  padding-left: 4px;
 }/*# sourceMappingURL=product-tab.css.map */

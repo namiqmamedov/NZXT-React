@@ -18,6 +18,10 @@ import { AiFillDislike } from "react-icons/ai";
 import feedbackImage01 from '../../assets/images/thumbnail/feedbackImage01.jpg'
 import feedbackImage02 from '../../assets/images/thumbnail/feedbackImage02.jpg'
 import feedbackImage03 from '../../assets/images/thumbnail/feedbackImage03.jpg'
+import ReactReadMoreReadLess from "react-read-more-read-less";
+
+const longText =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum venenatis pulvinar. Proin vitae lectus urna. Sed erat ipsum, maximus a elit nec, condimentum placerat ex. Ut tincidunt mi eget condimentum mollis. Pellentesque aliquam velit quis est varius, sed molestie dolor ultrices. Pellentesque eget dapibus eros, at blandit arcu. Duis id purus quis mi porttitor viverra vel tempus elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos posuere";
 
 const ProductTab = () => {
   const [value, setValue] = React.useState("1");
@@ -430,9 +434,10 @@ const ProductTab = () => {
                 </div>
                 <div className="review-gallery">
                   <span className="review-total">11 Reviews</span>
+                  <div className="review-main">
                   <div className="review-item">
                     <div className="review-header">
-                      <span className="user-name">maxim t.</span>
+                      <span className="user-name">jahmensky l.</span>
                       <span className="review-date">
                       03/20/23
                       </span>
@@ -445,21 +450,10 @@ const ProductTab = () => {
                       <AiOutlineStar />
                     </div>
                     <div className="context-title">
-                      Very good, with little issue.
+                    Best case in the market
                     </div>
                     <div className="review-wrapper">
-                      Everything arrived on time, no damage. Vibration may be a
-                      thing that could be corrected with some pads. The height
-                      of the inner top section is little too short to fit a
-                      fan/cooling rad and no place to pass wires. Probably not
-                      designed for that but it saves some space inside the case.
-                      The length of the SSD support is a little short for the
-                      cables tRead more about review stating Very good, with
-                      little issue.o fit “perfectly”. No fan controller, so make
-                      sure to buy one. BUT I recommend this case 100%. Looks
-                      awesome and strong. Very good finish. I didn't test the
-                      air flow, but recommend to put some fan at the bottom. AND
-                      Cable management @#$%ing AWESOME!
+                    Best case in the market !! Inspired by the lian li but better made.
                     </div>
                     <div className="review-image">
                       <img src={feedbackImage01} alt="Feedback Image" />
@@ -484,30 +478,28 @@ const ProductTab = () => {
                     </div>
                   </div>
                   <div className="review-item">
-                    <span className="user-name">maxim t.</span>
+                    <span className="user-name">Sébastien M.</span>
                     <div className="star-index">
                       <AiFillStar />
                       <AiFillStar />
                       <AiFillStar />
                       <AiFillStar />
-                      <AiOutlineStar />
+                      <AiFillStar />
                     </div>
                     <div className="context-title">
-                      Very good, with little issue.
+                    The look of that case
                     </div>
                     <div className="review-wrapper">
-                      Everything arrived on time, no damage. Vibration may be a
-                      thing that could be corrected with some pads. The height
-                      of the inner top section is little too short to fit a
-                      fan/cooling rad and no place to pass wires. Probably not
-                      designed for that but it saves some space inside the case.
-                      The length of the SSD support is a little short for the
-                      cables tRead more about review stating Very good, with
-                      little issue.o fit “perfectly”. No fan controller, so make
-                      sure to buy one. BUT I recommend this case 100%. Looks
-                      awesome and strong. Very good finish. I didn't test the
-                      air flow, but recommend to put some fan at the bottom. AND
-                      Cable management @#$%ing AWESOME!
+                      
+                      <ReactReadMoreReadLess
+                        charLimit={200}
+                        readMoreText={"Read more ▼"}
+                        readLessText={"Read less ▲"}
+                        readMoreClassName="read-more-less--more"
+                        readLessClassName="read-more-less--less"
+                    >
+                       The look of that case is incredible! Also the quality of product is very good.
+                    </ReactReadMoreReadLess>
                     </div>
                     <div className="review-footer">
                       <div className="share">
@@ -525,6 +517,252 @@ const ProductTab = () => {
                         </div>
                       </div>
                     </div>
+                  </div>
+                  <div className="review-item">
+                    <span className="user-name">Mark W.</span>
+                    <div className="star-index">
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiFillStar />
+                    </div>
+                    <div className="context-title">
+                        Bought the case and some
+                    </div>
+                    <div className="review-wrapper">
+                      
+                      <ReactReadMoreReadLess
+                        charLimit={200}
+                        readMoreText={"Read more ▼"}
+                        readLessText={"Read less ▲"}
+                        readMoreClassName="read-more-less--more"
+                        readLessClassName="read-more-less--less"
+                    >
+                      Bought the case and some of the legs came broken, asked to get it fixed and it’s been almost a month and still really haven’t heard anything. The case is proper up using square foam pads.
+                    </ReactReadMoreReadLess>
+                    </div>
+                    <div className="review-footer">
+                      <div className="share">
+                        <ImShare />
+                        <span className="label">Share</span>
+                      </div>
+                      <div className="like-item">
+                        <div className="like-sum">
+                          <AiFillLike />
+                          <span className="count">3</span>
+                        </div>
+                        <div className="dislike-sum">
+                          <AiFillDislike />
+                          <span className="count">0</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="review-item">
+                    <span className="user-name">Trevor M.</span>
+                    <div className="star-index">
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiFillStar />
+                    </div>
+                    <div className="context-title">
+                    Case is quality built great
+                    </div>
+                    <div className="review-wrapper">
+                      
+                      <ReactReadMoreReadLess
+                        charLimit={200}
+                        readMoreText={"Read more ▼"}
+                        readLessText={"Read less ▲"}
+                        readMoreClassName="read-more-less--more"
+                        readLessClassName="read-more-less--less"
+                    >
+                      Case is quality built great looks lots of room for 40 series GPU excellent cable management set up in back all around top of the line case.
+                    </ReactReadMoreReadLess>
+                    </div>
+                    <div className="review-footer">
+                      <div className="share">
+                        <ImShare />
+                        <span className="label">Share</span>
+                      </div>
+                      <div className="like-item">
+                        <div className="like-sum">
+                          <AiFillLike />
+                          <span className="count">3</span>
+                        </div>
+                        <div className="dislike-sum">
+                          <AiFillDislike />
+                          <span className="count">0</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="review-item">
+                    <span className="user-name">Benoit S.</span>
+                    <div className="star-index">
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiFillDislike/>
+                    </div>
+                    <div className="context-title">
+                    It will have been great
+                    </div>
+                    <div className="review-wrapper">
+                      
+                      <ReactReadMoreReadLess
+                        charLimit={200}
+                        readMoreText={"Read more ▼"}
+                        readLessText={"Read less ▲"}
+                        readMoreClassName="read-more-less--more"
+                        readLessClassName="read-more-less--less"
+                    >
+                      It will have been great with a couple of y splitter for the fan. My motherboard was limited with the number of fan.
+                    </ReactReadMoreReadLess>
+                    </div>
+                    <div className="review-footer">
+                      <div className="share">
+                        <ImShare />
+                        <span className="label">Share</span>
+                      </div>
+                      <div className="like-item">
+                        <div className="like-sum">
+                          <AiFillLike />
+                          <span className="count">0</span>
+                        </div>
+                        <div className="dislike-sum">
+                          <AiFillDislike />
+                          <span className="count">1</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="review-item">
+                    <span className="user-name">Daniel H.</span>
+                    <div className="star-index">
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiFillStar />
+                    </div>
+                    <div className="context-title">
+                    Awesome fit and finish. Cable
+                    </div>
+                    <div className="review-wrapper">
+                      
+                      <ReactReadMoreReadLess
+                        charLimit={200}
+                        readMoreText={"Read more ▼"}
+                        readLessText={"Read less ▲"}
+                        readMoreClassName="read-more-less--more"
+                        readLessClassName="read-more-less--less"
+                    >
+                      Awesome fit and finish. Cable Management was fitted within. The ability to put fans on the bottom of the case allows these fans to blow directly into the my RXT 4090 video card fans. With vertical airflow through the case providing excellent cooling.
+                    </ReactReadMoreReadLess>
+                    </div>
+                    <div className="review-footer">
+                      <div className="share">
+                        <ImShare />
+                        <span className="label">Share</span>
+                      </div>
+                      <div className="like-item">
+                        <div className="like-sum">
+                          <AiFillLike />
+                          <span className="count">3</span>
+                        </div>
+                        <div className="dislike-sum">
+                          <AiFillDislike />
+                          <span className="count">0</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="review-item">
+                    <span className="user-name">Quadgee C.</span>
+                    <div className="star-index">
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiFillStar />
+                    </div>
+                    <div className="context-title">
+                    Love the product and your
+                    </div>
+                    <div className="review-wrapper">
+                      <ReactReadMoreReadLess
+                        charLimit={200}
+                        readMoreText={"Read more ▼"}
+                        readLessText={"Read less ▲"}
+                        readMoreClassName="read-more-less--more"
+                        readLessClassName="read-more-less--less"
+                    >
+                      Love the product and your company
+                    </ReactReadMoreReadLess>
+                    </div>
+                    <div className="review-footer">
+                      <div className="share">
+                        <ImShare />
+                        <span className="label">Share</span>
+                      </div>
+                      <div className="like-item">
+                        <div className="like-sum">
+                          <AiFillLike />
+                          <span className="count">3</span>
+                        </div>
+                        <div className="dislike-sum">
+                          <AiFillDislike />
+                          <span className="count">0</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="review-item">
+                    <span className="user-name">Dave H.</span>
+                    <div className="star-index">
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiFillStar />
+                    </div>
+                    <div className="context-title">
+                    Best looking case I've ever seen
+                    </div>
+                    <div className="review-wrapper">
+                      
+                      <ReactReadMoreReadLess
+                        charLimit={200}
+                        readMoreText={"Read more ▼"}
+                        readLessText={"Read less ▲"}
+                        readMoreClassName="read-more-less--more"
+                        readLessClassName="read-more-less--less"
+                    >
+                      The only issue I found was the cover where the motherboard power cable passes through was a bit too narrow. I ended up adding right angle connectors on on the motherboard power cable and front usb connectors.
+                    </ReactReadMoreReadLess>
+                    </div>
+                    <div className="review-footer">
+                      <div className="share">
+                        <ImShare />
+                        <span className="label">Share</span>
+                      </div>
+                      <div className="like-item">
+                        <div className="like-sum">
+                          <AiFillLike />
+                          <span className="count">3</span>
+                        </div>
+                        <div className="dislike-sum">
+                          <AiFillDislike />
+                          <span className="count">0</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   </div>
                 </div>
               </TabPanel>
