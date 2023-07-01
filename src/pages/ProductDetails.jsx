@@ -54,7 +54,7 @@ const ProductDetails = () => {
           <div className="row">
             <div className="product-index">
               <div className="product-thumbnail col-lg-6">
-                <img src={product01} alt="Product Image" />
+                {/* <img src={product01} alt="Product Image" />
                 <LightGallery
                   speed={500}
                   plugins={[lgThumbnail]}
@@ -62,8 +62,31 @@ const ProductDetails = () => {
                   <a href="https://nzxt.com/assets/cms/34299/1672294362-h9-flow-side-empty-white.png?auto=format&dpr=1.5&fit=crop&h=1000&w=1000">
                     <img src="https://nzxt.com/assets/cms/34299/1672294362-h9-flow-side-empty-white.png?auto=format&dpr=1.5&fit=crop&h=1000&w=1000" alt="Img" />
                   </a>
+                  <a href="https://nzxt.com/assets/cms/34299/1672294362-h9-flow-side-empty-white.png?auto=format&dpr=1.5&fit=crop&h=1000&w=1000">
+                    <img src="https://nzxt.com/assets/cms/34299/1672294362-h9-flow-side-empty-white.png?auto=format&dpr=1.5&fit=crop&h=1000&w=1000" alt="Img" />
+                  </a>
 
-                </LightGallery>
+                </LightGallery> */}
+                 <div class="carousel">
+                    <a href="#modal" class="demo-modal">
+                      <div class="slides-container">
+                        <LightGallery
+                          speed={500}
+                          plugins={[lgThumbnail]}
+                        >
+                        <a class="slide" href={product01}>
+                          <img src={product01} />
+                        </a>
+                        <a class="slide" href={miniProduct01}>
+                          <img src={miniProduct01} />
+                        </a>
+                        <a class="slide" href={product01}>
+                          <img src={product01} />
+                        </a>
+                        </LightGallery>
+                      </div>
+                    </a>
+                  </div>
               </div>
               <div className="product__content col-lg-6">
                 <h1 className="title">H9 Flow</h1>
