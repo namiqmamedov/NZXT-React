@@ -17,6 +17,14 @@
   cursor: pointer;
 }
 
+.lg-thumb-item.active {
+  border-color: hsl(267, 83%, 49%) !important;
+}
+
+.lg-thumb-outer {
+  background: #fff !important;
+}
+
 .lg-close {
   background-color: rgba(0, 0, 0, 0.45) !important;
   border-radius: 50%;
@@ -75,6 +83,7 @@
 
 .product-item .product-index {
   display: flex;
+  gap: 1.6rem;
 }
 .product-item .product-index .product-thumbnail .carousel {
   position: relative;

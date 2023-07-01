@@ -6,6 +6,12 @@
   font-size: 18px;
   font-family: "Gotham SSm", sans-serif;
 }
+.product-tab .MuiButtonBase-root.Mui-selected {
+  color: black;
+}
+.product-tab .MuiTabs-indicator {
+  background-color: hsl(267, 83%, 49%) !important;
+}
 
 .MuiTabPanel-root .detail-index {
   display: flex;
@@ -96,6 +102,9 @@
   margin-bottom: 0;
   padding: 10px 0;
   border-bottom: 1px solid #dcdbe6;
+  font-size: 16px;
+  font-family: "Gotham SSm", sans-serif;
+  color: #737279;
 }
 .MuiTabPanel-root .spec-main .spec-item .spec-body {
   padding-top: 10px;

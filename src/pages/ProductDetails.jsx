@@ -21,6 +21,7 @@ import '../styles/product-detail.css'
 // Plugins
 import lgThumbnail from 'lightgallery/plugins/thumbnail'
 import  'lightgallery/css/lightgallery.css'
+import  'lightgallery/css/lg-thumbnail.css'
 import  LightGallery  from 'lightgallery/react/Lightgallery.es5';
 
 
