@@ -127,9 +127,15 @@
   font-size: 14px;
   font-family: "Gotham SSm", sans-serif;
 }
+.MuiTabPanel-root .review-index .review-count .star-index {
+  color: hsl(267, 83%, 49%) !important;
+}
 .MuiTabPanel-root .review-index .review-count .star-index svg {
   width: 1.5rem;
   height: 1.5rem;
+}
+.MuiTabPanel-root .review-index .review-count .star-index .filled {
+  margin-top: -2px;
 }
 .MuiTabPanel-root .review-filter {
   border-bottom: 1px solid black;
@@ -208,6 +214,7 @@
 .MuiTabPanel-root .review-gallery .review-item .review-image img {
   padding-right: 12px;
   border-radius: 5px;
+  width: 24%;
 }
 .MuiTabPanel-root .review-gallery .review-item .share svg {
   margin-top: -1px;

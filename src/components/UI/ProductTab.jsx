@@ -9,7 +9,7 @@ import h9GpuCompatibility from "../../assets/images/thumbnail/h9-gpu-compatibili
 import h9FanCompatibility from "../../assets/images/thumbnail/h9-fan-compatibility.png";
 import h9RadiatorCompatibility from "../../assets/images/thumbnail/h9-radiator-compatibility.png";
 import { AiFillStar } from "react-icons/ai";
-import { BsStarHalf } from "react-icons/bs";
+import { TbStarHalfFilled } from "react-icons/tb";
 import { AiOutlineStar } from "react-icons/ai";
 import Form from "react-bootstrap/Form";
 import { ImShare } from "react-icons/im";
@@ -18,7 +18,11 @@ import { AiFillDislike } from "react-icons/ai";
 import feedbackImage01 from '../../assets/images/thumbnail/feedbackImage01.jpg'
 import feedbackImage02 from '../../assets/images/thumbnail/feedbackImage02.jpg'
 import feedbackImage03 from '../../assets/images/thumbnail/feedbackImage03.jpg'
+import feedbackImage04 from '../../assets/images/thumbnail/feedbackImage04.jpg'
+import feedbackImage05 from '../../assets/images/thumbnail/feedbackImage05.jpg'
+import feedbackImage06 from '../../assets/images/thumbnail/feedbackImage06.jpg'
 import ReactReadMoreReadLess from "react-read-more-read-less";
+import {IoIosArrowForward} from 'react-icons/io'
 
 const longText =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum venenatis pulvinar. Proin vitae lectus urna. Sed erat ipsum, maximus a elit nec, condimentum placerat ex. Ut tincidunt mi eget condimentum mollis. Pellentesque aliquam velit quis est varius, sed molestie dolor ultrices. Pellentesque eget dapibus eros, at blandit arcu. Duis id purus quis mi porttitor viverra vel tempus elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos posuere";
@@ -412,7 +416,7 @@ const ProductTab = () => {
                       <AiFillStar />
                       <AiFillStar />
                       <AiFillStar />
-                      <BsStarHalf />
+                      <TbStarHalfFilled  className="filled"/>
                     </div>
                     <span className="review-total">11 Reviews</span>
                   </div>
@@ -478,7 +482,12 @@ const ProductTab = () => {
                     </div>
                   </div>
                   <div className="review-item">
+                  <div className="review-header">
                     <span className="user-name">Sébastien M.</span>
+                      <span className="review-date">
+                      03/20/23
+                      </span>
+                    </div>
                     <div className="star-index">
                       <AiFillStar />
                       <AiFillStar />
@@ -501,6 +510,8 @@ const ProductTab = () => {
                        The look of that case is incredible! Also the quality of product is very good.
                     </ReactReadMoreReadLess>
                     </div>
+                    <div className="review-image">
+                    </div>
                     <div className="review-footer">
                       <div className="share">
                         <ImShare />
@@ -509,7 +520,7 @@ const ProductTab = () => {
                       <div className="like-item">
                         <div className="like-sum">
                           <AiFillLike />
-                          <span className="count">3</span>
+                          <span className="count">0</span>
                         </div>
                         <div className="dislike-sum">
                           <AiFillDislike />
@@ -519,13 +530,18 @@ const ProductTab = () => {
                     </div>
                   </div>
                   <div className="review-item">
-                    <span className="user-name">Mark W.</span>
+                  <div className="review-header">
+                  <span className="user-name">Mark W.</span>
+                      <span className="review-date">
+                      03/20/23
+                      </span>
+                    </div>
                     <div className="star-index">
                       <AiFillStar />
                       <AiFillStar />
-                      <AiFillStar />
-                      <AiFillStar />
-                      <AiFillStar />
+                      <AiOutlineStar/>
+                      <AiOutlineStar/>
+                      <AiOutlineStar/>
                     </div>
                     <div className="context-title">
                         Bought the case and some
@@ -550,7 +566,7 @@ const ProductTab = () => {
                       <div className="like-item">
                         <div className="like-sum">
                           <AiFillLike />
-                          <span className="count">3</span>
+                          <span className="count">0</span>
                         </div>
                         <div className="dislike-sum">
                           <AiFillDislike />
@@ -560,7 +576,12 @@ const ProductTab = () => {
                     </div>
                   </div>
                   <div className="review-item">
-                    <span className="user-name">Trevor M.</span>
+                  <div className="review-header">
+                  <span className="user-name">Trevor M.</span>
+                      <span className="review-date">
+                      03/20/23
+                      </span>
+                    </div>
                     <div className="star-index">
                       <AiFillStar />
                       <AiFillStar />
@@ -583,6 +604,10 @@ const ProductTab = () => {
                       Case is quality built great looks lots of room for 40 series GPU excellent cable management set up in back all around top of the line case.
                     </ReactReadMoreReadLess>
                     </div>
+                    <div className="review-image">
+                      <img src={feedbackImage04} alt="Feedback Image" />
+                      <img src={feedbackImage05} alt="Feedback Image" />
+                    </div>
                     <div className="review-footer">
                       <div className="share">
                         <ImShare />
@@ -591,7 +616,7 @@ const ProductTab = () => {
                       <div className="like-item">
                         <div className="like-sum">
                           <AiFillLike />
-                          <span className="count">3</span>
+                          <span className="count">0</span>
                         </div>
                         <div className="dislike-sum">
                           <AiFillDislike />
@@ -601,7 +626,12 @@ const ProductTab = () => {
                     </div>
                   </div>
                   <div className="review-item">
-                    <span className="user-name">Benoit S.</span>
+                  <div className="review-header">
+                  <span className="user-name">Benoit S.</span>
+                      <span className="review-date">
+                      03/20/23
+                      </span>
+                    </div>
                     <div className="star-index">
                       <AiFillStar />
                       <AiFillStar />
@@ -624,6 +654,8 @@ const ProductTab = () => {
                       It will have been great with a couple of y splitter for the fan. My motherboard was limited with the number of fan.
                     </ReactReadMoreReadLess>
                     </div>
+                    <div className="review-image">
+                    </div>
                     <div className="review-footer">
                       <div className="share">
                         <ImShare />
@@ -632,17 +664,22 @@ const ProductTab = () => {
                       <div className="like-item">
                         <div className="like-sum">
                           <AiFillLike />
-                          <span className="count">0</span>
+                          <span className="count">4</span>
                         </div>
                         <div className="dislike-sum">
                           <AiFillDislike />
-                          <span className="count">1</span>
+                          <span className="count">0</span>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div className="review-item">
-                    <span className="user-name">Daniel H.</span>
+                  <div className="review-header">
+                  <span className="user-name">Daniel H.</span>
+                      <span className="review-date">
+                      03/20/23
+                      </span>
+                    </div>
                     <div className="star-index">
                       <AiFillStar />
                       <AiFillStar />
@@ -665,6 +702,8 @@ const ProductTab = () => {
                       Awesome fit and finish. Cable Management was fitted within. The ability to put fans on the bottom of the case allows these fans to blow directly into the my RXT 4090 video card fans. With vertical airflow through the case providing excellent cooling.
                     </ReactReadMoreReadLess>
                     </div>
+                    <div className="review-image">
+                    </div>
                     <div className="review-footer">
                       <div className="share">
                         <ImShare />
@@ -673,17 +712,22 @@ const ProductTab = () => {
                       <div className="like-item">
                         <div className="like-sum">
                           <AiFillLike />
-                          <span className="count">3</span>
+                          <span className="count">0</span>
                         </div>
                         <div className="dislike-sum">
                           <AiFillDislike />
-                          <span className="count">0</span>
+                          <span className="count">1</span>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div className="review-item">
-                    <span className="user-name">Quadgee C.</span>
+                  <div className="review-header">
+                  <span className="user-name">Quadgee C.</span>
+                      <span className="review-date">
+                      03/20/23
+                      </span>
+                    </div>
                     <div className="star-index">
                       <AiFillStar />
                       <AiFillStar />
@@ -705,6 +749,8 @@ const ProductTab = () => {
                       Love the product and your company
                     </ReactReadMoreReadLess>
                     </div>
+                    <div className="review-image">
+                    </div>
                     <div className="review-footer">
                       <div className="share">
                         <ImShare />
@@ -713,7 +759,7 @@ const ProductTab = () => {
                       <div className="like-item">
                         <div className="like-sum">
                           <AiFillLike />
-                          <span className="count">3</span>
+                          <span className="count">0</span>
                         </div>
                         <div className="dislike-sum">
                           <AiFillDislike />
@@ -723,7 +769,12 @@ const ProductTab = () => {
                     </div>
                   </div>
                   <div className="review-item">
-                    <span className="user-name">Dave H.</span>
+                  <div className="review-header">
+                  <span className="user-name">Dave H.</span>
+                      <span className="review-date">
+                      03/20/23
+                      </span>
+                    </div>
                     <div className="star-index">
                       <AiFillStar />
                       <AiFillStar />
@@ -746,6 +797,9 @@ const ProductTab = () => {
                       The only issue I found was the cover where the motherboard power cable passes through was a bit too narrow. I ended up adding right angle connectors on on the motherboard power cable and front usb connectors.
                     </ReactReadMoreReadLess>
                     </div>
+                    <div className="review-image">
+                      <img src={feedbackImage06} alt="Review Image" />
+                    </div>
                     <div className="review-footer">
                       <div className="share">
                         <ImShare />
@@ -754,7 +808,7 @@ const ProductTab = () => {
                       <div className="like-item">
                         <div className="like-sum">
                           <AiFillLike />
-                          <span className="count">3</span>
+                          <span className="count">1</span>
                         </div>
                         <div className="dislike-sum">
                           <AiFillDislike />
@@ -764,6 +818,26 @@ const ProductTab = () => {
                     </div>
                   </div>
                   </div>
+                </div>
+                <div className="pagination-review">
+                <nav aria-label="...">
+                  <ul class="pagination">
+                    <li class="page-item disabled">
+                      <span class="page-link">Previous</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active">
+                      <span class="page-link">
+                        2
+                        <span class="sr-only">(current)</span>
+                      </span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
                 </div>
               </TabPanel>
               <TabPanel value="4">Resources</TabPanel>

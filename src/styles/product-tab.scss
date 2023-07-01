@@ -160,9 +160,15 @@
             }
 
             .star-index {
+                color: hsl(267, 83%, 49%) !important;
+
                 svg {
                     width: 1.5rem;
                     height: 1.5rem;
+                }
+
+                .filled {
+                    margin-top: -2px;
                 }
             }
         }
@@ -201,7 +207,8 @@
             padding-bottom: 25px;
             display: block;
         }
-        .review-main{
+
+        .review-main {
             display: flex;
             gap: 1rem;
             flex-wrap: wrap;
@@ -231,8 +238,8 @@
                 }
             }
 
-            .star-index{
-                svg{
+            .star-index {
+                svg {
                     width: 1.15rem;
                     height: 1.15rem;
                     color: hsl(267deg 83% 49%) !important;
@@ -257,6 +264,7 @@
                 img {
                     padding-right: 12px;
                     border-radius: 5px;
+                    width: 24%;
                 }
 
                 padding-bottom: 15px;
@@ -283,10 +291,11 @@
                     display: flex;
                     gap: 1rem;
 
-                    svg{
+                    svg {
                         color: #686774;
                     }
-                    .count{
+
+                    .count {
                         color: #686774;
                         font-size: 13px;
                         font-family: 'Gotham SSm', sans-serif;
