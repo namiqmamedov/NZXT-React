@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "../styles/product-detail.css";
 import { Link } from "react-router-dom";
 import product01 from "../assets/images/product/h9-01.png";
@@ -18,14 +18,26 @@ import nzxtSupport from '../assets/images/thumbnail/nzxtSupport.png'
 import BuyTogether from "../components/UI/BuyTogether";
 import ProductTab from "../components/UI/ProductTab";
 import '../styles/product-detail.css'
+import h9P01 from '../assets/images/product/h9-01.png'
+import h9P02 from '../assets/images/product/h9-02.png'
+import h9P03 from '../assets/images/product/h9-03.png'
+import h9P04 from '../assets/images/product/h9-04.png'
+import h9P05 from '../assets/images/product/h9-05.png'
+
 // Plugins
 import lgThumbnail from 'lightgallery/plugins/thumbnail'
 import  'lightgallery/css/lightgallery.css'
 import  'lightgallery/css/lg-thumbnail.css'
 import  LightGallery  from 'lightgallery/react/Lightgallery.es5';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 const ProductDetails = () => {
+  const [nav1, setNav1] = useState();
+  const [nav2, setNav2] = useState();
+
   return (
     <>
       <section className="breadcrumb-item col-lg-12">
@@ -54,24 +66,11 @@ const ProductDetails = () => {
         <div className="container">
           <div className="row">
             <div className="product-index">
-              <div className="product-thumbnail col-lg-6">
-                {/* <img src={product01} alt="Product Image" />
-                <LightGallery
-                  speed={500}
-                  plugins={[lgThumbnail]}
-                >
-                  <a href="https://nzxt.com/assets/cms/34299/1672294362-h9-flow-side-empty-white.png?auto=format&dpr=1.5&fit=crop&h=1000&w=1000">
-                    <img src="https://nzxt.com/assets/cms/34299/1672294362-h9-flow-side-empty-white.png?auto=format&dpr=1.5&fit=crop&h=1000&w=1000" alt="Img" />
-                  </a>
-                  <a href="https://nzxt.com/assets/cms/34299/1672294362-h9-flow-side-empty-white.png?auto=format&dpr=1.5&fit=crop&h=1000&w=1000">
-                    <img src="https://nzxt.com/assets/cms/34299/1672294362-h9-flow-side-empty-white.png?auto=format&dpr=1.5&fit=crop&h=1000&w=1000" alt="Img" />
-                  </a>
-
-                </LightGallery> */}
+              <div className="product-thumbnail col-lg-6 col-12">
                  <div class="carousel">
                     <a href="#modal" class="demo-modal">
                       <div class="slides-container">
-                        <LightGallery
+                        {/* <LightGallery
                           speed={500}
                           plugins={[lgThumbnail]}
                         >
@@ -84,12 +83,52 @@ const ProductDetails = () => {
                         <a class="slide" href={product01}>
                           <img src={product01} />
                         </a>
+                        </LightGallery> */}
+                          <LightGallery speed={500}
+                          plugins={[lgThumbnail]}>
+{/* <LightGallery
+                          speed={500}
+                          plugins={[lgThumbnail]}
+                        >
+                        <a class="slide" href={product01}>
+                          <img src={product01} />
+                        </a>
+                        <a class="slide" href={miniProduct01}>
+                          <img src={miniProduct01} />
+                        </a>
+                        <a class="slide" href={product01}>
+                          <img src={product01} />
+                        </a>
+                        </LightGallery> */}
+                        {/* <a class="slide" href={h9P01}>
+                          <img src={h9P01} />
+                        </a>
+                        <a class="slide" href={h9P02}>
+                          <img src={h9P02} />
+                        </a>
+                        <a class="slide" href={h9P03}>
+                          <img src={h9P03} />
+                        </a> */}
+                          <a class="slide" href={h9P01}>
+                          <img src={h9P01} />
+                          </a>
+                          <a class="slide" href={h9P02}>
+                          <img src={h9P02} />
+                          </a>
+                          <a class="slide" href={h9P03}>
+                          <img src={h9P03} />
+                          </a>
                         </LightGallery>
+                         <div>
+
+
                       </div>
+                      </div>
+                      
                     </a>
                   </div>
               </div>
-              <div className="product__content col-lg-6">
+              <div className="product__content col-lg-6 col-12">
                 <h1 className="title">H9 Flow</h1>
                 <div className="feedback-index">
                 <AiFillStar/>

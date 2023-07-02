@@ -327,4 +327,19 @@
   text-transform: unset;
   font-size: 16px;
   font-family: "Gotham SSm", sans-serif;
+}
+
+@media screen and (max-width: 576px) {
+  .product-item .product-index {
+    flex-wrap: wrap;
+  }
+  .product-item .product-index .product-thumbnail .slide img {
+    width: 58%;
+  }
+  .product-item .product-index .product__content {
+    width: 100%;
+  }
+  .product-item .product-index .product__content .title {
+    font-size: 24px !important;
+  }
 }/*# sourceMappingURL=product-detail.css.map */

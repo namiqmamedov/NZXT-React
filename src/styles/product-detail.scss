@@ -389,3 +389,23 @@
     }
 }
 
+@media screen and (max-width: 576px) {
+    .product-item{
+        .product-index{
+            flex-wrap: wrap;
+            .product-thumbnail{
+                .slide{
+                    img{
+                        width: 58%;
+                    }
+                }
+            }
+            .product__content {
+                width: 100%;
+                .title{
+                    font-size: 24px !important;
+                }
+            }
+        }
+    }
+}
