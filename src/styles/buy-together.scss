@@ -227,3 +227,121 @@
         }
     }
 }
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .buy-together-item{
+        .title{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .subtitle{
+            max-width: 77%;
+        }
+        .buy-together-main{
+            flex-wrap: wrap;
+            .buy-together-index{
+                padding-bottom: 50px;
+                .item-content{
+                    margin-right: 10px;
+                }
+                p{
+                    max-width: 89%;
+                }
+
+                img{
+                    width: 40%;
+                    height: 111px;
+                }
+                .sold-out{
+                    left: 5%;
+                    right: 0;
+                    bottom: 29%;
+                    width: 33%;
+                }
+            }
+            .total-price{
+                .price-index{
+                    flex-direction: column !important; 
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px)  {
+    .buy-together-item{
+        .title{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .subtitle{
+            max-width: 77%;
+        }
+        .buy-together-main{
+            flex-wrap: wrap;
+            .buy-together-index{
+                padding-bottom: 50px;
+                .item-content{
+                    margin-right: 10px;
+                }
+                p{
+                    max-width: 89%;
+                }
+
+                img{
+                    width: 38%;
+                    height: 111px;
+                }
+                .sold-out{
+                    left: 5%;
+                    right: 0;
+                    bottom: 29%;
+                    width: 33%;
+                }
+            }
+            .total-price{
+                .price-index{
+                    flex-direction: column !important; 
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1500px)  {
+    .buy-together-item{
+        .title{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .subtitle{
+            max-width: 77%;
+        }
+        .buy-together-main{
+            flex-wrap: wrap;
+            .buy-together-index{
+                padding-bottom: 50px;
+                .item-content{
+                    margin-right: 10px;
+                }
+                p{
+                    max-width: 89%;
+                }
+
+                img{
+                    width: 38%;
+                    height: 111px;
+                }
+                .sold-out{
+                    left: 5%;
+                    right: 0;
+                    bottom: 29%;
+                    width: 33%;
+                }
+            }
+            .total-price{
+                .price-index{
+                    flex-direction: column !important; 
+                }
+            }
+        }
+    }
+}

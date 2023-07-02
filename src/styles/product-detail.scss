@@ -499,7 +499,6 @@
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     .product-item{
         .product-index{
-            flex-wrap: wrap;
             .product-thumbnail{
                 .slide{
                     img{
@@ -508,7 +507,6 @@
                 }
             }
             .product__content {
-                width: 100%;
                 .title{
                     font-size: 24px !important;
                 }
@@ -530,8 +528,11 @@
     .product-mini-item{
         .item-index{
             img{
-                width: 11% !important;
+                width: 20% !important;
                 margin-right: 18px !important;
+            }
+            .item-content{
+                width: 100% !important;
             }
         }
     }
