@@ -1,7 +1,6 @@
-import React,{useState} from "react";
+import React from "react";
 import "../styles/product-detail.css";
 import { Link } from "react-router-dom";
-import product01 from "../assets/images/product/h9-01.png";
 import {AiFillStar} from 'react-icons/ai'
 import {BsStarHalf} from 'react-icons/bs'
 import Radio from "@mui/material/Radio";
@@ -17,29 +16,12 @@ import Button from '@mui/material/Button';
 import nzxtSupport from '../assets/images/thumbnail/nzxtSupport.png'
 import BuyTogether from "../components/UI/BuyTogether";
 import ProductTab from "../components/UI/ProductTab";
-import '../styles/product-detail.css'
-import h9P01 from '../assets/images/product/h9-01.png'
-import h9P02 from '../assets/images/product/h9-02.png'
-import h9P03 from '../assets/images/product/h9-03.png'
-import h9P04 from '../assets/images/product/h9-04.png'
-import h9P05 from '../assets/images/product/h9-05.png'
-
-// Plugins
-import lgThumbnail from 'lightgallery/plugins/thumbnail'
-import  'lightgallery/css/lightgallery.css'
-import  'lightgallery/css/lg-thumbnail.css'
-import  LightGallery  from 'lightgallery/react/Lightgallery.es5';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
+import ImageSlider from "../components/UI/ImageSlider";
 
 const ProductDetails = () => {
-  const [nav1, setNav1] = useState();
-  const [nav2, setNav2] = useState();
-
   return (
     <>
+
       <section className="breadcrumb-item col-lg-12">
         <div className="breadcrumb-main">
           <div className="breadcrumb-index">
@@ -67,65 +49,8 @@ const ProductDetails = () => {
           <div className="row">
             <div className="product-index">
               <div className="product-thumbnail col-lg-6 col-12">
-                 <div class="carousel">
-                    <a href="#modal" class="demo-modal">
-                      <div class="slides-container">
-                        {/* <LightGallery
-                          speed={500}
-                          plugins={[lgThumbnail]}
-                        >
-                        <a class="slide" href={product01}>
-                          <img src={product01} />
-                        </a>
-                        <a class="slide" href={miniProduct01}>
-                          <img src={miniProduct01} />
-                        </a>
-                        <a class="slide" href={product01}>
-                          <img src={product01} />
-                        </a>
-                        </LightGallery> */}
-                          <LightGallery speed={500}
-                          plugins={[lgThumbnail]}>
-{/* <LightGallery
-                          speed={500}
-                          plugins={[lgThumbnail]}
-                        >
-                        <a class="slide" href={product01}>
-                          <img src={product01} />
-                        </a>
-                        <a class="slide" href={miniProduct01}>
-                          <img src={miniProduct01} />
-                        </a>
-                        <a class="slide" href={product01}>
-                          <img src={product01} />
-                        </a>
-                        </LightGallery> */}
-                        {/* <a class="slide" href={h9P01}>
-                          <img src={h9P01} />
-                        </a>
-                        <a class="slide" href={h9P02}>
-                          <img src={h9P02} />
-                        </a>
-                        <a class="slide" href={h9P03}>
-                          <img src={h9P03} />
-                        </a> */}
-                          <a class="slide" href={h9P01}>
-                          <img src={h9P01} />
-                          </a>
-                          <a class="slide" href={h9P02}>
-                          <img src={h9P02} />
-                          </a>
-                          <a class="slide" href={h9P03}>
-                          <img src={h9P03} />
-                          </a>
-                        </LightGallery>
-                         <div>
-
-
-                      </div>
-                      </div>
-                      
-                    </a>
+                  <div className="slider-item">
+                    <ImageSlider/>
                   </div>
               </div>
               <div className="product__content col-lg-6 col-12">
