@@ -329,7 +329,6 @@
         font-weight: bold;
     }
 
-
     .documentation {
         padding-top: 30px;
 
@@ -426,6 +425,16 @@
 
                 .description {
                     max-width: 91% !important;
+                }
+            }
+        }
+        .spec-main{
+            flex-wrap: wrap;
+            .spec-item{
+                .spec-body{
+                    span{
+                        display: block;
+                    }
                 }
             }
         }

@@ -335,6 +335,12 @@
   .MuiTabPanel-root .content-grid-block .content-block .description {
     max-width: 91% !important;
   }
+  .MuiTabPanel-root .spec-main {
+    flex-wrap: wrap;
+  }
+  .MuiTabPanel-root .spec-main .spec-item .spec-body span {
+    display: block;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .product-tab .MuiButtonBase-root {

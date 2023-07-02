@@ -159,9 +159,10 @@
         .buy-together-main{
             flex-wrap: wrap;
             .buy-together-index{
-                width: 100% !important;
+                width: 83% !important;
                 padding-bottom: 50px;
                 padding-left: 80px;
+                margin: 0 auto;
                 p{
                     max-width: 100%;
                 }
@@ -171,15 +172,16 @@
                     height: 111px;
                 }
                 .sold-out{
-                    left: 4%;
+                    left: 18%;
                     right: 0;
-                    bottom: 19%;
-                    width: 18%;
+                    bottom: 24%;
+                    width: 15%;
                 }
             }
             .total-price{
                 margin: 0 auto;
                 padding-left: 0 !important;
+                width: 60%;
             }
         }
     }

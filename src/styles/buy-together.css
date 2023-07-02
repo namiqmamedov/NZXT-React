@@ -143,9 +143,10 @@
     flex-wrap: wrap;
   }
   .buy-together-item .buy-together-main .buy-together-index {
-    width: 100% !important;
+    width: 83% !important;
     padding-bottom: 50px;
     padding-left: 80px;
+    margin: 0 auto;
   }
   .buy-together-item .buy-together-main .buy-together-index p {
     max-width: 100%;
@@ -155,13 +156,14 @@
     height: 111px;
   }
   .buy-together-item .buy-together-main .buy-together-index .sold-out {
-    left: 4%;
+    left: 18%;
     right: 0;
-    bottom: 19%;
-    width: 18%;
+    bottom: 24%;
+    width: 15%;
   }
   .buy-together-item .buy-together-main .total-price {
     margin: 0 auto;
     padding-left: 0 !important;
+    width: 60%;
   }
 }/*# sourceMappingURL=buy-together.css.map */
