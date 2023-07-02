@@ -83,3 +83,40 @@
 .item-slider-main{
 background: #F6F6F9;
 }
+
+@media screen and (max-width: 576px) {
+    .keen-slider img{
+        width: 58%;
+        height: 58% !important;
+    }
+}
+@media screen and (min-width: 576px)  and (max-width: 768px){
+    .keen-slider img{
+        width: 58%;
+        height: 58% !important;
+    }
+}
+@media screen and (min-width: 768px)  and (max-width: 992px){
+    .keen-slider img{
+        width: 58%;
+        height: 58% !important;
+    }
+}
+@media screen and (min-width: 992px)  and (max-width: 1200px){
+    .keen-slider img{
+        width: 58%;
+        height: 58% !important;
+    }
+}
+@media screen and (min-width: 1280px)  {
+    .keen-slider img{
+        width: 58%;
+        height: 90% !important;
+    }
+}
+@media screen and (min-width: 1540px)  {
+    .keen-slider img{
+        width: 58%;
+        height: 90% !important;
+    }
+}
