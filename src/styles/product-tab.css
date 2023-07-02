@@ -311,6 +311,9 @@
 }
 
 @media screen and (max-width: 576px) {
+  .product-tab .MuiButtonBase-root {
+    font-size: 16px !important;
+  }
   .MuiTabPanel-root .detail-index {
     flex-wrap: wrap;
     gap: 1rem;
@@ -341,8 +344,52 @@
   .MuiTabPanel-root .spec-main .spec-item .spec-body span {
     display: block;
   }
+  .MuiTabPanel-root .review-index .star-index .filled {
+    margin-top: 0px !important;
+    width: 0.88rem !important;
+    height: 0.88rem !important;
+  }
+  .MuiTabPanel-root .review-index .star-index svg {
+    width: 0.9rem !important;
+    height: 0.9rem !important;
+  }
+  .MuiTabPanel-root .review-index .review-rating {
+    color: #6b6d76;
+  }
+  .MuiTabPanel-root .review-gallery .review-main .review-item {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
+  .product-tab .MuiButtonBase-root {
+    font-size: 16px !important;
+  }
+  .MuiTabPanel-root .detail-index {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .MuiTabPanel-root .inside-index {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .MuiTabPanel-root .inside-index ul {
+    padding-left: 0;
+  }
+  .MuiTabPanel-root .content-grid-block .content-main {
+    flex-wrap: wrap;
+  }
+  .MuiTabPanel-root .content-grid-block .content-block {
+    padding-left: 36px !important;
+    padding-bottom: 40px;
+  }
+  .MuiTabPanel-root .content-grid-block .content-block h3 {
+    font-size: 24px !important;
+  }
+  .MuiTabPanel-root .content-grid-block .content-block .description {
+    max-width: 91% !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .product-tab .MuiButtonBase-root {
     font-size: 16px !important;
   }

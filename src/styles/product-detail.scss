@@ -454,3 +454,85 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .product-item{
+        .product-index{
+            flex-wrap: wrap;
+            .product-thumbnail{
+                .slide{
+                    img{
+                        width: 58%;
+                    }
+                }
+            }
+            .product__content {
+                width: 100%;
+                .title{
+                    font-size: 24px !important;
+                }
+                .configure-item{
+                    text-align: center;
+                    hr{
+                        width: 36.2%;
+                    }
+                }
+                .buy-item{
+                    text-align: center;
+                    hr{
+                        width: 42%;
+                    }
+                }
+            }
+        }
+    }
+    .product-mini-item{
+        .item-index{
+            img{
+                width: 11% !important;
+                margin-right: 18px !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .product-item{
+        .product-index{
+            flex-wrap: wrap;
+            .product-thumbnail{
+                .slide{
+                    img{
+                        width: 58%;
+                    }
+                }
+            }
+            .product__content {
+                width: 100%;
+                .title{
+                    font-size: 24px !important;
+                }
+                .configure-item{
+                    text-align: center;
+                    hr{
+                        width: 36.2%;
+                    }
+                }
+                .buy-item{
+                    text-align: center;
+                    hr{
+                        width: 42%;
+                    }
+                }
+            }
+        }
+    }
+    .product-mini-item{
+        .item-index{
+            img{
+                width: 11% !important;
+                margin-right: 18px !important;
+            }
+        }
+    }
+}
