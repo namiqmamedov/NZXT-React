@@ -13,7 +13,7 @@ const BuyTogether = () => {
             <h2 className="title">Buy Together</h2>
             <p className="subtitle">Take your build to the next level with expert recommended products</p>
           <div className="buy-together-main">
-            <div className="buy-together-index col-lg-3">
+            <div className="buy-together-index col-lg-3 col-12">
               <img src={buyTogether01} className="opacity-3" alt="Buy Together Item" />
               <div className="sold-out">
                 <p>Sold Out</p>
@@ -24,7 +24,7 @@ const BuyTogether = () => {
               <span>$159.99</span>
               </div>
             </div>
-            <div className="buy-together-index col-lg-3">
+            <div className="buy-together-index col-lg-3 col-12">
               <img src={buyTogether02} className="opacity-3"  alt="Buy Together Item" />
                <div className="sold-out">
                 <p>Sold Out</p>
@@ -35,7 +35,7 @@ const BuyTogether = () => {
               <span>$134.99</span>
               </div>
             </div>
-            <div className="buy-together-index col-lg-3">
+            <div className="buy-together-index col-lg-3 col-12">
               <img src={buyTogether03} alt="Buy Together Item" />
               <div className="item-context">
               <h2>Internal USB Hub (Gen 3)</h2>
@@ -43,7 +43,7 @@ const BuyTogether = () => {
               <span>$24.99</span>
               </div>
             </div>
-            <div className="total-price col-lg-3">
+            <div className="total-price col-lg-3 col-10">
               <div className="price-index">
                 <p className="total">Total:</p>
                 <p className="price">$24.99</p>

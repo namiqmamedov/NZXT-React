@@ -6,10 +6,12 @@
         font-size: 18px;
         font-family: 'Gotham SSm', sans-serif;
     }
-.MuiButtonBase-root.Mui-selected{
-    color: black;
-}
-    .MuiTabs-indicator{
+
+    .MuiButtonBase-root.Mui-selected {
+        color: black;
+    }
+
+    .MuiTabs-indicator {
         background-color: hsl(267deg 83% 49%) !important;
     }
 }
@@ -330,7 +332,8 @@
 
     .documentation {
         padding-top: 30px;
-        .document-wrapper{
+
+        .document-wrapper {
             display: flex;
             flex-wrap: wrap;
             gap: 2rem;
@@ -349,13 +352,16 @@
             gap: 1rem;
             width: 48%;
             border-bottom: 1px solid #dcdbe6;
-            &:last-child{
+
+            &:last-child {
                 border: none;
             }
-            &:nth-child(9){
+
+            &:nth-child(9) {
                 border: none;
             }
-            .pdf-icon{
+
+            .pdf-icon {
                 width: 2.2rem;
                 height: 2.2rem;
                 color: hsl(221deg 94% 41%);
@@ -378,10 +384,91 @@
                 font-family: 'Gotham SSM', sans-serif;
                 color: #737279;
             }
-            .document-content{
-                .download-icon{
+
+            .document-content {
+                .download-icon {
                     margin-left: 5px;
                     margin-top: -3px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .MuiTabPanel-root {
+        .detail-index {
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .inside-index {
+            flex-wrap: wrap;
+            gap: 1rem;
+
+            ul {
+                padding-left: 0;
+            }
+        }
+
+        .content-grid-block {
+            .content-main {
+                flex-wrap: wrap;
+            }
+
+            .content-block {
+                padding-left: 36px !important;
+                padding-bottom: 40px;
+
+                h3 {
+                    font-size: 24px !important;
+                }
+
+                .description {
+                    max-width: 91% !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .product-tab {
+        .MuiButtonBase-root {
+            font-size: 16px !important;
+        }
+    }
+
+    .MuiTabPanel-root {
+        .detail-index {
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .inside-index {
+            flex-wrap: wrap;
+            gap: 1rem;
+
+            ul {
+                padding-left: 0;
+            }
+        }
+
+        .content-grid-block {
+            .content-main {
+                flex-wrap: wrap;
+            }
+
+            .content-block {
+                padding-left: 36px !important;
+                padding-bottom: 40px;
+
+                h3 {
+                    font-size: 24px !important;
+                }
+
+                .description {
+                    max-width: 91% !important;
                 }
             }
         }

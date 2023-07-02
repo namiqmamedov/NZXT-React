@@ -405,6 +405,51 @@
                 .title{
                     font-size: 24px !important;
                 }
+                .configure-item{
+                    text-align: center;
+                    hr{
+                        width: 36.2%;
+                    }
+                }
+                .buy-item{
+                    text-align: center;
+                    hr{
+                        width: 42%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .product-item{
+        .product-index{
+            flex-wrap: wrap;
+            .product-thumbnail{
+                .slide{
+                    img{
+                        width: 58%;
+                    }
+                }
+            }
+            .product__content {
+                width: 100%;
+                .title{
+                    font-size: 24px !important;
+                }
+                .configure-item{
+                    text-align: center;
+                    hr{
+                        width: 36.2%;
+                    }
+                }
+                .buy-item{
+                    text-align: center;
+                    hr{
+                        width: 42%;
+                    }
+                }
             }
         }
     }
