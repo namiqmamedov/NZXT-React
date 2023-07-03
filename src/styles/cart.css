@@ -85,6 +85,84 @@
 }
 .cart-index .cart-total .total-card {
   background: #F6F6F9;
+  padding: 10px 20px;
+}
+.cart-index .cart-total .total-card .subtotal-flex {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dcdbe6;
+  padding-bottom: 8px;
+}
+.cart-index .cart-total .total-card .subtotal-flex .subtotal {
+  font-family: "Gotham SSm", sans-serif;
+  font-size: 18px;
+}
+.cart-index .cart-total .total-card .subtotal-flex .price {
+  font-family: "Gotham SSm", sans-serif;
+  font-size: 18px;
+  color: #000000;
+}
+.cart-index .cart-total .total-card .taxes-flex {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.cart-index .cart-total .total-card .taxes-flex .taxes {
+  font-size: 14px;
+  font-family: "Gotham SSm", sans-serif;
+}
+.cart-index .cart-total .total-card .shipping-flex {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.cart-index .cart-total .total-card .shipping-flex .shipping {
+  font-size: 14px;
+  font-family: "Gotham SSm", sans-serif;
+}
+.cart-index .cart-total .total-card .affirm-text {
+  display: flex;
+  align-items: center;
+}
+.cart-index .cart-total .total-card .affirm-text img {
+  width: 10%;
+  margin-top: -8px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.cart-index .cart-total .total-card .affirm-text span {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  font-family: "Gotham SSm", sans-serif;
+}
+.cart-index .cart-total .total-card .checkout-btn button {
+  padding: 8px 15px;
+  font-family: "Gotham SSm", sans-serif;
+  font-size: 18px;
+  text-transform: none;
+  background-color: hsl(267, 83%, 49%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 0.375rem;
+  transform: scale(0.98);
+  transition: 0.1s ease-in;
+  width: 100%;
+  margin-top: 12px;
+}
+.cart-index .cart-total .total-card .checkout-btn button:hover {
+  transform: scale(1);
+  background: #5E0BCB;
+}
+.cart-index .cart-total .total-card .bottom-content {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  background: #EBEBF0;
+  padding: 10px 20px;
+}
+.cart-index .cart-total .total-card .bottom-content em {
+  font-size: 14px;
+  font-family: "Gotham SSm", sans-serif;
+  color: #313235;
 }
 
 .cart-empty {

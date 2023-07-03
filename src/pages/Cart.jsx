@@ -66,16 +66,27 @@ const Cart = () => {
             <div className="total-card">
                     <h2 className='text-summary'>Summary</h2>
                     <div className="subtotal-flex">
-                        <span>Subtotal</span>
-                        <span>$369.96</span>
+                        <span className='subtotal'>Subtotal</span>
+                        <span className='price'>$369.96</span>
                     </div>
                     <div className="taxes-flex">
-                        <span>Taxes</span>
+                        <span className='taxes'>Taxes</span>
                         <span>Calculated at checkout</span>
                     </div>
                     <div className="shipping-flex">
-                        <span>Estimated shipping</span>
+                        <span className='shipping'>Estimated shipping</span>
                         <span>Calculated at checkout</span>
+                    </div>
+                    <div className="affirm-text">
+                        <span>As low as $34/mo with <img src={affirm} alt="Affirm Logo" /> <Link>Learn more</Link> </span> 
+                    </div>
+                    <Link className="checkout-btn">
+                        <Button variant="contained">Proceed to Checkout</Button>
+                    </Link>
+                    <div className="bottom-content">
+                        <p>
+                            <em>New and/or refurbished products may process and ship at different times.</em>
+                        </p>
                     </div>
             </div>
         </div>
