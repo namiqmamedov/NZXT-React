@@ -15,6 +15,7 @@ import cartImg02 from '../assets/images/thumbnail/cartImg02.png'
 import {BiTrash} from 'react-icons/bi'
 import {AiOutlinePlus} from 'react-icons/ai'
 import {AiOutlineMinus} from 'react-icons/ai'
+import affirm from '../assets/images/icon/affirm-logo.svg'
 
 const Cart = () => {
   return (
@@ -22,7 +23,7 @@ const Cart = () => {
    <section className='cart-index'>
     <div className="container">
         <div className="row">
-        <div className="cart-order col-lg-6">
+        <div className="cart-order col-lg-7">
             <Stack sx={{ width: '100%' }} spacing={2}>
                 <Alert severity="info">All PCs Process in 48 Business Hours.</Alert>
             </Stack>
@@ -38,23 +39,45 @@ const Cart = () => {
                     </div>
                     <div className="cart-content">
                         <span className="title">NZXT PCIe 4.0 X 16 Riser Cable - AB-RC200-B1</span>
-                        <BiTrash/>
-                    </div>
-                    <div className="quantity-price">
+                        <BiTrash className='remove-item'/>
+                        <div className="quantity-price">
                         <button className="quantity-btn">
-
+                            <AiOutlinePlus/>
+                            <input type="number"  value={1}/>
+                            <AiOutlineMinus/>
                         </button>
                         <span>$79.99</span>
                     </div>
+                    </div>
                 </li>
+                {/* <li className="cart-item"></li>
                 <li className="cart-item"></li>
                 <li className="cart-item"></li>
-                <li className="cart-item"></li>
-                <li className="cart-item"></li>
+                <li className="cart-item"></li> */}
             </ul>
            </div>
         </div>
-        <div className="cart-total col-lg-6">
+        <div className="cart-total col-lg-5">
+            <div className="pay-later-card">
+                <img src={affirm} alt="Affirm Logo" />
+                <p className='pay-title'>Pay Later with Affirm</p>
+                <p className='description'>Buy now, pay over time. Quick and easy. No hidden fees. Select "Affirm monthly payments" during checkout.</p>
+            </div>
+            <div className="total-card">
+                    <h2 className='text-summary'>Summary</h2>
+                    <div className="subtotal-flex">
+                        <span>Subtotal</span>
+                        <span>$369.96</span>
+                    </div>
+                    <div className="taxes-flex">
+                        <span>Taxes</span>
+                        <span>Calculated at checkout</span>
+                    </div>
+                    <div className="shipping-flex">
+                        <span>Estimated shipping</span>
+                        <span>Calculated at checkout</span>
+                    </div>
+            </div>
         </div>
         </div>
     </div>

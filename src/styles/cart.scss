@@ -1,6 +1,6 @@
 .cart-index{
     .cart-order{
-        padding-top: 40px;
+        margin-top: 60px;
         .cart-flex{
             display: flex;
             justify-content: space-between;
@@ -21,26 +21,76 @@
         }
         .cart-main{
             ul{
+                padding-left: 0;
                 li{
                     display: flex;
                     align-items: center;
+                    flex-wrap: wrap;
                     list-style: none;
+                    border-top: 1px solid #dcdbe6;
 
                     .cart-image{
                         width: 20%;
                         img{
-                            width: 80%;
+                            width: 60%;
                         }
                     }
                     .cart-content{
                         width: 80%;
                         display: flex;
                         align-items: center;
+                        flex-wrap: wrap;
                         justify-content: space-between;
+                        padding-top: 20px;
+                        .title{
+                            font-size: 18px;
+                            font-family: 'Gotham SSm', sans-serif;
+                            font-weight: bold;
+                        }
+                        .remove-item{
+                            width: 1.2rem;
+                            height: 1.2rem;
+                            cursor: pointer;
+                        }
+                    }
+                    .quantity-price{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        padding-top: 30px;
                     }
                 }
             }
         }
+    }
+    .cart-total{
+        margin-top: 60px;
+       .pay-later-card{
+        background: #E6E6FA;
+        padding: 10px 0;
+        img{
+            width: 12%;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+        .pay-title{
+            font-size: 18px;
+            font-family: 'Gotham SSm', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: .5rem;
+        }
+        .description{
+            font-size: 14px;
+            font-family: 'Gotham SSm', sans-serif;
+            text-align: center;
+        }
+       }
+       .total-card{
+        background: #F6F6F9;
+       }
     }
 }
 
