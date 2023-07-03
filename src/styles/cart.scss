@@ -161,6 +161,13 @@
                     padding-top: 20px;
                     font-size: 14px;
                     font-family: 'Gotham SSm', sans-serif;
+
+                    a{
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
                 }
             }
 

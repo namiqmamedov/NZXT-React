@@ -136,6 +136,12 @@
   font-size: 14px;
   font-family: "Gotham SSm", sans-serif;
 }
+.cart-index .cart-total .total-card .affirm-text span a {
+  text-decoration: none;
+}
+.cart-index .cart-total .total-card .affirm-text span a:hover {
+  text-decoration: underline;
+}
 .cart-index .cart-total .total-card .checkout-btn button {
   padding: 8px 15px;
   font-family: "Gotham SSm", sans-serif;
