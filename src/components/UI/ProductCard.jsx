@@ -3,6 +3,7 @@ import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
+import {Link} from 'react-router-dom'
 
 const ProductCard = (props) => {
     const {id,title,subtitle,image,price,oldPrice,count} = props.item
@@ -23,7 +24,9 @@ const ProductCard = (props) => {
                         <p>$100 Off</p></span>
                     ) : ""  
                    }   
+                  <Link to='../product-detail'>
                   <img src={image} alt="Shop Card" />
+                  </Link>
                   <div className="quick-shop">
                     <p>Quick Shop</p>
                   </div>

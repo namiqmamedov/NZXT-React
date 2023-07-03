@@ -74,6 +74,7 @@
   font-size: 36px;
   font-weight: bold;
   font-family: "Gotham SSm", sans-serif;
+  padding-top: 20px;
 }
 .product-item .product-index .product__content .price {
   font-size: 24px;

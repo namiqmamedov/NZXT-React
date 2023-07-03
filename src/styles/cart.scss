@@ -1,0 +1,28 @@
+.cart-index{
+    margin-top: 60px;
+    .cart-base{
+        background: #F5F5F8;
+        text-align: center;
+        padding: 50px 0;
+        h3{
+            font-size: 30px;
+            font-family: 'Gotham SSm',sans-serif;
+            font-weight: bold;
+        }
+        p{
+            font-size: 16px;
+            font-family: 'Gotham SSm',sans-serif;
+            max-width: 35%;
+            margin: 0 auto;
+            padding-bottom: 15px;
+        }
+        .continue-shopping{
+            background: hsl(267deg 83% 49%);
+            text-transform: none;
+            font-size: 16px;
+            font-family: 'Gotham SSm',sans-serif;
+            padding: 9px 35px;
+            border-radius: 6px;
+        }
+    }
+}

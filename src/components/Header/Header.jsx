@@ -47,9 +47,21 @@ const Header = () => {
                         'aria-labelledby': 'basic-button',
                         }}
                     >
-                        <MenuItem onClick={handleClose}>Profile</MenuItem>
-                        <MenuItem onClick={handleClose}>My account</MenuItem>
-                        <MenuItem onClick={handleClose}>Logout</MenuItem>
+                       <Link to='product'>
+                         <MenuItem onClick={handleClose}>
+                            Profile
+                        </MenuItem>
+                        </Link>
+                        <Link to='product'>
+                        <MenuItem onClick={handleClose}>
+                            My account
+                        </MenuItem>
+                        </Link>
+                        <Link to='product'>
+                        <MenuItem onClick={handleClose}>
+                            Logout
+                        </MenuItem>
+                        </Link>
                     </Menu>
                 </li>
                 <li>
@@ -71,9 +83,21 @@ const Header = () => {
                         'aria-labelledby': 'basic-button',
                         }}
                     >
-                        <MenuItem onClick={handleClose}>Profile</MenuItem>
-                        <MenuItem onClick={handleClose}>My account</MenuItem>
-                        <MenuItem onClick={handleClose}>Logout</MenuItem>
+                         <Link to='product'>
+                         <MenuItem onClick={handleClose}>
+                            Profile
+                        </MenuItem>
+                        </Link>
+                        <Link to='product'>
+                        <MenuItem onClick={handleClose}>
+                            My account
+                        </MenuItem>
+                        </Link>
+                        <Link to='product'>
+                        <MenuItem onClick={handleClose}>
+                            Logout
+                        </MenuItem>
+                        </Link>
                     </Menu>
                 </li>
                 <li>
@@ -95,9 +119,21 @@ const Header = () => {
                         'aria-labelledby': 'basic-button',
                         }}
                     >
-                        <MenuItem onClick={handleClose}>Profile</MenuItem>
-                        <MenuItem onClick={handleClose}>My account</MenuItem>
-                        <MenuItem onClick={handleClose}>Logout</MenuItem>
+                        <Link to='product'>
+                         <MenuItem onClick={handleClose}>
+                            Profile
+                        </MenuItem>
+                        </Link>
+                        <Link to='product'>
+                        <MenuItem onClick={handleClose}>
+                            My account
+                        </MenuItem>
+                        </Link>
+                        <Link to='product'>
+                        <MenuItem onClick={handleClose}>
+                            Logout
+                        </MenuItem>
+                        </Link>
                     </Menu>
                 </li>
                 <li>
@@ -119,9 +155,21 @@ const Header = () => {
                         'aria-labelledby': 'basic-button',
                         }}
                     >
-                        <MenuItem onClick={handleClose}>Profile</MenuItem>
-                        <MenuItem onClick={handleClose}>My account</MenuItem>
-                        <MenuItem onClick={handleClose}>Logout</MenuItem>
+                        <Link to='product'>
+                         <MenuItem onClick={handleClose}>
+                            Profile
+                        </MenuItem>
+                        </Link>
+                        <Link to='product'>
+                        <MenuItem onClick={handleClose}>
+                            My account
+                        </MenuItem>
+                        </Link>
+                        <Link to='product'>
+                        <MenuItem onClick={handleClose}>
+                            Logout
+                        </MenuItem>
+                        </Link>
                     </Menu>
                 </li>
                 <li>
@@ -143,9 +191,21 @@ const Header = () => {
                         'aria-labelledby': 'basic-button',
                         }}
                     >
-                        <MenuItem onClick={handleClose}>Profile</MenuItem>
-                        <MenuItem onClick={handleClose}>My account</MenuItem>
-                        <MenuItem onClick={handleClose}>Logout</MenuItem>
+                        <Link to='product'>
+                         <MenuItem onClick={handleClose}>
+                            Profile
+                        </MenuItem>
+                        </Link>
+                        <Link to='product'>
+                        <MenuItem onClick={handleClose}>
+                            My account
+                        </MenuItem>
+                        </Link>
+                        <Link to='product'>
+                        <MenuItem onClick={handleClose}>
+                            Logout
+                        </MenuItem>
+                        </Link>
                     </Menu>
                 </li>
                 <li>
@@ -167,9 +227,21 @@ const Header = () => {
                         'aria-labelledby': 'basic-button',
                         }}
                     >
-                        <MenuItem onClick={handleClose}>Profile</MenuItem>
-                        <MenuItem onClick={handleClose}>My account</MenuItem>
-                        <MenuItem onClick={handleClose}>Logout</MenuItem>
+                        <Link to='product'>
+                         <MenuItem onClick={handleClose}>
+                            Profile
+                        </MenuItem>
+                        </Link>
+                        <Link to='product'>
+                        <MenuItem onClick={handleClose}>
+                            My account
+                        </MenuItem>
+                        </Link>
+                        <Link to='product'>
+                        <MenuItem onClick={handleClose}>
+                            Logout
+                        </MenuItem>
+                        </Link>
                     </Menu>
                 </li>
             </ul>
