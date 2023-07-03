@@ -1,3 +1,40 @@
+.cart-index .cart-order {
+  padding-top: 40px;
+}
+.cart-index .cart-order .cart-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+.cart-index .cart-order .cart-flex h1 {
+  font-family: "Gotham SSm", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+.cart-index .cart-order .cart-flex .cart-quantity {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-family: "Gotham SSm", sans-serif;
+}
+.cart-index .cart-order .cart-main ul li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.cart-index .cart-order .cart-main ul li .cart-image {
+  width: 20%;
+}
+.cart-index .cart-order .cart-main ul li .cart-image img {
+  width: 80%;
+}
+.cart-index .cart-order .cart-main ul li .cart-content {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .cart-empty {
   margin-top: 60px;
 }

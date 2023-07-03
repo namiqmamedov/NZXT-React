@@ -10,6 +10,11 @@ import products from '../data/products';
 import ProductCard from '../components/UI/ProductCard';
 import Alert from '@mui/material/Alert';
 import Stack from '@mui/material/Stack';
+import cartImg01 from '../assets/images/thumbnail/cartImg01.png'
+import cartImg02 from '../assets/images/thumbnail/cartImg02.png'
+import {BiTrash} from 'react-icons/bi'
+import {AiOutlinePlus} from 'react-icons/ai'
+import {AiOutlineMinus} from 'react-icons/ai'
 
 const Cart = () => {
   return (
@@ -25,7 +30,29 @@ const Cart = () => {
            <h1 className='font-weight-bold'>Cart</h1>
            <p className="cart-quantity">( 2 )</p>
            </div>
+           <div className="cart-main">
+            <ul>
+                <li className="cart-item">
+                    <div className="cart-image">
+                        <img src={cartImg01} alt="Cart Image" />
+                    </div>
+                    <div className="cart-content">
+                        <span className="title">NZXT PCIe 4.0 X 16 Riser Cable - AB-RC200-B1</span>
+                        <BiTrash/>
+                    </div>
+                    <div className="quantity-price">
+                        <button className="quantity-btn">
 
+                        </button>
+                        <span>$79.99</span>
+                    </div>
+                </li>
+                <li className="cart-item"></li>
+                <li className="cart-item"></li>
+                <li className="cart-item"></li>
+                <li className="cart-item"></li>
+            </ul>
+           </div>
         </div>
         <div className="cart-total col-lg-6">
         </div>
