@@ -8,11 +8,31 @@ import {Link} from 'react-router-dom'
 import monitorBanner from '../assets/images/thumbnail/monitor-banner.png'
 import products from '../data/products';
 import ProductCard from '../components/UI/ProductCard';
+import Alert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
 
 const Cart = () => {
   return (
    <>
-     <section className='cart-index'>
+   <section className='cart-index'>
+    <div className="container">
+        <div className="row">
+        <div className="cart-order col-lg-6">
+            <Stack sx={{ width: '100%' }} spacing={2}>
+                <Alert severity="info">All PCs Process in 48 Business Hours.</Alert>
+            </Stack>
+           <div className="cart-flex">
+           <h1 className='font-weight-bold'>Cart</h1>
+           <p className="cart-quantity">( 2 )</p>
+           </div>
+
+        </div>
+        <div className="cart-total col-lg-6">
+        </div>
+        </div>
+    </div>
+   </section>
+     <section className='cart-empty'>
         <div className="container">
             <div className="row">
                 <div className="cart-base">
@@ -98,6 +118,7 @@ const Cart = () => {
       <section className="shop-bestseller">
         <div className="container">
           <div className="row">
+            <h2 className='title-main'>Before You Go...</h2>
             <div className="shop-index">
               {products.slice(0,8).map((item,index) => (
                 <ProductCard item={item} key={index} />            

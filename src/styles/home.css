@@ -435,6 +435,12 @@
   font-weight: bold;
   text-align: center;
 }
+.shop-bestseller .title-main {
+  font-size: 46px;
+  font-weight: bold;
+  font-family: "Gotham SSm", sans-serif;
+  margin-bottom: -20px;
+}
 .shop-bestseller .subtitle {
   font-size: 16px;
   font-family: "Gotham SSm", sans-serif;

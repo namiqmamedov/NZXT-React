@@ -1,24 +1,24 @@
-.cart-index {
+.cart-empty {
   margin-top: 60px;
 }
-.cart-index .cart-base {
+.cart-empty .cart-base {
   background: #F5F5F8;
   text-align: center;
   padding: 50px 0;
 }
-.cart-index .cart-base h3 {
+.cart-empty .cart-base h3 {
   font-size: 30px;
   font-family: "Gotham SSm", sans-serif;
   font-weight: bold;
 }
-.cart-index .cart-base p {
+.cart-empty .cart-base p {
   font-size: 16px;
   font-family: "Gotham SSm", sans-serif;
   max-width: 35%;
   margin: 0 auto;
   padding-bottom: 15px;
 }
-.cart-index .cart-base .continue-shopping {
+.cart-empty .cart-base .continue-shopping {
   background: hsl(267, 83%, 49%);
   text-transform: none;
   font-size: 16px;
