@@ -1,0 +1,38 @@
+.support-index{
+    padding-top: 60px;
+    .support-main{
+        display: flex;
+        align-items: center;
+        .support-content{
+            h1{
+                font-size: 72px;
+                font-family: 'Gotham SSm',sans-serif;
+                font-weight: bold;
+            }
+            p{
+                font-size: 18px;
+                font-family: 'Gotham SSm',sans-serif;
+                color: #313235;
+            }
+        }
+    }
+    .support-content{
+        padding-left: 90px;
+    }
+    .support-img{
+        display: block;
+        margin: 0 auto;
+        img{
+            display: block;
+            margin-left: auto;
+            width: 80%;
+        }
+    }
+}
+
+.contact-index{
+
+    .contact-main{
+        display: flex;
+    }
+}

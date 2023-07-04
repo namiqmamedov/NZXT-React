@@ -55,7 +55,7 @@ const Register = () => {
                     <span className='remember-text'>Sign up for emails to get updates from NZXT on products,BLD,and CAM</span>
                 </Checkbox>
             </div>
-            <button className="sign-in-btn">
+            <button className="default-btn">
                 Sign Up
             </button>
             <div className="create-account">
