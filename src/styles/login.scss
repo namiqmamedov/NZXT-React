@@ -1,44 +1,89 @@
-.login-index{
+.login-index {
     padding-top: 4rem;
     padding-bottom: 4rem;
 
-    .nzxt-logo{
+    .nzxt-logo {
         width: 100%;
     }
 
-    .login-wrapper{
+    .login-wrapper {
         padding-top: 40px;
 
-        .login-google{
+        .login-google {
             margin: 0 auto;
             display: block;
             text-align: center;
-            .icon-google{
+
+            .icon-google {
                 margin-right: 12px;
                 width: 1.5rem;
                 height: 1.5rem;
             }
-            button{
+
+            button {
                 background-color: #fff;
                 padding: 10px 20px;
                 width: 24%;
                 border: 1px solid #dcdbe6;
                 border-radius: 8px;
 
-                span{
+                span {
                     font-size: 16px;
-                    font-family: 'Gotham SSm',sans-serif;
+                    font-family: 'Gotham SSm', sans-serif;
                     color: #737279;
                 }
             }
         }
 
-        .login-main{
+        .login-main {
             width: 24%;
             margin: 0 auto;
-            hr{
+
+            hr {
                 display: inline-block;
                 width: 15%;
+            }
+
+            .remember-check {
+                display: flex;
+                justify-content: space-between;
+
+                .nextui-c{
+                    cursor: none;
+                }
+
+                span{
+                    font-size: 14px;
+                    font-family: 'Gotham SSm', sans-serif;
+                }
+                a{
+                    font-size: 14px;
+                    font-family: 'Gotham SSm', sans-serif;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .sign-in-btn{
+                    padding: 8px 15px;
+                    font-family: 'Gotham SSm', sans-serif;
+                    font-size: 18px;
+                    text-transform: none;
+                    background-color: hsl(267deg 83% 49%);
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+                    border-radius: 0.375rem;
+                    transform: scale(0.98);
+                    transition: .1s ease-in;
+                    width: 100%;
+                    margin-top: 12px;
+                    color: #fff;
+                    margin-top: 20px;
+
+                    &:hover {
+                        transform: scale(1);
+                        background: #5E0BCB;
+                    }
             }
         }
     }

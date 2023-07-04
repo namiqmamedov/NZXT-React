@@ -37,4 +37,42 @@
 .login-index .login-wrapper .login-main hr {
   display: inline-block;
   width: 15%;
+}
+.login-index .login-wrapper .login-main .remember-check {
+  display: flex;
+  justify-content: space-between;
+}
+.login-index .login-wrapper .login-main .remember-check .nextui-c {
+  cursor: none;
+}
+.login-index .login-wrapper .login-main .remember-check span {
+  font-size: 14px;
+  font-family: "Gotham SSm", sans-serif;
+}
+.login-index .login-wrapper .login-main .remember-check a {
+  font-size: 14px;
+  font-family: "Gotham SSm", sans-serif;
+  text-decoration: none;
+}
+.login-index .login-wrapper .login-main .remember-check a:hover {
+  text-decoration: underline;
+}
+.login-index .login-wrapper .login-main .sign-in-btn {
+  padding: 8px 15px;
+  font-family: "Gotham SSm", sans-serif;
+  font-size: 18px;
+  text-transform: none;
+  background-color: hsl(267, 83%, 49%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 0.375rem;
+  transform: scale(0.98);
+  transition: 0.1s ease-in;
+  width: 100%;
+  margin-top: 12px;
+  color: #fff;
+  margin-top: 20px;
+}
+.login-index .login-wrapper .login-main .sign-in-btn:hover {
+  transform: scale(1);
+  background: #5E0BCB;
 }/*# sourceMappingURL=login.css.map */

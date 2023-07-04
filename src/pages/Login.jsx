@@ -1,7 +1,8 @@
 import React from 'react'
 import '../styles/login.css'
 import Form from 'react-bootstrap/Form';
-
+import { Checkbox } from "@nextui-org/react";
+import {Link} from 'react-router-dom'
 
 const Login = () => {
   return (
@@ -30,6 +31,19 @@ const Login = () => {
                 <Form.Label>Password</Form.Label>
                 <Form.Control type="password" />
             </Form.Group>
+            <div className="remember-check">
+                <Checkbox className="checkbox-index" color="secondary">
+                    <span>Remember me</span>
+                </Checkbox>
+                <div className="forgot-password-block">
+                    <Link>
+                    Forgot password?
+                    </Link>
+                </div>
+            </div>
+            <button className="sign-in-btn">
+                Sign In
+            </button>
         </Form>
         </div>
       </div>
