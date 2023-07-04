@@ -1939,7 +1939,7 @@
     }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1200px) {
     .container {
         max-width: 1265px !important;
     }
@@ -1962,8 +1962,6 @@
         }
 
         .home__content {
-
-
             .home__thumbnail {
                 img {
                     position: absolute;
@@ -2019,6 +2017,7 @@
             width: 35% !important;
             height: 100%;
             position: relative;
+            margin-top: 20px;
 
             .background-sr {
                 display: block !important;
@@ -2046,7 +2045,7 @@
             }
 
             .thumbnail-img {
-                height: 640px !important;
+                height: 672px !important;
                 width: 100% !important;
             }
         }

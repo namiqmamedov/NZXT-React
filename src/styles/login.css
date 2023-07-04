@@ -12,6 +12,7 @@
   margin: 0 auto;
   display: block;
   text-align: center;
+  padding-bottom: 20px;
 }
 .login-index .login-wrapper .login-google .icon-google {
   margin-right: 12px;
@@ -34,9 +35,30 @@
   width: 24%;
   margin: 0 auto;
 }
+.login-index .login-wrapper .login-main h2 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #dcdbe6;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+.login-index .login-wrapper .login-main h2 span {
+  background: #fff;
+  padding: 0 10px;
+}
 .login-index .login-wrapper .login-main hr {
   display: inline-block;
-  width: 15%;
+  width: 29%;
+  margin: 0;
+}
+.login-index .login-wrapper .login-main span {
+  margin: 0 3px;
+  font-size: 14px;
+  font-family: "Gotham SSm", sans-serif;
+  color: #6B7280;
+}
+.login-index .login-wrapper .login-main form {
+  padding-top: 20px;
 }
 .login-index .login-wrapper .login-main .remember-check {
   display: flex;
@@ -45,7 +67,13 @@
 .login-index .login-wrapper .login-main .remember-check .nextui-c {
   cursor: none;
 }
+.login-index .login-wrapper .login-main .remember-check svg {
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-left: 6px;
+}
 .login-index .login-wrapper .login-main .remember-check span {
+  padding-left: 2px;
   font-size: 14px;
   font-family: "Gotham SSm", sans-serif;
 }
@@ -71,8 +99,143 @@
   margin-top: 12px;
   color: #fff;
   margin-top: 20px;
+  border: none;
 }
 .login-index .login-wrapper .login-main .sign-in-btn:hover {
   transform: scale(1);
   background: #5E0BCB;
+}
+.login-index .login-wrapper .login-main .create-account {
+  display: flex;
+  justify-content: center;
+  padding-top: 12px;
+}
+.login-index .login-wrapper .login-main .create-account a {
+  padding-left: 12px;
+  text-decoration: none;
+}
+.login-index .login-wrapper .login-main .create-account a:hover {
+  text-decoration: underline;
+}
+.login-index .login-wrapper .login-main .create-account svg {
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-left: 6px;
+}
+
+@media screen and (max-width: 576px) {
+  .login-google button {
+    width: 83% !important;
+  }
+  .login-index .nzxt-logo {
+    width: 16%;
+    height: 24px;
+    display: block;
+    margin: 0 auto;
+  }
+  .login-index .login-wrapper .login-main {
+    width: 90% !important;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .login-google button {
+    width: 50% !important;
+  }
+  .login-index .nzxt-logo {
+    width: 15%;
+    height: 22px;
+    display: block;
+    margin: 0 auto;
+  }
+  .login-index .login-wrapper .login-main {
+    width: 50% !important;
+  }
+  .login-index .login-wrapper .login-google {
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .login-google button {
+    width: 40% !important;
+  }
+  .login-index .nzxt-logo {
+    width: 15%;
+    height: 22px;
+    display: block;
+    margin: 0 auto;
+  }
+  .login-index .login-wrapper .login-main {
+    width: 40% !important;
+  }
+  .login-index .login-wrapper .login-google {
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .login-google button {
+    width: 32% !important;
+  }
+  .login-index .nzxt-logo {
+    width: 15%;
+    height: 22px;
+    display: block;
+    margin: 0 auto;
+  }
+  .login-index .login-wrapper {
+    padding-top: 27px;
+  }
+  .login-index .login-wrapper .login-main {
+    width: 32% !important;
+  }
+  .login-index .login-wrapper .login-google {
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .login-google button {
+    width: 25% !important;
+  }
+  .login-index {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .login-index .nzxt-logo {
+    width: 15%;
+    height: 22px;
+    display: block;
+    margin: 0 auto;
+  }
+  .login-index .login-wrapper {
+    padding-top: 27px;
+  }
+  .login-index .login-wrapper .login-main {
+    width: 25% !important;
+  }
+  .login-index .login-wrapper .login-google {
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .login-google button {
+    width: 20% !important;
+  }
+  .login-index {
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+  }
+  .login-index .nzxt-logo {
+    width: 15%;
+    height: 22px;
+    display: block;
+    margin: 0 auto;
+  }
+  .login-index .login-wrapper {
+    padding-top: 27px;
+  }
+  .login-index .login-wrapper .login-main {
+    width: 20% !important;
+  }
+  .login-index .login-wrapper .login-google {
+    padding-bottom: 24px;
+  }
 }/*# sourceMappingURL=login.css.map */

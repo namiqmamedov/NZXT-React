@@ -1472,7 +1472,7 @@
     font-size: 36px;
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1200px) {
   .container {
     max-width: 1265px !important;
   }
@@ -1528,6 +1528,7 @@
     width: 35% !important;
     height: 100%;
     position: relative;
+    margin-top: 20px;
   }
   .player-two-card .thumbnail__end .background-sr {
     display: block !important;
@@ -1552,7 +1553,7 @@
     height: 15% !important;
   }
   .player-two-card .thumbnail__end .thumbnail-img {
-    height: 640px !important;
+    height: 672px !important;
     width: 100% !important;
   }
   .main-wrapper img {
