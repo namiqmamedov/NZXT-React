@@ -27,17 +27,24 @@ const Register = () => {
                 <Form.Control type="text" />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                <Form.Label>Username</Form.Label>
-                <Form.Control type="text" />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                <Form.Label>Username</Form.Label>
-                <Form.Control type="text" />
+                <Form.Label>Email Address</Form.Label>
+                <Form.Control type="email" />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                 <Form.Label>Password</Form.Label>
+                <Form.Control type="text" />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                <Form.Label>Confirm Password</Form.Label>
                 <Form.Control type="password" />
             </Form.Group>
+            <Form.Label>Location</Form.Label>
+            <Form.Select aria-label="Default select example">
+                <option value="1">North America</option>
+                <option value="2">Europe</option>
+                <option value="3">Oceania</option>
+                <option value="4">United Kingdom</option>
+            </Form.Select>
             <div className="remember-check">
                 <Checkbox className="checkbox-index" color="secondary">
                     <span className='remember-text'>Remember me</span>
@@ -50,12 +57,12 @@ const Register = () => {
                 </div>
             </div>
             <button className="sign-in-btn">
-                Sign In
+                Sign Up
             </button>
             <div className="create-account">
-                <p>Not a member? 
+                <p>Have an account? 
                 </p>
-                <Link>Create account
+                <Link>Sign In
                       <MdOutlineArrowForwardIos/>
                 </Link>
             </div>
