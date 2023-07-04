@@ -63,6 +63,7 @@
 .login-index .login-wrapper .login-main .remember-check {
   display: flex;
   justify-content: space-between;
+  padding-top: 10px;
 }
 .login-index .login-wrapper .login-main .remember-check .nextui-c {
   cursor: none;
@@ -83,6 +84,32 @@
   text-decoration: none;
 }
 .login-index .login-wrapper .login-main .remember-check a:hover {
+  text-decoration: underline;
+}
+.login-index .login-wrapper .login-main .item-check {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.login-index .login-wrapper .login-main .item-check .nextui-c {
+  cursor: none;
+}
+.login-index .login-wrapper .login-main .item-check svg {
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-left: 6px;
+}
+.login-index .login-wrapper .login-main .item-check span {
+  padding-left: 2px;
+  font-size: 12px;
+  font-family: "Gotham SSm", sans-serif;
+}
+.login-index .login-wrapper .login-main .item-check a {
+  font-size: 12px;
+  font-family: "Gotham SSm", sans-serif;
+  text-decoration: none;
+}
+.login-index .login-wrapper .login-main .item-check a:hover {
   text-decoration: underline;
 }
 .login-index .login-wrapper .login-main .sign-in-btn {

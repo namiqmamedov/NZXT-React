@@ -45,16 +45,15 @@ const Register = () => {
                 <option value="3">Oceania</option>
                 <option value="4">United Kingdom</option>
             </Form.Select>
-            <div className="remember-check">
+            <div className="item-check">
                 <Checkbox className="checkbox-index" color="secondary">
-                    <span className='remember-text'>Remember me</span>
+                    <span className='remember-text'>I accept the NZXT's <Link>Terms of Use</Link> and have read the <Link>Privacy Policy</Link>  </span>
                 </Checkbox>
-                <div className="forgot-password-block">
-                    <Link to='../register'>
-                    Forgot password?
-                  <MdOutlineArrowForwardIos/>
-                    </Link>
-                </div>
+            </div>
+            <div className="item-check">
+                <Checkbox className="checkbox-index" color="secondary">
+                    <span className='remember-text'>Sign up for emails to get updates from NZXT on products,BLD,and CAM</span>
+                </Checkbox>
             </div>
             <button className="sign-in-btn">
                 Sign Up

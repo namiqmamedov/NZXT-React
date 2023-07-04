@@ -74,6 +74,7 @@
             .remember-check {
                 display: flex;
                 justify-content: space-between;
+                padding-top: 10px;
 
                 .nextui-c {
                     cursor: none;
@@ -93,6 +94,37 @@
 
                 a {
                     font-size: 14px;
+                    font-family: 'Gotham SSm', sans-serif;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .item-check {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 10px;
+
+                .nextui-c {
+                    cursor: none;
+                }
+
+                svg {
+                    width: .7rem;
+                    height: .7rem;
+                    margin-left: 6px;
+                }
+
+                span {
+                    padding-left: 2px;
+                    font-size: 12px;
+                    font-family: 'Gotham SSm', sans-serif;
+                }
+
+                a {
+                    font-size: 12px;
                     font-family: 'Gotham SSm', sans-serif;
                     text-decoration: none;
 
