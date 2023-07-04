@@ -60,6 +60,25 @@
                             height: 1.2rem;
                             cursor: pointer;
                         }
+
+                        .increase__decrease-btn {
+                            padding: 8px 5px;
+                            border-radius: 5px;
+                            border: 1px solid #dcdbe6;
+                        }
+
+                        .increase__btn,
+                        .decrease__btn {
+                            cursor: pointer;
+                        }
+
+                        .delete__btn {
+                            font-size: 1.1rem;
+                            font-weight: 600;
+                            cursor: pointer;
+                        }
+
+                        /*# sourceMappingURL=cart-item.css.map */
                     }
 
                     .quantity-price {
@@ -79,6 +98,8 @@
         .pay-later-card {
             background: #E6E6FA;
             padding: 10px 0;
+            border-radius: 7px;
+            margin-bottom: 15px;
 
             img {
                 width: 12%;
@@ -106,7 +127,8 @@
         .total-card {
             background: #F6F6F9;
             padding: 10px 20px;
-
+            border-radius: 7px;
+            
             .subtotal-flex {
                 display: flex;
                 justify-content: space-between;
@@ -150,28 +172,31 @@
             .affirm-text {
                 display: flex;
                 align-items: center;
-                img{
+
+                img {
                     width: 10%;
                     margin-top: -8px;
                     margin-left: 3px;
                     margin-right: 3px;
                 }
-                span{
+
+                span {
                     text-align: center;
                     padding-top: 20px;
                     font-size: 14px;
                     font-family: 'Gotham SSm', sans-serif;
 
-                    a{
+                    a {
                         text-decoration: none;
-                        &:hover{
+
+                        &:hover {
                             text-decoration: underline;
                         }
                     }
                 }
             }
 
-            .checkout-btn{
+            .checkout-btn {
                 button {
                     padding: 8px 15px;
                     font-family: 'Gotham SSm', sans-serif;
@@ -184,7 +209,7 @@
                     transition: .1s ease-in;
                     width: 100%;
                     margin-top: 12px;
-        
+
                     &:hover {
                         transform: scale(1);
                         background: #5E0BCB;
@@ -192,13 +217,13 @@
                 }
             }
 
-            .bottom-content{
+            .bottom-content {
                 margin-top: 15px;
                 margin-bottom: 8px;
                 background: #EBEBF0;
                 padding: 10px 20px;
 
-                em{
+                em {
                     font-size: 14px;
                     font-family: 'Gotham SSm', sans-serif;
                     color: #313235;
@@ -302,6 +327,146 @@
             top: 0;
             left: 0;
             right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card-thumbnail {
+        .card-index {
+            flex-wrap: wrap;
+
+            .card-item {
+                img {
+                    width: 55%;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .card-thumbnail {
+        .card-index {
+            flex-wrap: wrap;
+
+            .card-item {
+                img {
+                    width: 55%;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .card-thumbnail {
+        .card-index {
+            flex-wrap: wrap;
+
+            .card-item {
+                img {
+                    width: 55%;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    .cart-index{
+        .cart-item{
+            .cart-image{
+                width: 10% !important;
+                img{
+                    width: 80% !important;
+                }
+            }
+            .cart-content{
+                width: 90% !important;
+            }
+        }
+    }
+
+    .pay-later-card {
+        margin-bottom: 15px;
+        border-radius: 10px;
+
+        img{
+            width: 9% !important;
+        }
+    }
+
+    .total-card {
+        border-radius: 10px;
+        .affirm-text{
+            span{
+                display: block;
+                width: 100%;
+            }
+            img{
+                width: 8%;
+            }
+        }
+        .checkout-btn{
+            button{
+                font-size: 16px !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .cart-order{
+        width: 67% !important;
+    }
+    .cart-total{
+        width: 33% !important;
+    }
+
+    .cart-index{
+        .cart-item{
+            .cart-image{
+                width: 10% !important;
+                img{
+                    width: 80% !important;
+                }
+            }
+            .cart-content{
+                width: 90% !important;
+            }
+        }
+    }
+
+    .pay-later-card {
+        margin-bottom: 15px;
+        border-radius: 10px;
+
+        img{
+            width: 9% !important;
+        }
+    }
+
+    .total-card {
+        border-radius: 10px;
+        .affirm-text{
+            span{
+                display: block;
+                width: 100%;
+            }
+            img{
+                width: 8%;
+            }
+        }
+        .checkout-btn{
+            button{
+                font-size: 16px !important;
+            }
         }
     }
 }

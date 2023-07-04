@@ -428,6 +428,7 @@
 
 .shop-bestseller {
   padding-top: 70px;
+  padding-bottom: 20px;
 }
 .shop-bestseller .title {
   font-size: 48px;
@@ -436,7 +437,7 @@
   text-align: center;
 }
 .shop-bestseller .title-main {
-  font-size: 46px;
+  font-size: 30px;
   font-weight: bold;
   font-family: "Gotham SSm", sans-serif;
   margin-bottom: -20px;
@@ -894,6 +895,9 @@
   }
   .main-content-grid .main-content p {
     max-width: 100%;
+  }
+  .main-content-grid .main-content h3 {
+    font-size: 24px;
   }
   .main-content-grid .image-block {
     background-color: #4A4AF4;
