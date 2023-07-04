@@ -1,7 +1,6 @@
 .login-index {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  text-align: center;
 }
 .login-index .nzxt-logo {
   width: 100%;
@@ -9,7 +8,33 @@
 .login-index .login-wrapper {
   padding-top: 40px;
 }
+.login-index .login-wrapper .login-google {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+.login-index .login-wrapper .login-google .icon-google {
+  margin-right: 12px;
+  width: 1.5rem;
+  height: 1.5rem;
+}
 .login-index .login-wrapper .login-google button {
+  background-color: #fff;
   padding: 10px 20px;
-  border: none;
+  width: 24%;
+  border: 1px solid #dcdbe6;
+  border-radius: 8px;
+}
+.login-index .login-wrapper .login-google button span {
+  font-size: 16px;
+  font-family: "Gotham SSm", sans-serif;
+  color: #737279;
+}
+.login-index .login-wrapper .login-main {
+  width: 24%;
+  margin: 0 auto;
+}
+.login-index .login-wrapper .login-main hr {
+  display: inline-block;
+  width: 15%;
 }/*# sourceMappingURL=login.css.map */

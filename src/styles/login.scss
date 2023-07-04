@@ -1,7 +1,6 @@
 .login-index{
     padding-top: 4rem;
     padding-bottom: 4rem;
-    text-align: center;
 
     .nzxt-logo{
         width: 100%;
@@ -11,9 +10,35 @@
         padding-top: 40px;
 
         .login-google{
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            .icon-google{
+                margin-right: 12px;
+                width: 1.5rem;
+                height: 1.5rem;
+            }
             button{
+                background-color: #fff;
                 padding: 10px 20px;
-                border: none;
+                width: 24%;
+                border: 1px solid #dcdbe6;
+                border-radius: 8px;
+
+                span{
+                    font-size: 16px;
+                    font-family: 'Gotham SSm',sans-serif;
+                    color: #737279;
+                }
+            }
+        }
+
+        .login-main{
+            width: 24%;
+            margin: 0 auto;
+            hr{
+                display: inline-block;
+                width: 15%;
             }
         }
     }

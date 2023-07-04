@@ -1,5 +1,7 @@
 import React from 'react'
 import '../styles/login.css'
+import Form from 'react-bootstrap/Form';
+
 
 const Login = () => {
   return (
@@ -11,9 +13,24 @@ const Login = () => {
       <div className="login-wrapper">
         <div className="login-google">
             <button>
-                <svg viewBox="0 0 48 48" width="1em" height="1em" ><path fill="#fbc02d" d="M44 20H24v8h11a12 12 0 11-3-13l6-6A20 20 0 004 24a20 20 0 1040-4z"></path><path fill="#e53935" d="M6 15l7 5a12 12 0 0119-5l6-6a20 20 0 00-32 6z"></path><path fill="#4caf50" d="M24 44c5 0 10-2 13-5l-6-5a12 12 0 01-18-6l-7 5c4 7 10 11 18 11z"></path><path fill="#1565c0" d="M44 20H24v8h11c0 2-2 4-4 6l6 5s7-5 7-15v-4z"></path></svg>
+                <svg className='icon-google' viewBox="0 0 48 48" width="1em" height="1em" ><path fill="#fbc02d" d="M44 20H24v8h11a12 12 0 11-3-13l6-6A20 20 0 004 24a20 20 0 1040-4z"></path><path fill="#e53935" d="M6 15l7 5a12 12 0 0119-5l6-6a20 20 0 00-32 6z"></path><path fill="#4caf50" d="M24 44c5 0 10-2 13-5l-6-5a12 12 0 01-18-6l-7 5c4 7 10 11 18 11z"></path><path fill="#1565c0" d="M44 20H24v8h11c0 2-2 4-4 6l6 5s7-5 7-15v-4z"></path></svg>
                 <span>Sign in with Google</span>
             </button>
+        </div>
+        <div className="login-main">
+            <hr/>
+            <span>Or continue with</span>
+            <hr/>
+            <Form>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                <Form.Label>Email Address</Form.Label>
+                <Form.Control type="email" />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                <Form.Label>Password</Form.Label>
+                <Form.Control type="password" />
+            </Form.Group>
+        </Form>
         </div>
       </div>
     </div>
