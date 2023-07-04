@@ -27,7 +27,7 @@ const Support = () => {
                     <div className="contact-main">
                         <div className="contact-about col-lg-4">
                             <h2>Contact</h2>
-                            <button>Contact Support</button>
+                            <button className='btn-default btn-main'>Contact Support</button>
                             <div className="contact-wrapper">
                             <p>Headquarters</p>
                                 <strong>Address</strong>
@@ -67,15 +67,40 @@ const Support = () => {
                         </div>
                         <div className="article-main col-lg-8">
                             <h2>Search for help articles</h2>
-                        <Form>
-                            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                                <Form.Label>Search for help articles</Form.Label>
-                                <Form.Control type="text" />
-                            </Form.Group>
-                            <button>
-                                Browse Articles
-                            </button>
-                        </Form>
+                            <Form>
+                                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                    <Form.Label>Search for help articles</Form.Label>
+                                    <Form.Control type="text" />
+                                </Form.Group>
+                                <div className="btn-article">
+                                    <button className='btn-default'>
+                                        Browse Articles
+                                    </button>
+                                </div>
+                            </Form>
+                            <div className="article-wrapper">
+                            <div className="article-item">
+                                <h3>WIN WIN ATTITUDE</h3>
+                                <p>“We put our customers first”. Our mission is to provide our customers a winning
+                                 solution in response to their customer support request.</p>
+                            </div>
+                            <div className="article-item">
+                                <h3>BE HUMBLE</h3>
+                                <p>We are gamers ourselves and we respect the community we come from. This keeps us humble and reminds us to keep improving.</p>
+                            </div>
+                            <div className="article-item">
+                                <h3>SERVICE WOW!</h3>
+                                <p>We believe that there is a service above and beyond what exists as the norm. We strive to deliver more and exceed expectations in consumer satisfaction.</p>
+                            </div>
+                            <div className="article-item">
+                                <h3>EFFICIENCY & QUALITY</h3>
+                                <p>It’s important to us that our customer service is reliable, receptive, prompt in follow ups and offers easy-to-use self-help tools.</p>
+                            </div>
+                            <div className="article-item">
+                                <h3>TEAM WORK</h3>
+                                <p>Our teamwork inspires people to make their best contributions- we share lessons learnt, identify areas to improve upon and celebrate our shared accomplishments.</p>
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>

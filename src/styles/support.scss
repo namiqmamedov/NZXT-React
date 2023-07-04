@@ -34,5 +34,51 @@
 
     .contact-main{
         display: flex;
+        margin-top: 100px;
+
+        .contact-about{
+            .contact-wrapper{
+                margin-top: 20px;
+                margin-bottom: 70px;
+            }
+
+            h2{
+                font-size: 36px;
+                font-family: 'Gotham SSm',sans-serif;
+                font-weight: bold;
+            }
+
+            .btn-main{
+                margin: 25px 0;
+            }
+        }
+    }
+
+    .article-main{
+        .btn-article{
+            margin-top: 10px;
+            margin-bottom: 120px;
+            text-align: center;
+        }
+        .article-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+
+            .article-item{
+                border-top: 1px solid #dcdbe6;
+                width: 30.75%;
+                h3{
+                    padding-top: 20px;
+                    width: 100%;
+                    font-size: 30px;
+                    font-family: 'Gotham SSm',sans-serif;
+                }
+                p{
+                    font-size: 16px;
+                    font-family: 'Gotham SSm',sans-serif;
+                }
+            }
+        }
     }
 }
