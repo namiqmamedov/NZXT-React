@@ -1,0 +1,20 @@
+.login-index{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+
+    .nzxt-logo{
+        width: 100%;
+    }
+
+    .login-wrapper{
+        padding-top: 40px;
+
+        .login-google{
+            button{
+                padding: 10px 20px;
+                border: none;
+            }
+        }
+    }
+}

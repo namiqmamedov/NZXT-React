@@ -1,0 +1,15 @@
+.login-index {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+.login-index .nzxt-logo {
+  width: 100%;
+}
+.login-index .login-wrapper {
+  padding-top: 40px;
+}
+.login-index .login-wrapper .login-google button {
+  padding: 10px 20px;
+  border: none;
+}/*# sourceMappingURL=login.css.map */
