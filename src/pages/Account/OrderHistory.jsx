@@ -63,10 +63,11 @@ const SavedBuild = () => {
             <h2>Order History</h2>
             <div className="account-wrapper">
               <div className="order-main">
+                {/* <p>You have no order history.</p> */}
                 <div class="table-responsive pb-5">
                   <table
                     id="tbOrderHistory"
-                    class="table border ps-table w-100 mb-3"
+                    class="table ps-table w-100 mb-3"
                   >
                     <thead>
                       <tr>

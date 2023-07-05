@@ -1,3 +1,8 @@
+
+.table-responsive{
+    padding-top: 25px;
+}
+
 table.dataTable thead th.sorting:hover:after {
     opacity: 1;
     transform: translate(0);
@@ -46,4 +51,16 @@ table.dataTable thead th.sorting_desc:after {
 table.dataTable thead th.sorting_desc:before,
 table.dataTable thead th.sorting_asc:before {
     display: none;
+}
+
+.order-main{
+    p{
+        padding-top: 15px;
+        font-size: 16px;
+        font-family: 'Gotham SSm',sans-serif;
+    }
+}
+
+#tbOrderHistory td a{
+    text-decoration: none;
 }

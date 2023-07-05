@@ -10,6 +10,7 @@ import Support from '../pages/Support'
 import Profile from '../pages/Account/Profile'
 import SavedBuild from '../pages/Account/SavedBuild'
 import OrderHistory from '../pages/Account/OrderHistory'
+import SupportReturn from '../pages/Account/SupportReturn'
 
 const Routers = () => {
   return (
@@ -25,6 +26,7 @@ const Routers = () => {
         <Route path='/account/profile' element={<Profile/>}/>
         <Route path='/account/saved-bld' element={<SavedBuild/>}/>
         <Route path='/account/order-history' element={<OrderHistory/>}/>
+        <Route path='/account/support' element={<SupportReturn/>}/>
     </Routes>
   )
 }

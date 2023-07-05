@@ -36,7 +36,7 @@
   padding-bottom: 35px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
-.account-index .account-body h2 {
+.account-index .account-body .title {
   border-bottom: 1px solid #dcdbe6;
   padding-bottom: 20px;
   font-family: "Gotham SSm", sans-serif;
