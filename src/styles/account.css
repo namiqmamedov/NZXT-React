@@ -1,4 +1,27 @@
+.account-index nav {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.account-index .account-management {
+  padding: 10px 20px;
+}
 .account-index .account-management .profile-item {
   display: block;
   width: 100%;
+  text-decoration: none;
+  margin-bottom: 13px;
+}
+.account-index .account-management .profile-item span {
+  font-size: 14px;
+  font-family: "Gotham SSm", sans-serif;
+  color: #313235;
+  margin-left: 0.7rem;
+}
+.account-index .account-management .profile-item svg {
+  font-size: 14px;
+  color: #313235;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.account-index .account-body h2 {
+  border-bottom: 1px solid black;
 }/*# sourceMappingURL=account.css.map */
