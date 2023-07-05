@@ -1,35 +1,82 @@
-.account-index{
+.account-index {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 
-    nav{
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    nav {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     }
-    .account-management{
-        padding: 10px 20px;
-        .profile-item{
-            display: block;
-            width: 100%;
-            text-decoration: none;
-            margin-bottom: 13px;
-            
-            span{
-                font-size: 14px;
-                font-family: 'Gotham SSm',sans-serif;
-                color: #313235;
-                margin-left: .7rem;
-            }
 
-            svg{
-                font-size: 14px;
-                color: #313235;
-                width: 1.3rem;
-                height: 1.3rem;
+    .account-list {
+        padding-left: 0;
+        padding-right: 0;
+
+        .account-management {
+            padding: 10px 20px;
+
+            .profile-item {
+                display: block;
+                width: 100%;
+                text-decoration: none;
+                margin-bottom: 13px;
+
+                span {
+                    font-size: 14px;
+                    font-family: 'Gotham SSm', sans-serif;
+                    color: #313235;
+                    margin-left: .7rem;
+                }
+
+                svg {
+                    font-size: 14px;
+                    color: #313235;
+                    width: 1.3rem;
+                    height: 1.3rem;
+                }
             }
         }
     }
 
-    .account-body{
-        h2{
-            border-bottom: 1px solid black;
+    .account-body {
+        padding-left: 20px;
+        padding-top: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+        h2 {
+            border-bottom: 1px solid #dcdbe6;
+            padding-bottom: 20px;
+            font-family: 'Gotham SSm', sans-serif;
+            font-size: 30px;
+
+        }
+
+        .account-profile {
+            padding-top: 20px;
+
+            .profile-icon {
+                background: rgb(243 244 246);
+                display: inline-block;
+                border-radius: 9999px;
+                overflow: hidden;
+                margin-bottom: 20px;
+
+                svg {
+                    width: 100%;
+                    height: 40px;
+                    color: hsl(267deg 83% 49%);
+                    overflow: hidden;
+                    padding-left: 1px;
+                    padding-right: 1px;
+                }
+            }
+
+            form{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+                .form-item{
+                    width: 48.3%;
+                }
+            }
         }
     }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/account.css";
 import { Link } from "react-router-dom";
+import Form from "react-bootstrap/Form";
 
 const Profile = () => {
   return (
@@ -9,7 +10,7 @@ const Profile = () => {
         <div className="container">
           <div className="row">
             <h1>Account</h1>
-            <div className="col-lg-3">
+            <div className="account-list col-lg-3">
               <nav>
                 <div className="account-management">
                   <Link className="profile-item">
@@ -56,10 +57,40 @@ const Profile = () => {
                 </div>
               </nav>
             </div>
-            <div className="col-lg-9">
-                <div className="account-body">
+            <div className="account-body col-lg-9">
+                <div className="account-wrapper">
                     <h2>Profile</h2>
-                    
+                    <div className="account-profile">
+                        <div className="profile-icon">
+                            <svg class="h-full w-full text-nzxt-volt-400" fill="currentColor" viewBox="0 0 24 24"><path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                        </div>
+                        <Form>
+                            <Form.Group className="mb-3 form-item" controlId="exampleForm.ControlInput1">
+                                <Form.Label>Username</Form.Label>
+                                <Form.Control type="text" />
+                            </Form.Group>
+                            <Form.Group className="mb-3 form-item" controlId="exampleForm.ControlInput1">
+                                <Form.Label>First Name</Form.Label>
+                                <Form.Control type="text" />
+                            </Form.Group>
+                            <Form.Group className="mb-3 form-item" controlId="exampleForm.ControlInput1">
+                                <Form.Label>Last Name</Form.Label>
+                                <Form.Control type="text" />
+                            </Form.Group>
+                            <Form.Group className="mb-3 form-item" controlId="exampleForm.ControlInput1">
+                                <Form.Label>Preferred pronouns</Form.Label>
+                                <Form.Control type="text" />
+                            </Form.Group>
+                            <Form.Group className="mb-3 form-item" controlId="exampleForm.ControlInput1">
+                                <Form.Label>Email Address</Form.Label>
+                                <Form.Control type="email" />
+                            </Form.Group>
+                            <Form.Group className="mb-3 form-item" controlId="exampleForm.ControlInput1">
+                                <Form.Label>First Name</Form.Label>
+                                <Form.Control type="text" />
+                            </Form.Group>
+                        </Form>
+                    </div>
                 </div>
             </div>
           </div>
