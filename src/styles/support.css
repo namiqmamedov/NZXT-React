@@ -67,4 +67,57 @@
 .contact-index .article-main .article-wrapper .article-item p {
   font-size: 16px;
   font-family: "Gotham SSm", sans-serif;
+}
+
+@media screen and (max-width: 576px) {
+  .contact-index .contact-main {
+    flex-wrap: wrap;
+  }
+  .contact-index .article-main .article-item {
+    width: 100% !important;
+  }
+  .contact-index .article-main .article-item h3 {
+    font-size: 20px !important;
+  }
+  .support-index .support-main {
+    flex-wrap: wrap;
+  }
+  .support-index .support-main .support-content {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 0;
+    text-align: center;
+  }
+  .support-index .support-main .support-content h1 {
+    font-size: 48px;
+  }
+  .support-index .support-main .support-img img {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .contact-index .contact-main {
+    flex-wrap: wrap;
+  }
+  .contact-index .article-main .article-item {
+    width: 100% !important;
+  }
+  .contact-index .article-main .article-item h3 {
+    font-size: 20px !important;
+  }
+  .support-index .support-main {
+    flex-wrap: wrap;
+  }
+  .support-index .support-main .support-content {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 0;
+    text-align: center;
+  }
+  .support-index .support-main .support-content h1 {
+    font-size: 48px;
+  }
+  .support-index .support-main .support-img img {
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=support.css.map */

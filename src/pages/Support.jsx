@@ -10,11 +10,11 @@ const Support = () => {
         <div className="container">
             <div className="row">
                 <div className="support-main" style={{background: 'hsl(240deg 14% 93%)'}}>
-                    <div className="support-content col-lg-6">
+                    <div className="support-content col-lg-6 col-12">
                         <h1>Support</h1>
                         <p>Find additional customer support arcitles and FAQ.</p>
                     </div>
-                    <div className="support-img col-lg-6">
+                    <div className="support-img col-lg-6 col-12">
                         <img src={customerSupport} alt="Customer Support Image" />
                     </div>
                 </div>
@@ -27,7 +27,9 @@ const Support = () => {
                     <div className="contact-main">
                         <div className="contact-about col-lg-4">
                             <h2>Contact</h2>
-                            <button className='btn-default btn-main'>Contact Support</button>
+                            <div className='btn-main'>
+                                <button className='btn-default'>Contact Support</button>
+                            </div>
                             <div className="contact-wrapper">
                             <p>Headquarters</p>
                                 <strong>Address</strong>
