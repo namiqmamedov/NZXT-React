@@ -25,7 +25,7 @@ const Support = () => {
             <div className="container">
                 <div className="row">
                     <div className="contact-main">
-                        <div className="contact-about col-lg-4">
+                        <div className="contact-about col-lg-4 col-md-6">
                             <h2>Contact</h2>
                             <div className='btn-main'>
                                 <button className='btn-default'>Contact Support</button>
@@ -67,7 +67,7 @@ const Support = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="article-main col-lg-8">
+                        <div className="article-main col-lg-8 col-md-6">
                             <h2>Search for help articles</h2>
                             <Form>
                                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
