@@ -2,8 +2,30 @@ import React from "react";
 import "../../styles/account.css";
 import { Link } from "react-router-dom";
 import Form from "react-bootstrap/Form";
+import DatePicker from 'react-datepicker'
+import { Checkbox } from "@nextui-org/react";
+import "react-datepicker/dist/react-datepicker.css";
 
 const Profile = () => {
+    const [startDate, setDate] = React.useState(new Date)
+    const [rangeStart, setRangeStart] = React.useState(new Date)
+    const defaultEndDate = new Date()
+    defaultEndDate.setDate(defaultEndDate.getDate() + 7)
+    const [rangeEnd, setRangeEnd] = React.useState(defaultEndDate)
+    const today = new Date()
+
+    const selectDateHandler = (d) => {
+        setDate(d)
+      }
+    
+      const selectStartDate = d => {
+        setRangeStart(d)
+      }
+    
+      const selectEndDate = d => {
+        setRangeEnd(d)
+      }
+
   return (
     <>
       <div className="account-index">
@@ -24,7 +46,7 @@ const Profile = () => {
                     </svg>
                     <span>Profile</span>
                   </Link>
-                  <Link className="profile-item">
+                  <Link className="profile-item" to={'../account/saved-bld'}>
                     <svg
                       width="1em"
                       height="1em"
@@ -86,9 +108,39 @@ const Profile = () => {
                                 <Form.Control type="email" />
                             </Form.Group>
                             <Form.Group className="mb-3 form-item" controlId="exampleForm.ControlInput1">
-                                <Form.Label>First Name</Form.Label>
-                                <Form.Control type="text" />
+                                <Form.Label>Birthday</Form.Label>
+                                <DatePicker
+                                id="exampleForm.ControlInput1"
+                                className="form-control"
+                                dateFormat="yyyy/MM/dd"
+                                selected={startDate}
+                                onChange={selectDateHandler} 
+                                minDate={today}
+                                todayButton={"Today"}/>
                             </Form.Group>
+                            <Form.Group className="mb-3 form-item checkbox" controlId="exampleForm.ControlInput1">
+                            <Form.Label>Location</Form.Label>
+                            <Form.Select aria-label="Default select example">
+                            <option value="1">North America</option>
+                            <option value="2">Europe</option>
+                            <option value="3">Oceania</option>
+                            <option value="4">United Kingdom</option>
+                            </Form.Select>
+                            </Form.Group>
+                            <div className="item-check">
+                                <Checkbox className="checkbox-index" color="secondary">
+                                    <span className="remember-text">
+                                    Sign up for emails to get updates from NZXT on
+                                    products,BLD,and CAM
+                                    </span>
+                                </Checkbox>
+                            </div>
+                            <button className="password-btn">
+                                Change Password
+                            </button>
+                            <div className='btn-main'>
+                                <button className='btn-default'>Save</button>
+                            </div>
                         </Form>
                     </div>
                 </div>

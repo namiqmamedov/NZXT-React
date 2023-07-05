@@ -39,6 +39,7 @@
     .account-body {
         padding-left: 20px;
         padding-top: 20px;
+        padding-bottom: 35px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 
         h2 {
@@ -75,6 +76,36 @@
                 gap: 1.5rem;
                 .form-item{
                     width: 48.3%;
+
+                    .react-datepicker-wrapper{
+                        width: 100%;
+                    }
+
+
+                }
+                .form-item.checkbox{
+                    width: 100%;
+                }
+
+                .item-check{
+                    .remember-text{
+                        font-size: 12px;
+                        font-family: 'Gotham SSm', sans-serif;
+                    }
+                }
+                .password-btn{
+                    color: #2563eb;
+                    font-family: 'Gotham SSm', sans-serif;
+                    border: none;
+                    background-color: transparent;
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+                    font-size: 12px;
+                }
+                .btn-main{
+                    width: 100%;
+                    text-align: right;
                 }
             }
         }

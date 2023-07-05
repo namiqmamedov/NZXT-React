@@ -1,0 +1,24 @@
+.account-index .build-main {
+  display: flex;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-left: 45px;
+}
+.account-index .build-main .build-content h3 {
+  font-size: 48px;
+  font-family: "Gotham SSm", sans-serif;
+  font-weight: bold;
+}
+.account-index .build-main .build-content p {
+  font-size: 16px;
+  font-family: "Gotham SSm", sans-serif;
+}
+.account-index .build-main .build-content .btn-default {
+  padding: 9px 70px;
+}
+.account-index .build-main .build-img img {
+  width: 76%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 330px;
+}/*# sourceMappingURL=saved-build.css.map */
