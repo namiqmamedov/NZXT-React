@@ -112,60 +112,47 @@
             }
         }
     }
+
+    .account-list{
+        .nav-index{
+            height: 100%;
+        }
+    }
+    .account-body.index{
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 576px) {
     .account-body{
         height: auto !important;
-    }   
-
-    .order-main{
-        .table-responsive{
-            tbody tr td{
-                font-size: 14px;
+        .account-profile{
+            .form-item{
+                width: 100% !important;
             }
         }
-    }
+    }   
 }
 
-@media screen and (max-width: 576px) and (max-width: 768px){
+@media screen and (min-width: 576px) and (max-width: 768px){
+    .account-body{
+        height: auto !important;
+        .account-profile{
+            .form-item{
+                width: 100% !important;
+            }
+        }
+    }   
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
     .account-body{
         height: auto !important;
     }   
-
-    .order-main{
-        .table-responsive{
-            tbody tr td{
-                font-size: 14px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 768px) and (max-width: 992px){
-    .account-body{
-        height: auto !important;
-    }   
-
-    .order-main{
-        .table-responsive{
-            tbody tr td{
-                font-size: 14px;
-            }
-        }
-    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px){
     .account-body{
         height: auto !important;
     }   
-
-    .order-main{
-        .table-responsive{
-            tbody tr td{
-                font-size: 14px;
-            }
-        }
-    }
 }

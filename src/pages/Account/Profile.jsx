@@ -33,7 +33,7 @@ const Profile = () => {
           <div className="row">
             <h1>Account</h1>
             <div className="account-list col-lg-3">
-              <nav>
+              <nav className="nav-index">
                 <div className="account-management">
                   <Link className="profile-item">
                     <svg
@@ -79,7 +79,7 @@ const Profile = () => {
                 </div>
               </nav>
             </div>
-            <div className="account-body col-lg-9">
+            <div className="account-body index col-lg-9">
                 <div className="account-wrapper">
                     <h2 className="title">Profile</h2>
                     <div className="account-profile">
