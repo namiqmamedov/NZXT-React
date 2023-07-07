@@ -1,9 +1,9 @@
 import React from 'react'
-import buyTogether01 from '../../assets/images/thumbnail/buyTogether01.png'
-import buyTogether02 from '../../assets/images/thumbnail/buyTogether02.png'
-import buyTogether03 from '../../assets/images/thumbnail/buyTogether03.png'
+import buyTogether01 from '../../../assets/images/thumbnail/buyTogether01.png'
+import buyTogether02 from '../../../assets/images/thumbnail/buyTogether02.png'
+import buyTogether03 from '../../../assets/images/thumbnail/buyTogether03.png'
 import Button from '@mui/material/Button';
-import '../../styles/buy-together.css'
+import '../../../styles/buy-together.css'
 
 const BuyTogether = () => {
   return (

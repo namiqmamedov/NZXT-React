@@ -1,17 +1,17 @@
 import React from "react"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
-import "../../styles/slider.css"
+import "../../../styles/slider.css"
 import lgThumbnail from 'lightgallery/plugins/thumbnail'
 import  'lightgallery/css/lightgallery.css'
 import  'lightgallery/css/lg-thumbnail.css'
 import  LightGallery  from 'lightgallery/react/Lightgallery.es5';
-import h9P01 from '../../assets/images/product/h9-01.png'
-import h9P02 from '../../assets/images/product/h9-02.png'
-import h9P03 from '../../assets/images/product/h9-03.png'
-import h9P04 from '../../assets/images/product/h9-04.png'
-import h9P05 from '../../assets/images/product/h9-05.png'
-import h9P06 from '../../assets/images/product/h9-06.png'
+import h9P01 from '../../../assets/images/product/h9-01.png'
+import h9P02 from '../../../assets/images/product/h9-02.png'
+import h9P03 from '../../../assets/images/product/h9-03.png'
+import h9P04 from '../../../assets/images/product/h9-04.png'
+import h9P05 from '../../../assets/images/product/h9-05.png'
+import h9P06 from '../../../assets/images/product/h9-06.png'
 
 function ThumbnailPlugin(mainRef) {
   return (slider) => {

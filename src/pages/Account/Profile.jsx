@@ -31,11 +31,11 @@ const Profile = () => {
       <div className="account-index">
         <div className="container">
           <div className="row">
-            <h1>Account</h1>
+            <h1 className="account-title">Account</h1>
             <div className="account-list col-lg-3">
               <nav className="nav-index">
                 <div className="account-management">
-                  <Link className="profile-item">
+                  <Link to={'../account/profile'} className="profile-item">
                     <svg
                       width="1em"
                       height="1em"
@@ -46,7 +46,7 @@ const Profile = () => {
                     </svg>
                     <span>Profile</span>
                   </Link>
-                  <Link className="profile-item" to={'../account/saved-bld'}>
+                  <Link to={'../account/saved-bld'} className="profile-item">
                     <svg
                       width="1em"
                       height="1em"
@@ -58,7 +58,7 @@ const Profile = () => {
                     </svg>{" "}
                     <span>Saved Builds</span>
                   </Link>
-                  <Link className="profile-item">
+                  <Link to={'../account/order-history'}  className="profile-item">
                     <svg
                       fill="none"
                       viewBox="0 0 24 24"

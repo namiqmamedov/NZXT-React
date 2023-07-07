@@ -14,9 +14,9 @@ import miniProduct03 from '../assets/images/product/miniProduct03.png'
 import { Checkbox } from "@nextui-org/react";
 import Button from '@mui/material/Button';
 import nzxtSupport from '../assets/images/thumbnail/nzxtSupport.png'
-import BuyTogether from "../components/UI/BuyTogether";
-import ProductTab from "../components/UI/ProductTab";
-import ImageSlider from "../components/UI/ImageSlider";
+import BuyTogether from "../components/UI/BuyTogether/BuyTogether";
+import ProductTab from "../components/UI/ProductTab/ProductTab";
+import ImageSlider from "../components/UI/ImageSlider/ImageSlider";
 
 const ProductDetails = () => {
   return (

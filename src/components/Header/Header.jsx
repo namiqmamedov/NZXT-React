@@ -1,10 +1,16 @@
-import React from "react";
+import React,{useState} from "react";
 import "../../styles/header.css";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { GoSearch } from "react-icons/go";
 import { Link } from "react-router-dom";
+import Overlay from "../../components/UI/Overlay/Overlay";
+import {IoIosArrowDown} from 'react-icons/io'
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+
+
 
 const Header = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -15,6 +21,12 @@ const Header = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleOverlay = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <header>
       <div className="nav__top">
@@ -47,6 +59,7 @@ const Header = () => {
                 onClick={handleClick}
               >
                 Gaming PCs
+                <IoIosArrowDown className="arrow-bottom"/>
               </Button>
               <Menu
                 id="basic-menu"
@@ -69,7 +82,175 @@ const Header = () => {
               </Menu>
             </li>
             <li>
-              <Button
+            <DropdownButton id="dropdown-item-button" title="Components">
+                <div className="dropdown-center">
+                <div className="dropdown-item">
+                <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 24 24"  ><path d="M7.416 3.34a2.755 2.755 0 110 5.51 2.755 2.755 0 010-5.51zm0 1.5a1.255 1.255 0 100 2.51 1.255 1.255 0 000-2.51zm.147 15.037l1.19.913-2.226 2.9H3.455l-2.225-2.9 1.19-.913 1.774 2.312h1.593l1.776-2.312zm14.197 0l1.19.913-2.225 2.9h-3.072l-2.225-2.9 1.19-.913 1.774 2.312h1.593l1.776-2.312zm-7.082-6.645v1.5H.942v-1.5h13.736zm8.272 0v1.5h-4.154v-1.5h4.154z"></path><path d="M15.428 20.64h-1.5V.31h1.5v20.33zm4.512 0h-1.5V.31h1.5v20.33zm-8.685-9.867a.75.75 0 01-.75.75H4.482a.75.75 0 010-1.5h6.023a.75.75 0 01.75.75zm1.084 6.516a.75.75 0 01-.75.75h-1.077a.75.75 0 110-1.5h1.077a.75.75 0 01.75.75z"></path><path d="M23 .31a1 1 0 011 1v18.924a1 1 0 01-1 1H1a1 1 0 01-1-1V1.311a1 1 0 011-1h22zm-.5 1.5h-21v17.923h21V1.811z"></path></svg>
+                Cases
+                <div className="item-body">
+                  <Link>
+                    <span className="title">
+                      H9
+                    </span>
+                    <span>
+                    Dual-Chamber Mid-Tower Cases
+                    </span>
+                  </Link>
+                  <Link>
+                    <span className="title">
+                      H7
+                    </span>
+                    <span>
+                    ATX Mid-Tower Cases
+                    </span>
+                  </Link>
+                  <Link>
+                    <span className="title">
+                      H5
+                    </span>
+                    <span>
+                    Compact ATX Mid-Tower Cases
+                    </span>
+                  </Link>
+                  <Link>
+                    <span className="title">
+                      H210
+                    </span>
+                    <span>
+                    Compact Mini-ITX Cases
+                    </span>
+                  </Link>
+                  <Link>
+                    <span className="title">
+                      H1
+                    </span>
+                    <span>
+                    Small Form Factor Mini-ITX
+                    </span>
+                  </Link>
+                  <Link>
+                    <span className="title">
+                      CRFT
+                    </span>
+                    <span>
+                    Limited Edition
+                    </span>
+                  </Link>
+                </div>
+                </div>
+                <div className="dropdown-item">
+                <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 24 24"  ><path d="M7.416 3.34a2.755 2.755 0 110 5.51 2.755 2.755 0 010-5.51zm0 1.5a1.255 1.255 0 100 2.51 1.255 1.255 0 000-2.51zm.147 15.037l1.19.913-2.226 2.9H3.455l-2.225-2.9 1.19-.913 1.774 2.312h1.593l1.776-2.312zm14.197 0l1.19.913-2.225 2.9h-3.072l-2.225-2.9 1.19-.913 1.774 2.312h1.593l1.776-2.312zm-7.082-6.645v1.5H.942v-1.5h13.736zm8.272 0v1.5h-4.154v-1.5h4.154z"></path><path d="M15.428 20.64h-1.5V.31h1.5v20.33zm4.512 0h-1.5V.31h1.5v20.33zm-8.685-9.867a.75.75 0 01-.75.75H4.482a.75.75 0 010-1.5h6.023a.75.75 0 01.75.75zm1.084 6.516a.75.75 0 01-.75.75h-1.077a.75.75 0 110-1.5h1.077a.75.75 0 01.75.75z"></path><path d="M23 .31a1 1 0 011 1v18.924a1 1 0 01-1 1H1a1 1 0 01-1-1V1.311a1 1 0 011-1h22zm-.5 1.5h-21v17.923h21V1.811z"></path></svg>
+                Cases
+                <div className="item-body">
+                  <Link>
+                    <span className="title">
+                      H9
+                    </span>
+                    <span>
+                    Dual-Chamber Mid-Tower Cases
+                    </span>
+                  </Link>
+                  <Link>
+                    <span className="title">
+                      H7
+                    </span>
+                    <span>
+                    ATX Mid-Tower Cases
+                    </span>
+                  </Link>
+                  <Link>
+                    <span className="title">
+                      H5
+                    </span>
+                    <span>
+                    Compact ATX Mid-Tower Cases
+                    </span>
+                  </Link>
+                  <Link>
+                    <span className="title">
+                      H210
+                    </span>
+                    <span>
+                    Compact Mini-ITX Cases
+                    </span>
+                  </Link>
+                  <Link>
+                    <span className="title">
+                      H1
+                    </span>
+                    <span>
+                    Small Form Factor Mini-ITX
+                    </span>
+                  </Link>
+
+                  <Link>
+                    <span className="title">
+                      CRFT
+                    </span>
+                    <span>
+                    Limited Edition
+                    </span>
+                  </Link>
+                </div>
+                </div>
+                <div className="dropdown-item">
+                <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 24 24"  ><path d="M7.416 3.34a2.755 2.755 0 110 5.51 2.755 2.755 0 010-5.51zm0 1.5a1.255 1.255 0 100 2.51 1.255 1.255 0 000-2.51zm.147 15.037l1.19.913-2.226 2.9H3.455l-2.225-2.9 1.19-.913 1.774 2.312h1.593l1.776-2.312zm14.197 0l1.19.913-2.225 2.9h-3.072l-2.225-2.9 1.19-.913 1.774 2.312h1.593l1.776-2.312zm-7.082-6.645v1.5H.942v-1.5h13.736zm8.272 0v1.5h-4.154v-1.5h4.154z"></path><path d="M15.428 20.64h-1.5V.31h1.5v20.33zm4.512 0h-1.5V.31h1.5v20.33zm-8.685-9.867a.75.75 0 01-.75.75H4.482a.75.75 0 010-1.5h6.023a.75.75 0 01.75.75zm1.084 6.516a.75.75 0 01-.75.75h-1.077a.75.75 0 110-1.5h1.077a.75.75 0 01.75.75z"></path><path d="M23 .31a1 1 0 011 1v18.924a1 1 0 01-1 1H1a1 1 0 01-1-1V1.311a1 1 0 011-1h22zm-.5 1.5h-21v17.923h21V1.811z"></path></svg>
+                Cases
+                <div className="item-body">
+                  <Link>
+                    <span className="title">
+                      H9
+                    </span>
+                    <span>
+                    Dual-Chamber Mid-Tower Cases
+                    </span>
+                  </Link>
+                  <Link>
+                    <span className="title">
+                      H7
+                    </span>
+                    <span>
+                    ATX Mid-Tower Cases
+                    </span>
+                  </Link>
+                  <Link>
+                    <span className="title">
+                      H5
+                    </span>
+                    <span>
+                    Compact ATX Mid-Tower Cases
+                    </span>
+                  </Link>
+                  <Link>
+                    <span className="title">
+                      H210
+                    </span>
+                    <span>
+                    Compact Mini-ITX Cases
+                    </span>
+                  </Link>
+                  <Link>
+                    <span className="title">
+                      H1
+                    </span>
+                    <span>
+                    Small Form Factor Mini-ITX
+                    </span>
+                  </Link>
+
+                  <Link>
+                    <span className="title">
+                      CRFT
+                    </span>
+                    <span>
+                    Limited Edition
+                    </span>
+                  </Link>
+                </div>
+                </div>
+                </div>
+            </DropdownButton>
+              {/* <Button
                 id="basic-button"
                 aria-controls={open ? "basic-menu" : undefined}
                 aria-haspopup="true"
@@ -77,6 +258,7 @@ const Header = () => {
                 onClick={handleClick}
               >
                 Components
+                <IoIosArrowDown className="arrow-bottom"/>
               </Button>
               <Menu
                 id="basic-menu"
@@ -96,7 +278,7 @@ const Header = () => {
                 <Link to="product">
                   <MenuItem onClick={handleClose}>Logout</MenuItem>
                 </Link>
-              </Menu>
+              </Menu> */}
             </li>
             <li>
               <Button
@@ -107,6 +289,7 @@ const Header = () => {
                 onClick={handleClick}
               >
                 Monitors
+                <IoIosArrowDown className="arrow-bottom"/>
               </Button>
               <Menu
                 id="basic-menu"
@@ -137,6 +320,7 @@ const Header = () => {
                 onClick={handleClick}
               >
                 Peripherals
+                <IoIosArrowDown className="arrow-bottom"/>
               </Button>
               <Menu
                 id="basic-menu"
@@ -167,6 +351,7 @@ const Header = () => {
                 onClick={handleClick}
               >
                 Software
+                <IoIosArrowDown className="arrow-bottom"/>
               </Button>
               <Menu
                 id="basic-menu"
@@ -197,6 +382,7 @@ const Header = () => {
                 onClick={handleClick}
               >
                 Community
+             <IoIosArrowDown className="arrow-bottom"/>
               </Button>
               <Menu
                 id="basic-menu"
@@ -259,7 +445,13 @@ const Header = () => {
             </svg>
           </Link>
         </div>
+    
       </div>
+      <button onClick={toggleOverlay}>Open Overlay</button>
+
+      <Overlay isOpen={isOpen} onClose={toggleOverlay}>
+        <h1>Content in Overlay</h1>
+      </Overlay>
     </header>
   );
 };

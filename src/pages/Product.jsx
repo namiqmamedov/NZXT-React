@@ -23,8 +23,7 @@ import nzxtLogo from "../assets/images/thumbnail/nzxtLogo.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import Button from "@mui/material/Button";
 import products from '../data/products'
-import { Link } from "react-router-dom";
-import ProductCard from "../components/UI/ProductCard";
+import ProductCard from "../components/UI/ProductCard/ProductCard";
 
 const Product = () => {
   return (

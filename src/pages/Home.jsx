@@ -31,7 +31,7 @@ import newsCard07 from "../assets/images/home/newsCard07.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
 import productData from '../data/products'
-import ProductCard from "../components/UI/ProductCard";
+import ProductCard from "../components/UI/ProductCard/ProductCard";
 
 const brandData = [
   {

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import monitorBanner from "../assets/images/thumbnail/monitor-banner.png";
 import monitorBannerSr from "../assets/images/thumbnail/monitorBannerSr.avif";
 import products from "../data/products";
-import ProductCard from "../components/UI/ProductCard";
+import ProductCard from "../components/UI/ProductCard/ProductCard";
 import Alert from "@mui/material/Alert";
 import Stack from "@mui/material/Stack";
 import cartImg01 from "../assets/images/thumbnail/cartImg01.png";
