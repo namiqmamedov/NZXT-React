@@ -14,7 +14,7 @@ const SavedBuild = () => {
       <div className="row">
         <h1>Account</h1>
         <div className="account-list col-lg-3">
-          <nav>
+          <nav className="nav-index">
             <div className="account-management">
               <Link className="profile-item">
                 <svg
@@ -60,17 +60,17 @@ const SavedBuild = () => {
             </div>
           </nav>
         </div>
-        <div className="account-body col-lg-9">
+        <div className="account-body index col-lg-9">
             <div className="account-wrapper">
                 <div className="build-main">
-                    <div className="build-content col-lg-6">
+                    <div className="build-content col-lg-6  col-12 col-md-6">
                         <h3>Designed to Show Off Your Build</h3>
                         <p>The compact vertical design maintains support for most full-sized GPU’s on the market so you can maintain your desk real estate without sacrificing graphics power.</p>
                         <div className='btn-main'>
                                 <button className='btn-default'>Start Build</button>
                         </div> 
                     </div>
-                    <div className="build-img col-lg-6">
+                    <div className="build-img col-lg-6 col-12 col-md-6">
                         <img src={nzxtCam} alt="Build Image" />
                     </div>
                 </div>
