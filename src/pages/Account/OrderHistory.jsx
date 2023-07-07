@@ -71,9 +71,6 @@ const SavedBuild = () => {
                   >
                     <thead>
                       <tr>
-                        <th class="font-weight-bold py-2 border-0">
-                          Document Type
-                        </th>
                         <th class="font-weight-bold py-2 border-0 quantity">
                           Number
                         </th>
@@ -88,7 +85,6 @@ const SavedBuild = () => {
                     </thead>
                     <tbody>
                       <tr role="row" class="odd-row">
-                        <td class="sorting_1">Order</td>
                         <td>
                           <a href="historicalViewOrderHistoryDetails?childCartId=179767">
                             0000294417
@@ -149,7 +145,6 @@ const SavedBuild = () => {
                         </td>
                       </tr>
                       <tr role="row" class="even-row">
-                        <td class="sorting_1">Order</td>
                         <td>
                           <a href="historicalViewOrderHistoryDetails?childCartId=178770">
                             0060012034
@@ -210,7 +205,6 @@ const SavedBuild = () => {
                         </td>
                       </tr>
                       <tr role="row" class="odd-row">
-                        <td class="sorting_1">Order</td>
                         <td>
                           <a href="historicalViewOrderHistoryDetails?childCartId=178771">
                             0060012036

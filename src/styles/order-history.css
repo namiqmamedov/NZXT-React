@@ -1,5 +1,6 @@
 .table-responsive {
   padding-top: 25px;
+  max-height: 210px;
 }
 
 table.dataTable thead th.sorting:hover:after {
