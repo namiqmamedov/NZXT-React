@@ -47,7 +47,7 @@ header {
             align-items: center;
             padding-left: 43px;
             margin-bottom: 0;
-            gap: 1.3rem;
+            gap: 0.1rem;
 
             li {
                 list-style: none;
@@ -77,14 +77,24 @@ header {
         }
     }
 }
-.dropdown-toggle{
+
+.dropdown-toggle {
     background: transparent !important;
     border: none !important;
+
+    &::after {
+        border: 0 !important;
+    }
+
+    svg {
+        margin-left: 6px;
+    }
 }
+
 .dropdown {
     background: transparent !important;
 
-    .dropdown-menu{
+    .dropdown-menu {
         background: #313235;
 
         transform: translate3d(0px, 52.8px, 0px) !important;
@@ -97,51 +107,58 @@ header {
 
     .dropdown-item {
 
-        &:hover{
+        &:hover {
             background: transparent;
         }
+
         .item-header {
             text-transform: uppercase;
             font-size: 14px;
             font-family: 'Gotham SSm', sans-serif;
             color: #ffff;
+
             svg {
                 margin-right: 7px;
             }
+
             padding-top: 10px;
             padding-bottom: 15px;
         }
 
-        .item-body{
+        .item-body {
             padding-left: 10px;
-            .title{
+
+            .title {
                 font-size: 14px;
                 font-family: 'Gotham SSm', sans-serif;
                 color: #ffff;
                 width: 100%;
             }
-            .desc{
+
+            .desc {
                 font-size: 10px;
                 font-family: 'Gotham SSm', sans-serif;
                 color: #ffff;
             }
+
             a {
                 display: flex;
                 text-decoration: none;
                 padding-bottom: 15px;
             }
-            .content{
+
+            .content {
                 display: flex;
                 flex-wrap: wrap;
             }
 
-            img{
+            img {
                 width: 30%;
             }
         }
     }
 
-    .dropdown-thumbnail{
+    .dropdown-thumbnail {
         background: #000;
         margin-bottom: 70px;
         margin-top: 39px;
@@ -149,17 +166,18 @@ header {
         margin-right: 14px;
         border-radius: 8px;
 
-        img{
+        img {
             width: 263px;
             height: 51%;
         }
 
-        .dropdown__thumbnail-content{
+        .dropdown__thumbnail-content {
             margin-bottom: 4rem;
             padding-top: 15px;
         }
     }
-    .dropdown-thumbnail.only-one{
+
+    .dropdown-thumbnail.only-one {
         margin-top: 5px !important;
         margin-bottom: 5px !important;
     }

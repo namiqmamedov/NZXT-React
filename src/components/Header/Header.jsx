@@ -16,7 +16,7 @@ import dropdownImg04 from '../../assets/images/thumbnail/dropdownImg04.png'
 import itemMini01 from '../../assets/images/thumbnail/itemMini01.avif'
 import itemMini02 from '../../assets/images/thumbnail/itemMini02.avif'
 import itemMini03 from '../../assets/images/thumbnail/itemMini03.avif'
-
+import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
 
 const Header = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -57,7 +57,12 @@ const Header = () => {
           </div>
           <ul>
             <li>
-            <DropdownButton id="dropdown-item-button" title="Gaming PCs">
+             <Dropdown className="d-inline mx-2">
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Gaming PCs
+                <IoIosArrowDown/>
+              </Dropdown.Toggle>
+                <Dropdown.Menu>
                 <div className="dropdown-center">
                 <div className="dropdown-main">
                 <div className="dropdown-item">
@@ -116,11 +121,17 @@ const Header = () => {
                   <img src={dropdownImg01} alt="Dropdown Image" />
                 </div>
                 </div>
-            </DropdownButton>
+                </Dropdown.Menu>
+             </Dropdown>
             </li>
             <li>
-            <DropdownButton id="dropdown-item-button" title="Components">
-                <div className="dropdown-center">
+              <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Components
+                <IoIosArrowDown/>
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+              <div className="dropdown-center">
                 <div className="dropdown-item">
                 <div className="item-header">
                 <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 24 24"  ><path d="M7.416 3.34a2.755 2.755 0 110 5.51 2.755 2.755 0 010-5.51zm0 1.5a1.255 1.255 0 100 2.51 1.255 1.255 0 000-2.51zm.147 15.037l1.19.913-2.226 2.9H3.455l-2.225-2.9 1.19-.913 1.774 2.312h1.593l1.776-2.312zm14.197 0l1.19.913-2.225 2.9h-3.072l-2.225-2.9 1.19-.913 1.774 2.312h1.593l1.776-2.312zm-7.082-6.645v1.5H.942v-1.5h13.736zm8.272 0v1.5h-4.154v-1.5h4.154z"></path><path d="M15.428 20.64h-1.5V.31h1.5v20.33zm4.512 0h-1.5V.31h1.5v20.33zm-8.685-9.867a.75.75 0 01-.75.75H4.482a.75.75 0 010-1.5h6.023a.75.75 0 01.75.75zm1.084 6.516a.75.75 0 01-.75.75h-1.077a.75.75 0 110-1.5h1.077a.75.75 0 01.75.75z"></path><path d="M23 .31a1 1 0 011 1v18.924a1 1 0 01-1 1H1a1 1 0 01-1-1V1.311a1 1 0 011-1h22zm-.5 1.5h-21v17.923h21V1.811z"></path></svg>
@@ -140,10 +151,20 @@ const Header = () => {
                   <Link>
                   <div className="content">
                   <span className="title">
-                      H9
+                      H7
                     </span>
                     <span className="desc">
-                    Dual-Chamber Mid-Tower Cases
+                    ATX Mid-Tower Cases
+                    </span>
+                  </div>
+                  </Link>
+                  <Link>
+                  <div className="content">
+                  <span className="title">
+                      H5
+                    </span>
+                    <span className="desc">
+                    Compact ATX Mid-Tower-Cases
                     </span>
                   </div>
                   </Link>
@@ -160,30 +181,20 @@ const Header = () => {
                   <Link>
                   <div className="content">
                   <span className="title">
-                      H9
+                      H210
                     </span>
                     <span className="desc">
-                    Dual-Chamber Mid-Tower Cases
+                    Compact Mini-ITX Cases
                     </span>
                   </div>
                   </Link>
                   <Link>
                   <div className="content">
                   <span className="title">
-                      H9
+                      CRFT
                     </span>
                     <span className="desc">
-                    Dual-Chamber Mid-Tower Cases
-                    </span>
-                  </div>
-                  </Link>
-                  <Link>
-                  <div className="content">
-                  <span className="title">
-                      H9
-                    </span>
-                    <span className="desc">
-                    Dual-Chamber Mid-Tower Cases
+                    Limited Edition
                     </span>
                   </div>
                   </Link>
@@ -198,60 +209,60 @@ const Header = () => {
                   <Link>
                   <div className="content">
                   <span className="title">
-                      H9
+                      The New Krakens
                     </span>
                     <span className="desc">
-                    Dual-Chamber Mid-Tower Cases
+                    AIO Liquid Coolers with LCD Display
                     </span>
                   </div>
                   </Link>
                   <Link>
                   <div className="content">
                   <span className="title">
-                      H9
+                      Kraken Z
                     </span>
                     <span className="desc">
-                    Dual-Chamber Mid-Tower Cases
+                    AIO Liquid Coolers with LCD Display
                     </span>
                   </div>
                   </Link>
                   <Link>
                   <div className="content">
                   <span className="title">
-                      H9
+                      Kraken X
                     </span>
                     <span className="desc">
-                    Dual-Chamber Mid-Tower Cases
+                    AIO Liquid Coolers with Mirror Display
                     </span>
                   </div>
                   </Link>
                   <Link>
                   <div className="content">
                   <span className="title">
-                      H9
+                      Kraken 120
                     </span>
                     <span className="desc">
-                    Dual-Chamber Mid-Tower Cases
+                    120mm Liquid Cooler with RGB
                     </span>
                   </div>
                   </Link>
                   <Link>
                   <div className="content">
                   <span className="title">
-                      H9
+                      F Series Fans
                     </span>
                     <span className="desc">
-                    Dual-Chamber Mid-Tower Cases
+                    RGB & High-performance Fans
                     </span>
                   </div>
                   </Link>
                   <Link>
                   <div className="content">
                   <span className="title">
-                      H9
+                      T120 Air Coolers
                     </span>
                     <span className="desc">
-                    Dual-Chamber Mid-Tower Cases
+                    CPU Air Coolers
                     </span>
                   </div>
                   </Link>
@@ -303,10 +314,16 @@ const Header = () => {
                   <img src={dropdownImg01} alt="Dropdown Image" />
                 </div>
                 </div>
-            </DropdownButton>
+</Dropdown.Menu>
+              </Dropdown>
             </li>
             <li>
-            <DropdownButton id="dropdown-item-button" title="Monitors">
+              <Dropdown>
+                <DropdownToggle>
+                Monitors
+                <IoIosArrowDown/>
+                </DropdownToggle>
+                <Dropdown.Menu>
                 <div className="dropdown-center">
                 <div className="dropdown-item">
                 <div className="item-header">
@@ -362,10 +379,16 @@ const Header = () => {
                   <img src={dropdownImg02} alt="Dropdown Image" />
                 </div>
                 </div>
-            </DropdownButton>
+                </Dropdown.Menu>
+              </Dropdown>
             </li>
             <li>
-            <DropdownButton id="dropdown-item-button" title="Peripherals">
+              <Dropdown>
+              <DropdownToggle>
+                Peripherals
+                <IoIosArrowDown/>
+                </DropdownToggle>
+                <Dropdown.Menu>
                 <div className="dropdown-center">
                 <div className="col">
                 <div className="dropdown-item">
@@ -447,10 +470,16 @@ const Header = () => {
                   <img src={dropdownImg03} alt="Dropdown Image" />
                 </div>
                 </div>
-            </DropdownButton>
+                </Dropdown.Menu>
+              </Dropdown>
             </li>
             <li>
-            <DropdownButton id="dropdown-item-button" title="Software">
+              <Dropdown>
+              <DropdownToggle>
+                Software
+                <IoIosArrowDown/>
+                </DropdownToggle>
+                <Dropdown.Menu>
                 <div className="dropdown-center">
                 <div className="dropdown-item">
                 <div className="item-header">
@@ -479,10 +508,16 @@ const Header = () => {
                 </div>
                 </div>
                 </div>
-            </DropdownButton>
+                 </Dropdown.Menu>
+              </Dropdown>
             </li>
             <li>
-            <DropdownButton id="dropdown-item-button" title="Community">
+              <Dropdown>
+              <DropdownToggle>
+                Community
+                <IoIosArrowDown/>
+                </DropdownToggle>
+                <Dropdown.Menu>
                 <div className="dropdown-center">
                 <div className="dropdown-item">
                 <div className="item-header">
@@ -559,7 +594,8 @@ const Header = () => {
                   <img src={dropdownImg04} alt="Dropdown Image" />
                 </div>
                 </div>
-            </DropdownButton>
+                </Dropdown.Menu>
+              </Dropdown>
             </li>
           </ul>
         </div>
