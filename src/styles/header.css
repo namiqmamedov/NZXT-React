@@ -136,6 +136,10 @@ header .main__nav .nav__end svg {
   margin-bottom: 4rem;
   padding-top: 15px;
 }
+.dropdown .dropdown-thumbnail.only-one {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
 
 @media screen and (max-width: 576px) {
   header .main__nav ul {

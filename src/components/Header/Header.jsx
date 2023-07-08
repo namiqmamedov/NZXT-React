@@ -10,6 +10,9 @@ import {IoIosArrowDown} from 'react-icons/io'
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import dropdownImg01 from '../../assets/images/thumbnail/h7-nav-cta.png'
+import dropdownImg02 from '../../assets/images/thumbnail/dropdownImg02.png'
+import dropdownImg03 from '../../assets/images/thumbnail/dropdownImg03.png'
+import dropdownImg04 from '../../assets/images/thumbnail/dropdownImg04.png'
 import itemMini01 from '../../assets/images/thumbnail/itemMini01.avif'
 import itemMini02 from '../../assets/images/thumbnail/itemMini02.avif'
 import itemMini03 from '../../assets/images/thumbnail/itemMini03.avif'
@@ -303,128 +306,260 @@ const Header = () => {
             </DropdownButton>
             </li>
             <li>
-              <Button
-                id="basic-button"
-                aria-controls={open ? "basic-menu" : undefined}
-                aria-haspopup="true"
-                aria-expanded={open ? "true" : undefined}
-                onClick={handleClick}
-              >
-                Monitors
-                <IoIosArrowDown className="arrow-bottom"/>
-              </Button>
-              <Menu
-                id="basic-menu"
-                anchorEl={anchorEl}
-                open={open}
-                onClose={handleClose}
-                MenuListProps={{
-                  "aria-labelledby": "basic-button",
-                }}
-              >
-                <Link to="product">
-                  <MenuItem onClick={handleClose}>Profile</MenuItem>
-                </Link>
-                <Link to="product">
-                  <MenuItem onClick={handleClose}>My account</MenuItem>
-                </Link>
-                <Link to="product">
-                  <MenuItem onClick={handleClose}>Logout</MenuItem>
-                </Link>
-              </Menu>
+            <DropdownButton id="dropdown-item-button" title="Monitors">
+                <div className="dropdown-center">
+                <div className="dropdown-item">
+                <div className="item-header">
+                <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 24 24" data-darkreader-inline-fill=""><path d="M21.19 1H2.83A2.75 2.75 0 00.08 3.75v11.652a2.75 2.75 0 002.75 2.75h18.36a2.75 2.75 0 002.75-2.75V3.75A2.75 2.75 0 0021.19 1zM2.83 2.5h18.36c.69 0 1.25.56 1.25 1.25v11.652c0 .69-.56 1.25-1.25 1.25H2.83c-.69 0-1.25-.56-1.25-1.25V3.75c0-.69.56-1.25 1.25-1.25zm13.652 18.623a.75.75 0 01.101 1.494l-.101.006H7.538a.75.75 0 01-.102-1.493l.102-.006h8.944z"></path><path d="M12.01 16.652a.75.75 0 01.743.648l.007.102v4.472a.75.75 0 01-1.493.101l-.007-.101v-4.472a.75.75 0 01.75-.75z"></path></svg>
+                CANVAS
+                </div>
+                <div className="item-body">
+                  <Link>
+                  <div className="content">
+                  <span className="title">
+                      FDH Monitors
+                    </span>
+                    <span className="desc">
+                    </span>
+                  </div>
+                  </Link>
+                  <Link>
+                  <div className="content">
+                  <span className="title">
+                      QHD Monitors
+                    </span>
+                  </div>
+                  </Link>
+                </div>
+                </div>
+                <div className="dropdown-item">
+                <div className="item-header">
+                <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 24 24" data-darkreader-inline-fill=""><path d="M21.19 1H2.83A2.75 2.75 0 00.08 3.75v11.652a2.75 2.75 0 002.75 2.75h18.36a2.75 2.75 0 002.75-2.75V3.75A2.75 2.75 0 0021.19 1zM2.83 2.5h18.36c.69 0 1.25.56 1.25 1.25v11.652c0 .69-.56 1.25-1.25 1.25H2.83c-.69 0-1.25-.56-1.25-1.25V3.75c0-.69.56-1.25 1.25-1.25zm13.652 18.623a.75.75 0 01.101 1.494l-.101.006H7.538a.75.75 0 01-.102-1.493l.102-.006h8.944z"></path><path d="M12.01 16.652a.75.75 0 01.743.648l.007.102v4.472a.75.75 0 01-1.493.101l-.007-.101v-4.472a.75.75 0 01.75-.75z"></path></svg>
+                MONITOR ARM
+                </div>
+                <div className="item-body">
+                  <Link>
+                  <div className="content">
+                  <span className="title">
+                      Monitor Arm (Single)
+                    </span>
+                  </div>
+                  </Link>
+                  <Link>
+                  <div className="content">
+                  <span className="title">
+                  Monitor Arm (Dual)
+                    </span>
+                  </div>
+                  </Link>
+                </div>
+                </div>
+                <div className="dropdown-thumbnail only-one" style={{background: "#6311E5"}}>
+                  <div className="dropdown__thumbnail-content">
+                    <p className="text-center text-white">Canvas FHD Monitors</p>
+                    <p className="text-center text-white">Put your best performance on display</p>
+                  </div>
+                  <img src={dropdownImg02} alt="Dropdown Image" />
+                </div>
+                </div>
+            </DropdownButton>
             </li>
             <li>
-              <Button
-                id="basic-button"
-                aria-controls={open ? "basic-menu" : undefined}
-                aria-haspopup="true"
-                aria-expanded={open ? "true" : undefined}
-                onClick={handleClick}
-              >
-                Peripherals
-                <IoIosArrowDown className="arrow-bottom"/>
-              </Button>
-              <Menu
-                id="basic-menu"
-                anchorEl={anchorEl}
-                open={open}
-                onClose={handleClose}
-                MenuListProps={{
-                  "aria-labelledby": "basic-button",
-                }}
-              >
-                <Link to="product">
-                  <MenuItem onClick={handleClose}>Profile</MenuItem>
-                </Link>
-                <Link to="product">
-                  <MenuItem onClick={handleClose}>My account</MenuItem>
-                </Link>
-                <Link to="product">
-                  <MenuItem onClick={handleClose}>Logout</MenuItem>
-                </Link>
-              </Menu>
+            <DropdownButton id="dropdown-item-button" title="Peripherals">
+                <div className="dropdown-center">
+                <div className="col">
+                <div className="dropdown-item">
+                <div className="item-header">
+                <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 24 24" data-darkreader-inline-fill=""><path d="M21.19 1H2.83A2.75 2.75 0 00.08 3.75v11.652a2.75 2.75 0 002.75 2.75h18.36a2.75 2.75 0 002.75-2.75V3.75A2.75 2.75 0 0021.19 1zM2.83 2.5h18.36c.69 0 1.25.56 1.25 1.25v11.652c0 .69-.56 1.25-1.25 1.25H2.83c-.69 0-1.25-.56-1.25-1.25V3.75c0-.69.56-1.25 1.25-1.25zm13.652 18.623a.75.75 0 01.101 1.494l-.101.006H7.538a.75.75 0 01-.102-1.493l.102-.006h8.944z"></path><path d="M12.01 16.652a.75.75 0 01.743.648l.007.102v4.472a.75.75 0 01-1.493.101l-.007-.101v-4.472a.75.75 0 01.75-.75z"></path></svg>
+                Capture Card
+                </div>
+                <div className="item-body">
+                  <Link>
+                  <div className="content">
+                  <span className="title">
+                      Capture Card
+                    </span>
+                    <span className="desc">
+                    </span>
+                  </div>
+                  </Link>
+                </div>
+                </div>
+                <div className="dropdown-item">
+                <div className="item-header">
+                <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 24 24" data-darkreader-inline-fill=""><path d="M21.19 1H2.83A2.75 2.75 0 00.08 3.75v11.652a2.75 2.75 0 002.75 2.75h18.36a2.75 2.75 0 002.75-2.75V3.75A2.75 2.75 0 0021.19 1zM2.83 2.5h18.36c.69 0 1.25.56 1.25 1.25v11.652c0 .69-.56 1.25-1.25 1.25H2.83c-.69 0-1.25-.56-1.25-1.25V3.75c0-.69.56-1.25 1.25-1.25zm13.652 18.623a.75.75 0 01.101 1.494l-.101.006H7.538a.75.75 0 01-.102-1.493l.102-.006h8.944z"></path><path d="M12.01 16.652a.75.75 0 01.743.648l.007.102v4.472a.75.75 0 01-1.493.101l-.007-.101v-4.472a.75.75 0 01.75-.75z"></path></svg>
+                Capture Card
+                </div>
+                <div className="item-body">
+                  <Link>
+                  <div className="content">
+                  <span className="title">
+                      Capture Card
+                    </span>
+                    <span className="desc">
+                    </span>
+                  </div>
+                  </Link>
+                </div>
+                </div>
+                </div>
+                <div className="col">
+                <div className="dropdown-item">
+                <div className="item-header">
+                <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 24 24" data-darkreader-inline-fill=""><path d="M21.19 1H2.83A2.75 2.75 0 00.08 3.75v11.652a2.75 2.75 0 002.75 2.75h18.36a2.75 2.75 0 002.75-2.75V3.75A2.75 2.75 0 0021.19 1zM2.83 2.5h18.36c.69 0 1.25.56 1.25 1.25v11.652c0 .69-.56 1.25-1.25 1.25H2.83c-.69 0-1.25-.56-1.25-1.25V3.75c0-.69.56-1.25 1.25-1.25zm13.652 18.623a.75.75 0 01.101 1.494l-.101.006H7.538a.75.75 0 01-.102-1.493l.102-.006h8.944z"></path><path d="M12.01 16.652a.75.75 0 01.743.648l.007.102v4.472a.75.75 0 01-1.493.101l-.007-.101v-4.472a.75.75 0 01.75-.75z"></path></svg>
+                Capture Card
+                </div>
+                <div className="item-body">
+                  <Link>
+                  <div className="content">
+                  <span className="title">
+                      Capture Card
+                    </span>
+                    <span className="desc">
+                    </span>
+                  </div>
+                  </Link>
+                </div>
+                </div>
+                <div className="dropdown-item">
+                <div className="item-header">
+                <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 24 24" data-darkreader-inline-fill=""><path d="M21.19 1H2.83A2.75 2.75 0 00.08 3.75v11.652a2.75 2.75 0 002.75 2.75h18.36a2.75 2.75 0 002.75-2.75V3.75A2.75 2.75 0 0021.19 1zM2.83 2.5h18.36c.69 0 1.25.56 1.25 1.25v11.652c0 .69-.56 1.25-1.25 1.25H2.83c-.69 0-1.25-.56-1.25-1.25V3.75c0-.69.56-1.25 1.25-1.25zm13.652 18.623a.75.75 0 01.101 1.494l-.101.006H7.538a.75.75 0 01-.102-1.493l.102-.006h8.944z"></path><path d="M12.01 16.652a.75.75 0 01.743.648l.007.102v4.472a.75.75 0 01-1.493.101l-.007-.101v-4.472a.75.75 0 01.75-.75z"></path></svg>
+                Capture Card
+                </div>
+                <div className="item-body">
+                  <Link>
+                  <div className="content">
+                  <span className="title">
+                      Capture Card
+                    </span>
+                    <span className="desc">
+                    </span>
+                  </div>
+                  </Link>
+                </div>
+                </div>
+                </div>
+                <div className="dropdown-thumbnail only-one" style={{background: "#6311E5"}}>
+                  <div className="dropdown__thumbnail-content">
+                    <p className="text-center text-white">Relay Audio</p>
+                    <p className="text-center text-white">Don't miss a beat with high-fidelity Relay Audio.</p>
+                  </div>
+                  <img src={dropdownImg03} alt="Dropdown Image" />
+                </div>
+                </div>
+            </DropdownButton>
             </li>
             <li>
-              <Button
-                id="basic-button"
-                aria-controls={open ? "basic-menu" : undefined}
-                aria-haspopup="true"
-                aria-expanded={open ? "true" : undefined}
-                onClick={handleClick}
-              >
-                Software
-                <IoIosArrowDown className="arrow-bottom"/>
-              </Button>
-              <Menu
-                id="basic-menu"
-                anchorEl={anchorEl}
-                open={open}
-                onClose={handleClose}
-                MenuListProps={{
-                  "aria-labelledby": "basic-button",
-                }}
-              >
-                <Link to="product">
-                  <MenuItem onClick={handleClose}>Profile</MenuItem>
-                </Link>
-                <Link to="product">
-                  <MenuItem onClick={handleClose}>My account</MenuItem>
-                </Link>
-                <Link to="product">
-                  <MenuItem onClick={handleClose}>Logout</MenuItem>
-                </Link>
-              </Menu>
+            <DropdownButton id="dropdown-item-button" title="Software">
+                <div className="dropdown-center">
+                <div className="dropdown-item">
+                <div className="item-header">
+                <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 24 24" data-darkreader-inline-fill=""><path d="M21.19 1H2.83A2.75 2.75 0 00.08 3.75v11.652a2.75 2.75 0 002.75 2.75h18.36a2.75 2.75 0 002.75-2.75V3.75A2.75 2.75 0 0021.19 1zM2.83 2.5h18.36c.69 0 1.25.56 1.25 1.25v11.652c0 .69-.56 1.25-1.25 1.25H2.83c-.69 0-1.25-.56-1.25-1.25V3.75c0-.69.56-1.25 1.25-1.25zm13.652 18.623a.75.75 0 01.101 1.494l-.101.006H7.538a.75.75 0 01-.102-1.493l.102-.006h8.944z"></path><path d="M12.01 16.652a.75.75 0 01.743.648l.007.102v4.472a.75.75 0 01-1.493.101l-.007-.101v-4.472a.75.75 0 01.75-.75z"></path></svg>
+                PC Monitoring
+                </div>
+                <div className="item-body">
+                  <Link>
+                  <div className="content">
+                  <span className="title">
+                      CAM
+                    </span>
+                    <span className="desc">
+                    </span>
+                  </div>
+                  </Link>
+                  <Link>
+                  <div className="content">
+                  <span className="title">
+                      CAM Feedback
+                    </span>
+                    <span className="desc">
+                    </span>
+                  </div>
+                  </Link>
+                </div>
+                </div>
+                </div>
+            </DropdownButton>
             </li>
             <li>
-              <Button
-                id="basic-button"
-                aria-controls={open ? "basic-menu" : undefined}
-                aria-haspopup="true"
-                aria-expanded={open ? "true" : undefined}
-                onClick={handleClick}
-              >
-                Community
-             <IoIosArrowDown className="arrow-bottom"/>
-              </Button>
-              <Menu
-                id="basic-menu"
-                anchorEl={anchorEl}
-                open={open}
-                onClose={handleClose}
-                MenuListProps={{
-                  "aria-labelledby": "basic-button",
-                }}
-              >
-                <Link to="product">
-                  <MenuItem onClick={handleClose}>Profile</MenuItem>
-                </Link>
-                <Link to="product">
-                  <MenuItem onClick={handleClose}>My account</MenuItem>
-                </Link>
-                <Link to="product">
-                  <MenuItem onClick={handleClose}>Logout</MenuItem>
-                </Link>
-              </Menu>
+            <DropdownButton id="dropdown-item-button" title="Community">
+                <div className="dropdown-center">
+                <div className="dropdown-item">
+                <div className="item-header">
+                <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 24 24" data-darkreader-inline-fill=""><path d="M21.19 1H2.83A2.75 2.75 0 00.08 3.75v11.652a2.75 2.75 0 002.75 2.75h18.36a2.75 2.75 0 002.75-2.75V3.75A2.75 2.75 0 0021.19 1zM2.83 2.5h18.36c.69 0 1.25.56 1.25 1.25v11.652c0 .69-.56 1.25-1.25 1.25H2.83c-.69 0-1.25-.56-1.25-1.25V3.75c0-.69.56-1.25 1.25-1.25zm13.652 18.623a.75.75 0 01.101 1.494l-.101.006H7.538a.75.75 0 01-.102-1.493l.102-.006h8.944z"></path><path d="M12.01 16.652a.75.75 0 01.743.648l.007.102v4.472a.75.75 0 01-1.493.101l-.007-.101v-4.472a.75.75 0 01.75-.75z"></path></svg>
+                NZXT COMMUNITY
+                </div>
+                <div className="item-body">
+                  <Link>
+                  <div className="content">
+                  <span className="title">
+                      Podcast
+                    </span>
+                    <span className="desc">
+                    </span>
+                  </div>
+                  </Link>
+                  <Link>
+                  <div className="content">
+                  <span className="title">
+                      NZXT Club & Discord
+                    </span>
+                  </div>
+                  </Link>
+                  <Link>
+                  <div className="content">
+                  <span className="title">
+                      Newsroom & Blog
+                    </span>
+                  </div>
+                  </Link>
+                  <Link>
+                  <div className="content">
+                  <span className="title">
+                      Partner Program
+                    </span>
+                  </div>
+                  </Link>
+                </div>
+                </div>
+                <div className="dropdown-item">
+                <div className="item-header">
+                <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 24 24" data-darkreader-inline-fill=""><path d="M21.19 1H2.83A2.75 2.75 0 00.08 3.75v11.652a2.75 2.75 0 002.75 2.75h18.36a2.75 2.75 0 002.75-2.75V3.75A2.75 2.75 0 0021.19 1zM2.83 2.5h18.36c.69 0 1.25.56 1.25 1.25v11.652c0 .69-.56 1.25-1.25 1.25H2.83c-.69 0-1.25-.56-1.25-1.25V3.75c0-.69.56-1.25 1.25-1.25zm13.652 18.623a.75.75 0 01.101 1.494l-.101.006H7.538a.75.75 0 01-.102-1.493l.102-.006h8.944z"></path><path d="M12.01 16.652a.75.75 0 01.743.648l.007.102v4.472a.75.75 0 01-1.493.101l-.007-.101v-4.472a.75.75 0 01.75-.75z"></path></svg>
+                Company
+                </div>
+                <div className="item-body">
+                  <Link>
+                  <div className="content">
+                  <span className="title">
+                      Company
+                    </span>
+                  </div>
+                  </Link>
+                  <Link>
+                  <div className="content">
+                  <span className="title">
+                  Careers
+                    </span>
+                  </div>
+                  </Link>
+                  <Link>
+                  <div className="content">
+                  <span className="title">
+                  Product Updates
+                    </span>
+                  </div>
+                  </Link>
+                </div>
+                </div>
+                <div className="dropdown-thumbnail only-one" style={{background: "#000000"}}>
+                  <div className="dropdown__thumbnail-content">
+                    <p className="text-center text-white">NZXT Partner Program</p>
+                    <p className="text-center text-white">We want to grow with you!</p>
+                  </div>
+                  <img src={dropdownImg04} alt="Dropdown Image" />
+                </div>
+                </div>
+            </DropdownButton>
             </li>
           </ul>
         </div>
