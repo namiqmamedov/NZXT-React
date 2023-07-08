@@ -10,6 +10,9 @@ import {IoIosArrowDown} from 'react-icons/io'
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import dropdownImg01 from '../../assets/images/thumbnail/h7-nav-cta.png'
+import itemMini01 from '../../assets/images/thumbnail/itemMini01.avif'
+import itemMini02 from '../../assets/images/thumbnail/itemMini02.avif'
+import itemMini03 from '../../assets/images/thumbnail/itemMini03.avif'
 
 
 const Header = () => {
@@ -51,35 +54,66 @@ const Header = () => {
           </div>
           <ul>
             <li>
-              <Button
-                id="basic-button"
-                aria-controls={open ? "basic-menu" : undefined}
-                aria-haspopup="true"
-                aria-expanded={open ? "true" : undefined}
-                onClick={handleClick}
-              >
-                Gaming PCs
-                <IoIosArrowDown className="arrow-bottom"/>
-              </Button>
-              <Menu
-                id="basic-menu"
-                anchorEl={anchorEl}
-                open={open}
-                onClose={handleClose}
-                MenuListProps={{
-                  "aria-labelledby": "basic-button",
-                }}
-              >
-                <Link to="product">
-                  <MenuItem onClick={handleClose}>Profile</MenuItem>
-                </Link>
-                <Link to="product">
-                  <MenuItem onClick={handleClose}>My account</MenuItem>
-                </Link>
-                <Link to="product">
-                  <MenuItem onClick={handleClose}>Logout</MenuItem>
-                </Link>
-              </Menu>
+            <DropdownButton id="dropdown-item-button" title="Gaming PCs">
+                <div className="dropdown-center">
+                <div className="dropdown-main">
+                <div className="dropdown-item">
+                <div className="item-header">
+                <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 24 24"  data-darkreader-inline-fill=""><path d="M22.219 7.583H8.699a1.75 1.75 0 00-1.749 1.75v7.876c0 .966.783 1.75 1.75 1.75h13.519a1.75 1.75 0 001.75-1.75V9.333a1.75 1.75 0 00-1.75-1.75zm-13.52 1.5h13.52a.25.25 0 01.25.25v7.876a.25.25 0 01-.25.25H8.699a.25.25 0 01-.25-.25V9.333a.25.25 0 01.25-.25zm9.581 11.903a.75.75 0 01.103 1.493l-.102.007h-5.643a.75.75 0 01-.102-1.494l.102-.006h5.643z"></path><path d="M15.46 17.459a.75.75 0 01.742.648l.007.102v2.821a.75.75 0 01-1.493.102l-.007-.102v-2.82a.75.75 0 01.75-.75zM8.882 2c.824 0 1.446.703 1.512 1.55l.006.15v4.633H9V3.7c0-.161-.06-.262-.099-.291l-.02-.009H1.519c-.025 0-.09.074-.111.21L1.4 3.7v16c0 .161.06.262.099.291l.02.009h7.363c.025 0 .09-.074.111-.21L9 19.7v-1.749h1.4V19.7c0 .86-.576 1.612-1.375 1.693l-.143.007H1.518c-.824 0-1.446-.703-1.512-1.55L0 19.7v-16c0-.86.576-1.612 1.375-1.693L1.518 2h7.364z"></path><path d="M7.2 5.5a.7.7 0 01.095 1.394L7.2 6.9h-4a.7.7 0 01-.095-1.394L3.2 5.5h4zm-2 6a.7.7 0 01.095 1.394L5.2 12.9h-2a.7.7 0 01-.095-1.394L3.2 11.5h2z"></path></svg>
+                BUILD A CUSTOM PC <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1em" height="1em" data-darkreader-inline-stroke="" ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </div>
+                </div>
+                <div className="dropdown-item">
+                <div className="item-header">
+                <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 24 24"  data-darkreader-inline-fill=""><path d="M22.219 7.583H8.699a1.75 1.75 0 00-1.749 1.75v7.876c0 .966.783 1.75 1.75 1.75h13.519a1.75 1.75 0 001.75-1.75V9.333a1.75 1.75 0 00-1.75-1.75zm-13.52 1.5h13.52a.25.25 0 01.25.25v7.876a.25.25 0 01-.25.25H8.699a.25.25 0 01-.25-.25V9.333a.25.25 0 01.25-.25zm9.581 11.903a.75.75 0 01.103 1.493l-.102.007h-5.643a.75.75 0 01-.102-1.494l.102-.006h5.643z"></path><path d="M15.46 17.459a.75.75 0 01.742.648l.007.102v2.821a.75.75 0 01-1.493.102l-.007-.102v-2.82a.75.75 0 01.75-.75zM8.882 2c.824 0 1.446.703 1.512 1.55l.006.15v4.633H9V3.7c0-.161-.06-.262-.099-.291l-.02-.009H1.519c-.025 0-.09.074-.111.21L1.4 3.7v16c0 .161.06.262.099.291l.02.009h7.363c.025 0 .09-.074.111-.21L9 19.7v-1.749h1.4V19.7c0 .86-.576 1.612-1.375 1.693l-.143.007H1.518c-.824 0-1.446-.703-1.512-1.55L0 19.7v-16c0-.86.576-1.612 1.375-1.693L1.518 2h7.364z"></path><path d="M7.2 5.5a.7.7 0 01.095 1.394L7.2 6.9h-4a.7.7 0 01-.095-1.394L3.2 5.5h4zm-2 6a.7.7 0 01.095 1.394L5.2 12.9h-2a.7.7 0 01-.095-1.394L3.2 11.5h2z"></path></svg>
+                PREBUILT GAMING PCS <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1em" height="1em" data-darkreader-inline-stroke=""><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </div>
+                <div className="item-body">
+                  <Link>
+                  <img src={itemMini01} alt="Menu Image" />
+                  <div className="content">
+                    <span className="title">
+                      Player: One
+                    </span>
+                    <span className="desc">
+                    H5 Flow PCs
+                    </span>
+                  </div>
+                  </Link>
+                  <Link>
+                  <img src={itemMini02} alt="Menu Image" />
+                  <div className="content">
+                  <span className="title">
+                    Player: Two
+                    </span>
+                    <span className="desc">
+                    H5 Elite PCs
+                    </span>
+                  </div>
+                  </Link>
+                  <Link>
+                  <img src={itemMini03} alt="Menu Image" />
+                  <div className="content">
+                  <span className="title">
+                      Player: Three
+                    </span>
+                    <span className="desc">
+                    H7 Flow and Elite PCs
+                    </span>
+                  </div>
+                  </Link>
+                </div>
+                </div>
+                </div>
+                <div className="dropdown-thumbnail" style={{background: '#6712E5'}}>
+                  <div className="dropdown__thumbnail-content">
+                    <p className="text-center text-white">Power Up Your Prebuilt</p>
+                    <p className="text-center text-white">More Options.Greater Performance</p>
+                  </div>
+                  <img src={dropdownImg01} alt="Dropdown Image" />
+                </div>
+                </div>
+            </DropdownButton>
             </li>
             <li>
             <DropdownButton id="dropdown-item-button" title="Components">
@@ -91,52 +125,64 @@ const Header = () => {
                 </div>
                 <div className="item-body">
                   <Link>
-                    <span className="title">
+                  <div className="content">
+                  <span className="title">
                       H9
                     </span>
                     <span className="desc">
                     Dual-Chamber Mid-Tower Cases
                     </span>
+                  </div>
                   </Link>
                   <Link>
-                    <span className="title">
-                      H7
+                  <div className="content">
+                  <span className="title">
+                      H9
                     </span>
                     <span className="desc">
-                    ATX Mid-Tower Cases
+                    Dual-Chamber Mid-Tower Cases
                     </span>
+                  </div>
                   </Link>
                   <Link>
-                    <span className="title">
-                      H5
+                  <div className="content">
+                  <span className="title">
+                      H9
                     </span>
                     <span className="desc">
-                    Compact ATX Mid-Tower Cases
+                    Dual-Chamber Mid-Tower Cases
                     </span>
+                  </div>
                   </Link>
                   <Link>
-                    <span className="title">
-                      H210
+                  <div className="content">
+                  <span className="title">
+                      H9
                     </span>
                     <span className="desc">
-                    Compact Mini-ITX Cases
+                    Dual-Chamber Mid-Tower Cases
                     </span>
+                  </div>
                   </Link>
                   <Link>
-                    <span className="title">
-                      H1
+                  <div className="content">
+                  <span className="title">
+                      H9
                     </span>
                     <span className="desc">
-                    Small Form Factor Mini-ITX
+                    Dual-Chamber Mid-Tower Cases
                     </span>
+                  </div>
                   </Link>
                   <Link>
-                    <span className="title">
-                      CRFT
+                  <div className="content">
+                  <span className="title">
+                      H9
                     </span>
                     <span className="desc">
-                    Limited Edition
+                    Dual-Chamber Mid-Tower Cases
                     </span>
+                  </div>
                   </Link>
                 </div>
                 </div>
@@ -147,52 +193,64 @@ const Header = () => {
                 </div>
                 <div className="item-body">
                   <Link>
-                    <span className="title">
+                  <div className="content">
+                  <span className="title">
                       H9
                     </span>
                     <span className="desc">
                     Dual-Chamber Mid-Tower Cases
                     </span>
+                  </div>
                   </Link>
                   <Link>
-                    <span className="title">
-                      H7
+                  <div className="content">
+                  <span className="title">
+                      H9
                     </span>
                     <span className="desc">
-                    ATX Mid-Tower Cases
+                    Dual-Chamber Mid-Tower Cases
                     </span>
+                  </div>
                   </Link>
                   <Link>
-                    <span className="title">
-                      H5
+                  <div className="content">
+                  <span className="title">
+                      H9
                     </span>
                     <span className="desc">
-                    Compact ATX Mid-Tower Cases
+                    Dual-Chamber Mid-Tower Cases
                     </span>
+                  </div>
                   </Link>
                   <Link>
-                    <span className="title">
-                      H210
+                  <div className="content">
+                  <span className="title">
+                      H9
                     </span>
                     <span className="desc">
-                    Compact Mini-ITX Cases
+                    Dual-Chamber Mid-Tower Cases
                     </span>
+                  </div>
                   </Link>
                   <Link>
-                    <span className="title">
-                      H1
+                  <div className="content">
+                  <span className="title">
+                      H9
                     </span>
                     <span className="desc">
-                    Small Form Factor Mini-ITX
+                    Dual-Chamber Mid-Tower Cases
                     </span>
+                  </div>
                   </Link>
                   <Link>
-                    <span className="title">
-                      CRFT
+                  <div className="content">
+                  <span className="title">
+                      H9
                     </span>
                     <span className="desc">
-                    Limited Edition
+                    Dual-Chamber Mid-Tower Cases
                     </span>
+                  </div>
                   </Link>
                 </div>
                 </div>
@@ -203,52 +261,34 @@ const Header = () => {
                 </div>
                 <div className="item-body">
                   <Link>
-                    <span className="title">
-                      H9
+                  <div className="content">
+                  <span className="title">
+                      Motherboards
                     </span>
                     <span className="desc">
-                    Dual-Chamber Mid-Tower Cases
+                    Gaming Motherboards
                     </span>
+                  </div>
                   </Link>
                   <Link>
-                    <span className="title">
-                      H7
+                  <div className="content">
+                  <span className="title">
+                      Power
                     </span>
                     <span className="desc">
-                    ATX Mid-Tower Cases
+                    80 Plus Rated PSUs
                     </span>
+                  </div>
                   </Link>
                   <Link>
-                    <span className="title">
-                      H5
+                  <div className="content">
+                  <span className="title">
+                      Lighting
                     </span>
                     <span className="desc">
-                    Compact ATX Mid-Tower Cases
+                    Expanded RGB Lighting and Control
                     </span>
-                  </Link>
-                  <Link>
-                    <span className="title">
-                      H210
-                    </span>
-                    <span className="desc">
-                    Compact Mini-ITX Cases
-                    </span>
-                  </Link>
-                  <Link>
-                    <span className="title">
-                      H1
-                    </span>
-                    <span className="desc">
-                    Small Form Factor Mini-ITX
-                    </span>
-                  </Link>
-                  <Link>
-                    <span className="title">
-                      CRFT
-                    </span>
-                    <span className="desc">
-                    Limited Edition
-                    </span>
+                  </div>
                   </Link>
                 </div>
                 </div>
@@ -261,35 +301,6 @@ const Header = () => {
                 </div>
                 </div>
             </DropdownButton>
-              {/* <Button
-                id="basic-button"
-                aria-controls={open ? "basic-menu" : undefined}
-                aria-haspopup="true"
-                aria-expanded={open ? "true" : undefined}
-                onClick={handleClick}
-              >
-                Components
-                <IoIosArrowDown className="arrow-bottom"/>
-              </Button>
-              <Menu
-                id="basic-menu"
-                anchorEl={anchorEl}
-                open={open}
-                onClose={handleClose}
-                MenuListProps={{
-                  "aria-labelledby": "basic-button",
-                }}
-              >
-                <Link to="product">
-                  <MenuItem onClick={handleClose}>Profile</MenuItem>
-                </Link>
-                <Link to="product">
-                  <MenuItem onClick={handleClose}>My account</MenuItem>
-                </Link>
-                <Link to="product">
-                  <MenuItem onClick={handleClose}>Logout</MenuItem>
-                </Link>
-              </Menu> */}
             </li>
             <li>
               <Button

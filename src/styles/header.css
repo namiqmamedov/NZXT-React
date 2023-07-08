@@ -101,6 +101,7 @@ header .main__nav .nav__end svg {
   font-size: 14px;
   font-family: "Gotham SSm", sans-serif;
   color: white;
+  width: 100%;
 }
 .dropdown .dropdown-item .item-body .desc {
   font-size: 10px;
@@ -109,9 +110,15 @@ header .main__nav .nav__end svg {
 }
 .dropdown .dropdown-item .item-body a {
   display: flex;
-  flex-direction: column;
   text-decoration: none;
   padding-bottom: 15px;
+}
+.dropdown .dropdown-item .item-body .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.dropdown .dropdown-item .item-body img {
+  width: 30%;
 }
 .dropdown .dropdown-thumbnail {
   background: #000;
