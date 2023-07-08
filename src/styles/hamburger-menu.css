@@ -1,17 +1,42 @@
 /* Mixin */
+.nav-layout li a {
+  margin-bottom: -10px;
+}
+
 nav {
-  background-color: #91cfa1;
+  background: white;
   height: 50px;
   padding: 0 16px;
   display: flex;
   align-items: center;
   /* fade in checked menu */
 }
+nav .nav__end {
+  width: 100%;
+  text-align: end;
+}
+nav .nav__end svg {
+  color: rgb(133, 48, 236);
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-left: 10px;
+}
 nav .m-menu__checkbox {
   display: none;
 }
 nav label.m-menu__toggle {
   cursor: pointer;
+}
+nav label.m-menu__toggle svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+nav .nav-logo {
+  margin-left: 10px;
+}
+nav .nav-logo svg {
+  width: 3.5rem;
+  height: 3.5rem;
 }
 nav .m-menu {
   position: absolute;
@@ -29,6 +54,17 @@ nav .m-menu {
 nav .m-menu .m-menu__header svg {
   width: 1.7rem;
   height: 1.7rem;
+}
+nav .m-menu .support {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #dcdbe6;
+  border-bottom: 1px solid #dcdbe6;
+  padding-left: 15px;
+}
+nav .m-menu .support svg {
+  color: hsl(267, 83%, 49%);
+  margin-left: 2px;
 }
 nav .m-menu .nav-logo {
   margin-left: 10px;
@@ -76,7 +112,8 @@ nav .m-menu ul {
   height: 100%;
   overflow-y: auto;
 }
-nav .m-menu ul li a, nav .m-menu ul li label {
+nav .m-menu ul li a,
+nav .m-menu ul li label {
   display: block;
   text-align: left;
   padding: 0 15px;
@@ -112,6 +149,8 @@ nav .m-menu .m-menu label.m-menu__toggle {
 }
 nav .m-menu__checkbox:checked ~ .m-menu__overlay {
   display: block;
+  height: 629px;
+  left: 0;
 }
 nav .m-menu__checkbox:checked ~ .m-menu {
   transform: translate3d(0, 0, 0);
