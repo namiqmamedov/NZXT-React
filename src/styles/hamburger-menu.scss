@@ -248,6 +248,28 @@ nav {
   position: relative;
 }
 
+@media screen and (min-width: 576px) and  (max-width:768px){
+  .nav-menu{
+    .nav__end{
+      svg{
+        width: 1.4rem;
+        height: 1.4rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and  (max-width:992px){
+  .nav-menu{
+    .nav__end{
+      svg{
+        width: 1.4rem;
+        height: 1.4rem;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 992px) and (max-width:1200px) {
   .nav-menu {
     display: none;

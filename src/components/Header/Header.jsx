@@ -58,7 +58,7 @@ const Header = () => {
             </Link>
           </div>
           <ul>
-            <li>
+            <li onClick={toggleOverlay}>
               <Dropdown className="d-inline mx-2">
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
                   Gaming PCs
@@ -173,7 +173,7 @@ const Header = () => {
                 </Dropdown.Menu>
               </Dropdown>
             </li>
-            <li>
+            <li onClick={toggleOverlay}>
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
                   Components
@@ -353,7 +353,7 @@ const Header = () => {
                 </Dropdown.Menu>
               </Dropdown>
             </li>
-            <li>
+            <li onClick={toggleOverlay}>
               <Dropdown>
                 <DropdownToggle>
                   Monitors
@@ -434,7 +434,7 @@ const Header = () => {
                 </Dropdown.Menu>
               </Dropdown>
             </li>
-            <li>
+            <li onClick={toggleOverlay}>
               <Dropdown>
                 <DropdownToggle>
                   Peripherals
@@ -554,7 +554,7 @@ const Header = () => {
                 </Dropdown.Menu>
               </Dropdown>
             </li>
-            <li>
+            <li onClick={toggleOverlay}>
               <Dropdown>
                 <DropdownToggle>
                   Software
@@ -595,7 +595,7 @@ const Header = () => {
                 </Dropdown.Menu>
               </Dropdown>
             </li>
-            <li>
+            <li onClick={toggleOverlay}>
               <Dropdown>
                 <DropdownToggle>
                   Community
@@ -730,9 +730,7 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      <button onClick={toggleOverlay}>Open Overlay</button>
       <Overlay isOpen={isOpen} onClose={toggleOverlay}>
-        <h1>Content in Overlay</h1>
       </Overlay>
     </header>
   );

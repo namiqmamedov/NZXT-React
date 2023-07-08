@@ -394,7 +394,7 @@ const Home = () => {
             <h1 className="title">What Others Say</h1>
             <div className="card-main">
               {brandData.map((item, index) => (
-                <div className="card-item col-lg-4" key={index}>
+                <div className="card-item" key={index}>
                   <div className="card-body">
                     <img
                       src={item.image}

@@ -830,6 +830,7 @@
         padding-top: 55px;
 
         .card-item {
+            width: 33.33%;
             background: #F5F5F8;
 
             .card-body {
@@ -1132,6 +1133,9 @@
 
         .card-main {
             flex-wrap: wrap;
+            .card-item{
+                width: 100%;
+            }
         }
     }
 
@@ -1384,6 +1388,9 @@
 
         .card-main {
             flex-wrap: wrap;
+            .card-item{
+                width: 100%;
+            }
         }
     }
 

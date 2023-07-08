@@ -683,6 +683,7 @@
   padding-top: 55px;
 }
 .brand-content .card-main .card-item {
+  width: 33.33%;
   background: #F5F5F8;
 }
 .brand-content .card-main .card-item .card-body {
@@ -910,6 +911,9 @@
   .brand-content .card-main {
     flex-wrap: wrap;
   }
+  .brand-content .card-main .card-item {
+    width: 100%;
+  }
   .bottom-thumbnail .content {
     top: 42%;
   }
@@ -1090,6 +1094,9 @@
   }
   .brand-content .card-main {
     flex-wrap: wrap;
+  }
+  .brand-content .card-main .card-item {
+    width: 100%;
   }
   .bottom-thumbnail .content {
     top: 42%;
