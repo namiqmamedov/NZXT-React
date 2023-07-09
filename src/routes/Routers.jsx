@@ -11,6 +11,7 @@ import Profile from '../pages/Account/Profile'
 import SavedBuild from '../pages/Account/SavedBuild'
 import OrderHistory from '../pages/Account/OrderHistory'
 import SupportReturn from '../pages/Account/SupportReturn'
+import Error from '../pages/Error'
 
 const Routers = () => {
   return (
@@ -27,6 +28,7 @@ const Routers = () => {
         <Route path='/account/saved-bld' element={<SavedBuild/>}/>
         <Route path='/account/order-history' element={<OrderHistory/>}/>
         <Route path='/account/support' element={<SupportReturn/>}/>
+        <Route path='*' element={<Error/>}/>
     </Routes>
   )
 }

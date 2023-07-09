@@ -3,7 +3,13 @@
   margin-bottom: -10px;
 }
 
-nav {
+.nav-menu {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.nav-menu nav {
   background: white;
   height: 50px;
   padding: 0 16px;
@@ -11,34 +17,34 @@ nav {
   align-items: center;
   /* fade in checked menu */
 }
-nav .nav__end {
+.nav-menu nav .nav__end {
   width: 100%;
   text-align: end;
 }
-nav .nav__end svg {
+.nav-menu nav .nav__end svg {
   color: rgb(133, 48, 236);
   width: 1.15rem;
   height: 1.15rem;
   margin-left: 10px;
 }
-nav .m-menu__checkbox {
+.nav-menu nav .m-menu__checkbox {
   display: none;
 }
-nav label.m-menu__toggle {
+.nav-menu nav label.m-menu__toggle {
   cursor: pointer;
 }
-nav label.m-menu__toggle svg {
+.nav-menu nav label.m-menu__toggle svg {
   width: 1.5rem;
   height: 1.5rem;
 }
-nav .nav-logo {
+.nav-menu nav .nav-logo {
   margin-left: 10px;
 }
-nav .nav-logo svg {
+.nav-menu nav .nav-logo svg {
   width: 3.5rem;
   height: 3.5rem;
 }
-nav .m-menu {
+.nav-menu nav .m-menu {
   position: absolute;
   top: 0;
   left: 0;
@@ -51,40 +57,40 @@ nav .m-menu {
   overflow: hidden;
   background-color: #fff;
 }
-nav .m-menu .m-menu__header svg {
+.nav-menu nav .m-menu .m-menu__header svg {
   width: 1.7rem;
   height: 1.7rem;
 }
-nav .m-menu .support {
+.nav-menu nav .m-menu .support {
   display: flex;
   align-items: center;
   border-top: 1px solid #dcdbe6;
   border-bottom: 1px solid #dcdbe6;
   padding-left: 15px;
 }
-nav .m-menu .support svg {
+.nav-menu nav .m-menu .support svg {
   color: hsl(267, 83%, 49%);
   margin-left: 2px;
 }
-nav .m-menu .nav-logo {
+.nav-menu nav .m-menu .nav-logo {
   margin-left: 10px;
 }
-nav .m-menu .nav-logo svg {
+.nav-menu nav .m-menu .nav-logo svg {
   width: 3.4rem;
   height: 3.4rem;
 }
-nav .m-menu ul {
+.nav-menu nav .m-menu ul {
   padding-left: 0;
 }
-nav .m-menu ul li {
+.nav-menu nav .m-menu ul li {
   list-style: none;
 }
-nav .m-menu ul li label {
+.nav-menu nav .m-menu ul li label {
   font-size: 16px;
   font-family: "Gotham SSm", sans-serif;
   color: #313235;
 }
-nav .m-menu__overlay {
+.nav-menu nav .m-menu__overlay {
   background-color: hsla(0, 0%, 40.4%, 0.5);
   position: absolute;
   top: 0;
@@ -93,27 +99,27 @@ nav .m-menu__overlay {
   z-index: 1;
   display: none;
 }
-nav .m-menu__header {
+.nav-menu nav .m-menu__header {
   padding: 0 16px;
   height: 50px;
   display: flex;
   align-items: center;
 }
-nav .m-menu__header span {
+.nav-menu nav .m-menu__header span {
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
   width: 100%;
 }
-nav .m-menu .m-menu {
+.nav-menu nav .m-menu .m-menu {
   transform: translate3d(480px, 0, 0);
 }
-nav .m-menu ul {
+.nav-menu nav .m-menu ul {
   height: 100%;
   overflow-y: auto;
 }
-nav .m-menu ul li a,
-nav .m-menu ul li label {
+.nav-menu nav .m-menu ul li a,
+.nav-menu nav .m-menu ul li label {
   display: block;
   text-align: left;
   padding: 0 15px;
@@ -124,7 +130,7 @@ nav .m-menu ul li label {
   font-size: 1rem;
   position: relative;
 }
-nav .m-menu ul li label.a-label__chevron::after {
+.nav-menu nav .m-menu ul li label.a-label__chevron::after {
   content: "";
   position: absolute;
   display: inline-block;
@@ -138,29 +144,22 @@ nav .m-menu ul li label.a-label__chevron::after {
   margin-top: -5px;
   right: 16px;
 }
-nav .m-menu ul li .-invisible {
+.nav-menu nav .m-menu ul li .-invisible {
   border-bottom: 0;
 }
-nav .m-menu .m-menu label.m-menu__toggle {
+.nav-menu nav .m-menu .m-menu label.m-menu__toggle {
   display: flex;
   border-bottom: 0;
   padding: 0;
   box-sizing: content-box;
 }
-nav .m-menu__checkbox:checked ~ .m-menu__overlay {
+.nav-menu nav .m-menu__checkbox:checked ~ .m-menu__overlay {
   display: block;
   height: 629px;
   left: 0;
 }
-nav .m-menu__checkbox:checked ~ .m-menu {
+.nav-menu nav .m-menu__checkbox:checked ~ .m-menu {
   transform: translate3d(0, 0, 0);
-}
-
-.nav-menu {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
