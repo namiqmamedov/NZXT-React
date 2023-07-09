@@ -40,6 +40,8 @@ const Header = () => {
         <p>All PCs Built in 2 Business Days</p>
       </div>
       <HamburgerMenu />
+      <Overlay isOpen={isOpen} onClose={toggleOverlay} >
+      </Overlay>
       <div className="main__nav">
         <div className="start__main">
           <div className="nav-logo">
@@ -58,7 +60,7 @@ const Header = () => {
             </Link>
           </div>
           <ul>
-            <li onClick={toggleOverlay}>
+            <li  onClick={toggleOverlay}>
               <Dropdown className="d-inline mx-2">
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
                   Gaming PCs
@@ -173,7 +175,7 @@ const Header = () => {
                 </Dropdown.Menu>
               </Dropdown>
             </li>
-            <li onClick={toggleOverlay}>
+            <li    onClick={toggleOverlay}>
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
                   Components
@@ -730,8 +732,6 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      <Overlay isOpen={isOpen} onClose={toggleOverlay}>
-      </Overlay>
     </header>
   );
 };

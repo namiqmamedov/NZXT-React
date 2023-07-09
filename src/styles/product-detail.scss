@@ -37,8 +37,15 @@
     .product-index {
         display: flex;
         gap: 1.6rem;
+        margin-bottom: 50px;
         .product-thumbnail{
 
+            .slider-item{
+                position: sticky;
+                top: 20%;
+                left: 0;
+                right: 0;
+            }
             .carousel {
                 position: relative;
                 margin: 0 auto;
@@ -278,6 +285,29 @@
                 }
             }
 
+            .buy-btn {
+                text-align: center;
+                padding: 26px 0;
+
+                button {
+                    width: 100%;
+                    text-transform: unset;
+                    background-color: hsl(267deg 83% 49%);
+                    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
+                    transform: scale(1);
+                    transition: .3s ease-in-out;
+                    font-size: 16px;
+                    font-family: 'Gotham SSm', sans-serif;
+                    padding: 10px 0;
+
+                    &:hover {
+                        background-color: hsl(266deg 90% 42%);
+                        transform: scale(1.025);
+                    }
+                }
+            }
+
             .order-text {
                 display: flex;
 
@@ -302,7 +332,6 @@
                 display: flex;
                 justify-content: space-between;
                 padding: 0 42px;
-                margin-bottom: 40px;
 
                 .support-img {
                     padding-top: 30px;

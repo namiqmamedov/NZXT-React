@@ -67,7 +67,7 @@ export default function App() {
         <LightGallery speed={500}
                     plugins={[lgThumbnail]} elementClassNames="keen-slider">
         <a className="keen-slider__slide number-slide item-slider-main" href={h9P01}>
-        <img src={h9P03} />
+        <img src={h9P01} />
         </a>
         <a className="keen-slider__slide number-slide item-slider-main" href={h9P02}>
         <img src={h9P02} />

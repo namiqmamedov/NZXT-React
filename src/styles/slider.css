@@ -81,8 +81,15 @@
   height: 100% !important;
 }
 
+.keen-slider.thumbnail .item-slider.active {
+  border: 2px dashed transparent;
+}
+
 .keen-slider.thumbnail .item-slider {
   background-color: #fff;
+}
+.keen-slider.thumbnail .item-slider.active {
+  border-bottom: 5px solid #dcdbe6;
 }
 
 .item-slider-main {

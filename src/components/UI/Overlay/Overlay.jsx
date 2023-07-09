@@ -6,11 +6,12 @@ const Overlay = ({ isOpen, onClose }) => {
     <>
         {isOpen && (
           <div className="overlay">
-            <div className="overlay__background" onClick={onClose} />
+            <div className="overlay__background"  onClick={onClose} />
           </div>
         )}
     </>
   )
+  
 }
 
 export default Overlay

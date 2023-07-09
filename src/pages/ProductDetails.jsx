@@ -50,8 +50,8 @@ const ProductDetails = () => {
             <div className="product-index">
               <div className="product-thumbnail col-lg-6 col-12">
                   <div className="slider-item">
-                    <ImageSlider/>
-                  </div>
+                      <ImageSlider/>
+                    </div>
               </div>
               <div className="product__content col-lg-6 col-12">
                 <h1 className="title">H9 Flow</h1>
@@ -174,9 +174,12 @@ const ProductDetails = () => {
                     </span>
                     <hr/>
                 </div>
-                <div className="notify-btn">
+                {/* <div className="notify-btn">
                   <p className="notified-text">Get notified when this item is available.</p>
                   <Button variant="contained">Notify Me</Button>
+                </div> */}
+                 <div className="buy-btn">
+                  <Button variant="contained">Buy Now</Button>
                 </div>
                 <hr/>
                 <div className="order-text">
@@ -204,7 +207,7 @@ const ProductDetails = () => {
                   </div>
                 </div>
               </div>
-            </div>
+              </div>
           </div>
         </div>
       </section>
