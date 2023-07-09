@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/account.css";
 import "../../styles/order-history.css";
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 import Form from "react-bootstrap/Form";
 import { Checkbox } from "@nextui-org/react";
 import nzxtCam from "../../assets/images/thumbnail/nzxtCam.png";
@@ -14,8 +14,8 @@ const SavedBuild = () => {
           <h1 className="account-title">Account</h1>
           <div className="account-list col-lg-3">
             <nav>
-              <div className="account-management">
-              <Link to={'../account/profile'} className="profile-item">
+            <div className="account-management">
+                  <NavLink to={'../account/profile'}  className={({ isActive }) => (isActive ? 'profile-item link-active' : 'profile-item')}>
                     <svg
                       width="1em"
                       height="1em"
@@ -25,8 +25,8 @@ const SavedBuild = () => {
                       <path d="M16.954 14.986a5.735 5.735 0 015.731 5.514l.004.22v2.493a.75.75 0 01-1.493.102l-.007-.102V20.72a4.235 4.235 0 00-4.023-4.23l-.212-.004h-9.97a4.235 4.235 0 00-4.229 4.023l-.005.211v2.493a.75.75 0 01-1.493.102l-.007-.102V20.72a5.735 5.735 0 015.515-5.73l.22-.004h9.97zM11.97.031a5.735 5.735 0 100 11.47 5.735 5.735 0 000-11.47zm0 1.5a4.235 4.235 0 110 8.47 4.235 4.235 0 010-8.47z"></path>
                     </svg>
                     <span>Profile</span>
-                  </Link>
-                  <Link to={'../account/saved-bld'} className="profile-item">
+                  </NavLink>
+                  <NavLink to={'../account/saved-bld'} className={({ isActive }) => (isActive ? 'profile-item link-active' : 'profile-item')}>
                     <svg
                       width="1em"
                       height="1em"
@@ -37,8 +37,8 @@ const SavedBuild = () => {
                       <path d="M2.078 2.863a1.016 1.016 0 100-2.032 1.016 1.016 0 000 2.032zm19.535 0a1.016 1.016 0 100-2.032 1.016 1.016 0 000 2.032zM2.078 22.583a1.016 1.016 0 100-2.032 1.016 1.016 0 000 2.032zm19.535 0a1.016 1.016 0 100-2.032 1.016 1.016 0 000 2.032z"></path>
                     </svg>{" "}
                     <span>Saved Builds</span>
-                  </Link>
-                  <Link to={'../account/order-history'}  className="profile-item">
+                  </NavLink>
+                  <NavLink to={'../account/order-history'}  className={({ isActive }) => (isActive ? 'profile-item link-active' : 'profile-item')}>
                     <svg
                       fill="none"
                       viewBox="0 0 24 24"
@@ -55,8 +55,8 @@ const SavedBuild = () => {
                       ></path>
                     </svg>{" "}
                     <span>Order History</span>
-                  </Link>
-              </div>
+                  </NavLink>
+                </div>
             </nav>
           </div>
           <div className="account-body col-lg-9">

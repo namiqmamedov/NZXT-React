@@ -16,13 +16,22 @@
         padding-right: 0;
 
         .account-management {
-            padding: 10px 20px;
-
+            padding-top: 24px;
             .profile-item {
                 display: block;
                 width: 100%;
                 text-decoration: none;
-                margin-bottom: 13px;
+                margin-bottom: 8px;
+                padding: 9px 0;
+                padding-left: 10px;
+                
+                &:hover{
+                    background: #EBEBF0;
+
+                    svg{
+                        color: #8C35FD !important;
+                    }
+                }
 
                 span {
                     font-size: 14px;
@@ -159,4 +168,15 @@
     .account-body{
         height: auto !important;
     }   
+}
+
+.link-active{
+    background: #EBEBF0;
+    border-left: 4px solid hsl(266deg 98% 60%);
+    svg{
+        color: #8C35FD !important;
+    }
+    span{
+        color: #8C35FD !important;
+    }
 }

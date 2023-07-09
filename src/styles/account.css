@@ -14,13 +14,21 @@
   padding-right: 0;
 }
 .account-index .account-list .account-management {
-  padding: 10px 20px;
+  padding-top: 24px;
 }
 .account-index .account-list .account-management .profile-item {
   display: block;
   width: 100%;
   text-decoration: none;
-  margin-bottom: 13px;
+  margin-bottom: 8px;
+  padding: 9px 0;
+  padding-left: 10px;
+}
+.account-index .account-list .account-management .profile-item:hover {
+  background: #EBEBF0;
+}
+.account-index .account-list .account-management .profile-item:hover svg {
+  color: #8C35FD !important;
 }
 .account-index .account-list .account-management .profile-item span {
   font-size: 14px;
@@ -129,4 +137,14 @@
   .account-body {
     height: auto !important;
   }
+}
+.link-active {
+  background: #EBEBF0;
+  border-left: 4px solid hsl(266, 98%, 60%);
+}
+.link-active svg {
+  color: #8C35FD !important;
+}
+.link-active span {
+  color: #8C35FD !important;
 }/*# sourceMappingURL=account.css.map */
