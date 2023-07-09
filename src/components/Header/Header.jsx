@@ -1,14 +1,10 @@
 import React, { useState } from "react";
 import "../../styles/header.css";
-import Button from "@mui/material/Button";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
 import { GoSearch } from "react-icons/go";
 import { Link } from "react-router-dom";
 import Overlay from "../../components/UI/Overlay/Overlay";
 import { IoIosArrowDown } from "react-icons/io";
 import Dropdown from "react-bootstrap/Dropdown";
-import DropdownButton from "react-bootstrap/DropdownButton";
 import dropdownImg01 from "../../assets/images/thumbnail/h7-nav-cta.png";
 import dropdownImg02 from "../../assets/images/thumbnail/dropdownImg02.png";
 import dropdownImg03 from "../../assets/images/thumbnail/dropdownImg03.png";
@@ -20,14 +16,6 @@ import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
 import HamburgerMenu from "../UI/HamburgerMenu/HamburgerMenu";
 
 const Header = () => {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOverlay = () => {
@@ -60,7 +48,7 @@ const Header = () => {
             </Link>
           </div>
           <ul>
-            <li  onClick={toggleOverlay}>
+            <li onClick={toggleOverlay}>
               <Dropdown className="d-inline mx-2">
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
                   Gaming PCs
@@ -697,7 +685,16 @@ const Header = () => {
         </div>
         <div className="nav__end">
           <Link className="search__item">
-            <GoSearch />
+          <Dropdown className="d-inline">
+                <Dropdown.Toggle className="search__toggle" variant="success" id="dropdown-basic">
+                <GoSearch />
+                </Dropdown.Toggle>
+                <Dropdown.Menu className="search-box">
+                    <form>
+                      <input type="text" placeholder="Search NZXT" />
+                    </form>
+                </Dropdown.Menu>
+              </Dropdown>
           </Link>
           <Link className="support__item" to={"support"}>
             <svg

@@ -33,6 +33,7 @@ import { Link } from "react-router-dom";
 import productData from '../data/products'
 import ProductCard from "../components/UI/ProductCard/ProductCard";
 
+
 const brandData = [
   {
     id: "01",
@@ -54,6 +55,7 @@ const brandData = [
 const Home = () => {
   return (
     <>
+
       <section className="home__index">
         <img
           className="background-img"
