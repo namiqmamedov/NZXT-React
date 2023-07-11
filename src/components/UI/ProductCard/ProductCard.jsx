@@ -24,7 +24,7 @@ const ProductCard = (props) => {
                         <p>$100 Off</p></span>
                     ) : ""  
                    }   
-                  <Link to='../product-detail'>
+                  <Link to={`/product/${id}`}>
                   <img src={image} alt="Shop Card" />
                   </Link>
                   <div className="quick-shop">

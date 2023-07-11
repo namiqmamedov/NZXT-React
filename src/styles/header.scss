@@ -75,6 +75,26 @@ header {
                 width: 1.4rem;
                 height: 1.4rem;
             }
+
+            .cart__item{
+                position: relative;
+                .cart__badge{
+                    position: absolute;
+                    top: -11%;
+                    right: -8px;
+                    background-color: #ffff;
+                    width: 16px;
+                    color: #000;
+                    height: 16px;
+                    border-radius: 50%;
+                    font-size: .8rem;
+                    font-weight: 500;
+                    display: flex;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
         }
     }
 }

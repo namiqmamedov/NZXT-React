@@ -56,12 +56,32 @@ header .main__nav ul li button .arrow-bottom {
 }
 header .main__nav .nav__end {
   display: flex;
+  align-items: center;
   gap: 0.9rem;
 }
 header .main__nav .nav__end svg {
   fill: white;
   width: 1.4rem;
   height: 1.4rem;
+}
+header .main__nav .nav__end .cart__item {
+  position: relative;
+}
+header .main__nav .nav__end .cart__item .cart__badge {
+  position: absolute;
+  top: -11%;
+  right: -8px;
+  background-color: white;
+  width: 16px;
+  color: #000;
+  height: 16px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-box {

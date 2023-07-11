@@ -11,14 +11,14 @@ import products from "../data/products";
 import ProductCard from "../components/UI/ProductCard/ProductCard";
 import Alert from "@mui/material/Alert";
 import Stack from "@mui/material/Stack";
-import cartImg01 from "../assets/images/thumbnail/cartImg01.png";
-import cartImg02 from "../assets/images/thumbnail/cartImg02.png";
-import { BiTrash } from "react-icons/bi";
-import { AiOutlinePlus } from "react-icons/ai";
-import { AiOutlineMinus } from "react-icons/ai";
 import affirm from "../assets/images/icon/affirm-logo.svg";
+import {useSelector } from "react-redux";
+import CartItem from "../components/UI/Cart/CartItem";
 
 const Cart = () => {
+
+  const cartProducts = useSelector(state => state.cart.cartItems)
+  const totalAmount = useSelector(state => state.cart.totalAmount)
 
   return (
     <>
@@ -36,36 +36,13 @@ const Cart = () => {
                 <p className="cart-quantity">( 2 )</p>
               </div>
               <div className="cart-main">
-                <ul>
-                  <li className="cart-item">
-                    <div className="cart-image">
-                      <img src={cartImg01} alt="Cart Image" />
-                    </div>
-                    <div className="cart-content">
-                      <span className="title">
-                        NZXT PCIe 4.0 X 16 Riser Cable - AB-RC200-B1
-                      </span>
-                      <BiTrash className="remove-item" />
-                      <div className="quantity-price">
-                        {/* <button className="quantity-btn">
-                            <AiOutlinePlus/>
-                            <input type="number"  value={1}/>
-                            <AiOutlineMinus/>
-                        </button> */}
-                        <div className="d-flex align-items-center justify-content-between gap-3 increase__decrease-btn">
-                          <span className="increase__btn">
-                            <AiOutlinePlus />
-                          </span>
-                          <span className="quantity">1</span>
-                          <span className="decrease__btn">
-                            <AiOutlineMinus />
-                          </span>
-                        </div>
-                        <span>$79.99</span>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+                {
+                cartProducts.length === 0 ? <h6 className="text-center">No item added to the cart</h6>
+                : cartProducts.map((item,index) => (
+                        <ul>
+                            <CartItem item={item} key={index}/>
+                        </ul>         
+                ))}
               </div>
             </div>
             <div className="cart-total col-lg-5 col-12">
@@ -81,7 +58,7 @@ const Cart = () => {
                 <h2 className="text-summary">Summary</h2>
                 <div className="subtotal-flex">
                   <span className="subtotal">Subtotal</span>
-                  <span className="price">$369.96</span>
+                  <span className="price">${totalAmount}</span>
                 </div>
                 <div className="taxes-flex">
                   <span className="taxes">Taxes</span>

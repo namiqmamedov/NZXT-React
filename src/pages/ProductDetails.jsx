@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/product-detail.css";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import {AiFillStar} from 'react-icons/ai'
 import {BsStarHalf} from 'react-icons/bs'
 import Radio from "@mui/material/Radio";
@@ -17,11 +17,30 @@ import nzxtSupport from '../assets/images/thumbnail/nzxtSupport.png'
 import BuyTogether from "../components/UI/BuyTogether/BuyTogether";
 import ProductTab from "../components/UI/ProductTab/ProductTab";
 import ImageSlider from "../components/UI/ImageSlider/ImageSlider";
+import { useDispatch } from "react-redux";
+import { cartActions } from "../store/shopping-cart/cartSlice";
+import products from "../data/products";
 
 const ProductDetails = () => {
+
+  const {id} = useParams();
+
+  const dispatch = useDispatch()
+
+  const product = products.find(product => product.id === id)
+  const {title,price,image} = product 
+
+  const addItem = () => {
+    dispatch(cartActions.addItem({
+      id,
+      title,
+      image,
+      price
+    }))
+  }
+
   return (
     <>
-
       <section className="breadcrumb-item col-lg-12">
         <div className="breadcrumb-main">
           <div className="breadcrumb-index">
@@ -179,7 +198,7 @@ const ProductDetails = () => {
                   <Button variant="contained">Notify Me</Button>
                 </div> */}
                  <div className="buy-btn">
-                  <Button variant="contained">Buy Now</Button>
+                  <Button variant="contained" onClick={addItem}>Add to Cart</Button>
                 </div>
                 <hr/>
                 <div className="order-text">

@@ -4,7 +4,7 @@ import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
  
-import store from './store/store.js';
+import store from './store/store.jsx';
 import { Provider } from 'react-redux';
 
 import ScrollToTop from './components/UI/ScrollToTop/ScrollToTop.jsx';
