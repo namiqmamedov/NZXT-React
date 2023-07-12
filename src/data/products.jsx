@@ -12,8 +12,8 @@ const products = [
         id: "01",
         title:"Player: Two",
         subtitle:"H5 Elite RTX 4070 Gaming PC",
-        price: "1,599.00",
-        oldPrice:"1,699.00",
+        price: "1,599.00".toString(),
+        // oldPrice:1699.00,
         desc: "280mm Liquid Cooler with LCD Display",
         image: card01,
         count: 12

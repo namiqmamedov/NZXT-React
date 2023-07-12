@@ -1,43 +1,90 @@
 
 import { createSlice } from '@reduxjs/toolkit'
+import { json } from 'react-router-dom';
+
+const items = 
+    localStorage.getItem("cartItems") !== null
+    ? JSON.parse(localStorage.getItem("cartItems"))
+    : [];
+
+const totalAmount =
+    localStorage.getItem("totalAmount") !== null
+    ? JSON.parse(localStorage.getItem("totalAmount"))
+    : [];
+
+const totalQuantity =
+    localStorage.getItem("totalQuantity") !== null
+    ? JSON.parse(localStorage.getItem("totalQuantity"))
+    : [];
+
+    
 
 const initialState = {
-    cartItems: [],
-    totalQuantity: 0,
-    totalAmount: 0
+    cartItems: items,
+    totalQuantity: totalAmount,
+    totalAmount: totalQuantity
 }
 const cartSlice = createSlice({
     name: 'cart',
-    initialState: initialState,
+    initialState,
     reducers: {
 
         // add item
 
+        // addItem(state,action){
+        //     const newItem = action.payload
+        //     const existingItem = state.cartItems.find((item) => item.id === newItem.id)
+        //     state.totalQuantity++
+
+        //     if(!existingItem){
+        //         state.cartItems.push({
+        //             id: newItem.id,
+        //             title: newItem.title,
+        //             image: newItem.image,
+        //             price: newItem.price,
+        //             quantity: newItem.quantity,
+        //             totalPrice: newItem.price
+        //         })
+        //     }
+
+        //     else{
+        //         existingItem.quantity++
+        //         existingItem.totalPrice = Number(existingItem.totalPrice)
+        //         + Number(newItem.price)
+        //     }
+
+        //     state.totalAmount = state.cartItems.reduce((total,item) => 
+        //         total + Number(item.price) * Number(item.quantity),0
+        //     )
+        // },
+
         addItem(state,action){
             const newItem = action.payload
-            const existingItem = state.cartItems.find((item) => item.id === newItem.id)
+            const exisitingItem = state.cartItems.find((item) => item.id === newItem.id)
             state.totalQuantity++
 
-            if(!existingItem){
-                state.cartItems.push({
-                    id: newItem.id,
-                    title: newItem.title,
-                    image: newItem.image,
-                    price: newItem.price,
-                    quantity: newItem.quantity,
-                    totalPrice: newItem.price
-                })
+            if(!exisitingItem){
+                    state.cartItems.push({
+                        id: newItem.id,
+                        title:newItem.title,
+                        image: newItem.image,
+                        price: newItem.price,
+                        quantity: 1,
+                        totalPrice: newItem.price,
+                    })
             }
-
             else{
-                existingItem.quantity++
-                existingItem.totalPrice = Number(existingItem.totalPrice)
-                + Number(newItem.price)
+                exisitingItem.quantity++
+                exisitingItem.totalPrice = Number(exisitingItem.totalPrice) + Number(newItem.price)
             }
 
             state.totalAmount = state.cartItems.reduce((total,item) => 
-                total + Number(item.price) * Number(item.quantity),0
-            )
+                total + Number(item.price) * Number(item.quantity),0 // initial value should be 0
+            );
+
+            localStorage.setItem('cartItems',JSON.stringify(state.cartItems.map(item=>item)))
+            localStorage.setItem('totalAmount',JSON.stringify(state.totalAmount))
+            localStorage.setItem('totalQuantity',JSON.stringify(state.totalQuantity))
         },
 
         // remove item
