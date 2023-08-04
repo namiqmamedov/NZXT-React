@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "../styles/cart.css";
 import Button from "@mui/material/Button";
 import img01 from "../assets/images/thumbnail/prebuilts-primary-web.avif";
@@ -17,8 +17,8 @@ import CartItem from "../components/UI/Cart/CartItem";
 
 const Cart = () => {
 
-  const cartProducts = useSelector(state => state.cart.cartItems)
-  const totalAmount = useSelector(state => state.cart.totalAmount)
+  const cartItems = useSelector((state) => state.cart.cartItems);
+  const totalAmount = useSelector((state) => state.cart.totalAmount);
 
   return (
     <>
@@ -26,71 +26,11 @@ const Cart = () => {
         <div className="container">
           <div className="row">
             <div className="cart-order col-lg-7 col-12 ">
-              <Stack sx={{ width: "100%" }} spacing={2}>
-                <Alert severity="info">
-                  All PCs Process in 48 Business Hours.
-                </Alert>
-              </Stack>
-              <div className="cart-flex">
-                <h1 className="font-weight-bold">Cart</h1>
-                <p className="cart-quantity">( 2 )</p>
-              </div>
               <div className="cart-main">
                 {
-                cartProducts.length === 0 ? <h6 className="text-center">No item added to the cart</h6>
-                : cartProducts.map((item,index) => (
-                        <ul>
-                            <CartItem item={item} key={index}/>
-                        </ul>         
-                ))}
-              </div>
-            </div>
-            <div className="cart-total col-lg-5 col-12">
-              <div className="pay-later-card">
-                <img src={affirm} alt="Affirm Logo" />
-                <p className="pay-title">Pay Later with Affirm</p>
-                <p className="description">
-                  Buy now, pay over time. Quick and easy. No hidden fees. Select
-                  "Affirm monthly payments" during checkout.
-                </p>
-              </div>
-              <div className="total-card">
-                <h2 className="text-summary">Summary</h2>
-                <div className="subtotal-flex">
-                  <span className="subtotal">Subtotal</span>
-                  <span className="price">${totalAmount}</span>
-                </div>
-                <div className="taxes-flex">
-                  <span className="taxes">Taxes</span>
-                  <span>Calculated at checkout</span>
-                </div>
-                <div className="shipping-flex">
-                  <span className="shipping">Estimated shipping</span>
-                  <span>Calculated at checkout</span>
-                </div>
-                <div className="affirm-text">
-                  <span>
-                    As low as $34/mo with <img src={affirm} alt="Affirm Logo" />{" "}
-                    <Link>Learn more</Link>{" "}
-                  </span>
-                </div>
-                <Link className="checkout-btn">
-                  <Button variant="contained">Proceed to Checkout</Button>
-                </Link>
-                <div className="bottom-content">
-                  <p>
-                    <em>
-                      New and/or refurbished products may process and ship at
-                      different times.
-                    </em>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="cart-empty">
+                cartItems.length === 0 ? 
+                  <Fragment>
+                          <section className="cart-empty">
         <div className="container">
           <div className="row">
             <div className="cart-base">
@@ -178,6 +118,71 @@ const Cart = () => {
               {products.slice(0, 8).map((item, index) => (
                 <ProductCard item={item} key={index} />
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+                  </Fragment>
+
+                : cartItems.map((item,index) => (
+                  <Fragment>
+                    <Stack sx={{ width: "100%" }} spacing={2}>
+                  <Alert severity="info">
+                    All PCs Process in 48 Business Hours.
+                  </Alert>
+                </Stack>
+                <div className="cart-flex">
+                  <h1 className="font-weight-bold">Cart</h1>
+                  <p className="cart-quantity">( 2 )</p>
+                </div>
+                        <ul>
+                            <CartItem item={item} key={index}/>
+                        </ul>  
+                  </Fragment>       
+                ))}
+              </div>
+            </div>
+            <div className="cart-total col-lg-5 col-12">
+              <div className="pay-later-card">
+                <img src={affirm} alt="Affirm Logo" />
+                <p className="pay-title">Pay Later with Affirm</p>
+                <p className="description">
+                  Buy now, pay over time. Quick and easy. No hidden fees. Select
+                  "Affirm monthly payments" during checkout.
+                </p>
+              </div>
+              <div className="total-card">
+                <h2 className="text-summary">Summary</h2>
+                <div className="subtotal-flex">
+                  <span className="subtotal">Subtotal</span>
+                  <span className="price">${totalAmount}</span>
+                </div>
+                <div className="taxes-flex">
+                  <span className="taxes">Taxes</span>
+                  <span>Calculated at checkout</span>
+                </div>
+                <div className="shipping-flex">
+                  <span className="shipping">Estimated shipping</span>
+                  <span>Calculated at checkout</span>
+                </div>
+                <div className="affirm-text">
+                  <span>
+                    As low as $34/mo with <img src={affirm} alt="Affirm Logo" />{" "}
+                    <Link>Learn more</Link>{" "}
+                  </span>
+                </div>
+                <Link className="checkout-btn">
+                  <Button variant="contained">Proceed to Checkout</Button>
+                </Link>
+                <div className="bottom-content">
+                  <p>
+                    <em>
+                      New and/or refurbished products may process and ship at
+                      different times.
+                    </em>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

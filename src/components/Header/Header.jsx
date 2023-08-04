@@ -7,26 +7,40 @@ import Dropdown from "react-bootstrap/Dropdown";
 import HamburgerMenu from "../UI/HamburgerMenu/HamburgerMenu";
 import NavDropdown from "../UI/NavDropdown/NavDropdown";
 import { useSelector } from "react-redux";
-import Badge from '@mui/material/Badge';
+import Backdrop from '@mui/material/Backdrop';
 
 
 const Header = () => {
+
+  const [open, setOpen] = React.useState(false);
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOverlay = () => {
     setIsOpen(!isOpen);
   };
 
-  const totalQuantity = useSelector(state => state.cart.totalQuantity)
+  const totalQuantity = useSelector(state=>state.cart.totalQuantity)
 
   return (
+    
     <header>
       <div className="nav__top">
         <p>All PCs Built in 2 Business Days</p>
       </div>
       <HamburgerMenu />
-      <Overlay isOpen={isOpen} onClose={toggleOverlay} >
-      </Overlay>
+      <Backdrop
+            className="backdrop-main"
+        sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+        open={open}
+        onClick={handleClose}
+      />
       <div className="main__nav">
         <div className="start__main">
           <div className="nav-logo">
@@ -49,7 +63,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="nav__end">
-          <Link className="search__item">
+          <Link onClick={handleOpen} className="search__item">
           <Dropdown className="d-inline">
                 <Dropdown.Toggle className="search__toggle" variant="success" id="dropdown-basic">
                 <GoSearch />
@@ -92,7 +106,9 @@ const Header = () => {
               >
               <path d="M9.69 20.142a1.926 1.926 0 100 3.853 1.926 1.926 0 000-3.853zm0 1.5a.426.426 0 110 .853.426.426 0 010-.853zm9.412-1.5a1.927 1.927 0 100 3.853 1.927 1.927 0 000-3.853zm0 1.5a.426.426 0 110 .853.426.426 0 010-.853zM4.396.141c.317 0 .596.2.703.49l.03.1.905 4.158.045-.015a.745.745 0 01.097-.02l.102-.007H23.22a.75.75 0 01.749.792l-.013.099-1.884 9.892a3.1 3.1 0 01-2.903 2.48l-.185.002H9.94a3.101 3.101 0 01-3.058-2.293l-.042-.18L3.79 1.641H.866A.75.75 0 01.123.993L.116.891A.75.75 0 01.765.148L.866.141h3.53zm17.916 6.206H6.352l1.955 8.983c.145.71.747 1.23 1.472 1.279l.146.003H19a1.602 1.602 0 001.566-1.135l.035-.138 1.711-8.992z"></path>
             </svg>
-            <div className="cart__badge">{totalQuantity}</div>
+            <div className="cart__badge">
+              {totalQuantity}
+            </div>
           </Link>
         </div>
       </div>

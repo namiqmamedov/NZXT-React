@@ -10,17 +10,28 @@ import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
 import { IoIosArrowDown } from "react-icons/io";
 import Dropdown from "react-bootstrap/Dropdown";
 import { Link } from "react-router-dom";
+import Backdrop from '@mui/material/Backdrop';
 
 const NavDropdown = () => {
+  const [open, setOpen] = React.useState(false);
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleOverlay = () => {
       setIsOpen(!isOpen);
     };
     
+    
   return (
    <>
-            <li onClick={toggleOverlay}>
+
+            <li onClick={handleOpen}>
               <Dropdown className="d-inline mx-2">
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
                   Gaming PCs
@@ -135,7 +146,7 @@ const NavDropdown = () => {
                 </Dropdown.Menu>
               </Dropdown>
             </li>
-            <li onClick={toggleOverlay}>
+            <li onClick={handleOpen}>
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
                   Components
@@ -315,7 +326,7 @@ const NavDropdown = () => {
                 </Dropdown.Menu>
               </Dropdown>
             </li>
-            <li onClick={toggleOverlay}>
+            <li onClick={handleOpen}>
               <Dropdown>
                 <DropdownToggle>
                   Monitors
@@ -396,7 +407,7 @@ const NavDropdown = () => {
                 </Dropdown.Menu>
               </Dropdown>
             </li>
-            <li onClick={toggleOverlay}>
+            <li onClick={handleOpen}>
               <Dropdown>
                 <DropdownToggle>
                   Peripherals
@@ -516,7 +527,7 @@ const NavDropdown = () => {
                 </Dropdown.Menu>
               </Dropdown>
             </li>
-            <li onClick={toggleOverlay}>
+            <li onClick={handleOpen}>
               <Dropdown>
                 <DropdownToggle>
                   Software
@@ -557,7 +568,7 @@ const NavDropdown = () => {
                 </Dropdown.Menu>
               </Dropdown>
             </li>
-            <li onClick={toggleOverlay}>
+            <li onClick={handleOpen}>
               <Dropdown>
                 <DropdownToggle>
                   Community
@@ -653,6 +664,13 @@ const NavDropdown = () => {
                 </Dropdown.Menu>
               </Dropdown>
             </li>
+            <Backdrop
+            className="backdrop-main"
+        sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+        open={open}
+        onClick={handleClose}
+      >
+      </Backdrop>
    </>
   )
 }

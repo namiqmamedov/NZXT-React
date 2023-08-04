@@ -1,29 +1,29 @@
 
 import { createSlice } from '@reduxjs/toolkit'
-import { json } from 'react-router-dom';
 
-const items = 
-    localStorage.getItem("cartItems") !== null
+const items =
+  localStorage.getItem("cartItems") !== null
     ? JSON.parse(localStorage.getItem("cartItems"))
     : [];
 
 const totalAmount =
-    localStorage.getItem("totalAmount") !== null
+  localStorage.getItem("totalAmount") !== null
     ? JSON.parse(localStorage.getItem("totalAmount"))
-    : [];
+    : 0;
 
 const totalQuantity =
-    localStorage.getItem("totalQuantity") !== null
+  localStorage.getItem("totalQuantity") !== null
     ? JSON.parse(localStorage.getItem("totalQuantity"))
-    : [];
+    : 0;
 
     
 
 const initialState = {
     cartItems: items,
-    totalQuantity: totalAmount,
-    totalAmount: totalQuantity
+    totalQuantity: totalQuantity,
+    totalAmount: totalAmount
 }
+
 const cartSlice = createSlice({
     name: 'cart',
     initialState,
@@ -83,8 +83,10 @@ const cartSlice = createSlice({
             );
 
             localStorage.setItem('cartItems',JSON.stringify(state.cartItems.map(item=>item)))
-            localStorage.setItem('totalAmount',JSON.stringify(state.totalAmount))
-            localStorage.setItem('totalQuantity',JSON.stringify(state.totalQuantity))
+            
+            localStorage.setItem('totalAmount', JSON.stringify(state.totalAmount))
+            
+            localStorage.setItem('totalQuantity', JSON.stringify(state.totalQuantity))
         },
 
         // remove item
@@ -106,6 +108,12 @@ const cartSlice = createSlice({
             state.totalAmount = state.cartItems.reduce((total,item) => 
                 total + Number(item.price) * Number(item.quantity),0
             )
+
+            localStorage.setItem('cartItems',JSON.stringify(state.cartItems.map(item=>item)))
+            
+            localStorage.setItem('totalAmount', JSON.stringify(state.totalAmount))
+            
+            localStorage.setItem('totalQuantity', JSON.stringify(state.totalQuantity))
         },
 
         // delete item
@@ -122,6 +130,12 @@ const cartSlice = createSlice({
             state.totalAmount = state.cartItems.reduce((total,item) => (
                 total + Number(item.price) * Number(item.quantity),0
             ))
+
+            localStorage.setItem('cartItems',JSON.stringify(state.cartItems.map(item=>item)))
+            
+            localStorage.setItem('totalAmount', JSON.stringify(state.totalAmount))
+            
+            localStorage.setItem('totalQuantity', JSON.stringify(state.totalQuantity))
         }
     }
 })

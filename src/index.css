@@ -68,4 +68,25 @@
     font-size: 36px;
     cursor: pointer;
   }
+
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    .backdrop-main{
+      top: 13.5% !important;
+      z-index: 0 !important;
+    }
+  }
   
+
+  @media screen and (min-width: 1200px) {
+    .backdrop-main{
+      top: 13.5% !important;
+      z-index: 0 !important;
+    }
+  }
+  
+  @media screen and (min-width: 1500px) {
+    .backdrop-main{
+      top: 10.5% !important;
+      z-index: 0 !important;
+    }
+  }

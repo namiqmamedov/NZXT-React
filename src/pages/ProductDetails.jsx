@@ -24,19 +24,18 @@ import products from "../data/products";
 const ProductDetails = () => {
 
   const {id} = useParams();
-
-  const dispatch = useDispatch()
-
+  const dispatch = useDispatch();
   const product = products.find(product => product.id === id)
-  const {title,price,image} = product 
+  const {title, price, image} = product
+ 
 
-  const addItem = () => {
+  const addItem = () =>{
     dispatch(cartActions.addItem({
       id,
       title,
-      image,
-      price
-    }))
+      price,
+      image
+  }))
   }
 
   return (
@@ -198,7 +197,7 @@ const ProductDetails = () => {
                   <Button variant="contained">Notify Me</Button>
                 </div> */}
                  <div className="buy-btn">
-                  <Button variant="contained" onClick={addItem}>Add to Cart</Button>
+                  <Button onClick={addItem} variant="contained">Add to Cart</Button>
                 </div>
                 <hr/>
                 <div className="order-text">

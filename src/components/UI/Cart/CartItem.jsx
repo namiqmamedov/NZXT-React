@@ -6,6 +6,7 @@ import { AiOutlinePlus } from "react-icons/ai";
 import { AiOutlineMinus } from "react-icons/ai";
 
 const CartItem = ({item}) => {
+    
 
     const {id,title,price,image,quantity,totalPrice} = item
 
@@ -16,18 +17,19 @@ const CartItem = ({item}) => {
             id,
             title,
             price,
-            image
+            image,
         }))
     }
 
     const decreaseItem = () => {
-        dispatch(cartActions.removeItem(id))
+       dispatch(cartActions.removeItem(id))
     }
 
     const deleteItem = () => {
         dispatch(cartActions.deleteItem(id))
     }
-    
+
+
   return (
     <li className="cart-item">
     <div className="cart-image">
