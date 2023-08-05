@@ -102,21 +102,21 @@ const NavDropdown = () => {
                           </svg>
                         </div>
                         <div className="item-body">
-                          <Link to={'product'}>
+                          <Link to={'product'} onClick={() => onClick()}>
                             <img src={itemMini01} alt="Menu Image" />
                             <div className="content">
                               <span className="title">Player: One</span>
                               <span className="desc">H5 Flow PCs</span>
                             </div>
                           </Link>
-                          <Link to={'product'}>
+                          <Link to={'product'} onClick={() => onClick()}>
                             <img src={itemMini02} alt="Menu Image" />
                             <div className="content">
                               <span className="title">Player: Two</span>
                               <span className="desc">H5 Elite PCs</span>
                             </div>
                           </Link>
-                          <Link to={'product'}>
+                          <Link to={'product'} onClick={() => onClick()}>
                             <img src={itemMini03} alt="Menu Image" />
                             <div className="content">
                               <span className="title">Player: Three</span>
@@ -169,7 +169,7 @@ const NavDropdown = () => {
                         Cases
                       </div>
                       <div className="item-body">
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">H9</span>
                             <span className="desc">
@@ -177,13 +177,13 @@ const NavDropdown = () => {
                             </span>
                           </div>
                         </Link>
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">H7</span>
                             <span className="desc">ATX Mid-Tower Cases</span>
                           </div>
                         </Link>
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">H5</span>
                             <span className="desc">
@@ -191,7 +191,7 @@ const NavDropdown = () => {
                             </span>
                           </div>
                         </Link>
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">H9</span>
                             <span className="desc">
@@ -199,13 +199,13 @@ const NavDropdown = () => {
                             </span>
                           </div>
                         </Link>
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">H210</span>
                             <span className="desc">Compact Mini-ITX Cases</span>
                           </div>
                         </Link>
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">CRFT</span>
                             <span className="desc">Limited Edition</span>
@@ -228,7 +228,7 @@ const NavDropdown = () => {
                         Cooling
                       </div>
                       <div className="item-body">
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">The New Krakens</span>
                             <span className="desc">
@@ -236,7 +236,7 @@ const NavDropdown = () => {
                             </span>
                           </div>
                         </Link>
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">Kraken Z</span>
                             <span className="desc">
@@ -244,7 +244,7 @@ const NavDropdown = () => {
                             </span>
                           </div>
                         </Link>
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">Kraken X</span>
                             <span className="desc">
@@ -252,7 +252,7 @@ const NavDropdown = () => {
                             </span>
                           </div>
                         </Link>
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">Kraken 120</span>
                             <span className="desc">
@@ -260,7 +260,7 @@ const NavDropdown = () => {
                             </span>
                           </div>
                         </Link>
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">F Series Fans</span>
                             <span className="desc">
@@ -268,7 +268,7 @@ const NavDropdown = () => {
                             </span>
                           </div>
                         </Link>
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">T120 Air Coolers</span>
                             <span className="desc">CPU Air Coolers</span>
@@ -291,19 +291,19 @@ const NavDropdown = () => {
                         Components
                       </div>
                       <div className="item-body">
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">Motherboards</span>
                             <span className="desc">Gaming Motherboards</span>
                           </div>
                         </Link>
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">Power</span>
                             <span className="desc">80 Plus Rated PSUs</span>
                           </div>
                         </Link>
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">Lighting</span>
                             <span className="desc">
@@ -349,13 +349,13 @@ const NavDropdown = () => {
                         CANVAS
                       </div>
                       <div className="item-body">
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">FDH Monitors</span>
                             <span className="desc"></span>
                           </div>
                         </Link>
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">QHD Monitors</span>
                           </div>
@@ -377,12 +377,12 @@ const NavDropdown = () => {
                         MONITOR ARM
                       </div>
                       <div className="item-body">
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">Monitor Arm (Single)</span>
                           </div>
                         </Link>
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">Monitor Arm (Dual)</span>
                           </div>
@@ -431,7 +431,7 @@ const NavDropdown = () => {
                           Capture Card
                         </div>
                         <div className="item-body">
-                          <Link to={'product'}>
+                          <Link to={'product'} onClick={() => onClick()}>
                             <div className="content">
                               <span className="title">Capture Card</span>
                               <span className="desc"></span>
@@ -454,7 +454,7 @@ const NavDropdown = () => {
                           Capture Card
                         </div>
                         <div className="item-body">
-                          <Link to={'product'}>
+                          <Link to={'product'} onClick={() => onClick()}>
                             <div className="content">
                               <span className="title">Capture Card</span>
                               <span className="desc"></span>
@@ -479,7 +479,7 @@ const NavDropdown = () => {
                           Capture Card
                         </div>
                         <div className="item-body">
-                          <Link to={'product'}>
+                          <Link to={'product'} onClick={() => onClick()}>
                             <div className="content">
                               <span className="title">Capture Card</span>
                               <span className="desc"></span>
@@ -502,7 +502,7 @@ const NavDropdown = () => {
                           Capture Card
                         </div>
                         <div className="item-body">
-                          <Link to={'product'}>
+                          <Link to={'product'} onClick={() => onClick()}>
                             <div className="content">
                               <span className="title">Capture Card</span>
                               <span className="desc"></span>
@@ -550,13 +550,13 @@ const NavDropdown = () => {
                         PC Monitoring
                       </div>
                       <div className="item-body">
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">CAM</span>
                             <span className="desc"></span>
                           </div>
                         </Link>
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">CAM Feedback</span>
                             <span className="desc"></span>
@@ -591,23 +591,23 @@ const NavDropdown = () => {
                         NZXT COMMUNITY
                       </div>
                       <div className="item-body">
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">Podcast</span>
                             <span className="desc"></span>
                           </div>
                         </Link>
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">NZXT Club & Discord</span>
                           </div>
                         </Link>
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">Newsroom & Blog</span>
                           </div>
                         </Link>
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">Partner Program</span>
                           </div>
@@ -629,17 +629,17 @@ const NavDropdown = () => {
                         Company
                       </div>
                       <div className="item-body">
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">Company</span>
                           </div>
                         </Link>
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">Careers</span>
                           </div>
                         </Link>
-                        <Link to={'product'}>
+                        <Link to={'product'} onClick={() => onClick()}>
                           <div className="content">
                             <span className="title">Product Updates</span>
                           </div>

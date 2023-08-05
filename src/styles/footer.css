@@ -89,10 +89,9 @@ footer .footer-wrapper .input-wrapper fieldset {
 }
 footer .footer-wrapper .input-wrapper fieldset .select-box {
   display: flex;
-  gap: 1rem;
 }
 footer .footer-wrapper .input-wrapper fieldset .select-box select {
-  background: transparent;
+  background: #1A1C1E;
   color: white;
   border-style: none;
   -webkit-appearance: none;

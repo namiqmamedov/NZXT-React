@@ -6,7 +6,7 @@ import FormControl from "@mui/material/FormControl";
 import {Link} from 'react-router-dom'
 
 const ProductCard = (props) => {
-    const {id,title,subtitle,image,price,oldPrice,count} = props.item
+  const {id,title,subtitle,image,price,oldPrice,count} = props.item
   return (
     <div className="shop-card">
                 <div className="card-thumbnail">
@@ -61,7 +61,7 @@ const ProductCard = (props) => {
                     </div>
                   </div>
                 </div>
-              </div>
+    </div>
   )
 }
 
