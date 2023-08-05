@@ -1,3 +1,6 @@
+.cart-index .cart-order .shop-card {
+  width: 30.6%;
+}
 .cart-index .cart-order .cart-flex {
   display: flex;
   justify-content: space-between;

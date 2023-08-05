@@ -31,33 +31,6 @@ const cartSlice = createSlice({
 
         // add item
 
-        // addItem(state,action){
-        //     const newItem = action.payload
-        //     const existingItem = state.cartItems.find((item) => item.id === newItem.id)
-        //     state.totalQuantity++
-
-        //     if(!existingItem){
-        //         state.cartItems.push({
-        //             id: newItem.id,
-        //             title: newItem.title,
-        //             image: newItem.image,
-        //             price: newItem.price,
-        //             quantity: newItem.quantity,
-        //             totalPrice: newItem.price
-        //         })
-        //     }
-
-        //     else{
-        //         existingItem.quantity++
-        //         existingItem.totalPrice = Number(existingItem.totalPrice)
-        //         + Number(newItem.price)
-        //     }
-
-        //     state.totalAmount = state.cartItems.reduce((total,item) => 
-        //         total + Number(item.price) * Number(item.quantity),0
-        //     )
-        // },
-
         addItem(state,action){
             const newItem = action.payload
             const exisitingItem = state.cartItems.find((item) => item.id === newItem.id)
@@ -69,6 +42,7 @@ const cartSlice = createSlice({
                         title:newItem.title,
                         image: newItem.image,
                         price: newItem.price,
+                        size: newItem.size,
                         quantity: 1,
                         totalPrice: newItem.price,
                     })
@@ -82,6 +56,7 @@ const cartSlice = createSlice({
                 total + Number(item.price) * Number(item.quantity),0 // initial value should be 0
             );
 
+
             localStorage.setItem('cartItems',JSON.stringify(state.cartItems.map(item=>item)))
             
             localStorage.setItem('totalAmount', JSON.stringify(state.totalAmount))
@@ -90,53 +65,56 @@ const cartSlice = createSlice({
         },
 
         // remove item
-        
+
         removeItem(state,action){
-            const id = action.payload
-            const existingItem = state.cartItems.find(item => item.id === id)
-            state.totalQuantity--
+            const id = action.payload;
+            const existingItem = state.cartItems.find(item => item.id ===  id )
+            state.totalQuantity--;
 
             if(existingItem.quantity === 1){
-                state.cartItems = state.cartItems.filter(item => item.id === id)
+                state.cartItems = state.cartItems.filter(item => item.id !== id)
             }
-
             else{
                 existingItem.quantity--
                 existingItem.totalPrice = Number(existingItem.totalPrice) - Number(existingItem.price)
             }
 
             state.totalAmount = state.cartItems.reduce((total,item) => 
-                total + Number(item.price) * Number(item.quantity),0
+                total + Number(item.price) * Number(item.quantity),0  // the initial value should be 0
             )
-
+            
             localStorage.setItem('cartItems',JSON.stringify(state.cartItems.map(item=>item)))
             
             localStorage.setItem('totalAmount', JSON.stringify(state.totalAmount))
             
             localStorage.setItem('totalQuantity', JSON.stringify(state.totalQuantity))
+
         },
 
         // delete item
 
-        deleteItem(state,action){
-            const id = action.payload
-            const existingItem = state.cartItems.find(item => item.id === id)
-
-            if(existingItem){
-                state.cartItems = state.cartItems.filter(item => item.id === id)
-                state.totalQuantity = state.totalQuantity - existingItem.quantity
+        deleteItem(state, action) {
+            const id = action.payload;
+            
+            const existingItem = state.cartItems.find(item => item.id ===  id )
+            if (existingItem) {
+                state.cartItems = state.cartItems.filter(item => item.id !== id)
+              state.totalQuantity = state.totalQuantity - existingItem.quantity;
             }
+      
+            state.totalAmount = state.cartItems.reduce(
+              (total, item) => total + Number(item.price) * Number(item.quantity),
+              0 // the initial value should be 0
+            );
 
-            state.totalAmount = state.cartItems.reduce((total,item) => (
-                total + Number(item.price) * Number(item.quantity),0
-            ))
-
+            
             localStorage.setItem('cartItems',JSON.stringify(state.cartItems.map(item=>item)))
             
             localStorage.setItem('totalAmount', JSON.stringify(state.totalAmount))
             
             localStorage.setItem('totalQuantity', JSON.stringify(state.totalQuantity))
-        }
+
+        },
     }
 })
 

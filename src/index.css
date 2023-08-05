@@ -84,7 +84,7 @@
     }
   }
   
-  @media screen and (min-width: 1500px) {
+  @media screen and (min-width: 1540px) {
     .backdrop-main{
       top: 10.5% !important;
       z-index: 0 !important;
